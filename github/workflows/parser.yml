@@ -2,21 +2,8 @@ name: CoinMarketCap AI Parser
 
 on:
   schedule:
-    # Каждые 6 часов (по умолчанию)
     - cron: '0 */6 * * *'
-    
-    # Или раскомментируйте другие варианты:
-    
-    # Каждые 3 часа
-    # - cron: '0 */3 * * *'
-    
-    # Каждый день в 9:00 UTC
-    # - cron: '0 9 * * *'
-    
-    # Каждый понедельник в 10:00 UTC
-    # - cron: '0 10 * * 1'
   
-  # Запуск вручную из интерфейса GitHub
   workflow_dispatch:
     inputs:
       debug:
@@ -24,10 +11,6 @@ on:
         required: false
         default: 'false'
         type: boolean
-
-env:
-  MAX_QUESTIONS: 8
-  MAX_RETRIES: 2
 
 jobs:
   run-parser:
@@ -57,17 +40,7 @@ jobs:
           libxdamage1 \
           libxrandr2 \
           libgbm1 \
-          libasound2 \
-          libx11-xcb1
-        
-    - name: Cache Playwright browsers
-      uses: actions/cache@v3
-      with:
-        path: |
-          ~/.cache/ms-playwright
-        key: ${{ runner.os }}-playwright-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-playwright-
+          libasound2
         
     - name: Install Python dependencies
       run: |
@@ -79,20 +52,6 @@ jobs:
         python -m playwright install chromium
         python -m playwright install-deps
         
-    - name: Create credentials file for Google Sheets
-      if: secrets.GOOGLE_CREDENTIALS != ''
-      run: |
-        echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
-        echo "✓ Google credentials configured"
-        
-    - name: Debug info
-      if: inputs.debug == 'true'
-      run: |
-        echo "Python version: $(python --version)"
-        echo "Playwright version: $(python -c 'import playwright; print(playwright.__version__)')"
-        echo "Current directory: $(pwd)"
-        ls -la
-        
     - name: Run CoinMarketCap AI Parser
       timeout-minutes: 30
       run: |
@@ -102,22 +61,9 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: cmc-parser-results-${{ github.run_id }}-${{ github.run_attempt }}
+        name: parser-results
         path: |
           cmc_full_data.json
           cmc_questions_answers.csv
           screenshot_final.png
         retention-days: 7
-        if-no-files-found: warn
-        
-    - name: Notify success
-      if: success()
-      run: |
-        echo "✅ Парсинг успешно завершен!"
-        echo "📊 Результаты сохранены в артефактах"
-        
-    - name: Notify failure
-      if: failure()
-      run: |
-        echo "❌ Парсинг завершился с ошибкой"
-        echo "Проверьте логи для деталей"
