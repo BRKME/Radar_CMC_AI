@@ -22,12 +22,12 @@ import os
 import sys
 
 # Глобальные настройки
-MAX_QUESTIONS = 8  # Обрабатываем все вопросы
-MAX_RETRIES = 2    # Повторные попытки для каждого вопроса
+MAX_QUESTIONS = int(os.getenv('MAX_QUESTIONS', 8))
+MAX_RETRIES = int(os.getenv('MAX_RETRIES', 2))
 
 # Telegram настройки
 TELEGRAM_BOT_TOKEN = "8323539910:AAG6DYij-FuqT7q-ovsBNNgEnWH2V6FXhoM"
-TELEGRAM_CHAT_ID = "@Ready777_bot"  # Если это канал, используйте @channelname
+TELEGRAM_CHAT_ID = "@Ready777_bot"
 
 def send_telegram_message(message, parse_mode='HTML'):
     """Отправляет сообщение в Telegram"""
@@ -140,9 +140,6 @@ async def get_ai_response(page, question_text):
     """Получает ответ AI используя точный селектор"""
     try:
         print("  ⏳ Ожидание генерации ответа AI...")
-
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
         await asyncio.sleep(5)
 
         max_attempts = 25
@@ -232,15 +229,11 @@ async def click_and_get_response(page, question_text, attempt_num=1):
         return None
 
 async def parse_all_questions_with_retries(page, questions_list, max_questions=8, max_retries=2):
-    """
-    Парсит все вопросы с повторными попытками для пропущенных
-    """
+    """Парсит все вопросы с повторными попытками для пропущенных"""
     results = []
     failed_questions = []
 
-    print("\n" + "="*70)
-    print(f"📝 СБОР ОТВЕТОВ НА ВОПРОСЫ ({min(max_questions, len(questions_list))} вопросов)")
-    print("="*70)
+    print(f"\n📝 СБОР ОТВЕТОВ НА ВОПРОСЫ ({min(max_questions, len(questions_list))} вопросов)")
 
     # Первый проход - обрабатываем все вопросы
     for i, question in enumerate(questions_list[:max_questions], 1):
@@ -251,23 +244,17 @@ async def parse_all_questions_with_retries(page, questions_list, max_questions=8
         if result:
             results.append(result)
             print(f"✓ Успешно обработан")
-
-            preview = result['answer'][:300] + "..." if len(result['answer']) > 300 else result['answer']
-            print(f"\n💬 Превью ответа:\n{preview}\n")
         else:
             print(f"✗ Не удалось получить ответ, добавляю в список повторов")
             failed_questions.append(question)
 
         if i < min(max_questions, len(questions_list)):
-            print("⏱️  Возврат к списку вопросов...")
             await reset_to_question_list(page)
             await asyncio.sleep(2)
 
     # Повторные попытки для пропущенных вопросов
     if failed_questions and max_retries > 0:
-        print("\n" + "="*70)
-        print(f"🔄 ПОВТОРНЫЕ ПОПЫТКИ ({len(failed_questions)} вопросов)")
-        print("="*70)
+        print(f"\n🔄 ПОВТОРНЫЕ ПОПЫТКИ ({len(failed_questions)} вопросов)")
 
         for retry_attempt in range(2, max_retries + 2):
             if not failed_questions:
@@ -294,19 +281,9 @@ async def parse_all_questions_with_retries(page, questions_list, max_questions=8
 
             failed_questions = still_failed
 
-    # Финальная статистика
-    print("\n" + "="*70)
-    print("📊 РЕЗУЛЬТАТЫ ОБРАБОТКИ")
-    print("="*70)
+    print(f"\n📊 РЕЗУЛЬТАТЫ ОБРАБОТКИ")
     print(f"  ✅ Успешно обработано: {len(results)}/{min(max_questions, len(questions_list))}")
     print(f"  ❌ Не удалось обработать: {len(failed_questions)}")
-
-    if failed_questions:
-        print(f"\n  Пропущенные вопросы:")
-        for q in failed_questions:
-            print(f"    • {q}")
-
-    print("="*70 + "\n")
 
     return results, failed_questions
 
@@ -326,20 +303,15 @@ def calculate_statistics(results):
     }
 
 def upload_to_google_sheets(data, sheet_name='CoinMarketCap AI Parser'):
-    """
-    Выгружает данные в Google Sheets
-    """
+    """Выгружает данные в Google Sheets"""
     try:
         print("\n📤 Выгрузка в Google Sheets...")
         
-        # Для GitHub Actions нужно использовать Service Account
-        # Создайте файл credentials.json с данными сервисного аккаунта
         if os.path.exists('credentials.json'):
             scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
             creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
             gc = gspread.authorize(creds)
             
-            # Создаем или открываем таблицу
             try:
                 spreadsheet = gc.open(sheet_name)
                 print(f"✓ Открыта существующая таблица: {sheet_name}")
@@ -347,11 +319,9 @@ def upload_to_google_sheets(data, sheet_name='CoinMarketCap AI Parser'):
                 spreadsheet = gc.create(sheet_name)
                 print(f"✓ Создана новая таблица: {sheet_name}")
 
-            # Создаем новый лист с timestamp
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
             worksheet = spreadsheet.add_worksheet(title=f"Parse {timestamp}", rows=100, cols=10)
 
-            # Подготавливаем данные
             headers = ['#', 'Вопрос', 'Ответ', 'Длина ответа', 'Попытка', 'Время']
             rows = [headers]
 
@@ -365,7 +335,6 @@ def upload_to_google_sheets(data, sheet_name='CoinMarketCap AI Parser'):
                     item['timestamp']
                 ])
 
-            # Добавляем пустую строку и статистику
             stats = calculate_statistics(data)
             rows.append([])
             rows.append(['СТАТИСТИКА', '', '', '', '', ''])
@@ -375,25 +344,11 @@ def upload_to_google_sheets(data, sheet_name='CoinMarketCap AI Parser'):
             rows.append(['Макс. длина', stats.get('max_length', 0), '', '', '', ''])
             rows.append(['Всего символов', stats.get('total_chars', 0), '', '', '', ''])
 
-            # Записываем данные
             worksheet.update('A1', rows)
-
-            # Форматирование
-            worksheet.format('A1:F1', {
-                'backgroundColor': {'red': 0.2, 'green': 0.6, 'blue': 0.86},
-                'textFormat': {'bold': True, 'foregroundColor': {'red': 1, 'green': 1, 'blue': 1}}
-            })
-
-            # Авторазмер колонок
-            worksheet.columns_auto_resize(0, 5)
-
-            # Получаем ссылку
             sheet_url = spreadsheet.url
 
             print(f"✓ Данные успешно выгружены в Google Sheets!")
-            print(f"📊 Ссылка на таблицу: {sheet_url}")
-            print(f"📄 Лист: {worksheet.title}")
-
+            print(f"📊 Ссылка: {sheet_url}")
             return sheet_url
         else:
             print("⚠️ Файл credentials.json не найден, пропускаем выгрузку в Google Sheets")
@@ -401,7 +356,6 @@ def upload_to_google_sheets(data, sheet_name='CoinMarketCap AI Parser'):
 
     except Exception as e:
         print(f"✗ Ошибка при выгрузке в Google Sheets: {e}")
-        traceback.print_exc()
         return None
 
 def save_to_json(data, filename='cmc_full_data.json'):
@@ -441,7 +395,6 @@ def send_results_to_telegram(results, failed_questions, stats, sheet_url=None):
         
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
         
-        # Основное сообщение со статистикой
         message = f"""
 <b>🚀 ПАРСИНГ COINMARKETCAP AI ЗАВЕРШЕН</b>
 <b>⏰ Время:</b> {timestamp}
@@ -457,21 +410,17 @@ def send_results_to_telegram(results, failed_questions, stats, sheet_url=None):
 <b>📋 ОБРАБОТАННЫЕ ВОПРОСЫ:</b>
 """
         
-        # Добавляем список обработанных вопросов
-        for i, result in enumerate(results[:5], 1):  # Первые 5 вопросов
+        for i, result in enumerate(results[:5], 1):
             message += f"{i}. {result['question']} ({result['length']} символов)\n"
         
         if len(results) > 5:
             message += f"... и еще {len(results) - 5} вопросов\n"
         
-        # Добавляем информацию о Google Sheets
         if sheet_url:
             message += f"\n<b>📊 GOOGLE SHEETS:</b>\n{sheet_url}"
         
-        # Отправляем основное сообщение
         send_telegram_message(message)
         
-        # Отправляем пример ответа (первый успешный)
         if results:
             first_result = results[0]
             example_message = f"""
@@ -495,7 +444,6 @@ async def main_parser():
         try:
             print("🌐 Загрузка страницы...")
 
-            # Установка браузера для GitHub Actions
             browser = await p.chromium.launch(
                 headless=True,
                 args=[
@@ -514,7 +462,6 @@ async def main_parser():
 
             page = await context.new_page()
 
-            # Отправляем стартовое сообщение в Telegram
             start_message = f"""
 <b>🚀 ЗАПУСК ПАРСЕРА COINMARKETCAP AI</b>
 <b>⏰ Время начала:</b> {datetime.now().strftime("%Y-%m-%d %H:%M")}
@@ -526,7 +473,6 @@ async def main_parser():
 """
             send_telegram_message(start_message)
 
-            # Переходим на страницу с retry
             for attempt in range(3):
                 try:
                     await page.goto('https://coinmarketcap.com/cmc-ai/ask/', wait_until='domcontentloaded', timeout=20000)
@@ -545,10 +491,7 @@ async def main_parser():
             print("⏳ Ожидание загрузки контента (5 секунд)...")
             await asyncio.sleep(5)
 
-            # Получаем список вопросов
-            print("\n" + "="*70)
-            print("🔍 ПОЛУЧЕНИЕ СПИСКА ВОПРОСОВ")
-            print("="*70 + "\n")
+            print("\n🔍 ПОЛУЧЕНИЕ СПИСКА ВОПРОСОВ")
 
             elements = await page.query_selector_all('div.BaseChip_labelWrapper__pQXPT')
 
@@ -566,7 +509,6 @@ async def main_parser():
             for i, q in enumerate(questions_list, 1):
                 print(f"  {i}. {q}")
 
-            # Парсим все вопросы с повторными попытками
             all_results, failed_questions = await parse_all_questions_with_retries(
                 page,
                 questions_list,
@@ -574,23 +516,14 @@ async def main_parser():
                 max_retries=MAX_RETRIES
             )
 
-            # Вычисляем статистику
             stats = calculate_statistics(all_results)
 
-            print("\n" + "="*70)
-            print("📊 СТАТИСТИКА ПО ДЛИНЕ ОТВЕТОВ")
-            print("="*70)
+            print("\n📊 СТАТИСТИКА ПО ДЛИНЕ ОТВЕТОВ")
             print(f"  • Всего ответов: {stats.get('total_answers', 0)}")
             print(f"  • Средняя длина: {stats.get('avg_length', 0)} символов")
             print(f"  • Минимальная: {stats.get('min_length', 0)} символов")
             print(f"  • Максимальная: {stats.get('max_length', 0)} символов")
             print(f"  • Всего символов: {stats.get('total_chars', 0)}")
-            print("="*70 + "\n")
-
-            # === СОХРАНЕНИЕ ДАННЫХ ===
-            print("\n" + "="*70)
-            print("💾 СОХРАНЕНИЕ ДАННЫХ")
-            print("="*70 + "\n")
 
             export_data = {
                 'metadata': {
@@ -606,34 +539,24 @@ async def main_parser():
                 'failed_questions': failed_questions
             }
 
-            # Сохраняем JSON
             json_file = save_to_json(export_data, 'cmc_full_data.json')
 
-            # Сохраняем CSV
             csv_file = None
             if all_results:
                 csv_file = save_to_csv(all_results, 'cmc_questions_answers.csv')
 
-            # Выгружаем в Google Sheets
             sheet_url = None
             if all_results:
                 sheet_url = upload_to_google_sheets(all_results, 'CoinMarketCap AI Parser')
 
-            # Скриншот
             print("\n📸 Сохранение финального скриншота...")
             screenshot_file = 'screenshot_final.png'
             await page.screenshot(path=screenshot_file, full_page=True)
             print("✓ Скриншот сохранен: screenshot_final.png")
 
-            # === ОТПРАВКА В TELEGRAM ===
-            print("\n" + "="*70)
-            print("📤 ОТПРАВКА РЕЗУЛЬТАТОВ В TELEGRAM")
-            print("="*70 + "\n")
-
-            # Отправляем итоговые результаты
+            print("\n📤 ОТПРАВКА РЕЗУЛЬТАТОВ В TELEGRAM")
             send_results_to_telegram(all_results, failed_questions, stats, sheet_url)
 
-            # Отправляем файлы
             if json_file:
                 send_telegram_document(json_file, "📄 Полные данные в JSON")
             
@@ -642,10 +565,7 @@ async def main_parser():
             
             send_telegram_document(screenshot_file, "🖼️ Финальный скриншот")
 
-            # Итоговая статистика
-            print("\n" + "="*70)
-            print("🎯 ИТОГОВАЯ СТАТИСТИКА")
-            print("="*70)
+            print(f"\n🎯 ИТОГОВАЯ СТАТИСТИКА")
             print(f"  ✓ Найдено вопросов: {len(questions_list)}")
             print(f"  ✓ Успешно обработано: {len(all_results)}")
             print(f"  ✗ Не удалось обработать: {len(failed_questions)}")
@@ -654,7 +574,6 @@ async def main_parser():
             if sheet_url:
                 print(f"  📊 Google Sheets: Обновлено")
             print(f"  📱 Отправлено в Telegram: 3 файла + статистика")
-            print("="*70 + "\n")
 
             await browser.close()
             print("✓ Браузер закрыт\n")
@@ -663,7 +582,6 @@ async def main_parser():
             print(f"\n❌ КРИТИЧЕСКАЯ ОШИБКА: {e}")
             traceback.print_exc()
             
-            # Отправляем сообщение об ошибке в Telegram
             error_message = f"""
 <b>❌ ОШИБКА ПАРСЕРА</b>
 <b>⏰ Время:</b> {datetime.now().strftime("%Y-%m-%d %H:%M")}
@@ -688,7 +606,6 @@ def main():
     print(f"  • Telegram бот: @Ready777_bot")
     print("\n" + "="*70 + "\n")
     
-    # Запуск асинхронной функции
     asyncio.run(main_parser())
     
     print("\n✅ ВСЕ ОПЕРАЦИИ ЗАВЕРШЕНЫ!")
