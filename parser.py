@@ -1,10 +1,8 @@
 """
-Парсер для CoinMarketCap AI - РАСШИРЕННАЯ ВЕРСИЯ
+Парсер для CoinMarketCap AI - УЛУЧШЕННАЯ ВЕРСИЯ
 ✅ Обработка всех 8 вопросов
 ✅ Повторные попытки для пропущенных
-✅ Выгрузка в Google Sheets
-✅ Статистика по длине ответов
-✅ Отправка результатов в Telegram
+✅ Отправка каждого вопроса/ответа отдельным сообщением в Telegram
 """
 
 import asyncio
@@ -30,13 +28,11 @@ TELEGRAM_BOT_TOKEN = "8442392037:AAEiM_b4QfdFLqbmmc1PXNvA99yxmFVLEp8"
 TELEGRAM_CHAT_ID = "350766421"
 
 def send_telegram_message(message, parse_mode='HTML'):
-    """Отправляет сообщение в Telegram с разбивкой на части"""
+    """Отправляет сообщение в Telegram с разбивкой на части при необходимости"""
     try:
-        # Лимит Telegram - 4096 символов
         max_length = 4000
         
         if len(message) <= max_length:
-            # Короткое сообщение - отправляем как есть
             url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
             payload = {
                 'chat_id': TELEGRAM_CHAT_ID,
@@ -49,84 +45,66 @@ def send_telegram_message(message, parse_mode='HTML'):
                 return True
             else:
                 print(f"✗ Ошибка отправки в Telegram: {response.status_code}")
-                print(f"🔍 Response text: {response.text}")
                 return False
         else:
-            # Длинное сообщение - разбиваем на части
-            print(f"📨 Сообщение слишком длинное ({len(message)} chars), разбиваю на части...")
-            
-            # Разбиваем сообщение по строкам
-            lines = message.split('\n')
+            # Разбиваем длинное сообщение
+            print(f"📨 Сообщение длинное ({len(message)} chars), разбиваю на части...")
+            parts = []
             current_part = ""
-            part_number = 1
             
-            for line in lines:
-                # Если добавление новой строки превысит лимит - отправляем текущую часть
+            for line in message.split('\n'):
                 if len(current_part) + len(line) + 1 > max_length:
                     if current_part:
-                        send_telegram_part(f"📊 Часть {part_number}:\n\n{current_part}")
-                        part_number += 1
+                        parts.append(current_part)
                         current_part = line
                     else:
-                        # Одна строка слишком длинная - разбиваем по символам
+                        # Строка слишком длинная - режем по символам
                         for i in range(0, len(line), max_length - 100):
-                            chunk = line[i:i + max_length - 100]
-                            send_telegram_part(f"📊 Часть {part_number}:\n\n{chunk}")
-                            part_number += 1
+                            parts.append(line[i:i + max_length - 100])
                 else:
-                    if current_part:
-                        current_part += "\n" + line
-                    else:
-                        current_part = line
+                    current_part = current_part + "\n" + line if current_part else line
             
-            # Отправляем последнюю часть
             if current_part:
-                send_telegram_part(f"📊 Часть {part_number}:\n\n{current_part}")
+                parts.append(current_part)
             
-            print(f"✓ Сообщение отправлено в Telegram ({part_number} частей)")
+            # Отправляем части
+            for i, part in enumerate(parts, 1):
+                url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+                payload = {
+                    'chat_id': TELEGRAM_CHAT_ID,
+                    'text': part,
+                    'parse_mode': parse_mode
+                }
+                response = requests.post(url, data=payload, timeout=10)
+                print(f"  ✓ Часть {i}/{len(parts)} отправлена")
+                time.sleep(0.5)  # Небольшая пауза между частями
+            
             return True
             
     except Exception as e:
         print(f"✗ Ошибка при отправке в Telegram: {e}")
         return False
 
-def send_telegram_part(message_part):
-    """Отправляет одну часть сообщения в Telegram"""
+def send_question_answer_to_telegram(question_num, total_questions, question, answer):
+    """Отправляет один вопрос и ответ в Telegram"""
     try:
-        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-        payload = {
-            'chat_id': TELEGRAM_CHAT_ID,
-            'text': message_part,
-            'parse_mode': 'HTML'
-        }
-        response = requests.post(url, data=payload, timeout=10)
-        if response.status_code == 200:
-            print(f"  ✓ Часть сообщения отправлена")
-        else:
-            print(f"  ✗ Ошибка отправки части: {response.status_code}")
-    except Exception as e:
-        print(f"  ✗ Ошибка при отправке части: {e}")
+        # Форматируем сообщение
+        message = f"""<b>❓ Вопрос {question_num}/{total_questions}</b>
 
-def send_telegram_document(document_path, caption=""):
-    """Отправляет документ в Telegram"""
-    try:
-        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendDocument"
-        with open(document_path, 'rb') as file:
-            files = {'document': file}
-            data = {
-                'chat_id': TELEGRAM_CHAT_ID,
-                'caption': caption[:200]  # Ограничиваем подпись
-            }
-            response = requests.post(url, files=files, data=data, timeout=30)
-        if response.status_code == 200:
-            print(f"✓ Документ {document_path} отправлен в Telegram")
-            return True
-        else:
-            print(f"✗ Ошибка отправки документа: {response.status_code}")
-            return False
+<b>{question}</b>
+
+{answer}
+
+{'─' * 40}"""
+        
+        print(f"\n📤 Отправка вопроса {question_num}/{total_questions} в Telegram...")
+        send_telegram_message(message)
+        
+        # Пауза между сообщениями, чтобы избежать флуда
+        time.sleep(1)
+        
     except Exception as e:
-        print(f"✗ Ошибка при отправке документа в Telegram: {e}")
-        return False
+        print(f"✗ Ошибка при отправке вопроса {question_num}: {e}")
 
 async def accept_cookies(page):
     """Принимает cookies если баннер появился"""
@@ -360,62 +338,6 @@ def calculate_statistics(results):
         'total_chars': sum(lengths)
     }
 
-def upload_to_google_sheets(data, sheet_name='CoinMarketCap AI Parser'):
-    """Выгружает данные в Google Sheets"""
-    try:
-        print("\n📤 Выгрузка в Google Sheets...")
-        
-        if os.path.exists('credentials.json'):
-            scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-            creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
-            gc = gspread.authorize(creds)
-            
-            try:
-                spreadsheet = gc.open(sheet_name)
-                print(f"✓ Открыта существующая таблица: {sheet_name}")
-            except:
-                spreadsheet = gc.create(sheet_name)
-                print(f"✓ Создана новая таблица: {sheet_name}")
-
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
-            worksheet = spreadsheet.add_worksheet(title=f"Parse {timestamp}", rows=100, cols=10)
-
-            headers = ['#', 'Вопрос', 'Ответ', 'Длина ответа', 'Попытка', 'Время']
-            rows = [headers]
-
-            for i, item in enumerate(data, 1):
-                rows.append([
-                    i,
-                    item['question'],
-                    item['answer'],
-                    item['length'],
-                    item.get('attempt', 1),
-                    item['timestamp']
-                ])
-
-            stats = calculate_statistics(data)
-            rows.append([])
-            rows.append(['СТАТИСТИКА', '', '', '', '', ''])
-            rows.append(['Всего ответов', stats.get('total_answers', 0), '', '', '', ''])
-            rows.append(['Средняя длина', stats.get('avg_length', 0), '', '', '', ''])
-            rows.append(['Мин. длина', stats.get('min_length', 0), '', '', '', ''])
-            rows.append(['Макс. длина', stats.get('max_length', 0), '', '', '', ''])
-            rows.append(['Всего символов', stats.get('total_chars', 0), '', '', '', ''])
-
-            worksheet.update('A1', rows)
-            sheet_url = spreadsheet.url
-
-            print(f"✓ Данные успешно выгружены в Google Sheets!")
-            print(f"📊 Ссылка: {sheet_url}")
-            return sheet_url
-        else:
-            print("⚠️ Файл credentials.json не найден, пропускаем выгрузку в Google Sheets")
-            return None
-
-    except Exception as e:
-        print(f"✗ Ошибка при выгрузке в Google Sheets: {e}")
-        return None
-
 def save_to_json(data, filename='cmc_full_data.json'):
     """Сохраняет данные в JSON файл"""
     try:
@@ -446,57 +368,41 @@ def save_to_csv(data, filename='cmc_questions_answers.csv'):
         print(f"✗ Ошибка сохранения CSV: {e}")
         return None
 
-def send_results_to_telegram(results, failed_questions, stats, sheet_url=None):
-    """Отправляет итоговые результаты в Telegram с ограничением длины"""
+def send_all_results_to_telegram(results):
+    """Отправляет все результаты в Telegram - каждый вопрос отдельным сообщением"""
     try:
         print("\n📤 Отправка результатов в Telegram...")
         
+        # Отправляем стартовое сообщение
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
-        
-        # Создаем компактное сообщение
-        message = f"""
-<b>🚀 ПАРСИНГ COINMARKETCAP AI ЗАВЕРШЕН</b>
-<b>⏰ Время:</b> {timestamp}
+        start_message = f"""<b>🚀 РЕЗУЛЬТАТЫ ПАРСИНГА COINMARKETCAP AI</b>
+⏰ {timestamp}
+📊 Получено ответов: <b>{len(results)}</b>
 
-<b>📊 СТАТИСТИКА:</b>
-✅ Успешно: <b>{stats.get('total_answers', 0)}/{stats.get('total_answers', 0) + len(failed_questions)}</b>
-📏 Средняя длина: <b>{stats.get('avg_length', 0)}</b> символов
-📈 Максимальная: <b>{stats.get('max_length', 0)}</b> символов
-📉 Минимальная: <b>{stats.get('min_length', 0)}</b> символов
-🔤 Всего символов: <b>{stats.get('total_chars', 0)}</b>
+Начинаю отправку вопросов и ответов..."""
+        
+        send_telegram_message(start_message)
+        time.sleep(2)
+        
+        # Отправляем каждый вопрос и ответ отдельным сообщением
+        total_questions = len(results)
+        for i, result in enumerate(results, 1):
+            send_question_answer_to_telegram(
+                question_num=i,
+                total_questions=total_questions,
+                question=result['question'],
+                answer=result['answer']
+            )
+        
+        # Финальное сообщение
+        final_message = f"""<b>✅ ПАРСИНГ ЗАВЕРШЕН</b>
 
-<b>📋 ВОПРОСЫ:</b>
-"""
+Успешно обработано: <b>{len(results)}</b> вопросов
+Время: {timestamp}"""
         
-        # Добавляем только первые 3 вопроса для компактности
-        for i, result in enumerate(results[:3], 1):
-            message += f"{i}. {result['question'][:50]}... ({result['length']} chars)\n"
+        send_telegram_message(final_message)
         
-        if len(results) > 3:
-            message += f"... и еще {len(results) - 3} вопросов\n"
-        
-        if failed_questions:
-            message += f"\n<b>❌ ПРОПУЩЕНО:</b> {len(failed_questions)}"
-        
-        if sheet_url:
-            message += f"\n\n<b>📊 GOOGLE SHEETS:</b>\n{sheet_url}"
-        
-        # Отправляем основное сообщение
-        send_telegram_message(message)
-        
-        # Отправляем пример ответа отдельным сообщением (укороченный)
-        if results:
-            first_result = results[0]
-            example_message = f"""
-<b>📝 ПРИМЕР ОТВЕТА:</b>
-<b>Вопрос:</b> {first_result['question']}
-<b>Длина:</b> {first_result['length']} символов
-
-<code>{first_result['answer'][:800]}...</code>
-"""
-            send_telegram_message(example_message)
-        
-        print("✓ Результаты отправлены в Telegram")
+        print("✓ Все результаты отправлены в Telegram")
         
     except Exception as e:
         print(f"✗ Ошибка при отправке результатов в Telegram: {e}")
@@ -526,15 +432,10 @@ async def main_parser():
             page = await context.new_page()
 
             # Отправляем стартовое сообщение
-            start_message = f"""
-<b>🚀 ЗАПУСК ПАРСЕРА COINMARKETCAP AI</b>
-<b>⏰ Время начала:</b> {datetime.now().strftime("%Y-%m-%d %H:%M")}
-<b>⚙️ Настройки:</b>
-• Максимум вопросов: {MAX_QUESTIONS}
-• Повторных попыток: {MAX_RETRIES}
+            start_message = f"""<b>🚀 ЗАПУСК ПАРСЕРА</b>
+⏰ {datetime.now().strftime("%Y-%m-%d %H:%M")}
 
-Ожидайте результаты...
-"""
+Начинаю обработку вопросов..."""
             send_telegram_message(start_message)
 
             for attempt in range(3):
@@ -589,6 +490,7 @@ async def main_parser():
             print(f"  • Максимальная: {stats.get('max_length', 0)} символов")
             print(f"  • Всего символов: {stats.get('total_chars', 0)}")
 
+            # Сохраняем данные локально (для бэкапа)
             export_data = {
                 'metadata': {
                     'url': 'https://coinmarketcap.com/cmc-ai/ask/',
@@ -605,40 +507,20 @@ async def main_parser():
 
             json_file = save_to_json(export_data, 'cmc_full_data.json')
 
-            csv_file = None
             if all_results:
                 csv_file = save_to_csv(all_results, 'cmc_questions_answers.csv')
 
-            sheet_url = None
-            if all_results:
-                sheet_url = upload_to_google_sheets(all_results, 'CoinMarketCap AI Parser')
-
-            print("\n📸 Сохранение финального скриншота...")
-            screenshot_file = 'screenshot_final.png'
-            await page.screenshot(path=screenshot_file, full_page=True)
-            print("✓ Скриншот сохранен: screenshot_final.png")
-
+            # Отправляем результаты в Telegram (каждый вопрос отдельно)
             print("\n📤 ОТПРАВКА РЕЗУЛЬТАТОВ В TELEGRAM")
-            send_results_to_telegram(all_results, failed_questions, stats, sheet_url)
-
-            # Отправляем файлы в Telegram
-            if json_file:
-                send_telegram_document(json_file, "📄 Полные данные в JSON")
-            
-            if csv_file:
-                send_telegram_document(csv_file, "📊 Вопросы и ответы в CSV")
-            
-            send_telegram_document(screenshot_file, "🖼️ Финальный скриншот")
+            send_all_results_to_telegram(all_results)
 
             print(f"\n🎯 ИТОГОВАЯ СТАТИСТИКА")
             print(f"  ✓ Найдено вопросов: {len(questions_list)}")
             print(f"  ✓ Успешно обработано: {len(all_results)}")
             print(f"  ✗ Не удалось обработать: {len(failed_questions)}")
             print(f"  📊 Средняя длина ответа: {stats.get('avg_length', 0)} символов")
-            print(f"  💾 Сохранено файлов: 3 (JSON, CSV, Screenshot)")
-            if sheet_url:
-                print(f"  📊 Google Sheets: Обновлено")
-            print(f"  📱 Отправлено в Telegram: 3 файла + статистика")
+            print(f"  💾 Сохранено файлов локально: 2 (JSON, CSV)")
+            print(f"  📱 Отправлено в Telegram: {len(all_results)} вопросов с ответами")
 
             await browser.close()
             print("✓ Браузер закрыт\n")
@@ -647,28 +529,24 @@ async def main_parser():
             print(f"\n❌ КРИТИЧЕСКАЯ ОШИБКА: {e}")
             traceback.print_exc()
             
-            error_message = f"""
-<b>❌ ОШИБКА ПАРСЕРА</b>
-<b>⏰ Время:</b> {datetime.now().strftime("%Y-%m-%d %H:%M")}
-<b>Ошибка:</b> <code>{str(e)[:1000]}</code>
-"""
+            error_message = f"""<b>❌ ОШИБКА ПАРСЕРА</b>
+⏰ {datetime.now().strftime("%Y-%m-%d %H:%M")}
+<b>Ошибка:</b> <code>{str(e)[:1000]}</code>"""
             send_telegram_message(error_message)
 
 def main():
     """Запуск парсера"""
     print("="*70)
-    print("🚀 РАСШИРЕННЫЙ ПАРСЕР COINMARKETCAP AI")
+    print("🚀 УЛУЧШЕННЫЙ ПАРСЕР COINMARKETCAP AI")
     print("="*70)
     print("\n📋 ВОЗМОЖНОСТИ:")
     print("  ✅ Обработка всех 8 вопросов")
     print("  ✅ Повторные попытки для пропущенных")
-    print("  ✅ Выгрузка в Google Sheets")
-    print("  ✅ Статистика по длине ответов")
-    print("  ✅ Отправка результатов в Telegram")
+    print("  ✅ Каждый вопрос/ответ отдельным сообщением в Telegram")
+    print("  ✅ Без лишних файлов и статистики в чате")
     print(f"\n⚙️  НАСТРОЙКИ:")
     print(f"  • Максимум вопросов: {MAX_QUESTIONS}")
     print(f"  • Повторных попыток: {MAX_RETRIES}")
-    print(f"  • Telegram бот: @Ready777_bot")
     print("\n" + "="*70 + "\n")
     
     asyncio.run(main_parser())
