@@ -18,16 +18,77 @@ from oauth2client.service_account import ServiceAccountCredentials
 import requests
 import os
 import sys
+import random
 
 # Глобальные настройки
 MAX_QUESTIONS = int(os.getenv('MAX_QUESTIONS', 8))
 MAX_RETRIES = int(os.getenv('MAX_RETRIES', 2))
 
 # Telegram настройки
-TELEGRAM_BOT_TOKEN = "8442392037:AAEiM_b4QfdFLqbmmc1PXNvA99yxmFVLEp8"
-TELEGRAM_CHAT_ID = "350766421"
+TELEGRAM_BOT_TOKEN = "8323539910:AAG6DYij-FuqT7q-ovsBNNgEnWH2V6FXhoM"
+TELEGRAM_CHAT_ID = "-1003445906500"
 
-def send_telegram_message(message, parse_mode='HTML'):
+# GitHub настройки для картинок
+GITHUB_IMAGES_URL = "https://raw.githubusercontent.com/coinmarketcap-parser/Images1/main/"
+# Список имен файлов картинок (от 10.jpg до 35.jpg)
+IMAGE_FILES = [f"{i}.jpg" for i in range(10, 36)]  # Генерирует: 10.jpg, 11.jpg, ..., 35.jpg
+
+def send_telegram_photo_with_caption(photo_url, caption, parse_mode='HTML'):
+    """Отправляет фото с подписью в Telegram"""
+    try:
+        max_caption_length = 1024  # Telegram лимит для подписи к фото
+        
+        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+        
+        # Если caption слишком длинный - отправляем фото, потом текст отдельно
+        if len(caption) > max_caption_length:
+            # Отправляем фото без подписи
+            payload = {
+                'chat_id': TELEGRAM_CHAT_ID,
+                'photo': photo_url
+            }
+            response = requests.post(url, data=payload, timeout=10)
+            
+            if response.status_code == 200:
+                print("✓ Фото отправлено в Telegram")
+                # Отправляем текст отдельным сообщением
+                time.sleep(0.5)
+                send_telegram_message(caption, parse_mode)
+                return True
+            else:
+                print(f"✗ Ошибка отправки фото: {response.status_code}")
+                # Если фото не отправилось - отправляем хотя бы текст
+                send_telegram_message(caption, parse_mode)
+                return False
+        else:
+            # Отправляем фото с подписью
+            payload = {
+                'chat_id': TELEGRAM_CHAT_ID,
+                'photo': photo_url,
+                'caption': caption,
+                'parse_mode': parse_mode
+            }
+            response = requests.post(url, data=payload, timeout=10)
+            
+            if response.status_code == 200:
+                print("✓ Фото с подписью отправлено в Telegram")
+                return True
+            else:
+                print(f"✗ Ошибка отправки фото: {response.status_code}")
+                # Если фото не отправилось - отправляем хотя бы текст
+                send_telegram_message(caption, parse_mode)
+                return False
+                
+    except Exception as e:
+        print(f"✗ Ошибка при отправке фото в Telegram: {e}")
+        # В случае ошибки отправляем хотя бы текст
+        send_telegram_message(caption, parse_mode)
+        return False
+
+def get_random_image_url():
+    """Возвращает случайный URL картинки из GitHub"""
+    random_image = random.choice(IMAGE_FILES)
+    return GITHUB_IMAGES_URL + random_image
     """Отправляет сообщение в Telegram с разбивкой на части при необходимости"""
     try:
         max_length = 4000
@@ -86,19 +147,29 @@ def send_telegram_message(message, parse_mode='HTML'):
         return False
 
 def send_question_answer_to_telegram(question_num, total_questions, question, answer):
-    """Отправляет один вопрос и ответ в Telegram"""
+    """Отправляет один вопрос и ответ в Telegram с случайной картинкой"""
     try:
-        # Форматируем сообщение
-        message = f"""<b>❓ Вопрос {question_num}/{total_questions}</b>
+        # Убираем строку "Researched for Xs" из ответа
+        answer_lines = answer.split('\n')
+        cleaned_lines = []
+        for line in answer_lines:
+            if not line.strip().startswith('Researched for'):
+                cleaned_lines.append(line)
+        
+        cleaned_answer = '\n'.join(cleaned_lines).strip()
+        
+        # Форматируем сообщение без номера вопроса
+        caption = f"""<b>{question}</b>
 
-<b>{question}</b>
-
-{answer}
+{cleaned_answer}
 
 {'─' * 40}"""
         
-        print(f"\n📤 Отправка вопроса {question_num}/{total_questions} в Telegram...")
-        send_telegram_message(message)
+        # Получаем случайную картинку
+        image_url = get_random_image_url()
+        
+        print(f"\n📤 Отправка вопроса {question_num}/{total_questions} в Telegram с картинкой...")
+        send_telegram_photo_with_caption(image_url, caption)
         
         # Пауза между сообщениями, чтобы избежать флуда
         time.sleep(1)
@@ -373,18 +444,7 @@ def send_all_results_to_telegram(results):
     try:
         print("\n📤 Отправка результатов в Telegram...")
         
-        # Отправляем стартовое сообщение
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
-        start_message = f"""<b>🚀 РЕЗУЛЬТАТЫ ПАРСИНГА COINMARKETCAP AI</b>
-⏰ {timestamp}
-📊 Получено ответов: <b>{len(results)}</b>
-
-Начинаю отправку вопросов и ответов..."""
-        
-        send_telegram_message(start_message)
-        time.sleep(2)
-        
-        # Отправляем каждый вопрос и ответ отдельным сообщением
+        # Отправляем каждый вопрос и ответ отдельным сообщением (без стартового сообщения)
         total_questions = len(results)
         for i, result in enumerate(results, 1):
             send_question_answer_to_telegram(
@@ -393,14 +453,6 @@ def send_all_results_to_telegram(results):
                 question=result['question'],
                 answer=result['answer']
             )
-        
-        # Финальное сообщение
-        final_message = f"""<b>✅ ПАРСИНГ ЗАВЕРШЕН</b>
-
-Успешно обработано: <b>{len(results)}</b> вопросов
-Время: {timestamp}"""
-        
-        send_telegram_message(final_message)
         
         print("✓ Все результаты отправлены в Telegram")
         
@@ -431,12 +483,7 @@ async def main_parser():
 
             page = await context.new_page()
 
-            # Отправляем стартовое сообщение
-            start_message = f"""<b>🚀 ЗАПУСК ПАРСЕРА</b>
-⏰ {datetime.now().strftime("%Y-%m-%d %H:%M")}
-
-Начинаю обработку вопросов..."""
-            send_telegram_message(start_message)
+            # Убрали стартовое сообщение в Telegram
 
             for attempt in range(3):
                 try:
