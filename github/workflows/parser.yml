@@ -25,6 +25,12 @@ on:
         default: 'false'
         type: boolean
 
+# Добавьте это разрешение
+permissions:
+  contents: read
+  actions: write
+  checks: write
+
 env:
   MAX_QUESTIONS: 8
   MAX_RETRIES: 2
