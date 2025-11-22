@@ -151,8 +151,46 @@ def clean_question_specific_text(question, text):
         print(f"⚠️ Ошибка очистки текста: {e}")
         return text
 
+def send_telegram_photo_with_caption(photo_url, caption, parse_mode='HTML'):
+    """Отправляет фото с подписью в Telegram"""
+    try:
+        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+        
+        print(f"🔍 Попытка отправить фото: {photo_url}")
+        print(f"📏 Длина caption: {len(caption)} символов")
+        
+        # Сначала отправляем фото без подписи
+        payload = {
+            'chat_id': TELEGRAM_CHAT_ID,
+            'photo': photo_url
+        }
+        response = requests.post(url, data=payload, timeout=30)
+        
+        print(f"📊 Response status: {response.status_code}")
+        
+        if response.status_code == 200:
+            print("✓ Фото отправлено в Telegram")
+            # Ждем немного и отправляем текст отдельным сообщением
+            time.sleep(1)
+            send_telegram_message(caption, parse_mode)
+            return True
+        else:
+            print(f"✗ Ошибка отправки фото: {response.status_code} - {response.text}")
+            # Если фото не отправилось - отправляем хотя бы текст
+            print("⚠️ Отправляю только текст без фото")
+            send_telegram_message(caption, parse_mode)
+            return False
+                
+    except Exception as e:
+        print(f"✗ Ошибка при отправке фото в Telegram: {e}")
+        traceback.print_exc()
+        # В случае ошибки отправляем хотя бы текст
+        print("⚠️ Отправляю только текст без фото")
+        send_telegram_message(caption, parse_mode)
+        return False
+
 def send_question_answer_to_telegram(question_num, total_questions, question, answer):
-    """Отправляет вопрос и TLDR в Telegram"""
+    """Отправляет вопрос и TLDR в Telegram с картинкой"""
     try:
         # Извлекаем только TLDR часть
         tldr_text = extract_tldr_from_answer(answer)
@@ -165,10 +203,13 @@ def send_question_answer_to_telegram(question_num, total_questions, question, an
 
 {tldr_text}"""
         
-        print(f"\n📤 Отправка вопроса {question_num}/{total_questions} в Telegram...")
+        # Получаем случайную картинку
+        image_url = get_random_image_url()
+        
+        print(f"\n📤 Отправка вопроса {question_num}/{total_questions} в Telegram с картинкой...")
         print(f"📏 Длина TLDR: {len(tldr_text)} символов")
         
-        send_telegram_message(short_message)
+        send_telegram_photo_with_caption(image_url, short_message)
         
         # Пауза между сообщениями
         time.sleep(1)
