@@ -49,8 +49,8 @@ logger = logging.getLogger(__name__)
 MAX_RETRIES = int(os.getenv('MAX_RETRIES', '2'))
 
 # Telegram настройки
-TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN') or '8323539910:AAG6DYij-FuqT7q-ovsBNNgEnWH2V6FXhoM'
+TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID') or '-1003445906500'
 
 # Twitter API настройки (только из Secrets)
 TWITTER_API_KEY = os.getenv('TWITTER_API_KEY')
