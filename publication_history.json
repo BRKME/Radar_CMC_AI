@@ -5,17 +5,17 @@
     "market_direction": "2025-11-26T14:29:55.357169+00:00",
     "narratives": "2025-11-26T11:28:59.179948+00:00",
     "events": "2025-11-26T07:27:20.618589+00:00",
-    "sentiment": "2025-11-26T09:31:57.063800+00:00",
+    "sentiment": "2025-11-26T17:26:28.750458+00:00",
     "altcoins": "2025-11-26T13:39:57.646299+00:00",
     "bullish": "2025-11-26T15:28:48.047795+00:00"
   },
   "last_dynamic_question": "Which crypto services halted in Cloudflare?",
   "dynamic_published_at": "2025-11-26T03:52:28.455791+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2025-11-26T16:36:21.095091+00:00",
-    "hour_utc": 16,
-    "answer_length": 2711
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2025-11-26T17:26:28.750474+00:00",
+    "hour_utc": 17,
+    "answer_length": 2203
   }
 }
