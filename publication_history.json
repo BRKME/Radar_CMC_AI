@@ -1,17 +1,17 @@
 {
   "last_published": {
     "kols": "2025-11-26T02:07:06.598814+00:00",
-    "dynamic": "2025-11-25T21:25:55.720064+00:00",
+    "dynamic": "2025-11-26T03:52:28.455811+00:00",
     "market_direction": "2025-11-25T22:28:03.135566+00:00",
     "narratives": "2025-11-25T23:26:08.918623+00:00"
   },
-  "last_dynamic_question": "Which ETFs added SOL this week?",
-  "dynamic_published_at": "2025-11-25T21:25:55.720046+00:00",
+  "last_dynamic_question": "Which crypto services halted in Cloudflare?",
+  "dynamic_published_at": "2025-11-26T03:52:28.455791+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2025-11-26T02:07:06.598835+00:00",
-    "hour_utc": 2,
-    "answer_length": 2525
+    "question": "Which crypto services halted in Cloudflare?",
+    "group": "DYNAMIC",
+    "published_at": "2025-11-26T03:52:28.455816+00:00",
+    "hour_utc": 3,
+    "answer_length": 2859
   }
 }
