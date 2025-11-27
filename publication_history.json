@@ -6,16 +6,16 @@
     "narratives": "2025-11-27T11:25:33.118631+00:00",
     "events": "2025-11-26T19:21:41.185904+00:00",
     "sentiment": "2025-11-26T17:26:28.750458+00:00",
-    "altcoins": "2025-11-27T03:18:38.995417+00:00",
+    "altcoins": "2025-11-27T13:38:00.864420+00:00",
     "bullish": "2025-11-27T05:29:45.819567+00:00"
   },
   "last_dynamic_question": "How much derivatives open interest increased?",
   "dynamic_published_at": "2025-11-27T09:31:36.141936+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2025-11-27T12:58:14.245349+00:00",
-    "hour_utc": 12,
-    "answer_length": 2694
+    "question": "Are altcoins outperforming Bitcoin?",
+    "group": "altcoins",
+    "published_at": "2025-11-27T13:38:00.864435+00:00",
+    "hour_utc": 13,
+    "answer_length": 1757
   }
 }
