@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2025-11-27T12:58:14.245334+00:00",
+    "kols": "2025-11-27T16:34:49.834392+00:00",
     "dynamic": "2025-11-27T15:29:26.855706+00:00",
     "market_direction": "2025-11-27T14:28:41.867412+00:00",
     "narratives": "2025-11-27T11:25:33.118631+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which majors led spot volumes today?",
   "dynamic_published_at": "2025-11-27T15:29:26.855689+00:00",
   "last_publication": {
-    "question": "Which majors led spot volumes today?",
-    "group": "DYNAMIC",
-    "published_at": "2025-11-27T15:29:26.855712+00:00",
-    "hour_utc": 15,
-    "answer_length": 2644
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2025-11-27T16:34:49.834407+00:00",
+    "hour_utc": 16,
+    "answer_length": 2619
   }
 }
