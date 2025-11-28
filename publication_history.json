@@ -3,7 +3,7 @@
     "kols": "2025-11-28T10:30:58.060510+00:00",
     "dynamic": "2025-11-28T09:29:33.964157+00:00",
     "market_direction": "2025-11-28T02:04:18.894992+00:00",
-    "narratives": "2025-11-27T23:25:58.405959+00:00",
+    "narratives": "2025-11-28T11:24:45.282030+00:00",
     "events": "2025-11-28T07:27:57.294575+00:00",
     "sentiment": "2025-11-27T17:24:46.401434+00:00",
     "altcoins": "2025-11-27T13:38:00.864420+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Who is buying Upbit?",
   "dynamic_published_at": "2025-11-28T09:29:33.964141+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2025-11-28T10:30:58.060526+00:00",
-    "hour_utc": 10,
-    "answer_length": 2523
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2025-11-28T11:24:45.282045+00:00",
+    "hour_utc": 11,
+    "answer_length": 3167
   }
 }
