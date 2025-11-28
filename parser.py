@@ -34,6 +34,9 @@ except ImportError:
     HAS_FCNTL = False
     # На Windows fcntl недоступен - используем альтернативный механизм
 
+# Импорт модуля улучшенного форматирования
+from formatting import send_improved, __version__ as formatting_version
+
 # Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
@@ -915,36 +918,22 @@ def send_question_answer_to_telegram(question, answer):
         logger.info(f"📏 Длина TLDR: {len(tldr_text)} символов")
         logger.info(f"🏷 Хэштеги: {hashtags}")
         
-        # Отправляем в Telegram
-        telegram_success = send_telegram_photo_with_caption(image_url, short_message)
-        time.sleep(1)
+  # Отправляем через новый модуль форматирования v2.1
+        logger.info(f"\n📤 ОТПРАВКА (форматирование v{formatting_version})")
         
-        # Отправляем в Twitter (параллельно) (FIX BUG #1, #11)
-        twitter_success = False
-        twitter_status = "Отключен"
-        
-        if TWITTER_ENABLED:
-            # Проверяем что ключи установлены
-            if all([TWITTER_API_KEY, TWITTER_API_SECRET, 
-                    TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET]):
-                try:
-                    twitter_success = send_to_twitter(title, tldr_text, hashtags, image_url)
-                    twitter_status = "✓ Успешно" if twitter_success else "✗ Ошибка"
-                except Exception as e:
-                    logger.error(f"✗ Ошибка отправки в Twitter: {e}")
-                    traceback.print_exc()
-                    twitter_success = False
-                    twitter_status = "✗ Ошибка"
-            else:
-                logger.warning("⚠️ Twitter включен, но API ключи не установлены")
-                logger.warning("   Добавьте TWITTER_API_KEY, TWITTER_API_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET в GitHub Secrets")
-                twitter_success = False
-                twitter_status = "Не настроен (нет ключей)"
-        
-        # Логируем итоги
-        logger.info(f"\n📊 РЕЗУЛЬТАТЫ ПУБЛИКАЦИИ:")
-        logger.info(f"  Telegram: {'✓ Успешно' if telegram_success else '✗ Ошибка'}")
-        logger.info(f"  Twitter: {twitter_status}")
+        telegram_success = send_improved(
+            result['question'], 
+            result['answer'],
+            extract_tldr_from_answer,
+            clean_question_specific_text,
+            QUESTION_DISPLAY_CONFIG,
+            get_random_image_url,
+            send_telegram_photo_with_caption,
+            send_telegram_message,
+            send_to_twitter,
+            TWITTER_ENABLED,
+            (TWITTER_API_KEY, TWITTER_API_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
+        )
         
         return telegram_success
         
@@ -1332,28 +1321,13 @@ async def main_parser():
         except:
             pass
         
-        # Отправляем уведомление об ошибке в Telegram
-        try:
-            current_hour = datetime.now(timezone.utc).hour
-            scheduled_group = SCHEDULE.get(current_hour, "unknown")
-            
-            error_message = f"""<b>❌ ОШИБКА ПАРСЕРА</b>
-
-⏰ <b>Время:</b> {datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")} UTC
-🕐 <b>Час UTC:</b> {current_hour}
-📋 <b>Запланированная группа:</b> {scheduled_group}
-
-<b>Ошибка:</b>
-<code>{str(e)[:1000]}</code>
-
-<i>Парсер будет повторен в следующий час</i>"""
-            
-            send_telegram_message(error_message)
-        except Exception as notification_error:
-            logger.error(f"Не удалось отправить уведомление об ошибке: {notification_error}")
+        # Ошибки только в логах (НЕ спамим в Telegram)
+        logger.error("=" * 70)
+        logger.error("Ошибка залогирована в parser.log")
+        logger.error("Telegram уведомление ОТКЛЮЧЕНО")
+        logger.error("=" * 70)
         
         return False
-
 
 def main():
     """Точка входа в программу"""
