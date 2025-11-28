@@ -37,6 +37,12 @@ jobs:
         playwright install chromium
         playwright install-deps chromium
     
+    - name: Check required files
+      run: |
+        echo "🔍 Checking required files..."
+        ls -la parser.py formatting.py
+        echo "✅ All files present"
+    
     - name: Run parser
       env:
         MAX_RETRIES: 2
