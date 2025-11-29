@@ -7,15 +7,15 @@
     "events": "2025-11-28T19:22:31.075348+00:00",
     "sentiment": "2025-11-28T17:25:14.979824+00:00",
     "altcoins": "2025-11-28T13:36:42.718225+00:00",
-    "bullish": "2025-11-28T05:29:34.579884+00:00"
+    "bullish": "2025-11-29T05:28:14.169668+00:00"
   },
   "last_dynamic_question": "How much USDC minted on SOL?",
   "dynamic_published_at": "2025-11-29T03:18:39.461039+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2025-11-29T04:32:37.989846+00:00",
-    "hour_utc": 4,
-    "answer_length": 2553
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2025-11-29T05:28:14.169687+00:00",
+    "hour_utc": 5,
+    "answer_length": 2686
   }
 }
