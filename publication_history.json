@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2025-11-29T04:32:37.989827+00:00",
+    "kols": "2025-11-29T08:35:02.222331+00:00",
     "dynamic": "2025-11-29T03:18:39.461058+00:00",
     "market_direction": "2025-11-29T06:39:00.683372+00:00",
     "narratives": "2025-11-28T23:25:53.181679+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "How much USDC minted on SOL?",
   "dynamic_published_at": "2025-11-29T03:18:39.461039+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2025-11-29T07:25:45.814009+00:00",
-    "hour_utc": 7,
-    "answer_length": 2834
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2025-11-29T08:35:02.222347+00:00",
+    "hour_utc": 8,
+    "answer_length": 3127
   }
 }
