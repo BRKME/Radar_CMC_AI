@@ -4,7 +4,7 @@
     "dynamic": "2025-11-29T15:26:09.969521+00:00",
     "market_direction": "2025-11-29T18:36:54.586091+00:00",
     "narratives": "2025-11-29T11:22:21.696253+00:00",
-    "events": "2025-11-29T07:25:45.813993+00:00",
+    "events": "2025-11-29T19:21:54.037176+00:00",
     "sentiment": "2025-11-29T17:23:58.679243+00:00",
     "altcoins": "2025-11-29T13:33:01.302559+00:00",
     "bullish": "2025-11-29T05:28:14.169668+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which sectors led the market today?",
   "dynamic_published_at": "2025-11-29T15:26:09.969504+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2025-11-29T18:36:54.586107+00:00",
-    "hour_utc": 18,
-    "answer_length": 1997
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2025-11-29T19:21:54.037189+00:00",
+    "hour_utc": 19,
+    "answer_length": 3052
   }
 }
