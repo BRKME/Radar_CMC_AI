@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2025-11-29T08:35:02.222331+00:00",
     "dynamic": "2025-11-29T09:27:36.098314+00:00",
-    "market_direction": "2025-11-29T06:39:00.683372+00:00",
+    "market_direction": "2025-11-29T10:28:02.894683+00:00",
     "narratives": "2025-11-28T23:25:53.181679+00:00",
     "events": "2025-11-29T07:25:45.813993+00:00",
     "sentiment": "2025-11-28T17:25:14.979824+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which venue halted crypto derivatives today?",
   "dynamic_published_at": "2025-11-29T09:27:36.098301+00:00",
   "last_publication": {
-    "question": "Which venue halted crypto derivatives today?",
-    "group": "DYNAMIC",
-    "published_at": "2025-11-29T09:27:36.098319+00:00",
-    "hour_utc": 9,
-    "answer_length": 2313
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2025-11-29T10:28:02.894697+00:00",
+    "hour_utc": 10,
+    "answer_length": 2442
   }
 }
