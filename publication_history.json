@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2025-11-29T04:32:37.989827+00:00",
     "dynamic": "2025-11-29T03:18:39.461058+00:00",
-    "market_direction": "2025-11-29T02:03:51.595737+00:00",
+    "market_direction": "2025-11-29T06:39:00.683372+00:00",
     "narratives": "2025-11-28T23:25:53.181679+00:00",
     "events": "2025-11-28T19:22:31.075348+00:00",
     "sentiment": "2025-11-28T17:25:14.979824+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "How much USDC minted on SOL?",
   "dynamic_published_at": "2025-11-29T03:18:39.461039+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2025-11-29T05:28:14.169687+00:00",
-    "hour_utc": 5,
-    "answer_length": 2686
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2025-11-29T06:39:00.683389+00:00",
+    "hour_utc": 6,
+    "answer_length": 2591
   }
 }
