@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2025-11-30T04:39:21.262343+00:00",
+    "kols": "2025-11-30T08:33:14.351917+00:00",
     "dynamic": "2025-11-29T21:24:19.741590+00:00",
     "market_direction": "2025-11-30T06:40:32.405435+00:00",
     "narratives": "2025-11-29T23:25:46.006780+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "What changed in USDT stability rating?",
   "dynamic_published_at": "2025-11-29T21:24:19.741574+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2025-11-30T07:25:10.501159+00:00",
-    "hour_utc": 7,
-    "answer_length": 2534
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2025-11-30T08:33:14.351933+00:00",
+    "hour_utc": 8,
+    "answer_length": 2681
   }
 }
