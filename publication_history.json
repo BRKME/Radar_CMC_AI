@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2025-11-30T20:30:06.046673+00:00",
-    "dynamic": "2025-11-30T15:26:09.488564+00:00",
+    "dynamic": "2025-11-30T21:24:50.862137+00:00",
     "market_direction": "2025-11-30T18:37:07.529040+00:00",
     "narratives": "2025-11-29T23:25:46.006780+00:00",
     "events": "2025-11-30T19:22:34.963193+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2025-11-29T13:33:01.302559+00:00",
     "bullish": "2025-11-30T05:28:21.458140+00:00"
   },
-  "last_dynamic_question": "How many BTC ETFs saw outflows?",
-  "dynamic_published_at": "2025-11-30T15:26:09.488549+00:00",
+  "last_dynamic_question": "Which firm is acquiring Upbit?",
+  "dynamic_published_at": "2025-11-30T21:24:50.862120+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2025-11-30T20:30:06.046690+00:00",
-    "hour_utc": 20,
-    "answer_length": 2636
+    "question": "Which firm is acquiring Upbit?",
+    "group": "DYNAMIC",
+    "published_at": "2025-11-30T21:24:50.862142+00:00",
+    "hour_utc": 21,
+    "answer_length": 2265
   }
 }
