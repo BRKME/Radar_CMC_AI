@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2025-12-05T08:37:29.707671+00:00",
+    "kols": "2025-12-05T12:58:12.910473+00:00",
     "dynamic": "2025-12-05T09:30:48.204202+00:00",
     "market_direction": "2025-12-05T10:31:53.131687+00:00",
     "narratives": "2025-12-05T11:26:35.629358+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "How much stablecoin redemptions this week?",
   "dynamic_published_at": "2025-12-05T09:30:48.204185+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2025-12-05T11:26:35.629374+00:00",
-    "hour_utc": 11,
-    "answer_length": 2656
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2025-12-05T12:58:12.910491+00:00",
+    "hour_utc": 12,
+    "answer_length": 2544
   }
 }
