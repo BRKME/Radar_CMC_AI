@@ -4,7 +4,7 @@
     "dynamic": "2025-12-05T03:55:27.970813+00:00",
     "market_direction": "2025-12-05T06:43:17.951119+00:00",
     "narratives": "2025-12-04T23:27:12.465749+00:00",
-    "events": "2025-12-04T19:25:22.325425+00:00",
+    "events": "2025-12-05T07:29:07.666262+00:00",
     "sentiment": "2025-12-04T17:30:15.603315+00:00",
     "altcoins": "2025-12-04T13:42:25.696075+00:00",
     "bullish": "2025-12-05T05:29:26.770845+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which SOL ETF stakes SOL?",
   "dynamic_published_at": "2025-12-05T03:55:27.970799+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2025-12-05T06:43:17.951135+00:00",
-    "hour_utc": 6,
-    "answer_length": 2282
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2025-12-05T07:29:07.666278+00:00",
+    "hour_utc": 7,
+    "answer_length": 2582
   }
 }
