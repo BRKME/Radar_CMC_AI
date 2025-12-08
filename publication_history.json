@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2025-12-07T20:29:57.448543+00:00",
+    "kols": "2025-12-08T04:40:16.996951+00:00",
     "dynamic": "2025-12-08T03:59:45.090201+00:00",
     "market_direction": "2025-12-08T02:10:37.305486+00:00",
     "narratives": "2025-12-07T23:25:30.292868+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which brokers added crypto ETFs?",
   "dynamic_published_at": "2025-12-08T03:59:45.090186+00:00",
   "last_publication": {
-    "question": "Which brokers added crypto ETFs?",
-    "group": "DYNAMIC",
-    "published_at": "2025-12-08T03:59:45.090205+00:00",
-    "hour_utc": 3,
-    "answer_length": 2202
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2025-12-08T04:40:16.996968+00:00",
+    "hour_utc": 4,
+    "answer_length": 2660
   }
 }
