@@ -4,7 +4,7 @@
     "dynamic": "2025-12-08T15:32:37.919773+00:00",
     "market_direction": "2025-12-08T18:42:45.494156+00:00",
     "narratives": "2025-12-08T11:27:10.856901+00:00",
-    "events": "2025-12-08T07:31:33.545975+00:00",
+    "events": "2025-12-08T19:25:16.290281+00:00",
     "sentiment": "2025-12-07T17:22:59.177410+00:00",
     "altcoins": "2025-12-08T13:40:23.368843+00:00",
     "bullish": "2025-12-08T05:31:52.749681+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "What changed in funding rates today?",
   "dynamic_published_at": "2025-12-08T15:32:37.919757+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2025-12-08T18:42:45.494170+00:00",
-    "hour_utc": 18,
-    "answer_length": 2099
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2025-12-08T19:25:16.290297+00:00",
+    "hour_utc": 19,
+    "answer_length": 2412
   }
 }
