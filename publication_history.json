@@ -3,7 +3,7 @@
     "kols": "2025-12-10T08:39:38.479993+00:00",
     "dynamic": "2025-12-10T09:33:49.981581+00:00",
     "market_direction": "2025-12-10T10:34:14.419797+00:00",
-    "narratives": "2025-12-09T23:27:55.740940+00:00",
+    "narratives": "2025-12-10T11:27:28.371390+00:00",
     "events": "2025-12-10T07:30:26.628270+00:00",
     "sentiment": "2025-12-09T17:28:28.353378+00:00",
     "altcoins": "2025-12-09T13:41:30.161870+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "When is the FOMC decision?",
   "dynamic_published_at": "2025-12-10T09:33:49.981567+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2025-12-10T10:34:14.419820+00:00",
-    "hour_utc": 10,
-    "answer_length": 2325
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2025-12-10T11:27:28.371403+00:00",
+    "hour_utc": 11,
+    "answer_length": 2282
   }
 }
