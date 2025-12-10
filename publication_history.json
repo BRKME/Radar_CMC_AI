@@ -6,7 +6,7 @@
     "narratives": "2025-12-10T11:27:28.371390+00:00",
     "events": "2025-12-10T07:30:26.628270+00:00",
     "sentiment": "2025-12-09T17:28:28.353378+00:00",
-    "altcoins": "2025-12-10T13:02:03.109866+00:00",
+    "altcoins": "2025-12-10T13:42:49.544126+00:00",
     "bullish": "2025-12-10T05:30:47.131808+00:00"
   },
   "last_dynamic_question": "When is the FOMC decision?",
@@ -14,8 +14,8 @@
   "last_publication": {
     "question": "Are altcoins outperforming Bitcoin?",
     "group": "altcoins",
-    "published_at": "2025-12-10T13:02:03.109883+00:00",
+    "published_at": "2025-12-10T13:42:49.544141+00:00",
     "hour_utc": 13,
-    "answer_length": 2087
+    "answer_length": 2063
   }
 }
