@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2025-12-11T08:39:58.192506+00:00",
     "dynamic": "2025-12-11T09:34:31.451053+00:00",
-    "market_direction": "2025-12-11T10:34:41.681491+00:00",
+    "market_direction": "2025-12-11T14:30:34.708859+00:00",
     "narratives": "2025-12-11T11:27:43.829871+00:00",
     "events": "2025-12-11T07:31:35.889107+00:00",
     "sentiment": "2025-12-10T17:31:03.531049+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "What did the Fed announce yesterday?",
   "dynamic_published_at": "2025-12-11T09:34:31.451037+00:00",
   "last_publication": {
-    "question": "Are altcoins outperforming Bitcoin?",
-    "group": "altcoins",
-    "published_at": "2025-12-11T13:47:05.625417+00:00",
-    "hour_utc": 13,
-    "answer_length": 2236
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2025-12-11T14:30:34.708874+00:00",
+    "hour_utc": 14,
+    "answer_length": 2170
   }
 }
