@@ -6,7 +6,7 @@
     "narratives": "2025-12-12T11:27:59.891340+00:00",
     "events": "2025-12-12T07:30:48.693920+00:00",
     "sentiment": "2025-12-10T17:31:03.531049+00:00",
-    "altcoins": "2025-12-12T13:00:22.930348+00:00",
+    "altcoins": "2025-12-12T13:39:58.857882+00:00",
     "bullish": "2025-12-12T05:31:03.394557+00:00"
   },
   "last_dynamic_question": "Which regions advanced stablecoin rules?",
@@ -14,8 +14,8 @@
   "last_publication": {
     "question": "Are altcoins outperforming Bitcoin?",
     "group": "altcoins",
-    "published_at": "2025-12-12T13:00:22.930365+00:00",
+    "published_at": "2025-12-12T13:39:58.857900+00:00",
     "hour_utc": 13,
-    "answer_length": 1956
+    "answer_length": 2421
   }
 }
