@@ -3,7 +3,7 @@
     "kols": "2025-12-12T08:40:18.520161+00:00",
     "dynamic": "2025-12-12T09:33:33.779586+00:00",
     "market_direction": "2025-12-12T10:33:03.840693+00:00",
-    "narratives": "2025-12-11T23:27:43.513690+00:00",
+    "narratives": "2025-12-12T11:27:59.891340+00:00",
     "events": "2025-12-12T07:30:48.693920+00:00",
     "sentiment": "2025-12-10T17:31:03.531049+00:00",
     "altcoins": "2025-12-11T13:47:05.625385+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which regions advanced stablecoin rules?",
   "dynamic_published_at": "2025-12-12T09:33:33.779568+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2025-12-12T10:33:03.840709+00:00",
-    "hour_utc": 10,
-    "answer_length": 2470
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2025-12-12T11:27:59.891356+00:00",
+    "hour_utc": 11,
+    "answer_length": 2529
   }
 }
