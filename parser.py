@@ -73,30 +73,30 @@ IMAGE_FILES = [f"{i}.jpg" for i in range(10, 101)]  # 10.jpg до 100.jpg (91 к
 
 # Расписание публикаций (час UTC : тип вопроса)
 SCHEDULE = {
-    0: "kols",           # What are KOLs discussing?
-    1: "sentiment",      # What is the market sentiment?
-    2: "market_direction", # Why is the market up/down?
-    3: "DYNAMIC",        # Динамический слот
-    4: "kols",
-    5: "bullish",        # What cryptos are showing bullish momentum?
-    6: "market_direction",
-    7: "events",         # What upcoming events may impact crypto?
-    8: "kols",
-    9: "DYNAMIC",        # Динамический слот
-    10: "market_direction",
-    11: "narratives",    # What are the trending narratives?
-    12: "kols",
-    13: "altcoins",      # Are altcoins outperforming Bitcoin?
-    14: "market_direction",
-    15: "DYNAMIC",       # Динамический слот
-    16: "kols",
-    17: "sentiment",
-    18: "market_direction",
-    19: "events",
-    20: "kols",
-    21: "DYNAMIC",       # Динамический слот
-    22: "market_direction",
-    23: "narratives"
+    0: None,
+    1: None,
+    2: None,
+    3: None,
+    4: None,
+    5: None,
+    6: "sentiment",      # 06:30 (запуск в 06:05, но логически 06:30)
+    7: None,
+    8: "market_direction",  # 08:00
+    9: "DYNAMIC",        # 09:30
+    10: None,
+    11: None,
+    12: None,
+    13: "kols",          # 13:00
+    14: "market_direction",  # 14:30
+    15: None,
+    16: "narratives",    # 16:00
+    17: None,
+    18: "sentiment",     # 18:00
+    19: "events",        # 19:30
+    20: None,
+    21: "DYNAMIC",       # 21:00
+    22: "market_direction",  # 22:30
+    23: "narratives"     # 23:30
 }
 
 # Группы вопросов (для обработки вариаций)
