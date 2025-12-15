@@ -1,8 +1,24 @@
+# CMC AI Parser Requirements
+# Version: 2.0.0 (with OpenAI Alpha Take Integration)
+
+# Core dependencies
 playwright==1.40.0
 beautifulsoup4==4.12.2
-gspread==5.11.0
-oauth2client==4.1.3
 requests==2.31.0
 tweepy>=4.14.0
+python-dotenv==1.0.0
+Pillow==10.1.0
+
+# Google Sheets integration (if needed)
+gspread==5.11.0
+oauth2client==4.1.3
 google-auth==2.23.4
 google-auth-oauthlib==1.1.0
+
+# OpenAI Integration (NEW in v2.0.0)
+openai==1.54.3
+httpx==0.27.0  # Required by OpenAI SDK for HTTP requests
+
+# Development
+pytest==7.4.3
+pytest-asyncio==0.21.1
