@@ -1,0 +1,313 @@
+"""
+OpenAI Integration для CMC AI - Alpha Take для текстовых новостей
+Version: 1.0.0
+Генерирует Alpha Take, Context Tag и Hashtags для новостей CoinMarketCap AI
+"""
+
+import os
+import logging
+from openai import OpenAI
+
+logger = logging.getLogger(__name__)
+
+# OpenAI API Key
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
+
+# Инициализация клиента
+client = None
+if OPENAI_API_KEY:
+    try:
+        client = OpenAI(api_key=OPENAI_API_KEY)
+        logger.info("✓ OpenAI client initialized for CMC AI")
+    except Exception as e:
+        logger.error(f"✗ Failed to initialize OpenAI client: {e}")
+        client = None
+else:
+    logger.warning("⚠️ OPENAI_API_KEY not found - Alpha Take generation disabled")
+
+
+# MASTER PROMPT для CMC AI новостей
+CMC_NEWS_MASTER_PROMPT = """ROLE: You are an institutional-grade crypto research assistant.
+
+Your task is to transform crypto news or market commentary into clear, emotionally neutral market intelligence following the "Institutional Alpha Take Generator" methodology.
+
+You do not give trading advice.
+You do not issue explicit price predictions unless clearly data-driven and framed probabilistically.
+You focus on market regimes, positioning, flows, incentives, and narratives.
+
+Tone: concise, analytical, signal-focused
+Audience: US-based, market-literate crypto investors
+
+INPUT: Raw crypto news text or market analysis from CoinMarketCap AI
+
+OUTPUT FORMAT (MANDATORY):
+
+ALPHA_TAKE: [2-4 sentences interpreting what the news/data signals about sentiment, positioning, liquidity preference, participation, or risk appetite. Emphasize second-order effects like leverage behavior, capital concentration, narrative rotation. If relevant, mention what would need to change for the takeaway to shift. NO calls to action, NO strategy language.]
+
+CONTEXT_TAG: [ONE of the following categories:
+- Risk Regime: Risk-off environment | Fragile risk-on | Liquidity-driven regime | High uncertainty phase
+- Market Regime: Volatile range | Compression phase | Trend transition phase | Momentum exhaustion
+- Time Horizon: Near-term volatility | Short-term cautious | Medium-term constructive | Long-term structural trend
+- Positioning Bias: Defensive positioning | Crowded longs | Crowded shorts | Light exposure | De-risked market]
+
+HASHTAGS: [Generate 3 relevant, contextual hashtags based on the current market state. Use professional vocabulary. Format: #Tag1 #Tag2 #Tag3]
+
+ALPHA TAKE TYPES - Select ONE:
+
+1️⃣ Alpha Take — Flow & Positioning
+Use when news includes: ETF flows, open interest, liquidations, funding rates, leverage, Bitcoin dominance, on-chain positioning
+Focus: Risk appetite, de-risking vs re-leveraging, capital concentration, asymmetry building/unwinding
+
+2️⃣ Alpha Take — Narrative & Attention
+Use when news includes: KOL chatter, sector narratives (AI, DeFi, L2), story-driven repricing, social momentum
+Focus: Attention rotation, narrative crowding vs early-stage themes, consensus formation/fatigue
+
+3️⃣ Alpha Take — Structural / Macro
+Use when news includes: Regulation, macro/policy developments, market structure changes, long-term adoption
+Focus: Regime shifts, long-duration implications, constraints, frictions, tail risks
+
+QUALITY REQUIREMENTS:
+- Interpretive, not predictive
+- Descriptive, not prescriptive
+- About behavior and structure, not outcomes
+- NO emojis in Alpha Take or Context Tag
+- NO bullish/bearish labels
+- NO execution language ("buy," "sell," "accumulate")
+- Use probabilistic language: "historically," "tends to," "often coincides," "may indicate"
+
+TONE: Analytical, neutral, institutional. Think: sell-side market note, not social media commentary. Data > emotion. Clarity > confidence.
+
+QUALITY CHECK:
+- Does this add interpretation, not just description?
+- Does it reduce noise or surface structure?
+- Would this make sense to a hedge fund analyst?
+- Does it help the reader orient within the current market regime?
+
+EXAMPLE OUTPUT:
+
+Input: "Bitcoin ETF flows show sustained positive inflows after weeks of outflows. Meanwhile, altcoins remain suppressed with dominance near 60%."
+
+ALPHA_TAKE: Renewed institutional flows into Bitcoin suggest risk appetite is returning, but concentrated positioning in BTC rather than broad crypto exposure indicates selective re-entry. Historically, this pattern precedes either a sustainable risk-on regime if macro conditions hold, or a false start if Bitcoin fails to establish a clear directional trend. Meaningful rotation into alts would require both stable BTC price action and improved derivatives activity signaling broader confidence.
+
+CONTEXT_TAG: Selective risk-on
+
+HASHTAGS: #BTCFlows #SelectiveRisk #InstitutionalDemand
+"""
+
+
+def get_ai_alpha_take(news_text, question_context=""):
+    """
+    Получает Alpha Take от OpenAI для текстовой новости
+    
+    Args:
+        news_text: Текст новости/анализа от CMC AI
+        question_context: Контекст вопроса (опционально)
+        
+    Returns:
+        dict: {
+            "alpha_take": "...",
+            "context_tag": "...",
+            "hashtags": "..."
+        }
+        или None если ошибка
+    """
+    if not client:
+        logger.warning("OpenAI client not initialized - skipping Alpha Take generation")
+        return None
+    
+    try:
+        # Формируем полный контекст
+        full_input = news_text
+        if question_context:
+            full_input = f"Question Context: {question_context}\n\nNews/Analysis:\n{news_text}"
+        
+        logger.info(f"🤖 Requesting Alpha Take from OpenAI for CMC news...")
+        logger.info(f"   Input length: {len(full_input)} chars")
+        
+        # Вызываем OpenAI API
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",  # Быстрая и недорогая модель
+            messages=[
+                {
+                    "role": "system",
+                    "content": CMC_NEWS_MASTER_PROMPT
+                },
+                {
+                    "role": "user",
+                    "content": full_input
+                }
+            ],
+            max_tokens=300,  # Alpha Take + Context Tag + Hashtags
+            temperature=0.7
+        )
+        
+        # Парсим ответ
+        content = response.choices[0].message.content.strip()
+        logger.info(f"  ✓ OpenAI response received")
+        
+        # Извлекаем компоненты
+        alpha_take = None
+        context_tag = None
+        hashtags = None
+        
+        for line in content.split('\n'):
+            line = line.strip()
+            if line.startswith('ALPHA_TAKE:'):
+                alpha_take = line.replace('ALPHA_TAKE:', '').strip()
+            elif line.startswith('CONTEXT_TAG:'):
+                context_tag = line.replace('CONTEXT_TAG:', '').strip()
+            elif line.startswith('HASHTAGS:'):
+                hashtags = line.replace('HASHTAGS:', '').strip()
+        
+        # Валидация
+        if not alpha_take:
+            logger.warning(f"Could not parse Alpha Take from response")
+            logger.warning(f"  Response: {content[:200]}...")
+            # Fallback: используем весь ответ
+            alpha_take = content
+        
+        logger.info(f"  ✓ Alpha Take: {alpha_take[:100]}...")
+        if context_tag:
+            logger.info(f"  ✓ Context Tag: {context_tag}")
+        if hashtags:
+            logger.info(f"  ✓ Hashtags: {hashtags}")
+        
+        return {
+            "alpha_take": alpha_take,
+            "context_tag": context_tag,
+            "hashtags": hashtags
+        }
+        
+    except Exception as e:
+        logger.error(f"Error getting Alpha Take: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
+
+def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
+    """
+    Добавляет Alpha Take к caption для Telegram
+    
+    Format:
+    <title>
+    
+    <original_text_summary>
+    
+    Alpha Take
+    <alpha_take>
+    
+    Context: <context_tag>
+    
+    <hashtags>
+    
+    Args:
+        title: Заголовок поста
+        text: Оригинальный текст (TLDR)
+        hashtags_fallback: Хештеги fallback (если AI не сгенерировал)
+        ai_result: Результат от get_ai_alpha_take()
+        
+    Returns:
+        str: Enhanced caption с Alpha Take
+    """
+    if not ai_result:
+        # Без AI - старый формат
+        return f"<b>{title}</b>\n\n{text}\n\n{hashtags_fallback}"
+    
+    alpha_take = ai_result.get('alpha_take', '')
+    context_tag = ai_result.get('context_tag', '')
+    hashtags_ai = ai_result.get('hashtags', '')
+    
+    # Используем AI хештеги если есть, иначе fallback
+    hashtags = hashtags_ai if hashtags_ai else hashtags_fallback
+    
+    # Сокращаем оригинальный текст если добавляем Alpha Take
+    # Чтобы уместиться в Telegram лимиты
+    max_original_text = 800  # Оставляем место для Alpha Take
+    if len(text) > max_original_text:
+        text = text[:max_original_text-3] + "..."
+    
+    # Формируем enhanced caption
+    caption = f"<b>{title}</b>\n\n"
+    
+    # Оригинальный контент (сокращенный)
+    caption += f"{text}\n\n"
+    
+    # Alpha Take секция
+    caption += f"<b>Alpha Take</b>\n"
+    caption += f"{alpha_take}\n\n"
+    
+    # Context Tag если есть
+    if context_tag:
+        caption += f"<i>Context: {context_tag}</i>\n\n"
+    
+    # Хештеги
+    caption += f"{hashtags}"
+    
+    # Проверка на длину Telegram
+    if len(caption) > 4000:
+        logger.warning(f"⚠️ Caption слишком длинный ({len(caption)}), сокращаю оригинальный текст")
+        # Агрессивное сокращение
+        max_original_text = 400
+        text = text[:max_original_text-3] + "..."
+        
+        caption = f"<b>{title}</b>\n\n"
+        caption += f"{text}\n\n"
+        caption += f"<b>Alpha Take</b>\n"
+        caption += f"{alpha_take}\n\n"
+        if context_tag:
+            caption += f"<i>Context: {context_tag}</i>\n\n"
+        caption += f"{hashtags}"
+    
+    return caption
+
+
+def enhance_twitter_with_alpha_take(title, alpha_take, context_tag, hashtags):
+    """
+    Создаёт Twitter контент с Alpha Take
+    
+    Args:
+        title: Заголовок
+        alpha_take: Alpha Take текст
+        context_tag: Context Tag
+        hashtags: Хештеги
+        
+    Returns:
+        str: Twitter-formatted текст (single tweet)
+    """
+    # Twitter лимит
+    max_length = 270
+    
+    # Формат: Title + Alpha Take (сокращенный) + Context + Hashtags
+    
+    # Резервируем место
+    reserved = len(title) + len(hashtags) + 20  # +20 для форматирования
+    if context_tag:
+        reserved += len(f"Context: {context_tag}") + 4
+    
+    available_for_alpha = max_length - reserved
+    
+    # Сокращаем Alpha Take если нужно
+    if len(alpha_take) > available_for_alpha:
+        # Берем первые предложения
+        sentences = alpha_take.split('. ')
+        short_alpha = sentences[0] + "."
+        
+        if len(short_alpha) > available_for_alpha:
+            short_alpha = alpha_take[:available_for_alpha-3] + "..."
+    else:
+        short_alpha = alpha_take
+    
+    # Собираем твит
+    tweet = f"{title}\n\n{short_alpha}"
+    
+    if context_tag:
+        tweet += f"\n\nContext: {context_tag}"
+    
+    tweet += f"\n\n{hashtags}"
+    
+    # Финальная проверка
+    if len(tweet) > 280:
+        tweet = tweet[:277] + "..."
+    
+    return tweet
