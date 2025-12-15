@@ -1,11 +1,12 @@
 """
-Парсер для CoinMarketCap AI - ПРОТЕСТИРОВАННАЯ ВЕРСИЯ 1.0
+Парсер для CoinMarketCap AI - VERSION 2.0.0 (with Alpha Take)
 ✅ 24/7 публикации по умному расписанию
 ✅ Отслеживание истории публикаций
 ✅ Динамические слоты с fallback на самый старый вопрос
 ✅ Группировка вариаций вопросов (up/down market)
 ✅ Retry логика и обработка ошибок
 ✅ Полное логирование и обработка edge cases
+✅ OpenAI Alpha Take генерация (NEW в v2.0.0)
 """
 
 import asyncio
@@ -37,6 +38,13 @@ except ImportError:
 # Импорт модуля улучшенного форматирования
 from formatting import send_improved, __version__ as formatting_version
 
+# Импорт OpenAI интеграции (NEW в v2.0.0)
+from openai_cmc_integration import (
+    get_ai_alpha_take,
+    enhance_caption_with_alpha_take,
+    enhance_twitter_with_alpha_take
+)
+
 # Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
@@ -52,8 +60,6 @@ logger = logging.getLogger(__name__)
 MAX_RETRIES = int(os.getenv('MAX_RETRIES', '2'))
 
 # Telegram настройки
-import os
-
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 
@@ -66,6 +72,10 @@ TWITTER_BEARER_TOKEN = os.getenv('TWITTER_BEARER_TOKEN')
 
 # Включить/выключить Twitter (для тестирования)
 TWITTER_ENABLED = os.getenv('TWITTER_ENABLED', 'true').lower() == 'true'
+
+# OpenAI Alpha Take настройки (NEW в v2.0.0)
+ALPHA_TAKE_ENABLED = os.getenv('ALPHA_TAKE_ENABLED', 'true').lower() == 'true'
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # GitHub настройки для картинок
 GITHUB_IMAGES_URL = "https://raw.githubusercontent.com/BRKME/coinmarketcap-parser/main/Images1/"
@@ -753,139 +763,6 @@ def init_twitter_client():
         logger.error(f"✗ Ошибка инициализации Twitter API: {e}")
         return None
 
-def send_to_twitter(title, text, hashtags, image_url):
-    """
-    Отправляет твит с картинкой
-    Возвращает True если успешно
-    """
-    try:
-        if not TWITTER_ENABLED:
-            logger.info("ℹ️  Twitter отключен (TWITTER_ENABLED=false)")
-            return False
-        
-        logger.info("\n🐦 ОТПРАВКА В TWITTER")
-        
-        # Инициализируем клиент
-        twitter = init_twitter_client()
-        if not twitter:
-            logger.error("✗ Не удалось инициализировать Twitter клиент")
-            return False
-        
-        client = twitter["client"]
-        api = twitter["api"]
-        
-        # Умное сокращение текста для Twitter
-        shortened_text = smart_shorten_for_twitter(text, title, hashtags, max_total=270)
-        
-        # Формируем твит
-        tweet_text = f"{title}\n\n{shortened_text}\n\n{hashtags}"
-        
-        # Проверяем длину
-        if len(tweet_text) > 280:
-            logger.warning(f"⚠️ Твит слишком длинный ({len(tweet_text)} символов), дополнительное сокращение...")
-            # Экстренное сокращение
-            max_text_length = 270 - len(title) - len(hashtags) - 6
-            shortened_text = text[:max_text_length-3] + "..."
-            tweet_text = f"{title}\n\n{shortened_text}\n\n{hashtags}"
-        
-        logger.info(f"📏 Длина твита: {len(tweet_text)} символов")
-        
-        # Загружаем картинку
-        media_id = None
-        try:
-            logger.info(f"🖼️  Загрузка картинки: {image_url}")
-            
-            # Скачиваем картинку
-            response = requests.get(image_url, timeout=30)
-            if response.status_code == 200:
-                # Загружаем в Twitter
-                media = api.media_upload(filename="image.jpg", file=BytesIO(response.content))
-                media_id = media.media_id
-                logger.info(f"✓ Картинка загружена, media_id: {media_id}")
-            else:
-                logger.warning(f"⚠️ Не удалось скачать картинку: {response.status_code}")
-        except Exception as e:
-            logger.warning(f"⚠️ Ошибка загрузки картинки: {e}")
-        
-        # Публикуем твит
-        try:
-            if media_id:
-                response = client.create_tweet(text=tweet_text, media_ids=[media_id])
-            else:
-                response = client.create_tweet(text=tweet_text)
-            
-            # Проверка response (FIX BUG #19, #24)
-            if not response or not hasattr(response, 'data'):
-                logger.error("✗ Получен пустой ответ от Twitter API")
-                return False
-            
-            # Универсальное получение ID (dict или объект)
-            tweet_id = None
-            try:
-                # Пробуем как dict
-                if hasattr(response.data, 'get'):
-                    tweet_id = response.data.get('id')
-                # Пробуем как объект
-                elif hasattr(response.data, 'id'):
-                    tweet_id = response.data.id
-                # Fallback - прямой доступ
-                else:
-                    tweet_id = response.data['id'] if 'id' in response.data else None
-            except Exception as e:
-                logger.error(f"✗ Ошибка получения ID твита: {e}")
-                return False
-            
-            if not tweet_id:
-                logger.error("✗ В ответе Twitter отсутствует ID твита")
-                logger.error(f"   Response data: {response.data}")
-                return False
-            
-            tweet_url = f"https://twitter.com/user/status/{tweet_id}"
-            
-            logger.info(f"✓ Твит опубликован: {tweet_url}")
-            logger.info(f"📊 ID твита: {tweet_id}")
-            
-            return True
-            
-        except tweepy.TweepyException as e:
-            error_str = str(e)
-            logger.error(f"✗ Ошибка публикации твита: {e}")
-            
-            # Rate limit - не критично (FIX BUG #13)
-            if "rate limit" in error_str.lower() or "429" in error_str or "code\":88" in error_str:
-                logger.warning("⚠️ Twitter API rate limit достигнут")
-                logger.warning("   Пропускаем публикацию в Twitter (Telegram опубликован)")
-                return True  # Считаем успехом - Telegram опубликован
-            
-            # Если дубликат - это не критично (уже опубликовано ранее) (FIX BUG #4)
-            if "duplicate" in error_str.lower() or "already" in error_str.lower() or "code\":187" in error_str:
-                logger.warning("⚠️ Твит был опубликован ранее (дубликат)")
-                return True  # Считаем успехом
-            
-            # Пробуем без картинки только при других ошибках
-            if media_id:
-                logger.info("🔄 Повторная попытка без картинки...")
-                try:
-                    response = client.create_tweet(text=tweet_text)
-                    
-                    # Проверка response
-                    if response and hasattr(response, 'data') and 'id' in response.data:
-                        tweet_id = response.data['id']
-                        logger.info(f"✓ Твит опубликован без картинки, ID: {tweet_id}")
-                        return True
-                    else:
-                        logger.error("✗ Получен некорректный ответ")
-                        return False
-                        
-                except Exception as e2:
-                    logger.error(f"✗ Не удалось опубликовать даже без картинки: {e2}")
-            
-            return False
-    
-    except Exception as e:
-        logger.error(f"✗ Критическая ошибка отправки в Twitter: {e}")
-        traceback.print_exc()
-        return False
 def send_twitter_thread(twitter_content, image_url):
     """
     Отправляет Twitter контент (тред или одиночный твит)
@@ -1070,59 +947,233 @@ def send_twitter_thread(twitter_content, image_url):
         logger.error(f"✗ Критическая ошибка: {e}")
         import traceback
         traceback.print_exc()
-        return False        
+        return False
 
 def send_question_answer_to_telegram(question, answer):
-    """Отправляет вопрос и TLDR в Telegram с картинкой. Возвращает True если успешно."""
+    """
+    Отправляет вопрос и TLDR в Telegram с картинкой и Alpha Take (V2).
+    Возвращает True если успешно.
+    
+    NEW в V2.0:
+    - Генерация Alpha Take через OpenAI
+    - Enhanced caption с Alpha Take + Context Tag
+    - Улучшенное форматирование для Twitter
+    """
     try:
         logger.info(f"\n📤 ОТПРАВКА (форматирование v{formatting_version})")
         
-        telegram_success = send_improved(
-            question,
-            answer,
-            extract_tldr_from_answer,
-            clean_question_specific_text,
-            QUESTION_DISPLAY_CONFIG,
-            get_random_image_url,
-            send_telegram_photo_with_caption,
-            send_telegram_message,
-            send_twitter_thread,
-            TWITTER_ENABLED,
-            (TWITTER_API_KEY, TWITTER_API_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
-        )
+        # ==========================================
+        # 1. ИЗВЛЕЧЕНИЕ И ОЧИСТКА КОНТЕНТА
+        # ==========================================
         
-        return telegram_success
+        # Извлекаем TLDR
+        tldr_text = extract_tldr_from_answer(answer)
+        if not tldr_text:
+            logger.error("✗ Пустой TLDR")
+            return False
+        
+        # Очищаем текст
+        tldr_text = clean_question_specific_text(question, tldr_text)
+        if not tldr_text:
+            logger.error("✗ Пустой текст после очистки")
+            return False
+        
+        logger.info(f"  ✓ TLDR извлечен: {len(tldr_text)} символов")
+        
+        # ==========================================
+        # 2. ПОЛУЧЕНИЕ КОНФИГУРАЦИИ
+        # ==========================================
+        
+        config = QUESTION_DISPLAY_CONFIG.get(question, {
+            "title": "Crypto Update",
+            "hashtags": "#Crypto #Bitcoin"
+        })
+        
+        title = config.get("title", "Crypto Update")
+        hashtags = config.get("hashtags", "#Crypto")
+        
+        logger.info(f"  ✓ Заголовок: {title}")
+        logger.info(f"  ✓ Хештеги: {hashtags}")
+        
+        # ==========================================
+        # 3. ГЕНЕРАЦИЯ ALPHA TAKE (NEW В V2)
+        # ==========================================
+        
+        ai_result = None
+        
+        if ALPHA_TAKE_ENABLED and OPENAI_API_KEY:
+            logger.info("\n🤖 ГЕНЕРАЦИЯ ALPHA TAKE")
+            logger.info(f"   Используем OpenAI для анализа...")
+            
+            try:
+                ai_result = get_ai_alpha_take(
+                    news_text=tldr_text,
+                    question_context=question
+                )
+                
+                if ai_result:
+                    logger.info("✓ Alpha Take успешно сгенерирован:")
+                    logger.info(f"   • Alpha Take: {ai_result.get('alpha_take', '')[:80]}...")
+                    logger.info(f"   • Context Tag: {ai_result.get('context_tag', 'N/A')}")
+                    logger.info(f"   • Hashtags: {ai_result.get('hashtags', 'N/A')}")
+                else:
+                    logger.warning("⚠️ Alpha Take не получен")
+                    logger.warning("   Используем обычный формат публикации")
+                    
+            except Exception as e:
+                logger.error(f"✗ Ошибка генерации Alpha Take: {e}")
+                logger.warning("   Fallback на обычный формат")
+                ai_result = None
+        else:
+            if not ALPHA_TAKE_ENABLED:
+                logger.info("ℹ️  Alpha Take отключен (ALPHA_TAKE_ENABLED=false)")
+            else:
+                logger.warning("⚠️ OpenAI API ключ не установлен")
+            logger.info("   Используем обычный формат публикации")
+        
+        # ==========================================
+        # 4. ФОРМАТИРОВАНИЕ TELEGRAM CAPTION
+        # ==========================================
+        
+        logger.info("\n📝 ФОРМАТИРОВАНИЕ КОНТЕНТА")
+        
+        if ai_result:
+            # С Alpha Take - enhanced формат
+            logger.info("   Режим: Enhanced (с Alpha Take)")
+            telegram_caption = enhance_caption_with_alpha_take(
+                title=title,
+                text=tldr_text,
+                hashtags_fallback=hashtags,
+                ai_result=ai_result
+            )
+        else:
+            # Без Alpha Take - старый формат
+            logger.info("   Режим: Standard (без Alpha Take)")
+            telegram_caption = f"<b>{title}</b>\n\n{tldr_text}\n\n{hashtags}"
+        
+        logger.info(f"  ✓ Telegram caption: {len(telegram_caption)} символов")
+        
+        # ==========================================
+        # 5. ПОЛУЧЕНИЕ КАРТИНКИ
+        # ==========================================
+        
+        image_url = get_random_image_url()
+        logger.info(f"  ✓ Картинка выбрана: {image_url.split('/')[-1]}")
+        
+        # ==========================================
+        # 6. ОТПРАВКА В TELEGRAM
+        # ==========================================
+        
+        logger.info("\n📤 ОТПРАВКА В TELEGRAM")
+        
+        telegram_success = False
+        try:
+            telegram_success = send_telegram_photo_with_caption(
+                photo_url=image_url,
+                caption=telegram_caption,
+                parse_mode='HTML'
+            )
+            
+            if telegram_success:
+                logger.info("✓ Telegram: Успешно отправлено")
+            else:
+                logger.error("✗ Telegram: Ошибка отправки")
+                return False
+                
+        except Exception as e:
+            logger.error(f"✗ Telegram ошибка: {e}")
+            return False
+        
+        # Пауза между платформами
+        time.sleep(2)
+        
+        # ==========================================
+        # 7. ОТПРАВКА В TWITTER (ОПЦИОНАЛЬНО)
+        # ==========================================
+        
+        if TWITTER_ENABLED and all([TWITTER_API_KEY, TWITTER_API_SECRET,
+                                    TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET]):
+            
+            logger.info("\n🐦 ПОДГОТОВКА TWITTER КОНТЕНТА")
+            
+            try:
+                # Если есть Alpha Take - используем его для Twitter
+                if ai_result:
+                    logger.info("   Используем Alpha Take для Twitter")
+                    
+                    twitter_text = enhance_twitter_with_alpha_take(
+                        title=title,
+                        alpha_take=ai_result.get('alpha_take', tldr_text),
+                        context_tag=ai_result.get('context_tag'),
+                        hashtags=ai_result.get('hashtags', hashtags)
+                    )
+                else:
+                    logger.info("   Используем стандартное сокращение")
+                    
+                    # Без Alpha Take - обычное сокращение
+                    twitter_text = smart_shorten_for_twitter(
+                        text=tldr_text,
+                        title=title,
+                        hashtags=hashtags,
+                        max_total=270
+                    )
+                    twitter_text = f"{title}\n\n{twitter_text}\n\n{hashtags}"
+                
+                # Формируем контент для Twitter
+                twitter_content = {
+                    "mode": "single",
+                    "tweet": twitter_text
+                }
+                
+                tweet_length = get_twitter_length(twitter_text)
+                logger.info(f"  ✓ Tweet подготовлен: {tweet_length} символов")
+                
+                if tweet_length > 280:
+                    logger.warning(f"  ⚠️ Tweet слишком длинный, дополнительное сокращение...")
+                    twitter_text = twitter_text[:277] + "..."
+                    twitter_content["tweet"] = twitter_text
+                
+                # Отправляем
+                logger.info("\n📤 ОТПРАВКА В TWITTER")
+                tw_success = send_twitter_thread(twitter_content, image_url)
+                
+                if tw_success:
+                    logger.info("✓ Twitter: Успешно отправлено")
+                else:
+                    logger.warning("⚠️ Twitter: Ошибка отправки (не критично)")
+                
+            except Exception as e:
+                logger.error(f"✗ Twitter ошибка: {e}")
+                logger.warning("   Twitter публикация пропущена (не критично)")
+        else:
+            logger.info("\nℹ️  Twitter отключен или не настроен")
+        
+        # ==========================================
+        # 8. ИТОГОВЫЙ ОТЧЕТ
+        # ==========================================
+        
+        logger.info(f"\n{'='*50}")
+        logger.info(f"📊 ИТОГОВЫЙ ОТЧЕТ:")
+        logger.info(f"{'='*50}")
+        logger.info(f"  Вопрос: {question[:50]}...")
+        logger.info(f"  Заголовок: {title}")
+        logger.info(f"  TLDR длина: {len(tldr_text)} символов")
+        logger.info(f"  Telegram: ✓ Отправлено")
+        logger.info(f"  Alpha Take: {'✓ Включен' if ai_result else '✗ Отключен'}")
+        
+        if ai_result:
+            logger.info(f"  Context Tag: {ai_result.get('context_tag', 'N/A')}")
+            logger.info(f"  AI Hashtags: {'✓ Да' if ai_result.get('hashtags') else '✗ Fallback'}")
+        
+        logger.info(f"{'='*50}\n")
+        
+        return True
         
     except Exception as e:
-        logger.error(f"✗ Ошибка при отправке: {e}")
+        logger.error(f"\n❌ КРИТИЧЕСКАЯ ОШИБКА В ОТПРАВКЕ")
+        logger.error(f"✗ Ошибка: {e}")
         import traceback
-        traceback.print_exc()
-        return False
-    """Отправляет вопрос и TLDR в Telegram с картинкой. Возвращает True если успешно."""
-    try:
-        # Используем новый модуль форматирования v2.1
-        logger.info(f"\n📤 ОТПРАВКА (форматирование v{formatting_version})")
-        
-        telegram_success = send_improved(
-            question,
-            answer,
-            extract_tldr_from_answer,
-            clean_question_specific_text,
-            QUESTION_DISPLAY_CONFIG,
-            get_random_image_url,
-            send_telegram_photo_with_caption,
-            send_telegram_message,
-            send_to_twitter,
-            TWITTER_ENABLED,
-            (TWITTER_API_KEY, TWITTER_API_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
-        )
-        
-        return telegram_success
-        
-    except Exception as e:
-        logger.error(f"✗ Ошибка при отправке: {e}")
-        import traceback
-        traceback.print_exc()
+        logger.error(traceback.format_exc())
         return False
 
 async def accept_cookies(page):
@@ -1302,7 +1353,7 @@ async def main_parser():
     browser = None
     try:
         logger.info("="*70)
-        logger.info("🚀 ЗАПУСК ПАРСЕРА COINMARKETCAP AI v1.0")
+        logger.info("🚀 ЗАПУСК ПАРСЕРА COINMARKETCAP AI v2.0.0")
         logger.info("="*70)
         
         async with async_playwright() as p:
@@ -1526,7 +1577,7 @@ def main():
             sys.exit(2)  # Exit code 2 = already running
         
         logger.info("\n" + "="*70)
-        logger.info("🤖 COINMARKETCAP AI PARSER - SCHEDULED MODE")
+        logger.info("🤖 COINMARKETCAP AI PARSER v2.0.0 - WITH ALPHA TAKE")
         logger.info("="*70)
         logger.info(f"📅 Дата запуска: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')} UTC")
         logger.info(f"💻 Платформа: {platform.system()} {platform.release()}")
@@ -1537,6 +1588,8 @@ def main():
         logger.info(f"   • Telegram Chat ID: {'✓ Установлен' if TELEGRAM_CHAT_ID else '✗ Не установлен'}")
         logger.info(f"   • Twitter API: {'✓ Установлен' if all([TWITTER_API_KEY, TWITTER_API_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET]) else '✗ Не установлен'}")
         logger.info(f"   • Twitter Enabled: {'✓ Да' if TWITTER_ENABLED else '✗ Нет'}")
+        logger.info(f"   • Alpha Take Enabled: {'✓ Да' if ALPHA_TAKE_ENABLED else '✗ Нет'}")
+        logger.info(f"   • OpenAI API Key: {'✓ Установлен' if OPENAI_API_KEY else '✗ Не установлен'}")
         logger.info(f"   • fcntl available: {'✓ Да' if HAS_FCNTL else '✗ Нет (Windows)'}")
         logger.info("="*70 + "\n")
         
