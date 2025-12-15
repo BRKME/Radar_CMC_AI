@@ -1,7 +1,12 @@
 """
 formatting.py - Модуль улучшенного форматирования для Telegram и Twitter
-Version: 3.1.1
+Version: 3.1.2
 Senior QA Approved - Production Ready
+
+ОБНОВЛЕНО В v3.1.2:
+- Twitter треды показывают 2-3 ключевых пункта (было: только 1)
+- Умная разбивка контента на твиты
+- Адаптивное сокращение если не влезает
 
 ОБНОВЛЕНО В v3.1.1:
 - Оптимизация для Twitter Free tier
@@ -32,7 +37,7 @@ logger = logging.getLogger(__name__)
 # ВЕРСИЯ И НАСТРОЙКИ
 # ========================================
 
-__version__ = "3.1.1"
+__version__ = "3.1.2"
 
 # НАСТРОЙКА РЕЖИМА TWITTER
 TWITTER_MODE = "thread"  # "thread" или "single"
@@ -251,6 +256,7 @@ def extract_intro_sentence(text):
 def format_twitter_thread(title, text, hashtags):
     """
     Создаёт мини-тред для Twitter (оптимизировано для Free tier)
+    v3.1.2: Показывает 2-3 ключевых пункта вместо одного
     Возвращает: list of str или None
     """
     try:
@@ -286,30 +292,52 @@ def format_twitter_thread(title, text, hashtags):
         
         tweets.append(tweet1)
         
-        # Твит 2: ГЛАВНЫЙ ПУНКТ (для мини-треда берём только самый важный)
+        # Твит 2: 2-3 ГЛАВНЫХ ПУНКТА (NEW в v3.1.2)
         points = extract_bullet_points(text)
         
         if not points:
             sentences = re.split(r'(?<=[.!?])\s+', text)
-            points = [s.strip() for s in sentences if len(s.strip()) > 20][:2]
+            points = [s.strip() for s in sentences if len(s.strip()) > 20][:3]
         
         if not points or len(points) < 1:
             logger.warning("⚠️ Недостаточно контента для треда, используем одиночный твит")
             return None
         
-        # Берём только ПЕРВЫЙ пункт (самый важный)
-        main_point = points[0]
+        # Берём 2-3 главных пункта (было: только 1)
+        key_points = points[:3]  # Первые 3 пункта
+        tweet2_lines = []
         
-        if CRYPTO_PRICE_PATTERN.match(main_point):
-            price_emoji = detect_price_change_emoji(main_point)
-            tweet2 = f"{price_emoji} {main_point}"
-        else:
-            tweet2 = f"• {main_point}"
+        for point in key_points:
+            if CRYPTO_PRICE_PATTERN.match(point):
+                price_emoji = detect_price_change_emoji(point)
+                line = f"{price_emoji} {point}"
+            else:
+                line = f"• {point}"
+            
+            # Сокращаем длинные пункты для экономии места
+            if len(line) > 100:
+                line = line[:97] + "..."
+            
+            tweet2_lines.append(line)
         
+        tweet2 = "\n\n".join(tweet2_lines)
+        
+        # Проверяем что влезает в лимит Twitter
         if get_twitter_length(tweet2) > MAX_TWITTER_LENGTH:
-            tweet2 = tweet2[:MAX_TWITTER_LENGTH-3] + "..."
+            # Если не влезает 3 пункта - берём только 2
+            logger.info("  ℹ️  3 пункта не влезают, используем 2")
+            tweet2_lines = tweet2_lines[:2]
+            tweet2 = "\n\n".join(tweet2_lines)
+            
+            # Если всё равно не влезает - берём только 1
+            if get_twitter_length(tweet2) > MAX_TWITTER_LENGTH:
+                logger.info("  ℹ️  2 пункта не влезают, используем 1")
+                tweet2 = tweet2_lines[0]
+                if get_twitter_length(tweet2) > MAX_TWITTER_LENGTH:
+                    tweet2 = tweet2[:MAX_TWITTER_LENGTH-3] + "..."
         
         tweets.append(tweet2)
+        logger.info(f"  ✓ Твит 2 содержит {len(tweet2_lines)} пункта(ов)")
         
         # Твит 3: ХЭШТЕГИ
         if hashtags:
@@ -414,6 +442,7 @@ def send_improved(question, answer,
     """
     Главная функция для отправки контента
     
+    v3.1.2: Показ 2-3 пунктов в Twitter тредах
     v3.1.1: Оптимизация для Twitter Free tier
     """
     total_start = time.time()
