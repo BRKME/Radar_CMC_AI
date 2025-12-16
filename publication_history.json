@@ -3,7 +3,7 @@
     "kols": "2025-12-16T13:45:09.097308+00:00",
     "dynamic": "2025-12-16T21:29:10.542425+00:00",
     "market_direction": "2025-12-16T22:27:39.312370+00:00",
-    "narratives": "2025-12-16T16:45:30.091091+00:00",
+    "narratives": "2025-12-16T23:28:12.330093+00:00",
     "events": "2025-12-16T19:26:36.300096+00:00",
     "sentiment": "2025-12-16T18:43:24.337644+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "What expanded USDT Lightning payments?",
   "dynamic_published_at": "2025-12-16T21:29:10.542409+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2025-12-16T22:27:39.312386+00:00",
-    "hour_utc": 22,
-    "answer_length": 2158
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2025-12-16T23:28:12.330108+00:00",
+    "hour_utc": 23,
+    "answer_length": 2726
   }
 }
