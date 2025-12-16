@@ -1,30 +1,22 @@
 """
 formatting.py - Модуль улучшенного форматирования для Telegram и Twitter
-Version: 3.1.2
+Version: 3.2.0
 Senior QA Approved - Production Ready
+
+ОБНОВЛЕНО В v3.2.0:
+- Twitter треды теперь включают Alpha Take!
+- Последний твит: Alpha Take + Context Tag + Хэштеги
+- Полные информативные треды (не урезанные)
+- Формат: Intro → Events → Alpha Take
 
 ОБНОВЛЕНО В v3.1.2:
 - Twitter треды показывают 2-3 ключевых пункта (было: только 1)
 - Умная разбивка контента на твиты
-- Адаптивное сокращение если не влезает
 
 ОБНОВЛЕНО В v3.1.1:
 - Оптимизация для Twitter Free tier
-- Мини-треды: максимум 3 твита
+- Мини-треды: максимум 3-5 твитов
 - Увеличена пауза между твитами: 15 секунд
-- Адаптация под rate limits
-
-ИСПРАВЛЕНО В v3.1.0:
-- Исправлен конфликт параметров send_twitter_fn
-- Оптимизированы импорты
-- Добавлена защита от пустых тредов
-- Улучшен fallback на одиночный твит
-
-НОВОЕ В v3.0.0:
-- 🧵 Поддержка Twitter тредов
-- 📊 Умная разбивка по смысловым блокам
-- 🎯 Автонумерация твитов
-- ⚡ Fallback на одиночный твит
 """
 
 import re
@@ -37,7 +29,7 @@ logger = logging.getLogger(__name__)
 # ВЕРСИЯ И НАСТРОЙКИ
 # ========================================
 
-__version__ = "3.1.2"
+__version__ = "3.2.0"
 
 # НАСТРОЙКА РЕЖИМА TWITTER
 TWITTER_MODE = "thread"  # "thread" или "single"
@@ -54,10 +46,10 @@ EMOJI_DETECTION_TEXT_LIMIT = 2000
 MIN_TWITTER_SPACE = 50
 MAX_TWITTER_LENGTH = 280
 MAX_TELEGRAM_LENGTH = 4000
-MAX_THREAD_TWEETS = 3  # Оптимизировано для Free tier (было 8)
+MAX_THREAD_TWEETS = 5  # Увеличено для Alpha Take (было 3)
 
-# Пауза между твитами (увеличена для Free tier rate limits)
-TWEET_DELAY = 15  # секунды (было 2)
+# Пауза между твитами
+TWEET_DELAY = 15  # секунды
 
 # Эмодзи для заголовков
 TITLE_EMOJI_MAP = {
@@ -232,6 +224,10 @@ def extract_bullet_points(text):
         if not line:
             continue
         
+        # Пропускаем Alpha Take и Context Tag
+        if line.startswith('Alpha Take') or line.startswith('Context:'):
+            continue
+        
         if LIST_ITEM_PATTERN.match(line) or CRYPTO_PRICE_PATTERN.match(line):
             clean = LIST_ITEM_PATTERN.sub('', line).strip()
             if clean and len(clean) > 10:
@@ -242,21 +238,54 @@ def extract_bullet_points(text):
 
 def extract_intro_sentence(text):
     """Извлекает первое предложение для intro"""
-    match = re.match(r'^([^.!?]+[.!?])', text)
+    # Пропускаем Alpha Take если он в начале
+    lines = text.split('\n')
+    clean_text = []
+    skip_alpha = False
+    
+    for line in lines:
+        if 'Alpha Take' in line:
+            skip_alpha = True
+            continue
+        if skip_alpha and (line.startswith('Context:') or not line.strip()):
+            continue
+        if line.strip():
+            clean_text.append(line)
+            break
+    
+    if not clean_text:
+        return text[:100]
+    
+    first_line = clean_text[0]
+    match = re.match(r'^([^.!?]+[.!?])', first_line)
     if match:
         intro = match.group(1).strip()
         if get_twitter_length(intro) <= 200:
             return intro
     
-    if len(text) > 200:
-        return text[:197] + "..."
-    return text
+    if len(first_line) > 200:
+        return first_line[:197] + "..."
+    return first_line
 
 
-def format_twitter_thread(title, text, hashtags):
+def format_twitter_thread(title, text, hashtags, alpha_take=None, context_tag=None):
     """
-    Создаёт мини-тред для Twitter (оптимизировано для Free tier)
-    v3.1.2: Показывает 2-3 ключевых пункта вместо одного
+    Создаёт полный тред для Twitter с Alpha Take
+    
+    v3.2.0: Включает Alpha Take в последний твит!
+    
+    Формат:
+    Твит 1: Заголовок + intro
+    Твит 2-N: События/пункты (2-3 на твит)
+    Последний твит: Alpha Take + Context Tag + Хэштеги
+    
+    Args:
+        title: Заголовок
+        text: Текст (без Alpha Take)
+        hashtags: Хэштеги
+        alpha_take: Alpha Take текст (опционально)
+        context_tag: Context Tag (опционально)
+    
     Возвращает: list of str или None
     """
     try:
@@ -273,7 +302,7 @@ def format_twitter_thread(title, text, hashtags):
         emoji = TITLE_EMOJI_MAP.get(title, "📰")
         context_emojis = get_context_emojis(text, max_count=2)
         
-        # Твит 1: INTRO
+        # ТВИТ 1: INTRO
         intro = extract_intro_sentence(text)
         context_str = " ".join(context_emojis) if context_emojis else ""
         
@@ -292,66 +321,86 @@ def format_twitter_thread(title, text, hashtags):
         
         tweets.append(tweet1)
         
-        # Твит 2: 2-3 ГЛАВНЫХ ПУНКТА (NEW в v3.1.2)
+        # ТВИТЫ 2-N: СОБЫТИЯ/ПУНКТЫ
         points = extract_bullet_points(text)
         
         if not points:
             sentences = re.split(r'(?<=[.!?])\s+', text)
-            points = [s.strip() for s in sentences if len(s.strip()) > 20][:3]
+            points = [s.strip() for s in sentences if len(s.strip()) > 20][:5]
         
-        if not points or len(points) < 1:
-            logger.warning("⚠️ Недостаточно контента для треда, используем одиночный твит")
-            return None
+        if points and len(points) >= 1:
+            # Группируем пункты по твитам (2-3 на твит)
+            i = 0
+            while i < len(points) and len(tweets) < (MAX_THREAD_TWEETS - 1):  # -1 для Alpha Take
+                batch = []
+                batch_length = 0
+                
+                # Берем 2-3 пункта пока влезает
+                while i < len(points) and len(batch) < 3:
+                    point = points[i]
+                    
+                    # Форматируем пункт
+                    if CRYPTO_PRICE_PATTERN.match(point):
+                        price_emoji = detect_price_change_emoji(point)
+                        formatted = f"{price_emoji} {point}"
+                    else:
+                        formatted = f"• {point}"
+                    
+                    # Сокращаем длинные пункты
+                    if len(formatted) > 100:
+                        formatted = formatted[:97] + "..."
+                    
+                    # Проверяем влезет ли
+                    test_text = "\n\n".join(batch + [formatted])
+                    if get_twitter_length(test_text) > MAX_TWITTER_LENGTH:
+                        if len(batch) == 0:
+                            # Даже один пункт не влезает - берем укороченный
+                            batch.append(formatted[:MAX_TWITTER_LENGTH-10] + "...")
+                            i += 1
+                        break
+                    
+                    batch.append(formatted)
+                    i += 1
+                
+                if batch:
+                    tweets.append("\n\n".join(batch))
         
-        # Берём 2-3 главных пункта (было: только 1)
-        key_points = points[:3]  # Первые 3 пункта
-        tweet2_lines = []
-        
-        for point in key_points:
-            if CRYPTO_PRICE_PATTERN.match(point):
-                price_emoji = detect_price_change_emoji(point)
-                line = f"{price_emoji} {point}"
-            else:
-                line = f"• {point}"
+        # ПОСЛЕДНИЙ ТВИТ: ALPHA TAKE + CONTEXT TAG + ХЭШТЕГИ
+        if alpha_take:
+            final_tweet = f"◼ Alpha Take\n\n{alpha_take}"
             
-            # Сокращаем длинные пункты для экономии места
-            if len(line) > 100:
-                line = line[:97] + "..."
+            if context_tag:
+                final_tweet += f"\n\nContext: {context_tag}"
             
-            tweet2_lines.append(line)
-        
-        tweet2 = "\n\n".join(tweet2_lines)
-        
-        # Проверяем что влезает в лимит Twitter
-        if get_twitter_length(tweet2) > MAX_TWITTER_LENGTH:
-            # Если не влезает 3 пункта - берём только 2
-            logger.info("  ℹ️  3 пункта не влезают, используем 2")
-            tweet2_lines = tweet2_lines[:2]
-            tweet2 = "\n\n".join(tweet2_lines)
+            final_tweet += f"\n\n{hashtags}"
             
-            # Если всё равно не влезает - берём только 1
-            if get_twitter_length(tweet2) > MAX_TWITTER_LENGTH:
-                logger.info("  ℹ️  2 пункта не влезают, используем 1")
-                tweet2 = tweet2_lines[0]
-                if get_twitter_length(tweet2) > MAX_TWITTER_LENGTH:
-                    tweet2 = tweet2[:MAX_TWITTER_LENGTH-3] + "..."
-        
-        tweets.append(tweet2)
-        logger.info(f"  ✓ Твит 2 содержит {len(tweet2_lines)} пункта(ов)")
-        
-        # Твит 3: ХЭШТЕГИ
-        if hashtags:
-            tweets.append(hashtags)
+            # Проверяем длину
+            if get_twitter_length(final_tweet) > MAX_TWITTER_LENGTH:
+                # Сокращаем Alpha Take
+                max_alpha = MAX_TWITTER_LENGTH - get_twitter_length(f"◼ Alpha Take\n\n\n\nContext: {context_tag}\n\n{hashtags}") - 10
+                short_alpha = alpha_take[:max_alpha-3] + "..."
+                final_tweet = f"◼ Alpha Take\n\n{short_alpha}"
+                if context_tag:
+                    final_tweet += f"\n\nContext: {context_tag}"
+                final_tweet += f"\n\n{hashtags}"
+            
+            tweets.append(final_tweet)
+        else:
+            # Без Alpha Take - просто хэштеги
+            if hashtags:
+                tweets.append(hashtags)
         
         if len(tweets) < 2:
             logger.warning("⚠️ Тред слишком короткий")
             return None
         
-        logger.info(f"✓ Создан тред из {len(tweets)} твитов")
+        logger.info(f"✓ Создан тред из {len(tweets)} твитов (включая Alpha Take)")
         return tweets
         
     except Exception as e:
         logger.error(f"✗ Ошибка создания треда: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 
@@ -438,18 +487,25 @@ def extract_short_text_safe(text, max_length):
 def send_improved(question, answer, 
                  extract_tldr_fn, clean_text_fn, config_dict,
                  get_image_fn, send_tg_photo_fn, send_tg_msg_fn,
-                 send_twitter_thread_fn, twitter_enabled, twitter_keys):
+                 send_twitter_thread_fn, twitter_enabled, twitter_keys,
+                 alpha_take=None, context_tag=None):
     """
     Главная функция для отправки контента
     
-    v3.1.2: Показ 2-3 пунктов в Twitter тредах
-    v3.1.1: Оптимизация для Twitter Free tier
+    v3.2.0: Добавлены alpha_take и context_tag для полных тредов
+    
+    Args:
+        ... (стандартные параметры)
+        alpha_take: Alpha Take текст (опционально)
+        context_tag: Context Tag (опционально)
     """
     total_start = time.time()
     
     try:
         logger.info(f"\n📝 Форматирование v{__version__}")
         logger.info(f"🐦 Twitter режим: {TWITTER_MODE}")
+        if alpha_take:
+            logger.info(f"  ✓ Alpha Take доступен для Twitter треда")
         
         # 1-2. Извлекаем и очищаем
         tldr_text = extract_tldr_fn(answer)
@@ -514,15 +570,21 @@ def send_improved(question, answer,
                     "title": title,
                     "text": tldr_text,
                     "hashtags": hashtags,
-                    "mode": TWITTER_MODE
+                    "mode": TWITTER_MODE,
+                    "alpha_take": alpha_take,  # v3.2.0: Передаем Alpha Take
+                    "context_tag": context_tag  # v3.2.0: Передаем Context Tag
                 }
                 
                 if TWITTER_MODE == "thread":
-                    tweets = format_twitter_thread(title, tldr_text, hashtags)
+                    tweets = format_twitter_thread(
+                        title, tldr_text, hashtags,
+                        alpha_take=alpha_take,  # v3.2.0
+                        context_tag=context_tag  # v3.2.0
+                    )
                     
                     if tweets and len(tweets) >= 2:
                         twitter_content["tweets"] = tweets
-                        logger.info(f"  ✓ Twitter тред: {len(tweets)} твитов")
+                        logger.info(f"  ✓ Twitter тред: {len(tweets)} твитов (с Alpha Take)")
                     else:
                         logger.warning("  ⚠️ Fallback на одиночный твит")
                         twitter_content["mode"] = "single"
