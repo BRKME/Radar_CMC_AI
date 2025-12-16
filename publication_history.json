@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2025-12-16T13:45:09.097308+00:00",
     "dynamic": "2025-12-16T09:35:09.705161+00:00",
-    "market_direction": "2025-12-16T08:41:50.103457+00:00",
+    "market_direction": "2025-12-16T14:34:03.217049+00:00",
     "narratives": "2025-12-15T23:29:15.688141+00:00",
     "events": "2025-12-15T19:35:33.372753+00:00",
     "sentiment": "2025-12-16T06:46:39.735517+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "What triggered the market drawdown today?",
   "dynamic_published_at": "2025-12-16T09:35:09.705145+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2025-12-16T13:45:09.097323+00:00",
-    "hour_utc": 13,
-    "answer_length": 2397
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2025-12-16T14:34:03.217066+00:00",
+    "hour_utc": 14,
+    "answer_length": 2555
   }
 }
