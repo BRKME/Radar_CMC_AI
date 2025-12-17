@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2025-12-16T13:45:09.097308+00:00",
+    "kols": "2025-12-17T13:02:12.301849+00:00",
     "dynamic": "2025-12-17T09:36:34.118038+00:00",
     "market_direction": "2025-12-16T22:27:39.312370+00:00",
     "narratives": "2025-12-16T23:28:12.330093+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "What defended SOL against DDoS?",
   "dynamic_published_at": "2025-12-17T09:36:34.118023+00:00",
   "last_publication": {
-    "question": "What defended SOL against DDoS?",
-    "group": "DYNAMIC",
-    "published_at": "2025-12-17T09:36:34.118043+00:00",
-    "hour_utc": 9,
-    "answer_length": 2850
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2025-12-17T13:02:12.301866+00:00",
+    "hour_utc": 13,
+    "answer_length": 2698
   }
 }
