@@ -1,7 +1,11 @@
 """
 formatting.py - Модуль улучшенного форматирования для Telegram и Twitter
-Version: 3.2.0
+Version: 3.2.1
 Senior QA Approved - Production Ready
+
+ОБНОВЛЕНО В v3.2.1:
+- FIX: Alpha Take теперь попадает в Telegram!
+- Используем enhance_caption_with_alpha_take для Telegram caption
 
 ОБНОВЛЕНО В v3.2.0:
 - Twitter треды теперь включают Alpha Take!
@@ -29,7 +33,7 @@ logger = logging.getLogger(__name__)
 # ВЕРСИЯ И НАСТРОЙКИ
 # ========================================
 
-__version__ = "3.2.0"
+__version__ = "3.2.1"
 
 # НАСТРОЙКА РЕЖИМА TWITTER
 TWITTER_MODE = "thread"  # "thread" или "single"
@@ -492,6 +496,7 @@ def send_improved(question, answer,
     """
     Главная функция для отправки контента
     
+    v3.2.1: Alpha Take теперь попадает в Telegram!
     v3.2.0: Добавлены alpha_take и context_tag для полных тредов
     
     Args:
@@ -532,8 +537,30 @@ def send_improved(question, answer,
         
         # 4. Форматируем Telegram
         try:
-            tg_message = format_telegram_improved(title, tldr_text, hashtags)
-            logger.info(f"  ✓ Telegram: {len(tg_message)} символов")
+            # v3.2.1: Используем Alpha Take для Telegram если доступен
+            if alpha_take and context_tag:
+                # Импортируем функцию для Alpha Take
+                from openai_cmc_integration import enhance_caption_with_alpha_take
+                
+                # Формируем ai_result для enhance_caption_with_alpha_take
+                ai_result = {
+                    'alpha_take': alpha_take,
+                    'context_tag': context_tag,
+                    'hashtags': None  # Будет использован hashtags из config
+                }
+                
+                tg_message = enhance_caption_with_alpha_take(
+                    title=title,
+                    text=tldr_text,
+                    hashtags_fallback=hashtags,
+                    ai_result=ai_result
+                )
+                logger.info(f"  ✓ Telegram (с Alpha Take): {len(tg_message)} символов")
+            else:
+                # Без Alpha Take - обычный формат
+                tg_message = format_telegram_improved(title, tldr_text, hashtags)
+                logger.info(f"  ✓ Telegram: {len(tg_message)} символов")
+                
         except Exception as e:
             logger.error(f"  ✗ Ошибка TG: {e}")
             tg_message = f"<b>{title}</b>\n\n{tldr_text[:500]}\n\n{hashtags}"
