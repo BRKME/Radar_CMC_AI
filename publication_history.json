@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2025-12-17T13:39:09.316565+00:00",
     "dynamic": "2025-12-17T09:36:34.118038+00:00",
-    "market_direction": "2025-12-17T14:32:38.255653+00:00",
+    "market_direction": "2025-12-18T08:40:07.100659+00:00",
     "narratives": "2025-12-17T16:39:49.355734+00:00",
     "events": "2025-12-16T19:26:36.300096+00:00",
     "sentiment": "2025-12-16T18:43:24.337644+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "What defended SOL against DDoS?",
   "dynamic_published_at": "2025-12-17T09:36:34.118023+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2025-12-17T16:39:49.355748+00:00",
-    "hour_utc": 16,
-    "answer_length": 2552
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2025-12-18T08:40:07.100674+00:00",
+    "hour_utc": 8,
+    "answer_length": 2095
   }
 }
