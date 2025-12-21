@@ -4,7 +4,7 @@
     "dynamic": "2025-12-19T09:33:12.665881+00:00",
     "market_direction": "2025-12-21T14:26:31.638981+00:00",
     "narratives": "2025-12-21T16:33:51.512832+00:00",
-    "events": "2025-12-20T19:22:31.186155+00:00",
+    "events": "2025-12-21T19:22:39.028810+00:00",
     "sentiment": "2025-12-21T18:38:27.152847+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "How did BOJ move affect BTC?",
   "dynamic_published_at": "2025-12-19T09:33:12.665866+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2025-12-21T18:38:27.152862+00:00",
-    "hour_utc": 18,
-    "answer_length": 1907
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2025-12-21T19:22:39.028827+00:00",
+    "hour_utc": 19,
+    "answer_length": 3275
   }
 }
