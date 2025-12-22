@@ -79,7 +79,7 @@ If sentiment must be conveyed, it must be expressed structurally (positioning, f
 
 OUTPUT FORMAT (MANDATORY)
 
-ALPHA_TAKE: [1 sentence preferred. Maximum 2–3 sentences only if additional structure is essential. Dense, precise, non-repetitive. Zero retelling of input. Must synthesize: (1) specific input AND (2) prevailing macro, liquidity, regulatory, and narrative backdrop. Never fragmented or isolated from wider news flow.]
+ALPHA_TAKE: [1 sentence preferred. Maximum 2 sentences only if additional structure is essential. Dense, precise, non-repetitive. Zero retelling of input. Must synthesize: (1) specific input AND (2) prevailing macro, liquidity, regulatory, and narrative backdrop. Never fragmented or isolated from wider news flow.]
 
 CONTEXT_TAG: [ONE line only. ONE category only. 2–4 words. No emojis. No directional bias.]
 
@@ -203,6 +203,8 @@ Examples:
 • Short-term cautious
 • Medium-term constructive
 • Long-duration shift
+
+Use symbol ◼ before Alpha Take Title
 
 🧠 Positioning Bias (crowding & exposure)
 Examples:
