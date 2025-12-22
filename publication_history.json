@@ -3,7 +3,7 @@
     "kols": "2025-12-20T13:33:44.769830+00:00",
     "dynamic": "2025-12-19T09:33:12.665881+00:00",
     "market_direction": "2025-12-22T14:34:27.479208+00:00",
-    "narratives": "2025-12-21T16:33:51.512832+00:00",
+    "narratives": "2025-12-22T16:37:08.784705+00:00",
     "events": "2025-12-21T19:22:39.028810+00:00",
     "sentiment": "2025-12-21T18:38:27.152847+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "How did BOJ move affect BTC?",
   "dynamic_published_at": "2025-12-19T09:33:12.665866+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2025-12-22T14:34:27.479226+00:00",
-    "hour_utc": 14,
-    "answer_length": 2250
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2025-12-22T16:37:08.784724+00:00",
+    "hour_utc": 16,
+    "answer_length": 2697
   }
 }
