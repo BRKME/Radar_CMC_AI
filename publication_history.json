@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2025-12-20T13:33:44.769830+00:00",
+    "kols": "2025-12-24T22:28:21.087436+00:00",
     "dynamic": "2025-12-24T21:26:50.796428+00:00",
     "market_direction": "2025-12-24T08:39:53.246312+00:00",
     "narratives": "2025-12-23T23:27:12.632892+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which ETFs target stablecoin infrastructure?",
   "dynamic_published_at": "2025-12-24T21:26:50.796413+00:00",
   "last_publication": {
-    "question": "Which ETFs target stablecoin infrastructure?",
-    "group": "DYNAMIC",
-    "published_at": "2025-12-24T21:26:50.796432+00:00",
-    "hour_utc": 21,
-    "answer_length": 2813
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2025-12-24T22:28:21.087454+00:00",
+    "hour_utc": 22,
+    "answer_length": 2474
   }
 }
