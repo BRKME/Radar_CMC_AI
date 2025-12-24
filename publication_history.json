@@ -5,17 +5,17 @@
     "market_direction": "2025-12-23T22:28:31.156486+00:00",
     "narratives": "2025-12-23T23:27:12.632892+00:00",
     "events": "2025-12-23T19:24:21.481166+00:00",
-    "sentiment": "2025-12-23T18:42:28.333732+00:00",
+    "sentiment": "2025-12-24T06:46:36.723909+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
   "last_dynamic_question": "Which bank eyes crypto trading?",
   "dynamic_published_at": "2025-12-22T21:26:44.141013+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2025-12-23T23:27:12.632906+00:00",
-    "hour_utc": 23,
-    "answer_length": 2247
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2025-12-24T06:46:36.723924+00:00",
+    "hour_utc": 6,
+    "answer_length": 2141
   }
 }
