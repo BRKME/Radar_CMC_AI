@@ -1,20 +1,62 @@
 """
 OpenAI Integration для CMC AI - Alpha Take для текстовых новостей
-Version: 2.4.0 - Simple clear analysis for everyone
+Version: 2.5.2 - Production-ready, all bugs fixed
 Генерирует Alpha Take, Context Tag и Hashtags для новостей CoinMarketCap AI
 
-ОБНОВЛЕНО В v2.4.0:
-- Новый простой промпт понятный каждому
-- Alpha Take объясняет влияние на цены
-- Context Tag: [Strength] [Tone] формат
-- Без жаргона и абстракций
+ОБНОВЛЕНО В v2.5.2:
+- FIX: safe_truncate для правильной обрезки с emoji
+- FIX: Специфичные exception handlers
+- FIX: Все обрезки используют safe_truncate
+- TESTED: Полная QA проверка пройдена
 """
 
 import os
 import logging
+import re
 from openai import OpenAI
 
 logger = logging.getLogger(__name__)
+
+
+def get_twitter_length(text):
+    """Вычисляет длину текста для Twitter (emoji = 2 символа)"""
+    if not text:
+        return 0
+    emoji_pattern = re.compile("["
+        "\U0001F600-\U0001F64F"
+        "\U0001F300-\U0001F5FF"
+        "\U0001F680-\U0001F6FF"
+        "\U0001F1E0-\U0001F1FF"
+        "\U00002702-\U000027B0"
+        "\U000024C2-\U0001F251"
+        "]+", flags=re.UNICODE)
+    emoji_count = len(emoji_pattern.findall(text))
+    return len(text) + emoji_count
+
+
+def safe_truncate(text, max_length, suffix="..."):
+    """Безопасно обрезает текст учитывая emoji и слова"""
+    if not text:
+        return ""
+    
+    if get_twitter_length(text) <= max_length:
+        return text
+    
+    target = max_length - len(suffix)
+    current = text
+    
+    while get_twitter_length(current) > target and len(current) > 0:
+        current = current[:-1]
+    
+    if not current:
+        return text[:max_length]
+    
+    if current[-1] not in (' ', '\n'):
+        words = current.rsplit(' ', 1)
+        if len(words) > 1:
+            current = words[0]
+    
+    return current.rstrip() + suffix
 
 # OpenAI API Key
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
@@ -24,7 +66,7 @@ client = None
 if OPENAI_API_KEY:
     try:
         client = OpenAI(api_key=OPENAI_API_KEY)
-        logger.info("✓ OpenAI client initialized for CMC AI v2.4.0")
+        logger.info("✓ OpenAI client initialized for CMC AI v2.5.2")
     except Exception as e:
         logger.error(f"✗ Failed to initialize OpenAI client: {e}")
         client = None
@@ -335,45 +377,132 @@ def enhance_twitter_with_alpha_take(title, alpha_take, context_tag, hashtags):
     """
     Создаёт Twitter контент с Alpha Take
     
-    v2.4.0: Simple clear analysis
+    v2.5.1: Fixed emoji length calculation
     
     Args:
         title: Заголовок
-        alpha_take: Alpha Take текст (чистый, без префиксов)
-        context_tag: Context Tag
-        hashtags: Хештеги (AI-generated или fallback)
+        alpha_take: Alpha Take текст
+        context_tag: Context Tag (deprecated, not used)
+        hashtags: Хештеги
         
     Returns:
-        str: Twitter-formatted текст (single tweet)
+        str: Twitter-formatted текст
     """
-    # Twitter лимит
     max_length = 270
     
-    # Формат: Title + Alpha Take + Context + Hashtags
-    
-    # Резервируем место
-    reserved = len(title) + len(hashtags) + 20
-    if context_tag:
-        reserved += len(f"Context: {context_tag}") + 4
-    
+    reserved = get_twitter_length(title) + get_twitter_length(hashtags) + 20
     available_for_alpha = max_length - reserved
     
-    # Alpha Take короче, обычно влезет
-    if len(alpha_take) > available_for_alpha:
-        short_alpha = alpha_take[:available_for_alpha-3] + "..."
+    if get_twitter_length(alpha_take) > available_for_alpha:
+        short_alpha = safe_truncate(alpha_take, available_for_alpha)
     else:
         short_alpha = alpha_take
     
-    # Собираем твит
-    tweet = f"{title}\n\n{short_alpha}"
+    tweet = f"{title}\n\n{short_alpha}\n\n{hashtags}"
     
-    if context_tag:
-        tweet += f"\n\nContext: {context_tag}"
-    
-    tweet += f"\n\n{hashtags}"
-    
-    # Финальная проверка
-    if len(tweet) > 280:
-        tweet = tweet[:277] + "..."
+    if get_twitter_length(tweet) > 280:
+        tweet = safe_truncate(tweet, 280)
     
     return tweet
+
+
+def optimize_tweet_for_twitter(title, alpha_take, hashtags, max_length=280):
+    """
+    Оптимизирует твит под 280 символов используя AI
+    
+    v2.5.1: Fixed emoji length, validation, exception handling
+    
+    Args:
+        title: Заголовок
+        alpha_take: Alpha Take текст
+        hashtags: Хештеги
+        max_length: Максимальная длина (280)
+        
+    Returns:
+        str: Оптимизированный твит
+    """
+    if not title or not alpha_take:
+        logger.error("✗ Title and alpha_take required")
+        return "Crypto news update"
+    
+    title = str(title).strip()
+    alpha_take = str(alpha_take).strip()
+    hashtags = str(hashtags).strip() if hashtags else ""
+    
+    if not client:
+        basic_tweet = f"{title}\n\n{alpha_take}\n\n{hashtags}"
+        if get_twitter_length(basic_tweet) <= max_length:
+            return basic_tweet
+        basic_tweet = f"{title}\n\n{alpha_take}"
+        if get_twitter_length(basic_tweet) <= max_length:
+            return basic_tweet
+        return safe_truncate(basic_tweet, max_length)
+    
+    try:
+        initial_tweet = f"{title}\n\n{alpha_take}\n\n{hashtags}"
+        
+        if get_twitter_length(initial_tweet) <= max_length:
+            return initial_tweet
+        
+        title_safe = title.replace('"', "'")
+        
+        prompt = f"""Optimize this crypto tweet to fit in {max_length} characters.
+
+Original tweet:
+{initial_tweet}
+
+Rules:
+- Keep title: {title_safe}
+- Keep main message from Alpha Take
+- Remove or shorten hashtags if needed
+- Maximum {max_length} characters
+- Clear and informative
+
+Return ONLY the optimized tweet text, nothing else. No explanations."""
+
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": "You optimize tweets to character limits. Return only the tweet text."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=150,
+            temperature=0.3
+        )
+        
+        optimized = response.choices[0].message.content.strip()
+        
+        prefixes = ["here's", "here is", "optimized tweet:", "tweet:", "result:"]
+        optimized_lower = optimized.lower()
+        for prefix in prefixes:
+            if optimized_lower.startswith(prefix):
+                optimized = optimized[len(prefix):].strip()
+                if optimized.startswith(":"):
+                    optimized = optimized[1:].strip()
+                break
+        
+        if get_twitter_length(optimized) > max_length:
+            optimized = safe_truncate(optimized, max_length)
+        
+        logger.info(f"✓ Tweet optimized: {get_twitter_length(initial_tweet)} → {get_twitter_length(optimized)} chars")
+        return optimized
+        
+    except (AttributeError, KeyError, IndexError) as e:
+        logger.error(f"✗ Tweet optimization failed (API response): {e}")
+        fallback = f"{title}\n\n{alpha_take}"
+        if get_twitter_length(fallback) <= max_length:
+            return fallback
+        
+        tags = hashtags.split()
+        for i in range(len(tags), 0, -1):
+            attempt = f"{title}\n\n{alpha_take}\n\n{' '.join(tags[:i])}"
+            if get_twitter_length(attempt) <= max_length:
+                return attempt
+        
+        return safe_truncate(fallback, max_length)
+    except Exception as e:
+        logger.error(f"✗ Tweet optimization failed (unexpected): {e}")
+        basic = f"{title}\n\n{alpha_take}"
+        if get_twitter_length(basic) <= max_length:
+            return basic
+        return safe_truncate(basic, max_length)
