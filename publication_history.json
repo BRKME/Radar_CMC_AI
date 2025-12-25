@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2025-12-24T22:28:21.087436+00:00",
-    "dynamic": "2025-12-24T21:26:50.796428+00:00",
+    "dynamic": "2025-12-25T09:31:57.656392+00:00",
     "market_direction": "2025-12-25T08:38:34.052142+00:00",
     "narratives": "2025-12-24T23:27:40.114447+00:00",
     "events": "2025-12-24T19:23:10.714284+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
-  "last_dynamic_question": "Which ETFs target stablecoin infrastructure?",
-  "dynamic_published_at": "2025-12-24T21:26:50.796413+00:00",
+  "last_dynamic_question": "Which SOL catalysts drove activity?",
+  "dynamic_published_at": "2025-12-25T09:31:57.656376+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2025-12-25T08:38:34.052157+00:00",
-    "hour_utc": 8,
-    "answer_length": 2086
+    "question": "Which SOL catalysts drove activity?",
+    "group": "DYNAMIC",
+    "published_at": "2025-12-25T09:31:57.656398+00:00",
+    "hour_utc": 9,
+    "answer_length": 3386
   }
 }
