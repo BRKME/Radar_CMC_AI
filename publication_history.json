@@ -3,7 +3,7 @@
     "kols": "2025-12-26T13:38:37.084873+00:00",
     "dynamic": "2025-12-25T21:26:52.876479+00:00",
     "market_direction": "2025-12-26T14:29:22.286912+00:00",
-    "narratives": "2025-12-25T23:27:31.142804+00:00",
+    "narratives": "2025-12-26T16:34:20.853696+00:00",
     "events": "2025-12-25T19:23:45.563714+00:00",
     "sentiment": "2025-12-26T06:44:12.458441+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which L2s led activity this week?",
   "dynamic_published_at": "2025-12-25T21:26:52.876462+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2025-12-26T14:29:22.286925+00:00",
-    "hour_utc": 14,
-    "answer_length": 2076
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2025-12-26T16:34:20.853712+00:00",
+    "hour_utc": 16,
+    "answer_length": 2395
   }
 }
