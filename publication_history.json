@@ -5,17 +5,17 @@
     "market_direction": "2025-12-27T14:26:54.023037+00:00",
     "narratives": "2025-12-27T23:27:12.443969+00:00",
     "events": "2025-12-27T19:22:32.324373+00:00",
-    "sentiment": "2025-12-27T18:38:42.867990+00:00",
+    "sentiment": "2025-12-28T06:42:11.480482+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
   "last_dynamic_question": "What compromised Trust Wallet browser extension?",
   "dynamic_published_at": "2025-12-27T09:29:23.193871+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2025-12-27T23:27:12.443984+00:00",
-    "hour_utc": 23,
-    "answer_length": 2537
+    "question": "What moved BTC sentiment this week?",
+    "group": "sentiment",
+    "published_at": "2025-12-28T06:42:11.480494+00:00",
+    "hour_utc": 6,
+    "answer_length": 2608
   }
 }
