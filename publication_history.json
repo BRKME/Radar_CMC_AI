@@ -3,7 +3,7 @@
     "kols": "2025-12-28T13:35:52.778182+00:00",
     "dynamic": "2025-12-28T09:29:14.631588+00:00",
     "market_direction": "2025-12-28T14:27:40.174585+00:00",
-    "narratives": "2025-12-27T23:27:12.443969+00:00",
+    "narratives": "2025-12-28T16:34:52.404863+00:00",
     "events": "2025-12-27T19:22:32.324373+00:00",
     "sentiment": "2025-12-28T06:42:11.480482+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which CEX added new perps?",
   "dynamic_published_at": "2025-12-28T09:29:14.631575+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2025-12-28T14:27:40.174601+00:00",
-    "hour_utc": 14,
-    "answer_length": 2214
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2025-12-28T16:34:52.404874+00:00",
+    "hour_utc": 16,
+    "answer_length": 2922
   }
 }
