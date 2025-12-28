@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2025-12-27T22:27:30.158869+00:00",
+    "kols": "2025-12-28T13:35:52.778182+00:00",
     "dynamic": "2025-12-28T09:29:14.631588+00:00",
     "market_direction": "2025-12-28T08:37:02.071341+00:00",
     "narratives": "2025-12-27T23:27:12.443969+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which CEX added new perps?",
   "dynamic_published_at": "2025-12-28T09:29:14.631575+00:00",
   "last_publication": {
-    "question": "Which CEX added new perps?",
-    "group": "DYNAMIC",
-    "published_at": "2025-12-28T09:29:14.631593+00:00",
-    "hour_utc": 9,
-    "answer_length": 2445
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2025-12-28T13:35:52.778198+00:00",
+    "hour_utc": 13,
+    "answer_length": 2709
   }
 }
