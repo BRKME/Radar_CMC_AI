@@ -42,7 +42,7 @@ from formatting import send_improved, __version__ as formatting_version
 from openai_cmc_integration import (
     get_ai_alpha_take,
     enhance_caption_with_alpha_take,
-    enhance_twitter_with_alpha_take
+    optimize_tweet_for_twitter
 )
 
 # Настройка логирования
@@ -635,6 +635,13 @@ def clean_question_specific_text(question, text):
             if question_pattern in question:
                 text = text.replace(text_to_remove, "").strip()
         
+        if "sentiment" in question.lower():
+            text = re.sub(
+                r'\(CMC Fear & Greed Index:\s*(\d+)/\d+\)',
+                r'<b>\1</b>',
+                text
+            )
+        
         return text
     except Exception as e:
         logger.error(f"⚠️ Ошибка очистки текста: {e}")
@@ -1097,20 +1104,17 @@ def send_question_answer_to_telegram(question, answer):
             logger.info("\n🐦 ПОДГОТОВКА TWITTER КОНТЕНТА")
             
             try:
-                # Если есть Alpha Take - используем его для Twitter
                 if ai_result:
                     logger.info("   Используем Alpha Take для Twitter")
                     
-                    twitter_text = enhance_twitter_with_alpha_take(
+                    twitter_text = optimize_tweet_for_twitter(
                         title=title,
-                        alpha_take=ai_result.get('alpha_take', tldr_text),
-                        context_tag=ai_result.get('context_tag'),
-                        hashtags=ai_result.get('hashtags', hashtags)
+                        alpha_take=ai_result.get('alpha_take') or tldr_text,
+                        hashtags=ai_result.get('hashtags') or hashtags
                     )
                 else:
                     logger.info("   Используем стандартное сокращение")
                     
-                    # Без Alpha Take - обычное сокращение
                     twitter_text = smart_shorten_for_twitter(
                         text=tldr_text,
                         title=title,
@@ -1119,21 +1123,13 @@ def send_question_answer_to_telegram(question, answer):
                     )
                     twitter_text = f"{title}\n\n{twitter_text}\n\n{hashtags}"
                 
-                # Формируем контент для Twitter
                 twitter_content = {
                     "mode": "single",
                     "tweet": twitter_text
                 }
                 
-                tweet_length = get_twitter_length(twitter_text)
-                logger.info(f"  ✓ Tweet подготовлен: {tweet_length} символов")
+                logger.info(f"  ✓ Tweet подготовлен: {get_twitter_length(twitter_text)} символов")
                 
-                if tweet_length > 280:
-                    logger.warning(f"  ⚠️ Tweet слишком длинный, дополнительное сокращение...")
-                    twitter_text = twitter_text[:277] + "..."
-                    twitter_content["tweet"] = twitter_text
-                
-                # Отправляем
                 logger.info("\n📤 ОТПРАВКА В TWITTER")
                 tw_success = send_twitter_thread(twitter_content, image_url)
                 
