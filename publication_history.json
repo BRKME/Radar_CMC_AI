@@ -4,7 +4,7 @@
     "dynamic": "2025-12-29T09:39:21.223483+00:00",
     "market_direction": "2025-12-29T14:30:53.626695+00:00",
     "narratives": "2025-12-29T16:36:27.046828+00:00",
-    "events": "2025-12-28T19:23:08.334189+00:00",
+    "events": "2025-12-29T19:23:46.761763+00:00",
     "sentiment": "2025-12-29T18:41:02.822902+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which ETFs saw net outflows today?",
   "dynamic_published_at": "2025-12-29T09:39:21.223464+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2025-12-29T18:41:02.822928+00:00",
-    "hour_utc": 18,
-    "answer_length": 1979
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2025-12-29T19:23:46.761777+00:00",
+    "hour_utc": 19,
+    "answer_length": 2926
   }
 }
