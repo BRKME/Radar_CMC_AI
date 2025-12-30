@@ -5,17 +5,17 @@
     "market_direction": "2025-12-30T14:30:38.718895+00:00",
     "narratives": "2025-12-30T16:38:11.364027+00:00",
     "events": "2025-12-29T19:23:46.761763+00:00",
-    "sentiment": "2025-12-30T06:44:52.962977+00:00",
+    "sentiment": "2025-12-30T18:43:17.785856+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
   "last_dynamic_question": "Which ETFs drove BTC outflows?",
   "dynamic_published_at": "2025-12-30T09:34:29.972140+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2025-12-30T16:38:11.364056+00:00",
-    "hour_utc": 16,
-    "answer_length": 2864
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2025-12-30T18:43:17.785868+00:00",
+    "hour_utc": 18,
+    "answer_length": 2124
   }
 }
