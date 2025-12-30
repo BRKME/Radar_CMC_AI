@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2025-12-29T22:28:29.427829+00:00",
+    "kols": "2025-12-30T13:01:07.488448+00:00",
     "dynamic": "2025-12-30T09:34:29.972159+00:00",
     "market_direction": "2025-12-30T08:39:51.793354+00:00",
     "narratives": "2025-12-29T23:27:50.413666+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which ETFs drove BTC outflows?",
   "dynamic_published_at": "2025-12-30T09:34:29.972140+00:00",
   "last_publication": {
-    "question": "Which ETFs drove BTC outflows?",
-    "group": "DYNAMIC",
-    "published_at": "2025-12-30T09:34:29.972169+00:00",
-    "hour_utc": 9,
-    "answer_length": 2392
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2025-12-30T13:01:07.488461+00:00",
+    "hour_utc": 13,
+    "answer_length": 2783
   }
 }
