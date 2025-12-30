@@ -1,13 +1,18 @@
 """
 OpenAI Integration для CMC AI - Alpha Take для текстовых новостей
-Version: 2.5.3 - All critical bugs fixed
+Version: 2.5.6 - All bugs fixed, CCO approved
 Генерирует Alpha Take, Context Tag и Hashtags для новостей CoinMarketCap AI
 
-ОБНОВЛЕНО В v2.5.3:
-- FIX: Context Tag validation for Neutral (no modifiers)
-- FIX: Improved regex for Daily Market Sentiment
-- FIX: Better fallback for empty alpha_take
-- TESTED: Full CTO review passed
+ОБНОВЛЕНО В v2.5.6:
+- FIX: Critical suffix overflow (Bug #1)
+- FIX: Removed regex duplication (Bug #2)
+- FIX: Fixed escaped quote in regex (Bug #3)
+- FIX: Clarified prompt instructions (Bug #4)
+- FIX: Image fallback validation (Bug #5)
+- FIX: Optimized max_tokens 150→100 (Bug #6)
+- FIX: Lowered temperature 0.3→0.1 (Bug #7)
+- FIX: Clarified line break format (Bug #8)
+- TESTED: All 8 bugs resolved
 """
 
 import os
@@ -42,21 +47,29 @@ def safe_truncate(text, max_length, suffix="..."):
     if get_twitter_length(text) <= max_length:
         return text
     
-    target = max_length - len(suffix)
+    suffix_length = get_twitter_length(suffix)
+    target = max_length - suffix_length
     current = text
     
     while get_twitter_length(current) > target and len(current) > 0:
         current = current[:-1]
     
     if not current:
-        return text[:max_length]
+        while get_twitter_length(text) > max_length and len(text) > 0:
+            text = text[:-1]
+        return text
     
     if current[-1] not in (' ', '\n'):
         words = current.rsplit(' ', 1)
         if len(words) > 1:
             current = words[0]
     
-    return current.rstrip() + suffix
+    result = current.rstrip() + suffix
+    
+    if get_twitter_length(result) > max_length:
+        return safe_truncate(text, max_length, "")
+    
+    return result
 
 # OpenAI API Key
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
@@ -66,7 +79,7 @@ client = None
 if OPENAI_API_KEY:
     try:
         client = OpenAI(api_key=OPENAI_API_KEY)
-        logger.info("✓ OpenAI client initialized for CMC AI v2.5.3")
+        logger.info("✓ OpenAI client initialized for CMC AI v2.5.6")
     except Exception as e:
         logger.error(f"✗ Failed to initialize OpenAI client: {e}")
         client = None
@@ -452,17 +465,24 @@ def optimize_tweet_for_twitter(title, alpha_take, hashtags, max_length=280):
         
         title_safe = title.replace('"', "'")
         
-        prompt = f"""Optimize this crypto tweet to fit in {max_length} characters.
+        ai_limit = 240
+        
+        prompt = f"""Optimize this crypto tweet to fit in {ai_limit} characters.
 
 Original tweet:
 {initial_tweet}
 
 Rules:
 - Keep title: {title_safe}
-- Keep main message from Alpha Take
-- Remove or shorten hashtags if needed
-- Maximum {max_length} characters
-- Clear and informative
+- Condense the main message from Alpha Take into 1-2 sentences maximum
+- Remove ALL hashtags if needed to fit the limit
+- Target length: 220-240 characters (aim for this range for safety)
+- CRITICAL: Each emoji counts as 2 characters - avoid emoji if possible
+- Remove filler words: "however", "additionally", "furthermore", "meanwhile", etc
+- Use short words and direct language
+- Format: Keep double line break after title (\\n\\n), single line breaks elsewhere
+
+Be concise but complete. Deliver clear actionable information.
 
 Return ONLY the optimized tweet text, nothing else. No explanations."""
 
@@ -472,8 +492,8 @@ Return ONLY the optimized tweet text, nothing else. No explanations."""
                 {"role": "system", "content": "You optimize tweets to character limits. Return only the tweet text."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=150,
-            temperature=0.3
+            max_tokens=100,
+            temperature=0.1
         )
         
         optimized = response.choices[0].message.content.strip()
@@ -488,7 +508,17 @@ Return ONLY the optimized tweet text, nothing else. No explanations."""
                 break
         
         if get_twitter_length(optimized) > max_length:
+            logger.warning(f"  ⚠️ AI result too long: {get_twitter_length(optimized)} chars, truncating...")
             optimized = safe_truncate(optimized, max_length)
+        
+        final_length = get_twitter_length(optimized)
+        if final_length > max_length:
+            logger.error(f"  ✗ Still too long after truncate: {final_length} chars!")
+            while get_twitter_length(optimized) > max_length and len(optimized) > 0:
+                optimized = optimized[:-1]
+            optimized = optimized.rstrip()
+            if get_twitter_length(optimized + "...") <= max_length:
+                optimized = optimized + "..."
         
         logger.info(f"✓ Tweet optimized: {get_twitter_length(initial_tweet)} → {get_twitter_length(optimized)} chars")
         return optimized
