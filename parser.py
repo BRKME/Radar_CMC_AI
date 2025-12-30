@@ -79,7 +79,7 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # GitHub настройки для картинок
 GITHUB_IMAGES_URL = "https://raw.githubusercontent.com/BRKME/coinmarketcap-parser/main/Images1/"
-IMAGE_FILES = [f"{i}.jpg" for i in range(10, 151)]
+IMAGE_FILES = [f"{i}.jpg" for i in range(10, 223)]  # 10.jpg до 222.jpg (213 картинок)
 
 # Расписание публикаций (час UTC : тип вопроса)
 SCHEDULE = {
@@ -581,11 +581,31 @@ def send_telegram_photo_with_caption(photo_url, caption, parse_mode='HTML'):
         return False
 
 def get_random_image_url():
-    """Возвращает случайный URL картинки из GitHub"""
-    random_image = random.choice(IMAGE_FILES)
-    url = GITHUB_IMAGES_URL + random_image
-    logger.info(f"🎨 Выбрана картинка: {random_image}")
-    return url
+    """Возвращает случайный URL картинки из GitHub с fallback"""
+    max_attempts = 5
+    fallback_range = range(10, 151)
+    
+    for attempt in range(max_attempts):
+        if attempt < 3:
+            random_image = random.choice(IMAGE_FILES)
+        else:
+            random_image = f"{random.choice(fallback_range)}.jpg"
+        
+        url = GITHUB_IMAGES_URL + random_image
+        
+        try:
+            response = requests.head(url, timeout=3)
+            if response.status_code == 200:
+                logger.info(f"🎨 Выбрана картинка: {random_image}")
+                return url
+        except Exception as e:
+            if attempt < max_attempts - 1:
+                continue
+            logger.warning(f"⚠️ Ошибка проверки картинки: {e}")
+    
+    fallback_image = f"{random.choice(fallback_range)}.jpg"
+    logger.warning(f"⚠️ Используем fallback картинку: {fallback_image}")
+    return GITHUB_IMAGES_URL + fallback_image
 
 def extract_tldr_from_answer(answer):
     """Извлекает только TLDR часть из ответа"""
@@ -626,14 +646,19 @@ def clean_question_specific_text(question, text):
             ("What upcoming events may impact crypto?", 
              "These are the upcoming crypto events that may impact crypto the most:"),
             ("What cryptos are showing bullish momentum?", 
-             "Here are the trending cryptos based on CoinMarketCap's evolving momentum algorithm (news, social, price momentum)"),
-            ("What are the trending narratives?", 
-             "Here are the trending narratives based on CoinMarketCap's evolving narrative algorithm (price, news, social momentum):")
+             "Here are the trending cryptos based on CoinMarketCap's evolving momentum algorithm (news, social, price momentum)")
         ]
         
         for question_pattern, text_to_remove in cleaners:
             if question_pattern in question:
                 text = text.replace(text_to_remove, "").strip()
+        
+        text = re.sub(
+            r"Here are the trending narratives based on CoinMarketCap's evolving narrative algorithm \(price, news, social momentum\):?\s*",
+            '',
+            text,
+            flags=re.IGNORECASE
+        )
         
         if "sentiment" in question.lower():
             text = re.sub(
