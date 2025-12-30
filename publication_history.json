@@ -5,17 +5,17 @@
     "market_direction": "2025-12-29T14:30:53.626695+00:00",
     "narratives": "2025-12-29T23:27:50.413666+00:00",
     "events": "2025-12-29T19:23:46.761763+00:00",
-    "sentiment": "2025-12-29T18:41:02.822902+00:00",
+    "sentiment": "2025-12-30T06:44:52.962977+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
   "last_dynamic_question": "Which L2s led volumes today?",
   "dynamic_published_at": "2025-12-29T21:27:16.668087+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2025-12-29T23:27:50.413680+00:00",
-    "hour_utc": 23,
-    "answer_length": 2994
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2025-12-30T06:44:52.962992+00:00",
+    "hour_utc": 6,
+    "answer_length": 2076
   }
 }
