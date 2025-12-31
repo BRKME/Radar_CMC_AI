@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2025-12-31T13:38:43.804924+00:00",
-    "dynamic": "2025-12-30T21:28:02.878239+00:00",
+    "dynamic": "2025-12-31T21:26:56.928068+00:00",
     "market_direction": "2025-12-31T14:28:41.399209+00:00",
     "narratives": "2025-12-31T16:36:19.481619+00:00",
     "events": "2025-12-31T19:23:08.533091+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
-  "last_dynamic_question": "Which ETH ETFs saw outflows?",
-  "dynamic_published_at": "2025-12-30T21:28:02.878221+00:00",
+  "last_dynamic_question": "What moved USDC supply this week?",
+  "dynamic_published_at": "2025-12-31T21:26:56.928052+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2025-12-31T19:23:08.533106+00:00",
-    "hour_utc": 19,
-    "answer_length": 2952
+    "question": "What moved USDC supply this week?",
+    "group": "DYNAMIC",
+    "published_at": "2025-12-31T21:26:56.928073+00:00",
+    "hour_utc": 21,
+    "answer_length": 2873
   }
 }
