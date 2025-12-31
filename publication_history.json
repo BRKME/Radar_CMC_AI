@@ -5,17 +5,17 @@
     "market_direction": "2025-12-31T14:28:41.399209+00:00",
     "narratives": "2025-12-31T16:36:19.481619+00:00",
     "events": "2025-12-29T19:23:46.761763+00:00",
-    "sentiment": "2025-12-31T06:46:34.622408+00:00",
+    "sentiment": "2025-12-31T18:40:24.062265+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
   "last_dynamic_question": "Which ETH ETFs saw outflows?",
   "dynamic_published_at": "2025-12-30T21:28:02.878221+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2025-12-31T16:36:19.481635+00:00",
-    "hour_utc": 16,
-    "answer_length": 2478
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2025-12-31T18:40:24.062284+00:00",
+    "hour_utc": 18,
+    "answer_length": 2006
   }
 }
