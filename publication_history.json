@@ -4,7 +4,7 @@
     "dynamic": "2026-01-01T09:34:08.106819+00:00",
     "market_direction": "2026-01-01T14:28:30.131643+00:00",
     "narratives": "2026-01-01T16:37:08.642396+00:00",
-    "events": "2025-12-31T19:23:08.533091+00:00",
+    "events": "2026-01-01T19:24:07.225032+00:00",
     "sentiment": "2026-01-01T18:40:50.322173+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "What changed BTC dominance this week?",
   "dynamic_published_at": "2026-01-01T09:34:08.106804+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-01-01T18:40:50.322191+00:00",
-    "hour_utc": 18,
-    "answer_length": 2109
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-01-01T19:24:07.225044+00:00",
+    "hour_utc": 19,
+    "answer_length": 2861
   }
 }
