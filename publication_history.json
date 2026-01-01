@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-01-01T13:39:15.614380+00:00",
     "dynamic": "2026-01-01T09:34:08.106819+00:00",
-    "market_direction": "2026-01-01T08:39:41.735433+00:00",
+    "market_direction": "2026-01-01T14:28:30.131643+00:00",
     "narratives": "2025-12-31T23:28:32.834553+00:00",
     "events": "2025-12-31T19:23:08.533091+00:00",
     "sentiment": "2026-01-01T06:46:16.946936+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "What changed BTC dominance this week?",
   "dynamic_published_at": "2026-01-01T09:34:08.106804+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-01-01T13:39:15.614396+00:00",
-    "hour_utc": 13,
-    "answer_length": 2577
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-01-01T14:28:30.131660+00:00",
+    "hour_utc": 14,
+    "answer_length": 2187
   }
 }
