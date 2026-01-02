@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-01-02T13:38:53.385078+00:00",
     "dynamic": "2026-01-02T09:33:05.198304+00:00",
-    "market_direction": "2026-01-02T08:39:55.725094+00:00",
+    "market_direction": "2026-01-02T14:30:18.676124+00:00",
     "narratives": "2026-01-01T23:28:36.329970+00:00",
     "events": "2026-01-01T19:24:07.225032+00:00",
     "sentiment": "2026-01-02T06:46:46.155521+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which L2s led fees this week?",
   "dynamic_published_at": "2026-01-02T09:33:05.198282+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-01-02T13:38:53.385097+00:00",
-    "hour_utc": 13,
-    "answer_length": 2641
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-01-02T14:30:18.676141+00:00",
+    "hour_utc": 14,
+    "answer_length": 2393
   }
 }
