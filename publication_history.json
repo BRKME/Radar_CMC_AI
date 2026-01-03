@@ -3,7 +3,7 @@
     "kols": "2026-01-03T13:35:30.748535+00:00",
     "dynamic": "2026-01-03T09:29:39.573855+00:00",
     "market_direction": "2026-01-03T14:27:05.827158+00:00",
-    "narratives": "2026-01-02T23:27:59.340016+00:00",
+    "narratives": "2026-01-03T16:35:01.371402+00:00",
     "events": "2026-01-02T19:20:04.974445+00:00",
     "sentiment": "2026-01-03T06:42:18.494436+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "How much BTC ETF inflows today?",
   "dynamic_published_at": "2026-01-03T09:29:39.573843+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-01-03T14:27:05.827173+00:00",
-    "hour_utc": 14,
-    "answer_length": 2203
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-01-03T16:35:01.371416+00:00",
+    "hour_utc": 16,
+    "answer_length": 2586
   }
 }
