@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-01-02T13:38:53.385078+00:00",
+    "kols": "2026-01-03T13:35:30.748535+00:00",
     "dynamic": "2026-01-03T09:29:39.573855+00:00",
     "market_direction": "2026-01-03T08:36:51.124422+00:00",
     "narratives": "2026-01-02T23:27:59.340016+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "How much BTC ETF inflows today?",
   "dynamic_published_at": "2026-01-03T09:29:39.573843+00:00",
   "last_publication": {
-    "question": "How much BTC ETF inflows today?",
-    "group": "DYNAMIC",
-    "published_at": "2026-01-03T09:29:39.573860+00:00",
-    "hour_utc": 9,
-    "answer_length": 2840
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-01-03T13:35:30.748551+00:00",
+    "hour_utc": 13,
+    "answer_length": 2474
   }
 }
