@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-01-06T13:43:55.183417+00:00",
     "dynamic": "2026-01-06T21:29:51.001928+00:00",
-    "market_direction": "2026-01-06T22:30:41.120525+00:00",
+    "market_direction": "2026-01-07T08:42:03.353686+00:00",
     "narratives": "2026-01-06T23:29:38.374358+00:00",
     "events": "2026-01-06T19:24:53.205294+00:00",
     "sentiment": "2026-01-07T06:47:34.766728+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Which bank filed BTC SOL ETFs?",
   "dynamic_published_at": "2026-01-06T21:29:51.001916+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-01-07T06:47:34.766745+00:00",
-    "hour_utc": 6,
-    "answer_length": 2075
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-01-07T08:42:03.353701+00:00",
+    "hour_utc": 8,
+    "answer_length": 2448
   }
 }
