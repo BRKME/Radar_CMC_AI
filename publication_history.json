@@ -5,17 +5,17 @@
     "market_direction": "2026-01-08T14:34:39.344470+00:00",
     "narratives": "2026-01-08T16:41:17.797789+00:00",
     "events": "2026-01-07T19:27:38.991025+00:00",
-    "sentiment": "2026-01-08T06:48:02.747502+00:00",
+    "sentiment": "2026-01-08T18:41:09.254658+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
   "last_dynamic_question": "Which entities staked most ETH today?",
   "dynamic_published_at": "2026-01-08T09:37:34.104833+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-01-08T16:41:17.797804+00:00",
-    "hour_utc": 16,
-    "answer_length": 2533
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-01-08T18:41:09.254675+00:00",
+    "hour_utc": 18,
+    "answer_length": 1997
   }
 }
