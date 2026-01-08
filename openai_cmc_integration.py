@@ -1,18 +1,13 @@
 """
 OpenAI Integration для CMC AI - Alpha Take для текстовых новостей
-Version: 2.5.6 - All bugs fixed, CCO approved
+Version: 2.5.7 - Narratives cleanup + hashtag limit
 Генерирует Alpha Take, Context Tag и Hashtags для новостей CoinMarketCap AI
 
-ОБНОВЛЕНО В v2.5.6:
-- FIX: Critical suffix overflow (Bug #1)
-- FIX: Removed regex duplication (Bug #2)
-- FIX: Fixed escaped quote in regex (Bug #3)
-- FIX: Clarified prompt instructions (Bug #4)
-- FIX: Image fallback validation (Bug #5)
-- FIX: Optimized max_tokens 150→100 (Bug #6)
-- FIX: Lowered temperature 0.3→0.1 (Bug #7)
-- FIX: Clarified line break format (Bug #8)
-- TESTED: All 8 bugs resolved
+ОБНОВЛЕНО В v2.5.7:
+- FIX: Narratives intro удаляется в enhance_caption (гарантированно)
+- FIX: Хэштеги ограничены до 3 максимум (промпт + валидация)
+- FIX: AI инструкция "Maximum 3 hashtags (STRICT LIMIT)"
+- TESTED: Narratives чистые, хэштеги <= 3
 """
 
 import os
@@ -79,7 +74,7 @@ client = None
 if OPENAI_API_KEY:
     try:
         client = OpenAI(api_key=OPENAI_API_KEY)
-        logger.info("✓ OpenAI client initialized for CMC AI v2.5.6")
+        logger.info("✓ OpenAI client initialized for CMC AI v2.5.7")
     except Exception as e:
         logger.error(f"✗ Failed to initialize OpenAI client: {e}")
         client = None
@@ -98,7 +93,7 @@ Return exactly three lines:
 
 ALPHA_TAKE: [Clear explanation in 1-2 sentences]
 CONTEXT_TAG: [Strength] [Tone]
-HASHTAGS: [3-5 hashtags]
+HASHTAGS: [Maximum 3 hashtags]
 
 ALPHA TAKE RULES
 
@@ -154,8 +149,8 @@ Choose based on:
 2. How does it affect prices? (Tone)
 
 HASHTAGS
-- 3-5 relevant tags
-- Mix of coins/topics mentioned
+- Maximum 3 hashtags (STRICT LIMIT)
+- Most relevant coins/topics only
 - Format: #CamelCase
 
 EXAMPLES
@@ -271,6 +266,11 @@ def get_ai_alpha_take(news_text, question_context=""):
                 
             elif line.startswith('HASHTAGS:'):
                 hashtags = line.replace('HASHTAGS:', '').strip()
+                
+                tags_list = [tag.strip() for tag in hashtags.split() if tag.startswith('#')]
+                if len(tags_list) > 3:
+                    hashtags = ' '.join(tags_list[:3])
+                    logger.info(f"  ⚠️ Trimmed hashtags from {len(tags_list)} to 3: {hashtags}")
         
         # Валидация
         if not alpha_take:
@@ -340,6 +340,15 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
         alpha_start = text.find('Alpha Take')
         if alpha_start > 0:
             text = text[:alpha_start].strip()
+    
+    # Убираем вводную строку narratives если она есть
+    import re
+    text = re.sub(
+        r"Here are the trending narratives based on CoinMarketCap's evolving narrative algorithm \(price, news, social momentum\):?\s*",
+        '',
+        text,
+        flags=re.IGNORECASE
+    )
     
     # Также убираем "CONTEXT_TAG:" и "HASHTAGS:" если они в тексте
     if 'CONTEXT_TAG:' in text:
