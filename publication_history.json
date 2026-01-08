@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-01-07T13:47:52.711389+00:00",
-    "dynamic": "2026-01-07T21:29:27.470826+00:00",
+    "dynamic": "2026-01-08T09:37:34.104852+00:00",
     "market_direction": "2026-01-08T08:41:43.915092+00:00",
     "narratives": "2026-01-07T23:29:21.135273+00:00",
     "events": "2026-01-07T19:27:38.991025+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
-  "last_dynamic_question": "Which CEXs saw whale inflows?",
-  "dynamic_published_at": "2026-01-07T21:29:27.470809+00:00",
+  "last_dynamic_question": "Which entities staked most ETH today?",
+  "dynamic_published_at": "2026-01-08T09:37:34.104833+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-01-08T08:41:43.915103+00:00",
-    "hour_utc": 8,
-    "answer_length": 1785
+    "question": "Which entities staked most ETH today?",
+    "group": "DYNAMIC",
+    "published_at": "2026-01-08T09:37:34.104857+00:00",
+    "hour_utc": 9,
+    "answer_length": 3064
   }
 }
