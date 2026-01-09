@@ -627,6 +627,23 @@ def extract_tldr_from_answer(answer):
                 tldr_section = answer[tldr_start:].strip()
             
             tldr_section = tldr_section.replace('TLDR', '', 1).strip()
+            
+            # КРИТИЧНО: Убираем вводные строки CMC (самая ранняя очистка)
+            tldr_section = re.sub(
+                r"Here are the trending (?:narratives|cryptos) based on CoinMarketCap['\u2018\u2019\"]?s evolving (?:narrative|momentum) algorithm[^:]*:?\s*",
+                '',
+                tldr_section,
+                flags=re.IGNORECASE
+            )
+            
+            # Убираем "These are the upcoming crypto events..."
+            tldr_section = re.sub(
+                r"These are the upcoming crypto events that may impact crypto the most:?\s*",
+                '',
+                tldr_section,
+                flags=re.IGNORECASE
+            )
+            
             return tldr_section
         else:
             logger.warning("⚠️ TLDR не найден, возвращаю первые 500 символов")
@@ -642,24 +659,23 @@ def clean_question_specific_text(question, text):
         if not text:
             return text
         
-        cleaners = [
-            ("What upcoming events may impact crypto?", 
-             "These are the upcoming crypto events that may impact crypto the most:"),
-            ("What cryptos are showing bullish momentum?", 
-             "Here are the trending cryptos based on CoinMarketCap's evolving momentum algorithm (news, social, price momentum)")
-        ]
-        
-        for question_pattern, text_to_remove in cleaners:
-            if question_pattern in question:
-                text = text.replace(text_to_remove, "").strip()
-        
+        # Агрессивная очистка всех вводных строк CMC
         text = re.sub(
-            r"Here are the trending narratives based on CoinMarketCap's evolving narrative algorithm \(price, news, social momentum\):?\s*",
+            r"Here are the trending (?:narratives|cryptos) based on CoinMarketCap['\u2018\u2019\"]?s evolving (?:narrative|momentum) algorithm[^:]*:?\s*",
             '',
             text,
             flags=re.IGNORECASE
         )
         
+        # Убираем "These are the upcoming crypto events..."
+        text = re.sub(
+            r"These are the upcoming crypto events that may impact crypto the most:?\s*",
+            '',
+            text,
+            flags=re.IGNORECASE
+        )
+        
+        # Sentiment форматирование
         if "sentiment" in question.lower():
             text = re.sub(
                 r'\(CMC Fear & Greed Index:\s*(\d+)/\d+\)',
