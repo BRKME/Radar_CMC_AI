@@ -3,7 +3,7 @@
     "kols": "2026-01-09T13:44:22.114373+00:00",
     "dynamic": "2026-01-09T21:29:31.636391+00:00",
     "market_direction": "2026-01-09T22:30:18.837266+00:00",
-    "narratives": "2026-01-09T16:39:28.847838+00:00",
+    "narratives": "2026-01-09T23:28:59.349136+00:00",
     "events": "2026-01-09T19:27:18.260692+00:00",
     "sentiment": "2026-01-09T18:44:08.233935+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "How much SOL ETF net inflow?",
   "dynamic_published_at": "2026-01-09T21:29:31.636375+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-01-09T22:30:18.837280+00:00",
-    "hour_utc": 22,
-    "answer_length": 2003
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-01-09T23:28:59.349153+00:00",
+    "hour_utc": 23,
+    "answer_length": 2630
   }
 }
