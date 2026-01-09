@@ -1,13 +1,13 @@
 """
 OpenAI Integration для CMC AI - Alpha Take для текстовых новостей
-Version: 2.5.7 - Narratives cleanup + hashtag limit
+Version: 2.5.8 - Triple-layer narratives cleanup
 Генерирует Alpha Take, Context Tag и Hashtags для новостей CoinMarketCap AI
 
-ОБНОВЛЕНО В v2.5.7:
-- FIX: Narratives intro удаляется в enhance_caption (гарантированно)
-- FIX: Хэштеги ограничены до 3 максимум (промпт + валидация)
-- FIX: AI инструкция "Maximum 3 hashtags (STRICT LIMIT)"
-- TESTED: Narratives чистые, хэштеги <= 3
+ОБНОВЛЕНО В v2.5.8:
+- FIX: Улучшен regex (поддержка типографских апострофов)
+- FIX: Очистка в 3 местах (extract_tldr + clean_question + enhance_caption)
+- FIX: Универсальный паттерн для narratives/cryptos/events
+- TESTED: Гарантированное удаление вводных строк CMC
 """
 
 import os
@@ -74,7 +74,7 @@ client = None
 if OPENAI_API_KEY:
     try:
         client = OpenAI(api_key=OPENAI_API_KEY)
-        logger.info("✓ OpenAI client initialized for CMC AI v2.5.7")
+        logger.info("✓ OpenAI client initialized for CMC AI v2.5.8")
     except Exception as e:
         logger.error(f"✗ Failed to initialize OpenAI client: {e}")
         client = None
@@ -341,10 +341,18 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
         if alpha_start > 0:
             text = text[:alpha_start].strip()
     
-    # Убираем вводную строку narratives если она есть
+    # Убираем вводные строки CMC (все варианты)
     import re
     text = re.sub(
-        r"Here are the trending narratives based on CoinMarketCap's evolving narrative algorithm \(price, news, social momentum\):?\s*",
+        r"Here are the trending (?:narratives|cryptos) based on CoinMarketCap['\u2018\u2019\"]?s evolving (?:narrative|momentum) algorithm[^:]*:?\s*",
+        '',
+        text,
+        flags=re.IGNORECASE
+    )
+    
+    # Убираем "These are the upcoming crypto events..."
+    text = re.sub(
+        r"These are the upcoming crypto events that may impact crypto the most:?\s*",
         '',
         text,
         flags=re.IGNORECASE
