@@ -3,7 +3,7 @@
     "kols": "2026-01-12T14:35:10.264547+00:00",
     "dynamic": "2026-01-12T09:42:00.937168+00:00",
     "market_direction": "2026-01-12T08:43:56.131580+00:00",
-    "narratives": "2026-01-11T23:27:52.473549+00:00",
+    "narratives": "2026-01-12T16:38:01.213300+00:00",
     "events": "2026-01-11T19:22:50.210228+00:00",
     "sentiment": "2026-01-12T06:50:57.765434+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SOL Surges 2.41% To $139.82",
   "dynamic_published_at": "2026-01-12T09:42:00.937132+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-01-12T14:35:10.264565+00:00",
-    "hour_utc": 14,
-    "answer_length": 2512
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-01-12T16:38:01.213316+00:00",
+    "hour_utc": 16,
+    "answer_length": 2873
   }
 }
