@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-01-14T13:49:28.814985+00:00",
+    "kols": "2026-01-15T13:04:00.847963+00:00",
     "dynamic": "2026-01-12T21:30:03.986687+00:00",
     "market_direction": "2026-01-15T08:42:00.485794+00:00",
     "narratives": "2026-01-14T23:26:11.806847+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Derivatives Open Interest Climbs 15.7% Today",
   "dynamic_published_at": "2026-01-12T21:30:03.986667+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-01-15T08:42:00.485808+00:00",
-    "hour_utc": 8,
-    "answer_length": 2125
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-01-15T13:04:00.847977+00:00",
+    "hour_utc": 13,
+    "answer_length": 2645
   }
 }
