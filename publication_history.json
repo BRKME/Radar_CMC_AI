@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-01-17T14:27:37.966614+00:00",
+    "kols": "2026-01-17T22:28:18.118999+00:00",
     "dynamic": "2026-01-12T21:30:03.986687+00:00",
     "market_direction": "2026-01-16T14:33:34.263097+00:00",
     "narratives": "2026-01-17T16:33:10.075861+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Derivatives Open Interest Climbs 15.7% Today",
   "dynamic_published_at": "2026-01-12T21:30:03.986667+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-01-17T19:22:20.047242+00:00",
-    "hour_utc": 19,
-    "answer_length": 2596
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-01-17T22:28:18.119015+00:00",
+    "hour_utc": 22,
+    "answer_length": 2308
   }
 }
