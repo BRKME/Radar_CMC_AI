@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-01-17T22:28:18.118999+00:00",
+    "kols": "2026-01-18T08:36:41.444407+00:00",
     "dynamic": "2026-01-12T21:30:03.986687+00:00",
     "market_direction": "2026-01-16T14:33:34.263097+00:00",
     "narratives": "2026-01-17T23:27:31.547964+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Derivatives Open Interest Climbs 15.7% Today",
   "dynamic_published_at": "2026-01-12T21:30:03.986667+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-01-18T06:42:35.834987+00:00",
-    "hour_utc": 6,
-    "answer_length": 2351
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-01-18T08:36:41.444421+00:00",
+    "hour_utc": 8,
+    "answer_length": 2346
   }
 }
