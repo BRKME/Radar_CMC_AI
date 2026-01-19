@@ -5,17 +5,17 @@
     "market_direction": "2026-01-19T14:37:25.729847+00:00",
     "narratives": "2026-01-19T16:40:07.189987+00:00",
     "events": "2026-01-18T19:23:14.977467+00:00",
-    "sentiment": "2026-01-19T06:52:58.461121+00:00",
+    "sentiment": "2026-01-19T18:43:47.040935+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
   "last_dynamic_question": "Derivatives Open Interest Climbs 15.7% Today",
   "dynamic_published_at": "2026-01-12T21:30:03.986667+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-01-19T16:40:07.190004+00:00",
-    "hour_utc": 16,
-    "answer_length": 2487
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-01-19T18:43:47.040950+00:00",
+    "hour_utc": 18,
+    "answer_length": 2152
   }
 }
