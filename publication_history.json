@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-01-22T13:08:49.397504+00:00",
+    "kols": "2026-01-23T13:05:36.326421+00:00",
     "dynamic": "2026-01-23T09:38:56.759597+00:00",
     "market_direction": "2026-01-23T08:41:33.991806+00:00",
     "narratives": "2026-01-22T23:30:21.713400+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Indonesia reclassifies crypto after $31B surge",
   "dynamic_published_at": "2026-01-23T09:38:56.759580+00:00",
   "last_publication": {
-    "question": "Indonesia reclassifies crypto after $31B surge",
-    "group": "DYNAMIC",
-    "published_at": "2026-01-23T09:38:56.759602+00:00",
-    "hour_utc": 9,
-    "answer_length": 3786
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-01-23T13:05:36.326439+00:00",
+    "hour_utc": 13,
+    "answer_length": 2788
   }
 }
