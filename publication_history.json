@@ -3,7 +3,7 @@
     "kols": "2026-01-24T14:28:12.625839+00:00",
     "dynamic": "2026-01-24T21:26:40.501262+00:00",
     "market_direction": "2026-01-24T22:28:38.906177+00:00",
-    "narratives": "2026-01-24T16:35:09.274814+00:00",
+    "narratives": "2026-01-24T23:27:46.731594+00:00",
     "events": "2026-01-24T19:23:27.607610+00:00",
     "sentiment": "2026-01-24T18:40:43.722519+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "UK FCA advances final crypto consumer consultation",
   "dynamic_published_at": "2026-01-24T21:26:40.501248+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-01-24T22:28:38.906194+00:00",
-    "hour_utc": 22,
-    "answer_length": 2223
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-01-24T23:27:46.731610+00:00",
+    "hour_utc": 23,
+    "answer_length": 2706
   }
 }
