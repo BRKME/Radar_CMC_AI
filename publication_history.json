@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-01-23T22:27:51.296925+00:00",
+    "kols": "2026-01-24T08:36:52.030023+00:00",
     "dynamic": "2026-01-23T21:30:13.252120+00:00",
     "market_direction": "2026-01-23T14:34:28.327886+00:00",
     "narratives": "2026-01-23T23:30:23.361366+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Gold hits records as BTC trades flat",
   "dynamic_published_at": "2026-01-23T21:30:13.252102+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-01-24T06:43:05.069662+00:00",
-    "hour_utc": 6,
-    "answer_length": 3537
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-01-24T08:36:52.030037+00:00",
+    "hour_utc": 8,
+    "answer_length": 3598
   }
 }
