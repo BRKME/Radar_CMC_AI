@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-01-24T14:28:12.625839+00:00",
+    "kols": "2026-01-25T13:37:51.179832+00:00",
     "dynamic": "2026-01-25T09:31:03.227670+00:00",
     "market_direction": "2026-01-25T08:37:29.845741+00:00",
     "narratives": "2026-01-24T23:27:46.731594+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Trump tariff threat pressures crypto ahead Fed",
   "dynamic_published_at": "2026-01-25T09:31:03.227653+00:00",
   "last_publication": {
-    "question": "Trump tariff threat pressures crypto ahead Fed",
-    "group": "DYNAMIC",
-    "published_at": "2026-01-25T09:31:03.227675+00:00",
-    "hour_utc": 9,
-    "answer_length": 3955
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-01-25T13:37:51.179845+00:00",
+    "hour_utc": 13,
+    "answer_length": 3242
   }
 }
