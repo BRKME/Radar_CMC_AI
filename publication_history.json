@@ -4,7 +4,7 @@
     "dynamic": "2026-01-26T09:43:51.199592+00:00",
     "market_direction": "2026-01-26T14:38:26.081620+00:00",
     "narratives": "2026-01-26T16:45:44.672348+00:00",
-    "events": "2026-01-25T19:24:15.990595+00:00",
+    "events": "2026-01-26T19:31:42.738844+00:00",
     "sentiment": "2026-01-26T18:50:21.032308+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "UK FCA enters final crypto rule phase",
   "dynamic_published_at": "2026-01-26T09:43:51.199577+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-01-26T18:50:21.032323+00:00",
-    "hour_utc": 18,
-    "answer_length": 3119
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-01-26T19:31:42.738863+00:00",
+    "hour_utc": 19,
+    "answer_length": 3585
   }
 }
