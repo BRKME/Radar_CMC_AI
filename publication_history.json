@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-01-26T13:06:41.757972+00:00",
     "dynamic": "2026-01-26T09:43:51.199592+00:00",
-    "market_direction": "2026-01-26T08:45:28.736879+00:00",
+    "market_direction": "2026-01-26T14:38:26.081620+00:00",
     "narratives": "2026-01-25T23:29:03.299657+00:00",
     "events": "2026-01-25T19:24:15.990595+00:00",
     "sentiment": "2026-01-26T06:51:51.189948+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "UK FCA enters final crypto rule phase",
   "dynamic_published_at": "2026-01-26T09:43:51.199577+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-01-26T13:06:41.757988+00:00",
-    "hour_utc": 13,
-    "answer_length": 2867
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-01-26T14:38:26.081636+00:00",
+    "hour_utc": 14,
+    "answer_length": 2306
   }
 }
