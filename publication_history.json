@@ -5,17 +5,17 @@
     "market_direction": "2026-01-26T22:32:10.476432+00:00",
     "narratives": "2026-01-26T23:31:38.568105+00:00",
     "events": "2026-01-26T19:31:42.738844+00:00",
-    "sentiment": "2026-01-26T18:50:21.032308+00:00",
+    "sentiment": "2026-01-27T06:50:21.289060+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
   "last_dynamic_question": "Dormant ETH whale deposits 50,000 ETH",
   "dynamic_published_at": "2026-01-26T21:32:47.055346+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-01-26T23:31:38.568121+00:00",
-    "hour_utc": 23,
-    "answer_length": 3599
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-01-27T06:50:21.289073+00:00",
+    "hour_utc": 6,
+    "answer_length": 2827
   }
 }
