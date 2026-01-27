@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-01-26T13:06:41.757972+00:00",
+    "kols": "2026-01-27T13:09:07.307846+00:00",
     "dynamic": "2026-01-27T09:42:14.779102+00:00",
     "market_direction": "2026-01-27T08:44:56.056485+00:00",
     "narratives": "2026-01-26T23:31:38.568105+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC slide triggers $750M long liquidations",
   "dynamic_published_at": "2026-01-27T09:42:14.779087+00:00",
   "last_publication": {
-    "question": "BTC slide triggers $750M long liquidations",
-    "group": "DYNAMIC",
-    "published_at": "2026-01-27T09:42:14.779107+00:00",
-    "hour_utc": 9,
-    "answer_length": 3689
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-01-27T13:09:07.307868+00:00",
+    "hour_utc": 13,
+    "answer_length": 2669
   }
 }
