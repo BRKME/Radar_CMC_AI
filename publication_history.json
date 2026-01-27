@@ -3,7 +3,7 @@
     "kols": "2026-01-27T14:39:21.772880+00:00",
     "dynamic": "2026-01-27T21:27:26.120538+00:00",
     "market_direction": "2026-01-27T22:31:19.737049+00:00",
-    "narratives": "2026-01-27T16:44:13.743468+00:00",
+    "narratives": "2026-01-27T23:31:46.542363+00:00",
     "events": "2026-01-27T19:35:06.037319+00:00",
     "sentiment": "2026-01-27T18:52:36.131883+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Binance launches Tesla equity perpetual futures",
   "dynamic_published_at": "2026-01-27T21:27:26.120521+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-01-27T22:31:19.737064+00:00",
-    "hour_utc": 22,
-    "answer_length": 2344
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-01-27T23:31:46.542379+00:00",
+    "hour_utc": 23,
+    "answer_length": 2573
   }
 }
