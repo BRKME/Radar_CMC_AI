@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-01-28T13:09:21.030872+00:00",
     "dynamic": "2026-01-28T21:38:37.136519+00:00",
-    "market_direction": "2026-01-28T22:36:56.029472+00:00",
+    "market_direction": "2026-01-29T08:53:53.751590+00:00",
     "narratives": "2026-01-28T23:35:00.149368+00:00",
     "events": "2026-01-28T19:37:50.324309+00:00",
     "sentiment": "2026-01-28T18:49:33.859827+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Survey finds 39% US merchants take crypto",
   "dynamic_published_at": "2026-01-28T21:38:37.136503+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-01-28T23:35:00.149381+00:00",
-    "hour_utc": 23,
-    "answer_length": 2471
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-01-29T08:53:53.751605+00:00",
+    "hour_utc": 8,
+    "answer_length": 2581
   }
 }
