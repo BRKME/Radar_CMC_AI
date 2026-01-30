@@ -3,7 +3,7 @@
     "kols": "2026-01-30T13:14:50.981877+00:00",
     "dynamic": "2026-01-30T09:50:35.662058+00:00",
     "market_direction": "2026-01-30T14:43:22.813693+00:00",
-    "narratives": "2026-01-29T23:34:59.501204+00:00",
+    "narratives": "2026-01-30T16:52:17.458329+00:00",
     "events": "2026-01-29T19:35:19.911197+00:00",
     "sentiment": "2026-01-29T18:59:58.174205+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Fed stance and shutdown risk hit BTC",
   "dynamic_published_at": "2026-01-30T09:50:35.662042+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-01-30T14:43:22.813709+00:00",
-    "hour_utc": 14,
-    "answer_length": 3142
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-01-30T16:52:17.458344+00:00",
+    "hour_utc": 16,
+    "answer_length": 3190
   }
 }
