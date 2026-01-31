@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-01-31T13:50:08.397128+00:00",
     "dynamic": "2026-01-31T09:37:12.856393+00:00",
-    "market_direction": "2026-01-31T08:40:43.113643+00:00",
+    "market_direction": "2026-01-31T14:33:05.371393+00:00",
     "narratives": "2026-01-30T23:34:43.539469+00:00",
     "events": "2026-01-30T19:38:59.108802+00:00",
     "sentiment": "2026-01-31T06:53:32.727225+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Trump selects pro-crypto Fed chair nominee",
   "dynamic_published_at": "2026-01-31T09:37:12.856376+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-01-31T13:50:08.397144+00:00",
-    "hour_utc": 13,
-    "answer_length": 3191
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-01-31T14:33:05.371413+00:00",
+    "hour_utc": 14,
+    "answer_length": 3106
   }
 }
