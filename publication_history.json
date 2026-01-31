@@ -5,17 +5,17 @@
     "market_direction": "2026-01-30T22:35:50.377134+00:00",
     "narratives": "2026-01-30T23:34:43.539469+00:00",
     "events": "2026-01-30T19:38:59.108802+00:00",
-    "sentiment": "2026-01-30T18:57:29.895805+00:00",
+    "sentiment": "2026-01-31T06:53:32.727225+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
   "last_dynamic_question": "Hong Kong regulators start reviewing stablecoin licenses",
   "dynamic_published_at": "2026-01-30T21:36:11.013503+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-01-30T23:34:43.539484+00:00",
-    "hour_utc": 23,
-    "answer_length": 2810
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-01-31T06:53:32.727248+00:00",
+    "hour_utc": 6,
+    "answer_length": 1906
   }
 }
