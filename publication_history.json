@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-01-31T13:50:08.397128+00:00",
     "dynamic": "2026-01-31T21:31:22.655476+00:00",
-    "market_direction": "2026-01-31T22:32:33.141469+00:00",
+    "market_direction": "2026-02-01T08:43:01.434278+00:00",
     "narratives": "2026-01-31T23:31:45.680908+00:00",
     "events": "2026-01-31T19:28:34.283924+00:00",
     "sentiment": "2026-01-31T18:44:58.243711+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "US shutdown and tariffs intensify crypto selloff",
   "dynamic_published_at": "2026-01-31T21:31:22.655461+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-01-31T23:31:45.680927+00:00",
-    "hour_utc": 23,
-    "answer_length": 2387
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-02-01T08:43:01.434294+00:00",
+    "hour_utc": 8,
+    "answer_length": 2832
   }
 }
