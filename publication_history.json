@@ -3,7 +3,7 @@
     "kols": "2026-02-02T13:19:51.359009+00:00",
     "dynamic": "2026-02-01T09:40:23.501894+00:00",
     "market_direction": "2026-02-02T14:52:30.065302+00:00",
-    "narratives": "2026-02-02T16:53:37.287765+00:00",
+    "narratives": "2026-02-02T23:38:54.642799+00:00",
     "events": "2026-02-01T19:32:36.690024+00:00",
     "sentiment": "2026-02-02T06:11:49.526646+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -14,8 +14,8 @@
   "last_publication": {
     "question": "What are the trending narratives?",
     "group": "narratives",
-    "published_at": "2026-02-02T16:53:37.287781+00:00",
-    "hour_utc": 16,
-    "answer_length": 2624
+    "published_at": "2026-02-02T23:38:54.642815+00:00",
+    "hour_utc": 23,
+    "answer_length": 2725
   }
 }
