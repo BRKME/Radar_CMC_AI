@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-01T13:08:09.700151+00:00",
+    "kols": "2026-02-02T13:19:51.359009+00:00",
     "dynamic": "2026-02-01T09:40:23.501894+00:00",
     "market_direction": "2026-02-02T08:56:51.801730+00:00",
     "narratives": "2026-02-01T16:40:28.259385+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Liquidation cascade tops $2.5B across crypto",
   "dynamic_published_at": "2026-02-01T09:40:23.501881+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-02-02T08:56:51.801746+00:00",
-    "hour_utc": 8,
-    "answer_length": 2793
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-02T13:19:51.359025+00:00",
+    "hour_utc": 13,
+    "answer_length": 2398
   }
 }
