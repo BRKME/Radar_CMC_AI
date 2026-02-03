@@ -4,7 +4,7 @@
     "dynamic": "2026-02-03T09:55:14.974529+00:00",
     "market_direction": "2026-02-03T14:54:53.152792+00:00",
     "narratives": "2026-02-02T23:38:54.642799+00:00",
-    "events": "2026-02-01T19:32:36.690024+00:00",
+    "events": "2026-02-03T19:07:33.512614+00:00",
     "sentiment": "2026-02-02T06:11:49.526646+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "NY prosecutors oppose GENIUS Act stablecoin law",
   "dynamic_published_at": "2026-02-03T09:55:14.974517+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-02-03T14:54:53.152807+00:00",
-    "hour_utc": 14,
-    "answer_length": 3425
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-02-03T19:07:33.512631+00:00",
+    "hour_utc": 19,
+    "answer_length": 2603
   }
 }
