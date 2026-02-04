@@ -3,7 +3,7 @@
     "kols": "2026-02-04T13:19:35.721522+00:00",
     "dynamic": "2026-02-04T21:42:19.349320+00:00",
     "market_direction": "2026-02-04T22:38:21.318603+00:00",
-    "narratives": "2026-02-03T23:36:58.645742+00:00",
+    "narratives": "2026-02-04T23:36:54.032854+00:00",
     "events": "2026-02-04T19:42:47.803032+00:00",
     "sentiment": "2026-02-02T06:11:49.526646+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Bitcoin-led rout erases $500B from crypto",
   "dynamic_published_at": "2026-02-04T21:42:19.349306+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-02-04T22:38:21.318618+00:00",
-    "hour_utc": 22,
-    "answer_length": 2861
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-02-04T23:36:54.032868+00:00",
+    "hour_utc": 23,
+    "answer_length": 3134
   }
 }
