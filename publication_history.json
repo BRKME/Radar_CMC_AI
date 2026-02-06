@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-02-06T13:18:46.464872+00:00",
     "dynamic": "2026-02-05T21:39:15.411084+00:00",
-    "market_direction": "2026-02-06T08:56:01.316298+00:00",
+    "market_direction": "2026-02-06T14:50:17.484080+00:00",
     "narratives": "2026-02-05T23:33:03.020721+00:00",
     "events": "2026-02-05T19:41:32.993415+00:00",
     "sentiment": "2026-02-06T06:00:50.108550+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "NFT market cap jumps 83% amid selloff",
   "dynamic_published_at": "2026-02-05T21:39:15.411067+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-02-06T13:18:46.464887+00:00",
-    "hour_utc": 13,
-    "answer_length": 3585
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-02-06T14:50:17.484097+00:00",
+    "hour_utc": 14,
+    "answer_length": 2974
   }
 }
