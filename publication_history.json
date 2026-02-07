@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-06T13:18:46.464872+00:00",
+    "kols": "2026-02-07T13:07:40.513148+00:00",
     "dynamic": "2026-02-07T09:40:17.311695+00:00",
     "market_direction": "2026-02-07T08:43:02.200032+00:00",
     "narratives": "2026-02-06T23:35:05.555267+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Crypto market rebounds after $2.5B liquidations",
   "dynamic_published_at": "2026-02-07T09:40:17.311680+00:00",
   "last_publication": {
-    "question": "Crypto market rebounds after $2.5B liquidations",
-    "group": "DYNAMIC",
-    "published_at": "2026-02-07T09:40:17.311699+00:00",
-    "hour_utc": 9,
-    "answer_length": 3350
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-07T13:07:40.513162+00:00",
+    "hour_utc": 13,
+    "answer_length": 3518
   }
 }
