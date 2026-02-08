@@ -3,7 +3,7 @@
     "kols": "2026-02-08T13:08:32.381110+00:00",
     "dynamic": "2026-02-08T09:39:50.194246+00:00",
     "market_direction": "2026-02-08T14:37:33.102964+00:00",
-    "narratives": "2026-02-07T23:39:50.991159+00:00",
+    "narratives": "2026-02-08T16:41:40.195613+00:00",
     "events": "2026-02-07T19:32:20.717554+00:00",
     "sentiment": "2026-02-07T18:49:30.171760+00:00",
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC ETFs see $330M inflows post selloff",
   "dynamic_published_at": "2026-02-08T09:39:50.194230+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-02-08T14:37:33.102981+00:00",
-    "hour_utc": 14,
-    "answer_length": 2847
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-02-08T16:41:40.195629+00:00",
+    "hour_utc": 16,
+    "answer_length": 2692
   }
 }
