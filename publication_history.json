@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-02-09T13:40:16.350348+00:00",
     "dynamic": "2026-02-08T21:36:28.260571+00:00",
-    "market_direction": "2026-02-08T22:37:13.742718+00:00",
+    "market_direction": "2026-02-09T22:49:48.931649+00:00",
     "narratives": "2026-02-09T16:04:02.098450+00:00",
     "events": "2026-02-09T19:27:56.418752+00:00",
     "sentiment": "2026-02-08T18:50:57.752704+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC short squeeze drives 7,132% liquidation imbalance",
   "dynamic_published_at": "2026-02-08T21:36:28.260557+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-02-09T19:27:56.418768+00:00",
-    "hour_utc": 19,
-    "answer_length": 4058
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-02-09T22:49:48.931666+00:00",
+    "hour_utc": 22,
+    "answer_length": 3166
   }
 }
