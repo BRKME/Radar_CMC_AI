@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-09T13:40:16.350348+00:00",
+    "kols": "2026-02-10T13:44:33.689292+00:00",
     "dynamic": "2026-02-10T09:06:31.593167+00:00",
     "market_direction": "2026-02-09T22:49:48.931649+00:00",
     "narratives": "2026-02-09T23:48:44.350826+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "China bans yuan stablecoins and most tokenization",
   "dynamic_published_at": "2026-02-10T09:06:31.593150+00:00",
   "last_publication": {
-    "question": "China bans yuan stablecoins and most tokenization",
-    "group": "DYNAMIC",
-    "published_at": "2026-02-10T09:06:31.593173+00:00",
-    "hour_utc": 9,
-    "answer_length": 4908
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-10T13:44:33.689309+00:00",
+    "hour_utc": 13,
+    "answer_length": 3072
   }
 }
