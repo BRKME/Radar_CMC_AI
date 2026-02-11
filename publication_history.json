@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-02-11T13:41:05.821267+00:00",
     "dynamic": "2026-02-11T21:41:35.799638+00:00",
-    "market_direction": "2026-02-10T22:52:39.872655+00:00",
+    "market_direction": "2026-02-11T22:39:27.764646+00:00",
     "narratives": "2026-02-11T16:20:09.645968+00:00",
     "events": "2026-02-11T19:17:15.651205+00:00",
     "sentiment": "2026-02-11T18:03:53.643195+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Hong Kong nears first regulated stablecoin licenses",
   "dynamic_published_at": "2026-02-11T21:41:35.799620+00:00",
   "last_publication": {
-    "question": "Hong Kong nears first regulated stablecoin licenses",
-    "group": "DYNAMIC",
-    "published_at": "2026-02-11T21:41:35.799643+00:00",
-    "hour_utc": 21,
-    "answer_length": 4098
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-02-11T22:39:27.764668+00:00",
+    "hour_utc": 22,
+    "answer_length": 2498
   }
 }
