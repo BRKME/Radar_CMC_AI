@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-10T13:44:33.689292+00:00",
+    "kols": "2026-02-11T13:41:05.821267+00:00",
     "dynamic": "2026-02-11T09:00:41.409633+00:00",
     "market_direction": "2026-02-10T22:52:39.872655+00:00",
     "narratives": "2026-02-10T23:49:17.679145+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Crypto fear index flashes extreme fear zone",
   "dynamic_published_at": "2026-02-11T09:00:41.409621+00:00",
   "last_publication": {
-    "question": "Crypto fear index flashes extreme fear zone",
-    "group": "DYNAMIC",
-    "published_at": "2026-02-11T09:00:41.409639+00:00",
-    "hour_utc": 9,
-    "answer_length": 3239
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-11T13:41:05.821286+00:00",
+    "hour_utc": 13,
+    "answer_length": 3407
   }
 }
