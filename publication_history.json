@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-12T13:39:26.659981+00:00",
+    "kols": "2026-02-13T13:20:28.178439+00:00",
     "dynamic": "2026-02-13T09:57:03.658184+00:00",
     "market_direction": "2026-02-13T08:55:45.500458+00:00",
     "narratives": "2026-02-12T23:38:54.401082+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "CFTC adds crypto leaders to innovation panel",
   "dynamic_published_at": "2026-02-13T09:57:03.658166+00:00",
   "last_publication": {
-    "question": "CFTC adds crypto leaders to innovation panel",
-    "group": "DYNAMIC",
-    "published_at": "2026-02-13T09:57:03.658188+00:00",
-    "hour_utc": 9,
-    "answer_length": 3433
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-13T13:20:28.178455+00:00",
+    "hour_utc": 13,
+    "answer_length": 3290
   }
 }
