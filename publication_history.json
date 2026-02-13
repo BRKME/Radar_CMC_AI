@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-02-12T13:39:26.659981+00:00",
-    "dynamic": "2026-02-12T21:42:16.418027+00:00",
+    "dynamic": "2026-02-13T09:57:03.658184+00:00",
     "market_direction": "2026-02-13T08:55:45.500458+00:00",
     "narratives": "2026-02-12T23:38:54.401082+00:00",
     "events": "2026-02-12T19:14:57.795770+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
-  "last_dynamic_question": "Hong Kong unveils timeline for stablecoin licenses",
-  "dynamic_published_at": "2026-02-12T21:42:16.418010+00:00",
+  "last_dynamic_question": "CFTC adds crypto leaders to innovation panel",
+  "dynamic_published_at": "2026-02-13T09:57:03.658166+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-02-13T08:55:45.500479+00:00",
-    "hour_utc": 8,
-    "answer_length": 2783
+    "question": "CFTC adds crypto leaders to innovation panel",
+    "group": "DYNAMIC",
+    "published_at": "2026-02-13T09:57:03.658188+00:00",
+    "hour_utc": 9,
+    "answer_length": 3433
   }
 }
