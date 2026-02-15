@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-14T13:07:51.419439+00:00",
+    "kols": "2026-02-15T13:09:47.876309+00:00",
     "dynamic": "2026-02-15T09:41:11.034149+00:00",
     "market_direction": "2026-02-15T08:44:38.507879+00:00",
     "narratives": "2026-02-14T23:33:53.147473+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Russia central bank studies ruble stablecoin",
   "dynamic_published_at": "2026-02-15T09:41:11.034136+00:00",
   "last_publication": {
-    "question": "Russia central bank studies ruble stablecoin",
-    "group": "DYNAMIC",
-    "published_at": "2026-02-15T09:41:11.034154+00:00",
-    "hour_utc": 9,
-    "answer_length": 3674
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-15T13:09:47.876326+00:00",
+    "hour_utc": 13,
+    "answer_length": 3313
   }
 }
