@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-02-15T13:09:47.876309+00:00",
-    "dynamic": "2026-02-15T09:41:11.034149+00:00",
+    "dynamic": "2026-02-15T21:33:56.881035+00:00",
     "market_direction": "2026-02-15T14:36:38.859769+00:00",
     "narratives": "2026-02-15T16:41:38.489062+00:00",
     "events": "2026-02-15T19:33:53.864992+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
-  "last_dynamic_question": "Russia central bank studies ruble stablecoin",
-  "dynamic_published_at": "2026-02-15T09:41:11.034136+00:00",
+  "last_dynamic_question": "BTC and altcoins rebound after soft CPI",
+  "dynamic_published_at": "2026-02-15T21:33:56.881023+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-02-15T19:33:53.865007+00:00",
-    "hour_utc": 19,
-    "answer_length": 3377
+    "question": "BTC and altcoins rebound after soft CPI",
+    "group": "DYNAMIC",
+    "published_at": "2026-02-15T21:33:56.881040+00:00",
+    "hour_utc": 21,
+    "answer_length": 3885
   }
 }
