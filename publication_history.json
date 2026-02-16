@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-15T13:09:47.876309+00:00",
+    "kols": "2026-02-16T13:22:38.008949+00:00",
     "dynamic": "2026-02-15T21:33:56.881035+00:00",
     "market_direction": "2026-02-16T09:00:14.078838+00:00",
     "narratives": "2026-02-15T23:35:56.578317+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC and altcoins rebound after soft CPI",
   "dynamic_published_at": "2026-02-15T21:33:56.881023+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-02-16T09:00:14.078860+00:00",
-    "hour_utc": 8,
-    "answer_length": 2601
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-16T13:22:38.008967+00:00",
+    "hour_utc": 13,
+    "answer_length": 3913
   }
 }
