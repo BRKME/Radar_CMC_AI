@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-18T08:57:45.806567+00:00",
+    "kols": "2026-02-18T13:25:13.612810+00:00",
     "dynamic": "2026-02-18T09:59:02.556861+00:00",
     "market_direction": "2026-02-17T22:42:16.127172+00:00",
     "narratives": "2026-02-17T23:38:16.978488+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "US government amasses $22.5B BTC reserve",
   "dynamic_published_at": "2026-02-18T09:59:02.556846+00:00",
   "last_publication": {
-    "question": "US government amasses $22.5B BTC reserve",
-    "group": "DYNAMIC",
-    "published_at": "2026-02-18T09:59:02.556866+00:00",
-    "hour_utc": 9,
-    "answer_length": 3943
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-18T13:25:13.612826+00:00",
+    "hour_utc": 13,
+    "answer_length": 3576
   }
 }
