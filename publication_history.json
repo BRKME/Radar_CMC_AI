@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-17T13:23:25.999784+00:00",
+    "kols": "2026-02-18T08:57:45.806567+00:00",
     "dynamic": "2026-02-17T21:47:35.864143+00:00",
     "market_direction": "2026-02-17T22:42:16.127172+00:00",
     "narratives": "2026-02-17T23:38:16.978488+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Bitcoin ETFs log 4-week outflow streak",
   "dynamic_published_at": "2026-02-17T21:47:35.864125+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-02-18T06:07:35.981982+00:00",
-    "hour_utc": 6,
-    "answer_length": 3399
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-18T08:57:45.806583+00:00",
+    "hour_utc": 8,
+    "answer_length": 3525
   }
 }
