@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-02-18T13:25:13.612810+00:00",
-    "dynamic": "2026-02-18T09:59:02.556861+00:00",
+    "dynamic": "2026-02-18T21:42:22.485139+00:00",
     "market_direction": "2026-02-17T22:42:16.127172+00:00",
     "narratives": "2026-02-18T16:01:21.630899+00:00",
     "events": "2026-02-18T19:07:40.260043+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
-  "last_dynamic_question": "US government amasses $22.5B BTC reserve",
-  "dynamic_published_at": "2026-02-18T09:59:02.556846+00:00",
+  "last_dynamic_question": "BTC derivatives open interest sees steepest drop",
+  "dynamic_published_at": "2026-02-18T21:42:22.485121+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-02-18T19:07:40.260057+00:00",
-    "hour_utc": 19,
-    "answer_length": 4076
+    "question": "BTC derivatives open interest sees steepest drop",
+    "group": "DYNAMIC",
+    "published_at": "2026-02-18T21:42:22.485143+00:00",
+    "hour_utc": 21,
+    "answer_length": 3268
   }
 }
