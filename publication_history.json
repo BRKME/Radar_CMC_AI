@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-02-19T13:26:59.130328+00:00",
-    "dynamic": "2026-02-19T21:41:44.894376+00:00",
+    "dynamic": "2026-02-20T09:53:19.241807+00:00",
     "market_direction": "2026-02-20T08:53:42.690642+00:00",
     "narratives": "2026-02-19T23:39:32.115445+00:00",
     "events": "2026-02-19T19:43:36.448892+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2025-12-14T13:34:12.765179+00:00",
     "bullish": "2025-12-14T05:29:18.868755+00:00"
   },
-  "last_dynamic_question": "CFTC asserts federal authority over prediction markets",
-  "dynamic_published_at": "2026-02-19T21:41:44.894364+00:00",
+  "last_dynamic_question": "Strait tensions drive crypto fear index lower",
+  "dynamic_published_at": "2026-02-20T09:53:19.241791+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-02-20T08:53:42.690658+00:00",
-    "hour_utc": 8,
-    "answer_length": 3046
+    "question": "Strait tensions drive crypto fear index lower",
+    "group": "DYNAMIC",
+    "published_at": "2026-02-20T09:53:19.241811+00:00",
+    "hour_utc": 9,
+    "answer_length": 3078
   }
 }
