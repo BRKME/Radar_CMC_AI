@@ -1,7 +1,11 @@
 """
 formatting.py - Модуль улучшенного форматирования для Telegram и Twitter
-Version: 3.2.1
+Version: 3.3.0
 Senior QA Approved - Production Ready
+
+ОБНОВЛЕНО В v3.3.0:
+- Импорт get_twitter_length из utils.py (унификация)
+- Удалена локальная копия функции
 
 ОБНОВЛЕНО В v3.2.1:
 - FIX: Alpha Take теперь попадает в Telegram!
@@ -27,13 +31,16 @@ import re
 import time
 import logging
 
+# Импорт общих утилит
+from utils import get_twitter_length, safe_truncate
+
 logger = logging.getLogger(__name__)
 
 # ========================================
 # ВЕРСИЯ И НАСТРОЙКИ
 # ========================================
 
-__version__ = "3.2.1"
+__version__ = "3.3.0"
 
 # НАСТРОЙКА РЕЖИМА TWITTER
 TWITTER_MODE = "thread"  # "thread" или "single"
@@ -83,6 +90,8 @@ CONTEXT_PATTERNS = [
 CRYPTO_PRICE_PATTERN = re.compile(r'^[A-Z]{2,10}\s*\([+-]?\d')
 LIST_ITEM_PATTERN = re.compile(r'^[\-•\*]\s+|^\d+\.\s+')
 
+# get_twitter_length импортируется из utils.py
+
 # ========================================
 # ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
 # ========================================
@@ -100,20 +109,7 @@ def safe_str(value, default="", max_length=None):
     return result
 
 
-def get_twitter_length(text):
-    """Вычисляет длину текста для Twitter (emoji = 2 символа)"""
-    if not text:
-        return 0
-    emoji_pattern = re.compile("["
-        "\U0001F600-\U0001F64F"
-        "\U0001F300-\U0001F5FF"
-        "\U0001F680-\U0001F6FF"
-        "\U0001F1E0-\U0001F1FF"
-        "\U00002702-\U000027B0"
-        "\U000024C2-\U0001F251"
-        "]+", flags=re.UNICODE)
-    emoji_count = len(emoji_pattern.findall(text))
-    return len(text) + emoji_count
+# get_twitter_length теперь импортируется из utils.py (v3.3.0)
 
 
 def get_context_emojis(text, max_count=MAX_EMOJI_COUNT):

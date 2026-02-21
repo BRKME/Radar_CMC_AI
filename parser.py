@@ -1,12 +1,14 @@
 """
-Парсер для CoinMarketCap AI - VERSION 2.0.0 (with Alpha Take)
+Парсер для CoinMarketCap AI - VERSION 2.1.0 (with Alpha Take)
 ✅ 24/7 публикации по умному расписанию
 ✅ Отслеживание истории публикаций
 ✅ Динамические слоты с fallback на самый старый вопрос
 ✅ Группировка вариаций вопросов (up/down market)
 ✅ Retry логика и обработка ошибок
 ✅ Полное логирование и обработка edge cases
-✅ OpenAI Alpha Take генерация (NEW в v2.0.0)
+✅ OpenAI Alpha Take генерация (NEW в v2.1.0)
+✅ Unified utils.py (NEW в v2.1.0)
+✅ Bullish/Altcoins в расписании (NEW в v2.1.0)
 """
 
 import asyncio
@@ -35,10 +37,13 @@ except ImportError:
     HAS_FCNTL = False
     # На Windows fcntl недоступен - используем альтернативный механизм
 
+# Импорт общих утилит (v2.1.0)
+from utils import get_twitter_length, safe_truncate, truncate_to_tweet_length
+
 # Импорт модуля улучшенного форматирования
 from formatting import send_improved, __version__ as formatting_version
 
-# Импорт OpenAI интеграции (NEW в v2.0.0)
+# Импорт OpenAI интеграции (NEW в v2.1.0)
 from openai_cmc_integration import (
     get_ai_alpha_take,
     enhance_caption_with_alpha_take,
@@ -73,7 +78,7 @@ TWITTER_BEARER_TOKEN = os.getenv('TWITTER_BEARER_TOKEN')
 # Включить/выключить Twitter (для тестирования)
 TWITTER_ENABLED = os.getenv('TWITTER_ENABLED', 'true').lower() == 'true'
 
-# OpenAI Alpha Take настройки (NEW в v2.0.0)
+# OpenAI Alpha Take настройки (NEW в v2.1.0)
 ALPHA_TAKE_ENABLED = os.getenv('ALPHA_TAKE_ENABLED', 'true').lower() == 'true'
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
@@ -82,6 +87,7 @@ GITHUB_IMAGES_URL = "https://raw.githubusercontent.com/BRKME/coinmarketcap-parse
 IMAGE_FILES = [f"{i}.jpg" for i in range(10, 223)]  # 10.jpg до 222.jpg (213 картинок)
 
 # Расписание публикаций (час UTC : тип вопроса)
+# v2.1.0: Добавлены bullish (10:00) и altcoins (15:00)
 SCHEDULE = {
     0: None,
     1: None,
@@ -89,24 +95,24 @@ SCHEDULE = {
     3: None,
     4: None,
     5: None,
-    6: "sentiment",      # 06:30 (запуск в 06:05, но логически 06:30)
+    6: "sentiment",      # 06:00 UTC
     7: None,
     8: "market_direction",  # 08:00
-    9: "DYNAMIC",        # 09:30
-    10: None,
+    9: "DYNAMIC",        # 09:00
+    10: "bullish",       # 10:00 - NEW!
     11: None,
     12: None,
     13: "kols",          # 13:00
-    14: "market_direction",  # 14:30
-    15: None,
+    14: "market_direction",  # 14:00
+    15: "altcoins",      # 15:00 - NEW!
     16: "narratives",    # 16:00
     17: None,
     18: "sentiment",     # 18:00
-    19: "events",        # 19:30
+    19: "events",        # 19:00
     20: None,
     21: "DYNAMIC",       # 21:00
-    22: "market_direction",  # 22:30
-    23: "narratives"     # 23:30
+    22: "market_direction",  # 22:00
+    23: "narratives"     # 23:00
 }
 
 # Группы вопросов (для обработки вариаций)
@@ -275,25 +281,7 @@ def release_lock(lock_file, lock_path):
     except Exception as e:
         logger.warning(f"⚠️ Не удалось удалить lock-файл: {e}")
 
-def get_twitter_length(text):
-    """
-    Вычисляет длину текста как Twitter (emoji = 2 символа) - FIX BUG #23
-    """
-    if not text:
-        return 0
-    
-    # Паттерн для emoji
-    emoji_pattern = re.compile("["
-        "\U0001F600-\U0001F64F"  # emoticons
-        "\U0001F300-\U0001F5FF"  # symbols & pictographs
-        "\U0001F680-\U0001F6FF"  # transport & map
-        "\U0001F1E0-\U0001F1FF"  # flags
-        "\U00002702-\U000027B0"  # dingbats
-        "\U000024C2-\U0001F251"  # enclosed characters
-        "]+", flags=re.UNICODE)
-    
-    emoji_count = len(emoji_pattern.findall(text))
-    return len(text) + emoji_count  # Каждый emoji добавляет +1
+# get_twitter_length теперь импортируется из utils.py (v2.1.0)
 
 def validate_telegram_credentials():
     """Проверяет что Telegram токены валидные - FIX BUG #20"""
@@ -1390,7 +1378,7 @@ async def main_parser():
     browser = None
     try:
         logger.info("="*70)
-        logger.info("🚀 ЗАПУСК ПАРСЕРА COINMARKETCAP AI v2.0.0")
+        logger.info("🚀 ЗАПУСК ПАРСЕРА COINMARKETCAP AI v2.1.0")
         logger.info("="*70)
         
         async with async_playwright() as p:
@@ -1618,7 +1606,7 @@ def main():
             sys.exit(2)  # Exit code 2 = already running
         
         logger.info("\n" + "="*70)
-        logger.info("🤖 COINMARKETCAP AI PARSER v2.0.0 - WITH ALPHA TAKE")
+        logger.info("🤖 COINMARKETCAP AI PARSER v2.1.0 - WITH ALPHA TAKE")
         logger.info("="*70)
         logger.info(f"📅 Дата запуска: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')} UTC")
         logger.info(f"💻 Платформа: {platform.system()} {platform.release()}")

@@ -1,13 +1,11 @@
 """
 OpenAI Integration для CMC AI - Alpha Take для текстовых новостей
-Version: 2.5.8 - Triple-layer narratives cleanup
+Version: 2.6.0 - Unified utils import
 Генерирует Alpha Take, Context Tag и Hashtags для новостей CoinMarketCap AI
 
-ОБНОВЛЕНО В v2.5.8:
-- FIX: Улучшен regex (поддержка типографских апострофов)
-- FIX: Очистка в 3 местах (extract_tldr + clean_question + enhance_caption)
-- FIX: Универсальный паттерн для narratives/cryptos/events
-- TESTED: Гарантированное удаление вводных строк CMC
+ОБНОВЛЕНО В v2.6.0:
+- Импорт get_twitter_length и safe_truncate из utils.py
+- Удалены дублирующиеся функции
 """
 
 import os
@@ -15,56 +13,12 @@ import logging
 import re
 from openai import OpenAI
 
+# Импорт общих утилит
+from utils import get_twitter_length, safe_truncate
+
 logger = logging.getLogger(__name__)
 
-
-def get_twitter_length(text):
-    """Вычисляет длину текста для Twitter (emoji = 2 символа)"""
-    if not text:
-        return 0
-    emoji_pattern = re.compile("["
-        "\U0001F600-\U0001F64F"
-        "\U0001F300-\U0001F5FF"
-        "\U0001F680-\U0001F6FF"
-        "\U0001F1E0-\U0001F1FF"
-        "\U00002702-\U000027B0"
-        "\U000024C2-\U0001F251"
-        "]+", flags=re.UNICODE)
-    emoji_count = len(emoji_pattern.findall(text))
-    return len(text) + emoji_count
-
-
-def safe_truncate(text, max_length, suffix="..."):
-    """Безопасно обрезает текст учитывая emoji и слова"""
-    if not text:
-        return ""
-    
-    if get_twitter_length(text) <= max_length:
-        return text
-    
-    suffix_length = get_twitter_length(suffix)
-    target = max_length - suffix_length
-    current = text
-    
-    while get_twitter_length(current) > target and len(current) > 0:
-        current = current[:-1]
-    
-    if not current:
-        while get_twitter_length(text) > max_length and len(text) > 0:
-            text = text[:-1]
-        return text
-    
-    if current[-1] not in (' ', '\n'):
-        words = current.rsplit(' ', 1)
-        if len(words) > 1:
-            current = words[0]
-    
-    result = current.rstrip() + suffix
-    
-    if get_twitter_length(result) > max_length:
-        return safe_truncate(text, max_length, "")
-    
-    return result
+# get_twitter_length и safe_truncate импортируются из utils.py
 
 # OpenAI API Key
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
@@ -74,7 +28,7 @@ client = None
 if OPENAI_API_KEY:
     try:
         client = OpenAI(api_key=OPENAI_API_KEY)
-        logger.info("✓ OpenAI client initialized for CMC AI v2.5.8")
+        logger.info("✓ OpenAI client initialized for CMC AI v2.6.0")
     except Exception as e:
         logger.error(f"✗ Failed to initialize OpenAI client: {e}")
         client = None
