@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-02-21T13:06:44.342605+00:00",
-    "dynamic": "2026-02-21T09:39:20.431210+00:00",
+    "dynamic": "2026-02-21T21:32:37.762625+00:00",
     "market_direction": "2026-02-21T14:35:15.614461+00:00",
     "narratives": "2026-02-21T16:40:43.821005+00:00",
     "events": "2026-02-21T19:33:13.574317+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-02-21T15:34:34.159617+00:00",
     "bullish": "2026-02-21T10:36:15.581102+00:00"
   },
-  "last_dynamic_question": "BTC options expiry triggers wave of liquidations",
-  "dynamic_published_at": "2026-02-21T09:39:20.431192+00:00",
+  "last_dynamic_question": "Lagarde exit reshapes ECB crypto agenda",
+  "dynamic_published_at": "2026-02-21T21:32:37.762609+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-02-21T19:33:13.574332+00:00",
-    "hour_utc": 19,
-    "answer_length": 4279
+    "question": "Lagarde exit reshapes ECB crypto agenda",
+    "group": "DYNAMIC",
+    "published_at": "2026-02-21T21:32:37.762631+00:00",
+    "hour_utc": 21,
+    "answer_length": 3514
   }
 }
