@@ -208,6 +208,57 @@ def truncate_to_tweet_length(text: str, max_length: int = 280) -> str:
     return safe_truncate(text, max_length)
 
 
+def sanitize_hashtags(hashtags: str, max_count: int = 2, max_length: int = 10) -> str:
+    """
+    Фильтрует и форматирует хэштеги.
+    
+    Правила:
+    1. Максимум max_count хэштегов (default: 2)
+    2. Каждый хэштег не длиннее max_length символов БЕЗ # (default: 10)
+    3. Длинные хэштеги пропускаются (не обрезаются!)
+    4. Приоритет: короткие
+    
+    Args:
+        hashtags: Строка с хэштегами (например "#Bitcoin #MarketSentiment #Crypto")
+        max_count: Максимальное количество хэштегов
+        max_length: Максимальная длина одного хэштега (БЕЗ #)
+        
+    Returns:
+        str: Отфильтрованные хэштеги
+        
+    Examples:
+        "#MarketSentiment #Bitcoin #ETH" -> "#Bitcoin #ETH" (MarketSentiment слишком длинный)
+        "#BTC #ETH #SOL" -> "#BTC #ETH" (max 2)
+    """
+    if not hashtags:
+        return ""
+    
+    # Разбиваем на отдельные хэштеги
+    tags = [tag.strip() for tag in hashtags.split() if tag.startswith('#')]
+    
+    if not tags:
+        return ""
+    
+    # Фильтруем по длине (длина БЕЗ символа #)
+    valid_tags = []
+    for tag in tags:
+        tag_length = len(tag) - 1  # Длина без #
+        if tag_length <= max_length:
+            valid_tags.append(tag)
+        else:
+            logger.debug(f"Skipping long hashtag: {tag} ({tag_length} chars > {max_length})")
+    
+    # Берём только max_count хэштегов
+    result_tags = valid_tags[:max_count]
+    
+    result = ' '.join(result_tags)
+    
+    if len(tags) != len(result_tags):
+        logger.info(f"Hashtags filtered: '{hashtags}' → '{result}'")
+    
+    return result
+
+
 # ══════════════════════════════════════════════════════════════════
 # ТЕСТЫ (для отладки)
 # ══════════════════════════════════════════════════════════════════

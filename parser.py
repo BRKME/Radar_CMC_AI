@@ -130,38 +130,39 @@ QUESTION_GROUPS = {
 }
 
 # Маппинг вопросов на заголовки и хэштеги для Telegram
+# v2.1.0: Максимум 2 коротких хэштега
 QUESTION_DISPLAY_CONFIG = {
     "What are KOLs discussing?": {
         "title": "Crypto Insights",
-        "hashtags": "#CryptoTwitter #KOLs #Alpha"
+        "hashtags": "#Crypto #Alpha"
     },
     "What is the market sentiment?": {
         "title": "Daily Market Sentiment",
-        "hashtags": "#FearAndGreed #CryptoSentiment #Bitcoin"
+        "hashtags": "#Bitcoin #Sentiment"
     },
     "What upcoming events may impact crypto?": {
         "title": "Upcoming Crypto Events",
-        "hashtags": "#CryptoEvents #CryptoCalendar"
+        "hashtags": "#Crypto #Events"
     },
     "What cryptos are showing bullish momentum?": {
         "title": "Bullish Crypto Watchlist",
-        "hashtags": "#Altseason #Bullish #CryptoGems"
+        "hashtags": "#Altcoins #Bullish"
     },
     "What are the trending narratives?": {
         "title": "Trending Crypto Narratives",
-        "hashtags": "#CryptoNarratives #RWA #AIcrypto"
+        "hashtags": "#Crypto #Trends"
     },
     "Why is the market up today?": {
         "title": "Market Analysis",
-        "hashtags": "#Bitcoin #CryptoMarket #BullRun"
+        "hashtags": "#Bitcoin #BullRun"
     },
     "Why is the market down today?": {
         "title": "Market Analysis",
-        "hashtags": "#Bitcoin #CryptoMarket #Correction"
+        "hashtags": "#Bitcoin #Markets"
     },
     "Are altcoins outperforming Bitcoin?": {
         "title": "Altcoin Performance",
-        "hashtags": "#Altcoins #Bitcoin #AltcoinSeason"
+        "hashtags": "#Altcoins #Bitcoin"
     }
 }
 

@@ -1,7 +1,12 @@
 """
 OpenAI Integration для CMC AI - Alpha Take для текстовых новостей
-Version: 2.6.0 - Unified utils import
+Version: 2.7.0 - Hashtags on top, max 2 short tags
 Генерирует Alpha Take, Context Tag и Hashtags для новостей CoinMarketCap AI
+
+ОБНОВЛЕНО В v2.7.0:
+- Хэштеги теперь вверху caption
+- Максимум 2 хэштега
+- Фильтрация длинных хэштегов (>15 символов)
 
 ОБНОВЛЕНО В v2.6.0:
 - Импорт get_twitter_length и safe_truncate из utils.py
@@ -14,7 +19,7 @@ import re
 from openai import OpenAI
 
 # Импорт общих утилит
-from utils import get_twitter_length, safe_truncate
+from utils import get_twitter_length, safe_truncate, sanitize_hashtags
 
 logger = logging.getLogger(__name__)
 
@@ -103,8 +108,9 @@ Choose based on:
 2. How does it affect prices? (Tone)
 
 HASHTAGS
-- Maximum 3 hashtags (STRICT LIMIT)
-- Most relevant coins/topics only
+- Maximum 2 hashtags (STRICT LIMIT)
+- Keep hashtags SHORT (max 10 characters each, no long words like #MarketSentiment)
+- Use simple tags: #Bitcoin #Crypto #ETH #BTC #DeFi #NFT #Altcoins #Trading
 - Format: #CamelCase
 
 EXAMPLES
@@ -112,17 +118,17 @@ EXAMPLES
 Input: "Bitcoin ETF inflows hit $500M in one day"
 ALPHA_TAKE: Massive institutional buying through ETFs typically pushes Bitcoin price up 5-10% within days as supply gets absorbed from exchanges.
 CONTEXT_TAG: Strong positive
-HASHTAGS: #Bitcoin #ETFs #InstitutionalBuying
+HASHTAGS: #Bitcoin #ETFs
 
 Input: "SEC delays decision on Ethereum ETF"  
 ALPHA_TAKE: Delays create short-term selling pressure as traders exit positions, expect ETH to drop 3-5% until next decision date.
 CONTEXT_TAG: Medium negative
-HASHTAGS: #Ethereum #SEC #Regulation
+HASHTAGS: #Ethereum #SEC
 
 Input: "Solana network experiences minor slowdown"
 ALPHA_TAKE: Small technical issues usually cause brief 2-3% dips but network recovers quickly, no lasting price impact expected.
 CONTEXT_TAG: Low negative
-HASHTAGS: #Solana #Network #Tech
+HASHTAGS: #Solana #Crypto
 
 Remember:
 - Write for regular people, not finance experts
@@ -255,9 +261,10 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
     """
     Добавляет Alpha Take к caption для Telegram
     
-    v2.4.0: Simple clear analysis with [Strength] [Tone] Context Tag
+    v2.7.0: Хэштеги вверху, максимум 2, не длинные
     
     Format:
+    <hashtags>
     <title>
     
     <original_text_summary>
@@ -266,8 +273,6 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
     <alpha_take>
     
     Context: <context_tag>
-    
-    <hashtags>
     
     Args:
         title: Заголовок поста
@@ -279,15 +284,19 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
         str: Enhanced caption с Alpha Take
     """
     if not ai_result:
-        # Без AI - старый формат
-        return f"<b>{title}</b>\n\n{text}\n\n{hashtags_fallback}"
+        # Без AI - старый формат (хэштеги вверху)
+        clean_hashtags = sanitize_hashtags(hashtags_fallback, max_count=2, max_length=10)
+        return f"{clean_hashtags}\n<b>{title}</b>\n\n{text}"
     
     alpha_take = ai_result.get('alpha_take', '')
     context_tag = ai_result.get('context_tag', '')
     hashtags_ai = ai_result.get('hashtags', '')
     
     # Используем AI хэштеги если есть, иначе fallback
-    hashtags = hashtags_ai if hashtags_ai else hashtags_fallback
+    hashtags_raw = hashtags_ai if hashtags_ai else hashtags_fallback
+    
+    # Применяем политику хэштегов: max 2, короткие (<=10 символов без #)
+    hashtags = sanitize_hashtags(hashtags_raw, max_count=2, max_length=10)
     
     # Убираем из текста блок "Alpha Take" если он там есть (для избежания дублирования)
     if 'Alpha Take' in text:
@@ -328,8 +337,9 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
     if len(text) > max_original_text:
         text = text[:max_original_text-3] + "..."
     
-    # Формируем enhanced caption
-    caption = f"<b>{title}</b>\n\n"
+    # Формируем enhanced caption (хэштеги ВВЕРХУ)
+    caption = f"{hashtags}\n" if hashtags else ""
+    caption += f"<b>{title}</b>\n\n"
     
     # Оригинальный контент (очищенный от дублей)
     caption += f"{text}\n\n"
@@ -340,10 +350,7 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
     
     # Context Tag если есть
     if context_tag:
-        caption += f"<i>Context: {context_tag}</i>\n\n"
-    
-    # Хештеги (AI или fallback)
-    caption += f"{hashtags}"
+        caption += f"<i>Context: {context_tag}</i>"
     
     # Проверка на длину Telegram
     if len(caption) > 4000:
@@ -352,13 +359,13 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
         max_original_text = 400
         text = text[:max_original_text-3] + "..."
         
-        caption = f"<b>{title}</b>\n\n"
+        caption = f"{hashtags}\n" if hashtags else ""
+        caption += f"<b>{title}</b>\n\n"
         caption += f"{text}\n\n"
         caption += f"◼️ <b>Alpha Take</b>\n"
         caption += f"{alpha_take}\n\n"
         if context_tag:
-            caption += f"<i>Context: {context_tag}</i>\n\n"
-        caption += f"{hashtags}"
+            caption += f"<i>Context: {context_tag}</i>"
     
     return caption
 
