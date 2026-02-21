@@ -5,17 +5,17 @@
     "market_direction": "2026-02-21T14:35:15.614461+00:00",
     "narratives": "2026-02-21T16:40:43.821005+00:00",
     "events": "2026-02-20T19:41:12.958873+00:00",
-    "sentiment": "2026-02-21T06:55:41.567168+00:00",
+    "sentiment": "2026-02-21T18:49:24.064059+00:00",
     "altcoins": "2026-02-21T15:34:34.159617+00:00",
     "bullish": "2026-02-21T10:36:15.581102+00:00"
   },
   "last_dynamic_question": "BTC options expiry triggers wave of liquidations",
   "dynamic_published_at": "2026-02-21T09:39:20.431192+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-02-21T16:40:43.821021+00:00",
-    "hour_utc": 16,
-    "answer_length": 2625
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-02-21T18:49:24.064076+00:00",
+    "hour_utc": 18,
+    "answer_length": 2784
   }
 }
