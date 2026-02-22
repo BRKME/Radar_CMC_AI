@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-22T08:42:53.473256+00:00",
+    "kols": "2026-02-22T13:08:40.611689+00:00",
     "dynamic": "2026-02-22T09:40:42.462160+00:00",
     "market_direction": "2026-02-21T22:33:51.940219+00:00",
     "narratives": "2026-02-21T23:33:20.843558+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC whale exchange share hits 2015 high",
   "dynamic_published_at": "2026-02-22T09:40:42.462143+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-02-22T10:35:56.528206+00:00",
-    "hour_utc": 10,
-    "answer_length": 2451
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-22T13:08:40.611703+00:00",
+    "hour_utc": 13,
+    "answer_length": 4014
   }
 }
