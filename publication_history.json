@@ -4,7 +4,7 @@
     "dynamic": "2026-02-23T09:00:43.722305+00:00",
     "market_direction": "2026-02-23T14:57:44.550834+00:00",
     "narratives": "2026-02-23T16:03:45.689401+00:00",
-    "events": "2026-02-22T19:33:54.409152+00:00",
+    "events": "2026-02-23T19:17:36.425020+00:00",
     "sentiment": "2026-02-22T18:49:45.551890+00:00",
     "altcoins": "2026-02-22T15:34:47.252770+00:00",
     "bullish": "2026-02-23T10:04:09.304226+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Trump tariff shock wipes $100B from crypto",
   "dynamic_published_at": "2026-02-23T09:00:43.722291+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-02-23T16:03:45.689418+00:00",
-    "hour_utc": 16,
-    "answer_length": 3379
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-02-23T19:17:36.425035+00:00",
+    "hour_utc": 19,
+    "answer_length": 3118
   }
 }
