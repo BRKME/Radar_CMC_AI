@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-02-23T13:24:31.443131+00:00",
+    "kols": "2026-02-24T13:26:07.686907+00:00",
     "dynamic": "2026-02-24T09:00:20.319755+00:00",
     "market_direction": "2026-02-23T22:52:46.884012+00:00",
     "narratives": "2026-02-23T23:40:28.528150+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Over $500M long liquidations shake crypto",
   "dynamic_published_at": "2026-02-24T09:00:20.319738+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-02-24T10:57:30.546052+00:00",
-    "hour_utc": 10,
-    "answer_length": 3096
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-02-24T13:26:07.686920+00:00",
+    "hour_utc": 13,
+    "answer_length": 3545
   }
 }
