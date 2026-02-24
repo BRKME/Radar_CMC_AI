@@ -3,7 +3,7 @@
     "kols": "2026-02-24T13:26:07.686907+00:00",
     "dynamic": "2026-02-24T09:00:20.319755+00:00",
     "market_direction": "2026-02-24T22:42:25.177962+00:00",
-    "narratives": "2026-02-24T16:06:55.023094+00:00",
+    "narratives": "2026-02-24T23:41:10.960906+00:00",
     "events": "2026-02-24T19:15:45.601537+00:00",
     "sentiment": "2026-02-24T18:08:41.067750+00:00",
     "altcoins": "2026-02-22T15:34:47.252770+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Over $500M long liquidations shake crypto",
   "dynamic_published_at": "2026-02-24T09:00:20.319738+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-02-24T22:42:25.177978+00:00",
-    "hour_utc": 22,
-    "answer_length": 2703
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-02-24T23:41:10.960921+00:00",
+    "hour_utc": 23,
+    "answer_length": 2483
   }
 }
