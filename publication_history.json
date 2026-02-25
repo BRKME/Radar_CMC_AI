@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-02-25T13:31:46.301312+00:00",
-    "dynamic": "2026-02-24T09:00:20.319755+00:00",
+    "dynamic": "2026-02-25T21:43:03.509924+00:00",
     "market_direction": "2026-02-25T15:00:10.636628+00:00",
     "narratives": "2026-02-25T16:12:55.619357+00:00",
     "events": "2026-02-25T19:53:16.388432+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-02-22T15:34:47.252770+00:00",
     "bullish": "2026-02-24T10:57:30.546039+00:00"
   },
-  "last_dynamic_question": "Over $500M long liquidations shake crypto",
-  "dynamic_published_at": "2026-02-24T09:00:20.319738+00:00",
+  "last_dynamic_question": "Crypto market jumps 7% amid extreme fear",
+  "dynamic_published_at": "2026-02-25T21:43:03.509889+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-02-25T19:53:16.388449+00:00",
-    "hour_utc": 19,
-    "answer_length": 3279
+    "question": "Crypto market jumps 7% amid extreme fear",
+    "group": "DYNAMIC",
+    "published_at": "2026-02-25T21:43:03.509929+00:00",
+    "hour_utc": 21,
+    "answer_length": 3738
   }
 }
