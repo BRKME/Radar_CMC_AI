@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-02-24T13:26:07.686907+00:00",
     "dynamic": "2026-02-24T09:00:20.319755+00:00",
-    "market_direction": "2026-02-24T22:42:25.177962+00:00",
+    "market_direction": "2026-02-25T09:00:09.047834+00:00",
     "narratives": "2026-02-24T23:41:10.960906+00:00",
     "events": "2026-02-24T19:15:45.601537+00:00",
     "sentiment": "2026-02-25T06:09:00.038978+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Over $500M long liquidations shake crypto",
   "dynamic_published_at": "2026-02-24T09:00:20.319738+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-02-25T06:09:00.038994+00:00",
-    "hour_utc": 6,
-    "answer_length": 2750
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-02-25T09:00:09.047851+00:00",
+    "hour_utc": 8,
+    "answer_length": 2987
   }
 }
