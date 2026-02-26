@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-02-25T13:31:46.301312+00:00",
     "dynamic": "2026-02-25T21:43:03.509924+00:00",
-    "market_direction": "2026-02-25T22:42:56.578492+00:00",
+    "market_direction": "2026-02-26T08:59:47.707837+00:00",
     "narratives": "2026-02-25T23:38:14.821515+00:00",
     "events": "2026-02-25T19:53:16.388432+00:00",
     "sentiment": "2026-02-26T06:04:14.997452+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Crypto market jumps 7% amid extreme fear",
   "dynamic_published_at": "2026-02-25T21:43:03.509889+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-02-26T06:04:14.997464+00:00",
-    "hour_utc": 6,
-    "answer_length": 3330
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-02-26T08:59:47.707849+00:00",
+    "hour_utc": 8,
+    "answer_length": 2993
   }
 }
