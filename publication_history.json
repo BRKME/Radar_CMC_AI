@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-02-26T13:26:34.912350+00:00",
-    "dynamic": "2026-02-26T09:59:26.689022+00:00",
+    "dynamic": "2026-02-26T21:40:56.377933+00:00",
     "market_direction": "2026-02-26T14:56:00.125774+00:00",
     "narratives": "2026-02-26T16:01:27.492284+00:00",
     "events": "2026-02-26T19:50:19.904316+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-02-22T15:34:47.252770+00:00",
     "bullish": "2026-02-26T10:56:21.431447+00:00"
   },
-  "last_dynamic_question": "Crypto market climbs 4% as volume jumps",
-  "dynamic_published_at": "2026-02-26T09:59:26.689006+00:00",
+  "last_dynamic_question": "White House summit targets US crypto rules",
+  "dynamic_published_at": "2026-02-26T21:40:56.377914+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-02-26T19:50:19.904333+00:00",
-    "hour_utc": 19,
-    "answer_length": 3581
+    "question": "White House summit targets US crypto rules",
+    "group": "DYNAMIC",
+    "published_at": "2026-02-26T21:40:56.377937+00:00",
+    "hour_utc": 21,
+    "answer_length": 3710
   }
 }
