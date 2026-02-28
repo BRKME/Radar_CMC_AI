@@ -5,17 +5,17 @@
     "market_direction": "2026-02-28T14:31:23.579804+00:00",
     "narratives": "2026-02-28T16:36:56.959461+00:00",
     "events": "2026-02-27T19:39:25.595264+00:00",
-    "sentiment": "2026-02-28T06:52:26.119249+00:00",
+    "sentiment": "2026-02-28T18:45:18.346024+00:00",
     "altcoins": "2026-02-28T15:32:33.196136+00:00",
     "bullish": "2026-02-28T10:33:19.960532+00:00"
   },
   "last_dynamic_question": "Geopolitics and inflation slam BTC and alts",
   "dynamic_published_at": "2026-02-28T09:35:01.059469+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-02-28T16:36:56.959478+00:00",
-    "hour_utc": 16,
-    "answer_length": 3523
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-02-28T18:45:18.346038+00:00",
+    "hour_utc": 18,
+    "answer_length": 2858
   }
 }
