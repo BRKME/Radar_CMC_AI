@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-02-28T13:41:58.748387+00:00",
     "dynamic": "2026-02-28T21:30:09.247400+00:00",
-    "market_direction": "2026-02-28T14:31:23.579804+00:00",
+    "market_direction": "2026-02-28T22:32:04.567616+00:00",
     "narratives": "2026-02-28T16:36:56.959461+00:00",
     "events": "2026-02-28T19:27:55.454347+00:00",
     "sentiment": "2026-02-28T18:45:18.346024+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC shorts crowd as funding hits -6%",
   "dynamic_published_at": "2026-02-28T21:30:09.247383+00:00",
   "last_publication": {
-    "question": "BTC shorts crowd as funding hits -6%",
-    "group": "DYNAMIC",
-    "published_at": "2026-02-28T21:30:09.247405+00:00",
-    "hour_utc": 21,
-    "answer_length": 3101
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-02-28T22:32:04.567635+00:00",
+    "hour_utc": 22,
+    "answer_length": 3012
   }
 }
