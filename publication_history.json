@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-02-27T13:17:20.733012+00:00",
     "dynamic": "2026-02-27T09:54:36.757355+00:00",
-    "market_direction": "2026-02-27T22:33:38.514519+00:00",
+    "market_direction": "2026-02-28T08:39:43.779674+00:00",
     "narratives": "2026-02-27T23:33:07.969222+00:00",
     "events": "2026-02-27T19:39:25.595264+00:00",
     "sentiment": "2026-02-28T06:52:26.119249+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC ETFs see $506M daily inflows",
   "dynamic_published_at": "2026-02-27T09:54:36.757340+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-02-28T06:52:26.119265+00:00",
-    "hour_utc": 6,
-    "answer_length": 3163
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-02-28T08:39:43.779691+00:00",
+    "hour_utc": 8,
+    "answer_length": 3180
   }
 }
