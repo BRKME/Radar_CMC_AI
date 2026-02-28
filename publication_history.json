@@ -7,15 +7,15 @@
     "events": "2026-02-27T19:39:25.595264+00:00",
     "sentiment": "2026-02-28T06:52:26.119249+00:00",
     "altcoins": "2026-02-27T15:46:33.867028+00:00",
-    "bullish": "2026-02-27T10:50:57.263794+00:00"
+    "bullish": "2026-02-28T10:33:19.960532+00:00"
   },
   "last_dynamic_question": "Geopolitics and inflation slam BTC and alts",
   "dynamic_published_at": "2026-02-28T09:35:01.059469+00:00",
   "last_publication": {
-    "question": "Geopolitics and inflation slam BTC and alts",
-    "group": "DYNAMIC",
-    "published_at": "2026-02-28T09:35:01.059487+00:00",
-    "hour_utc": 9,
-    "answer_length": 3033
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-02-28T10:33:19.960549+00:00",
+    "hour_utc": 10,
+    "answer_length": 2978
   }
 }
