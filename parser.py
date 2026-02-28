@@ -83,8 +83,8 @@ ALPHA_TAKE_ENABLED = os.getenv('ALPHA_TAKE_ENABLED', 'true').lower() == 'true'
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # GitHub настройки для картинок
-GITHUB_IMAGES_URL = "https://raw.githubusercontent.com/BRKME/coinmarketcap-parser/main/Images1/"
-IMAGE_FILES = [f"{i}.jpg" for i in range(10, 223)]  # 10.jpg до 222.jpg (213 картинок)
+GITHUB_IMAGES_URL = "https://raw.githubusercontent.com/BRKME/Radar_CMC_AI/main/Images1/"
+IMAGE_FILES = [f"{i}.jpg" for i in range(10, 259)]  # 10.jpg до 258.jpg
 
 # Расписание публикаций (час UTC : тип вопроса)
 # v2.1.0: Добавлены bullish (10:00) и altcoins (15:00)
@@ -476,7 +476,7 @@ def find_question_by_group(questions_list, group_name):
     logger.warning(f"⚠️ Не найден вопрос для группы '{group_name}'")
     return None
 
-def send_telegram_message(message, parse_mode='HTML'):
+def send_telegram_message(message, parse_mode='HTML', add_subscribe_button=True):
     """Отправляет сообщение в Telegram с разбивкой на части при необходимости"""
     try:
         # Проверка на пустые значения
@@ -486,6 +486,15 @@ def send_telegram_message(message, parse_mode='HTML'):
         
         max_length = 4000
         
+        # Subscribe button
+        subscribe_markup = None
+        if add_subscribe_button:
+            subscribe_markup = {
+                'inline_keyboard': [
+                    [{'text': '📢 Subscribe', 'url': 'https://t.me/OracAI_Radar'}]
+                ]
+            }
+        
         if len(message) <= max_length:
             url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
             payload = {
@@ -493,6 +502,9 @@ def send_telegram_message(message, parse_mode='HTML'):
                 'text': message,
                 'parse_mode': parse_mode
             }
+            if subscribe_markup:
+                payload['reply_markup'] = json.dumps(subscribe_markup)
+            
             response = requests.post(url, data=payload, timeout=10)
             if response.status_code == 200:
                 logger.info("✓ Сообщение отправлено в Telegram")
@@ -526,6 +538,10 @@ def send_telegram_message(message, parse_mode='HTML'):
                     'text': part,
                     'parse_mode': parse_mode
                 }
+                # Add subscribe button only to last part
+                if i == len(parts) and subscribe_markup:
+                    payload['reply_markup'] = json.dumps(subscribe_markup)
+                    
                 response = requests.post(url, data=payload, timeout=10)
                 logger.info(f"  ✓ Часть {i}/{len(parts)} отправлена")
                 time.sleep(0.5)
@@ -659,6 +675,14 @@ def clean_question_specific_text(question, text):
         # Убираем "These are the upcoming crypto events..."
         text = re.sub(
             r"These are the upcoming crypto events that may impact crypto the most:?\s*",
+            '',
+            text,
+            flags=re.IGNORECASE
+        )
+        
+        # Убираем "(from CMC's Social Sentiment Algorithm)" и подобные
+        text = re.sub(
+            r"\s*\(from CMC['\u2018\u2019\"]?s Social Sentiment Algorithm\)",
             '',
             text,
             flags=re.IGNORECASE
