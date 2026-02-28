@@ -3,7 +3,7 @@
     "kols": "2026-02-28T13:41:58.748387+00:00",
     "dynamic": "2026-02-28T09:35:01.059484+00:00",
     "market_direction": "2026-02-28T14:31:23.579804+00:00",
-    "narratives": "2026-02-27T23:33:07.969222+00:00",
+    "narratives": "2026-02-28T16:36:56.959461+00:00",
     "events": "2026-02-27T19:39:25.595264+00:00",
     "sentiment": "2026-02-28T06:52:26.119249+00:00",
     "altcoins": "2026-02-28T15:32:33.196136+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Geopolitics and inflation slam BTC and alts",
   "dynamic_published_at": "2026-02-28T09:35:01.059469+00:00",
   "last_publication": {
-    "question": "Are altcoins outperforming Bitcoin?",
-    "group": "altcoins",
-    "published_at": "2026-02-28T15:32:33.196150+00:00",
-    "hour_utc": 15,
-    "answer_length": 2893
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-02-28T16:36:56.959478+00:00",
+    "hour_utc": 16,
+    "answer_length": 3523
   }
 }
