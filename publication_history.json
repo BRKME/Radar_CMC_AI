@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-02-28T13:41:58.748387+00:00",
-    "dynamic": "2026-02-28T21:30:09.247400+00:00",
+    "dynamic": "2026-03-01T09:38:59.408003+00:00",
     "market_direction": "2026-03-01T08:41:53.222559+00:00",
     "narratives": "2026-02-28T23:30:35.547675+00:00",
     "events": "2026-02-28T19:27:55.454347+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-02-28T15:32:33.196136+00:00",
     "bullish": "2026-02-28T10:33:19.960532+00:00"
   },
-  "last_dynamic_question": "BTC shorts crowd as funding hits -6%",
-  "dynamic_published_at": "2026-02-28T21:30:09.247383+00:00",
+  "last_dynamic_question": "Tokenized gold surges above $5,400 on-chain",
+  "dynamic_published_at": "2026-03-01T09:38:59.407988+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-03-01T08:41:53.222577+00:00",
-    "hour_utc": 8,
-    "answer_length": 2718
+    "question": "Tokenized gold surges above $5,400 on-chain",
+    "group": "DYNAMIC",
+    "published_at": "2026-03-01T09:38:59.408008+00:00",
+    "hour_utc": 9,
+    "answer_length": 3084
   }
 }
