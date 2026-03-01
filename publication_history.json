@@ -3,7 +3,7 @@
     "kols": "2026-03-01T13:06:14.061205+00:00",
     "dynamic": "2026-03-01T21:31:57.075916+00:00",
     "market_direction": "2026-03-01T22:34:00.013497+00:00",
-    "narratives": "2026-03-01T16:39:36.795783+00:00",
+    "narratives": "2026-03-01T23:33:04.738720+00:00",
     "events": "2026-03-01T19:29:58.687038+00:00",
     "sentiment": "2026-03-01T18:47:24.357521+00:00",
     "altcoins": "2026-03-01T15:32:31.927320+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC whale inflows to Binance hit $8.8B",
   "dynamic_published_at": "2026-03-01T21:31:57.075900+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-03-01T22:34:00.013510+00:00",
-    "hour_utc": 22,
-    "answer_length": 3202
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-03-01T23:33:04.738736+00:00",
+    "hour_utc": 23,
+    "answer_length": 3327
   }
 }
