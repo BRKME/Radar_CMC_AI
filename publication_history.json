@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-02T13:18:50.927766+00:00",
     "dynamic": "2026-03-01T21:31:57.075916+00:00",
-    "market_direction": "2026-03-03T08:54:54.705593+00:00",
+    "market_direction": "2026-03-04T08:52:45.029013+00:00",
     "narratives": "2026-03-02T23:35:57.736212+00:00",
     "events": "2026-03-02T19:41:16.323948+00:00",
     "sentiment": "2026-03-01T18:47:24.357521+00:00",
@@ -14,8 +14,8 @@
   "last_publication": {
     "question": "Why is the market up today?",
     "group": "market_direction",
-    "published_at": "2026-03-03T08:54:54.705609+00:00",
+    "published_at": "2026-03-04T08:52:45.029028+00:00",
     "hour_utc": 8,
-    "answer_length": 3193
+    "answer_length": 2845
   }
 }
