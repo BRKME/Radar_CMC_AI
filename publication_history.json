@@ -7,15 +7,15 @@
     "events": "2026-03-02T19:41:16.323948+00:00",
     "sentiment": "2026-03-01T18:47:24.357521+00:00",
     "altcoins": "2026-03-02T15:51:04.123867+00:00",
-    "bullish": "2026-03-02T10:53:22.032752+00:00"
+    "bullish": "2026-03-04T10:49:24.298716+00:00"
   },
   "last_dynamic_question": "BTC ETFs add $4.2B amid broad rally",
   "dynamic_published_at": "2026-03-04T09:52:56.894929+00:00",
   "last_publication": {
-    "question": "BTC ETFs add $4.2B amid broad rally",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-04T09:52:56.894955+00:00",
-    "hour_utc": 9,
-    "answer_length": 3181
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-03-04T10:49:24.298728+00:00",
+    "hour_utc": 10,
+    "answer_length": 3021
   }
 }
