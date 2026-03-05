@@ -7,15 +7,15 @@
     "events": "2026-03-04T19:43:23.284517+00:00",
     "sentiment": "2026-03-01T18:47:24.357521+00:00",
     "altcoins": "2026-03-04T15:53:53.369783+00:00",
-    "bullish": "2026-03-04T10:49:24.298716+00:00"
+    "bullish": "2026-03-05T10:52:58.294576+00:00"
   },
   "last_dynamic_question": "BTC rally sparks $463M crypto short squeeze",
   "dynamic_published_at": "2026-03-05T09:56:00.276420+00:00",
   "last_publication": {
-    "question": "BTC rally sparks $463M crypto short squeeze",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-05T09:56:00.276443+00:00",
-    "hour_utc": 9,
-    "answer_length": 3731
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-03-05T10:52:58.294594+00:00",
+    "hour_utc": 10,
+    "answer_length": 3219
   }
 }
