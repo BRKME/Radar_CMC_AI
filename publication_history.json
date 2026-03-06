@@ -6,16 +6,16 @@
     "narratives": "2026-03-05T23:12:15.238560+00:00",
     "events": "2026-03-05T19:57:11.387518+00:00",
     "sentiment": "2026-03-05T18:12:21.730369+00:00",
-    "altcoins": "2026-03-05T15:58:19.485771+00:00",
+    "altcoins": "2026-03-06T15:48:59.891566+00:00",
     "bullish": "2026-03-06T10:48:09.039780+00:00"
   },
   "last_dynamic_question": "BTC retreats from $74K on macro jitters",
   "dynamic_published_at": "2026-03-06T09:51:49.169371+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-03-06T14:46:45.197874+00:00",
-    "hour_utc": 14,
-    "answer_length": 2351
+    "question": "Are altcoins outperforming Bitcoin?",
+    "group": "altcoins",
+    "published_at": "2026-03-06T15:48:59.891582+00:00",
+    "hour_utc": 15,
+    "answer_length": 3006
   }
 }
