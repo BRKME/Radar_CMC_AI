@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-06T13:15:16.466269+00:00",
     "dynamic": "2026-03-06T09:51:49.169389+00:00",
-    "market_direction": "2026-03-06T08:51:37.774926+00:00",
+    "market_direction": "2026-03-06T14:46:45.197857+00:00",
     "narratives": "2026-03-05T23:12:15.238560+00:00",
     "events": "2026-03-05T19:57:11.387518+00:00",
     "sentiment": "2026-03-05T18:12:21.730369+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC retreats from $74K on macro jitters",
   "dynamic_published_at": "2026-03-06T09:51:49.169371+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-03-06T13:15:16.466286+00:00",
-    "hour_utc": 13,
-    "answer_length": 3928
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-03-06T14:46:45.197874+00:00",
+    "hour_utc": 14,
+    "answer_length": 2351
   }
 }
