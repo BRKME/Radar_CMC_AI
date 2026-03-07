@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-03-06T13:15:16.466269+00:00",
-    "dynamic": "2026-03-06T21:37:45.061126+00:00",
+    "dynamic": "2026-03-07T09:37:56.629842+00:00",
     "market_direction": "2026-03-07T08:41:40.784162+00:00",
     "narratives": "2026-03-06T23:35:58.188295+00:00",
     "events": "2026-03-06T19:39:34.706096+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-06T15:48:59.891566+00:00",
     "bullish": "2026-03-06T10:48:09.039780+00:00"
   },
-  "last_dynamic_question": "IRS moves crypto brokers to e-tax forms",
-  "dynamic_published_at": "2026-03-06T21:37:45.061107+00:00",
+  "last_dynamic_question": "Jobs shock triggers $370M crypto liquidations",
+  "dynamic_published_at": "2026-03-07T09:37:56.629825+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-03-07T08:41:40.784174+00:00",
-    "hour_utc": 8,
-    "answer_length": 2645
+    "question": "Jobs shock triggers $370M crypto liquidations",
+    "group": "DYNAMIC",
+    "published_at": "2026-03-07T09:37:56.629847+00:00",
+    "hour_utc": 9,
+    "answer_length": 4683
   }
 }
