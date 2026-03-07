@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-06T13:15:16.466269+00:00",
     "dynamic": "2026-03-06T21:37:45.061126+00:00",
-    "market_direction": "2026-03-06T22:38:20.151468+00:00",
+    "market_direction": "2026-03-07T08:41:40.784162+00:00",
     "narratives": "2026-03-06T23:35:58.188295+00:00",
     "events": "2026-03-06T19:39:34.706096+00:00",
     "sentiment": "2026-03-07T06:54:48.961401+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "IRS moves crypto brokers to e-tax forms",
   "dynamic_published_at": "2026-03-06T21:37:45.061107+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-03-07T06:54:48.961416+00:00",
-    "hour_utc": 6,
-    "answer_length": 2917
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-03-07T08:41:40.784174+00:00",
+    "hour_utc": 8,
+    "answer_length": 2645
   }
 }
