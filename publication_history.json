@@ -7,15 +7,15 @@
     "events": "2026-03-06T19:39:34.706096+00:00",
     "sentiment": "2026-03-07T06:54:48.961401+00:00",
     "altcoins": "2026-03-06T15:48:59.891566+00:00",
-    "bullish": "2026-03-06T10:48:09.039780+00:00"
+    "bullish": "2026-03-07T10:33:52.246311+00:00"
   },
   "last_dynamic_question": "Jobs shock triggers $370M crypto liquidations",
   "dynamic_published_at": "2026-03-07T09:37:56.629825+00:00",
   "last_publication": {
-    "question": "Jobs shock triggers $370M crypto liquidations",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-07T09:37:56.629847+00:00",
-    "hour_utc": 9,
-    "answer_length": 4683
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-03-07T10:33:52.246328+00:00",
+    "hour_utc": 10,
+    "answer_length": 3231
   }
 }
