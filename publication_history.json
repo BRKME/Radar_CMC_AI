@@ -4,7 +4,7 @@
     "dynamic": "2026-03-07T09:37:56.629842+00:00",
     "market_direction": "2026-03-07T14:33:22.530085+00:00",
     "narratives": "2026-03-07T16:38:26.946253+00:00",
-    "events": "2026-03-06T19:39:34.706096+00:00",
+    "events": "2026-03-07T19:29:39.512457+00:00",
     "sentiment": "2026-03-07T18:46:28.947470+00:00",
     "altcoins": "2026-03-07T15:32:04.598652+00:00",
     "bullish": "2026-03-07T10:33:52.246311+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Jobs shock triggers $370M crypto liquidations",
   "dynamic_published_at": "2026-03-07T09:37:56.629825+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-03-07T18:46:28.947483+00:00",
-    "hour_utc": 18,
-    "answer_length": 2866
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-03-07T19:29:39.512475+00:00",
+    "hour_utc": 19,
+    "answer_length": 3984
   }
 }
