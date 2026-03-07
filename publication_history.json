@@ -3,7 +3,7 @@
     "kols": "2026-03-07T13:47:10.533517+00:00",
     "dynamic": "2026-03-07T09:37:56.629842+00:00",
     "market_direction": "2026-03-07T14:33:22.530085+00:00",
-    "narratives": "2026-03-06T23:35:58.188295+00:00",
+    "narratives": "2026-03-07T16:38:26.946253+00:00",
     "events": "2026-03-06T19:39:34.706096+00:00",
     "sentiment": "2026-03-07T06:54:48.961401+00:00",
     "altcoins": "2026-03-07T15:32:04.598652+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Jobs shock triggers $370M crypto liquidations",
   "dynamic_published_at": "2026-03-07T09:37:56.629825+00:00",
   "last_publication": {
-    "question": "Are altcoins outperforming Bitcoin?",
-    "group": "altcoins",
-    "published_at": "2026-03-07T15:32:04.598665+00:00",
-    "hour_utc": 15,
-    "answer_length": 2926
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-03-07T16:38:26.946266+00:00",
+    "hour_utc": 16,
+    "answer_length": 3385
   }
 }
