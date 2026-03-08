@@ -6,16 +6,16 @@
     "narratives": "2026-03-07T23:31:42.290800+00:00",
     "events": "2026-03-07T19:29:39.512457+00:00",
     "sentiment": "2026-03-08T06:56:26.102550+00:00",
-    "altcoins": "2026-03-07T15:32:04.598652+00:00",
+    "altcoins": "2026-03-08T15:32:55.122916+00:00",
     "bullish": "2026-03-08T10:35:00.152554+00:00"
   },
   "last_dynamic_question": "IRS proposes digital-only tax reporting for crypto",
   "dynamic_published_at": "2026-03-08T09:38:26.666578+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-03-08T14:33:33.337890+00:00",
-    "hour_utc": 14,
-    "answer_length": 3141
+    "question": "Are altcoins outperforming Bitcoin?",
+    "group": "altcoins",
+    "published_at": "2026-03-08T15:32:55.122933+00:00",
+    "hour_utc": 15,
+    "answer_length": 2627
   }
 }
