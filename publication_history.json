@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-03-07T13:47:10.533517+00:00",
-    "dynamic": "2026-03-07T21:30:12.039684+00:00",
+    "dynamic": "2026-03-08T09:38:26.666595+00:00",
     "market_direction": "2026-03-08T08:41:41.940009+00:00",
     "narratives": "2026-03-07T23:31:42.290800+00:00",
     "events": "2026-03-07T19:29:39.512457+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-07T15:32:04.598652+00:00",
     "bullish": "2026-03-07T10:33:52.246311+00:00"
   },
-  "last_dynamic_question": "US lawmakers weigh ban on prediction markets",
-  "dynamic_published_at": "2026-03-07T21:30:12.039670+00:00",
+  "last_dynamic_question": "IRS proposes digital-only tax reporting for crypto",
+  "dynamic_published_at": "2026-03-08T09:38:26.666578+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-03-08T08:41:41.940025+00:00",
-    "hour_utc": 8,
-    "answer_length": 2834
+    "question": "IRS proposes digital-only tax reporting for crypto",
+    "group": "DYNAMIC",
+    "published_at": "2026-03-08T09:38:26.666599+00:00",
+    "hour_utc": 9,
+    "answer_length": 3634
   }
 }
