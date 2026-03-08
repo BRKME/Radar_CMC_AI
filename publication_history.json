@@ -4,7 +4,7 @@
     "dynamic": "2026-03-08T09:38:26.666595+00:00",
     "market_direction": "2026-03-08T14:33:33.337874+00:00",
     "narratives": "2026-03-08T16:39:47.386905+00:00",
-    "events": "2026-03-07T19:29:39.512457+00:00",
+    "events": "2026-03-08T19:31:30.381269+00:00",
     "sentiment": "2026-03-08T18:48:16.709385+00:00",
     "altcoins": "2026-03-08T15:32:55.122916+00:00",
     "bullish": "2026-03-08T10:35:00.152554+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "IRS proposes digital-only tax reporting for crypto",
   "dynamic_published_at": "2026-03-08T09:38:26.666578+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-03-08T18:48:16.709400+00:00",
-    "hour_utc": 18,
-    "answer_length": 2665
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-03-08T19:31:30.381284+00:00",
+    "hour_utc": 19,
+    "answer_length": 3963
   }
 }
