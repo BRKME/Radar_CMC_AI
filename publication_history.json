@@ -6,16 +6,16 @@
     "narratives": "2026-03-08T23:33:03.381479+00:00",
     "events": "2026-03-08T19:31:30.381269+00:00",
     "sentiment": "2026-03-09T06:03:53.633373+00:00",
-    "altcoins": "2026-03-08T15:32:55.122916+00:00",
+    "altcoins": "2026-03-09T15:01:13.076527+00:00",
     "bullish": "2026-03-09T10:56:10.315719+00:00"
   },
   "last_dynamic_question": "US senators advance stablecoin market structure bill",
   "dynamic_published_at": "2026-03-08T21:32:43.200970+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-03-09T13:23:37.837023+00:00",
-    "hour_utc": 13,
-    "answer_length": 3283
+    "question": "Are altcoins outperforming Bitcoin?",
+    "group": "altcoins",
+    "published_at": "2026-03-09T15:01:13.076545+00:00",
+    "hour_utc": 15,
+    "answer_length": 2836
   }
 }
