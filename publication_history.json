@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-09T13:23:37.837007+00:00",
     "dynamic": "2026-03-09T21:41:28.805022+00:00",
-    "market_direction": "2026-03-09T22:38:53.597108+00:00",
+    "market_direction": "2026-03-10T08:56:24.469671+00:00",
     "narratives": "2026-03-09T23:37:06.347040+00:00",
     "events": "2026-03-09T19:47:15.647205+00:00",
     "sentiment": "2026-03-09T06:03:53.633373+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC decouples from stocks during oil shock",
   "dynamic_published_at": "2026-03-09T21:41:28.805007+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-09T23:37:06.347056+00:00",
-    "hour_utc": 23,
-    "answer_length": 2436
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-03-10T08:56:24.469686+00:00",
+    "hour_utc": 8,
+    "answer_length": 2650
   }
 }
