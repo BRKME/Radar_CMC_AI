@@ -7,15 +7,15 @@
     "events": "2026-03-09T19:47:15.647205+00:00",
     "sentiment": "2026-03-09T06:03:53.633373+00:00",
     "altcoins": "2026-03-09T15:01:13.076527+00:00",
-    "bullish": "2026-03-09T10:56:10.315719+00:00"
+    "bullish": "2026-03-10T10:53:07.801403+00:00"
   },
   "last_dynamic_question": "US banks prepare lawsuit over crypto charters",
   "dynamic_published_at": "2026-03-10T09:55:44.882581+00:00",
   "last_publication": {
-    "question": "US banks prepare lawsuit over crypto charters",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-10T09:55:44.882602+00:00",
-    "hour_utc": 9,
-    "answer_length": 4031
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-03-10T10:53:07.801421+00:00",
+    "hour_utc": 10,
+    "answer_length": 2757
   }
 }
