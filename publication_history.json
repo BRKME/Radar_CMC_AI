@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-03-11T13:20:46.968968+00:00",
-    "dynamic": "2026-03-11T09:54:30.769741+00:00",
+    "dynamic": "2026-03-11T21:41:33.815743+00:00",
     "market_direction": "2026-03-11T14:56:18.438727+00:00",
     "narratives": "2026-03-10T23:36:18.964053+00:00",
     "events": "2026-03-11T19:47:24.631388+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-11T15:57:54.317437+00:00",
     "bullish": "2026-03-11T10:52:48.733575+00:00"
   },
-  "last_dynamic_question": "US Treasury recognizes lawful uses for mixers",
-  "dynamic_published_at": "2026-03-11T09:54:30.769729+00:00",
+  "last_dynamic_question": "Ripple launches $750M buyback at $50B valuation",
+  "dynamic_published_at": "2026-03-11T21:41:33.815726+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-03-11T19:47:24.631404+00:00",
-    "hour_utc": 19,
-    "answer_length": 3454
+    "question": "Ripple launches $750M buyback at $50B valuation",
+    "group": "DYNAMIC",
+    "published_at": "2026-03-11T21:41:33.815749+00:00",
+    "hour_utc": 21,
+    "answer_length": 3584
   }
 }
