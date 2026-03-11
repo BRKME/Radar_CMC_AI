@@ -6,16 +6,16 @@
     "narratives": "2026-03-10T23:36:18.964053+00:00",
     "events": "2026-03-10T19:42:46.896491+00:00",
     "sentiment": "2026-03-09T06:03:53.633373+00:00",
-    "altcoins": "2026-03-09T15:01:13.076527+00:00",
+    "altcoins": "2026-03-11T15:57:54.317437+00:00",
     "bullish": "2026-03-11T10:52:48.733575+00:00"
   },
   "last_dynamic_question": "US Treasury recognizes lawful uses for mixers",
   "dynamic_published_at": "2026-03-11T09:54:30.769729+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-03-11T14:56:18.438741+00:00",
-    "hour_utc": 14,
-    "answer_length": 2653
+    "question": "Are altcoins outperforming Bitcoin?",
+    "group": "altcoins",
+    "published_at": "2026-03-11T15:57:54.317453+00:00",
+    "hour_utc": 15,
+    "answer_length": 3270
   }
 }
