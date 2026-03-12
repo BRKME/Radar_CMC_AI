@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-03-11T13:20:46.968968+00:00",
+    "kols": "2026-03-12T08:55:45.694888+00:00",
     "dynamic": "2026-03-11T21:41:33.815743+00:00",
     "market_direction": "2026-03-11T22:35:36.189636+00:00",
     "narratives": "2026-03-11T23:35:10.999716+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Ripple launches $750M buyback at $50B valuation",
   "dynamic_published_at": "2026-03-11T21:41:33.815726+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-11T23:35:10.999732+00:00",
-    "hour_utc": 23,
-    "answer_length": 2717
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-03-12T08:55:45.694902+00:00",
+    "hour_utc": 8,
+    "answer_length": 3664
   }
 }
