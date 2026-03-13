@@ -5,17 +5,17 @@
     "market_direction": "2026-03-13T14:53:17.223393+00:00",
     "narratives": "2026-03-13T16:52:48.069407+00:00",
     "events": "2026-03-12T19:49:27.427825+00:00",
-    "sentiment": "2026-03-09T06:03:53.633373+00:00",
+    "sentiment": "2026-03-13T18:55:57.479013+00:00",
     "altcoins": "2026-03-13T15:53:01.091074+00:00",
     "bullish": "2026-03-13T10:49:54.319441+00:00"
   },
   "last_dynamic_question": "Goldman delays Fed cuts forecast citing oil",
   "dynamic_published_at": "2026-03-12T21:42:28.382818+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-13T16:52:48.069421+00:00",
-    "hour_utc": 16,
-    "answer_length": 3421
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-03-13T18:55:57.479031+00:00",
+    "hour_utc": 18,
+    "answer_length": 2903
   }
 }
