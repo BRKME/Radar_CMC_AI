@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-12T14:59:44.562071+00:00",
     "dynamic": "2026-03-12T21:42:28.382836+00:00",
-    "market_direction": "2026-03-12T22:35:50.896286+00:00",
+    "market_direction": "2026-03-13T08:53:41.257426+00:00",
     "narratives": "2026-03-12T23:37:04.504208+00:00",
     "events": "2026-03-12T19:49:27.427825+00:00",
     "sentiment": "2026-03-09T06:03:53.633373+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Goldman delays Fed cuts forecast citing oil",
   "dynamic_published_at": "2026-03-12T21:42:28.382818+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-12T23:37:04.504223+00:00",
-    "hour_utc": 23,
-    "answer_length": 2934
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-03-13T08:53:41.257451+00:00",
+    "hour_utc": 8,
+    "answer_length": 2543
   }
 }
