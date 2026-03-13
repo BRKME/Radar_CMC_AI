@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-03-12T14:59:44.562071+00:00",
+    "kols": "2026-03-13T13:18:47.868031+00:00",
     "dynamic": "2026-03-12T21:42:28.382836+00:00",
     "market_direction": "2026-03-13T08:53:41.257426+00:00",
     "narratives": "2026-03-12T23:37:04.504208+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Goldman delays Fed cuts forecast citing oil",
   "dynamic_published_at": "2026-03-12T21:42:28.382818+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-03-13T10:49:54.319459+00:00",
-    "hour_utc": 10,
-    "answer_length": 2461
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-03-13T13:18:47.868046+00:00",
+    "hour_utc": 13,
+    "answer_length": 3309
   }
 }
