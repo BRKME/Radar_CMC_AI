@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-03-14T13:10:54.563810+00:00",
-    "dynamic": "2026-03-13T21:42:14.705378+00:00",
+    "dynamic": "2026-03-14T21:34:25.268486+00:00",
     "market_direction": "2026-03-14T14:38:37.071647+00:00",
     "narratives": "2026-03-14T16:42:24.653185+00:00",
     "events": "2026-03-13T19:38:31.570730+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-14T15:36:17.769933+00:00",
     "bullish": "2026-03-14T10:38:28.243935+00:00"
   },
-  "last_dynamic_question": "Hong Kong banks poised for stablecoin licenses",
-  "dynamic_published_at": "2026-03-13T21:42:14.705362+00:00",
+  "last_dynamic_question": "ETF inflows steady BTC amid Iran war",
+  "dynamic_published_at": "2026-03-14T21:34:25.268475+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-03-14T18:52:33.079924+00:00",
-    "hour_utc": 18,
-    "answer_length": 3039
+    "question": "ETF inflows steady BTC amid Iran war",
+    "group": "DYNAMIC",
+    "published_at": "2026-03-14T21:34:25.268492+00:00",
+    "hour_utc": 21,
+    "answer_length": 3347
   }
 }
