@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-03-13T13:18:47.868031+00:00",
+    "kols": "2026-03-14T08:48:01.677575+00:00",
     "dynamic": "2026-03-13T21:42:14.705378+00:00",
     "market_direction": "2026-03-13T22:36:51.043395+00:00",
     "narratives": "2026-03-13T23:37:24.631219+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Hong Kong banks poised for stablecoin licenses",
   "dynamic_published_at": "2026-03-13T21:42:14.705362+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-13T23:37:24.631237+00:00",
-    "hour_utc": 23,
-    "answer_length": 2936
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-03-14T08:48:01.677589+00:00",
+    "hour_utc": 8,
+    "answer_length": 3015
   }
 }
