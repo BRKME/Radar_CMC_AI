@@ -4,7 +4,7 @@
     "dynamic": "2026-03-15T09:43:34.124159+00:00",
     "market_direction": "2026-03-15T08:49:43.123550+00:00",
     "narratives": "2026-03-15T16:42:15.947904+00:00",
-    "events": "2026-03-13T19:38:31.570730+00:00",
+    "events": "2026-03-15T19:36:34.972996+00:00",
     "sentiment": "2026-03-15T18:53:56.108574+00:00",
     "altcoins": "2026-03-15T15:37:38.616944+00:00",
     "bullish": "2026-03-15T10:40:08.865967+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC whales accumulate as ETFs extend inflows",
   "dynamic_published_at": "2026-03-15T09:43:34.124143+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-03-15T18:53:56.108590+00:00",
-    "hour_utc": 18,
-    "answer_length": 2572
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-03-15T19:36:34.973013+00:00",
+    "hour_utc": 19,
+    "answer_length": 4462
   }
 }
