@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-03-15T14:39:13.914881+00:00",
+    "kols": "2026-03-16T13:46:21.326662+00:00",
     "dynamic": "2026-03-16T09:08:20.820817+00:00",
     "market_direction": "2026-03-15T22:37:31.135467+00:00",
     "narratives": "2026-03-15T23:37:50.123095+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BIS warns fully backed stablecoins can depeg",
   "dynamic_published_at": "2026-03-16T09:08:20.820801+00:00",
   "last_publication": {
-    "question": "BIS warns fully backed stablecoins can depeg",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-16T09:08:20.820822+00:00",
-    "hour_utc": 9,
-    "answer_length": 3340
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-03-16T13:46:21.326677+00:00",
+    "hour_utc": 13,
+    "answer_length": 3412
   }
 }
