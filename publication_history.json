@@ -3,7 +3,7 @@
     "kols": "2026-03-16T13:46:21.326662+00:00",
     "dynamic": "2026-03-16T21:50:46.802257+00:00",
     "market_direction": "2026-03-16T22:43:33.655395+00:00",
-    "narratives": "2026-03-15T23:37:50.123095+00:00",
+    "narratives": "2026-03-16T23:38:42.662711+00:00",
     "events": "2026-03-16T19:16:29.209178+00:00",
     "sentiment": "2026-03-15T18:53:56.108574+00:00",
     "altcoins": "2026-03-16T15:11:19.739907+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Memecoins surge as BTC and ETH climb",
   "dynamic_published_at": "2026-03-16T21:50:46.802241+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-03-16T22:43:33.655411+00:00",
-    "hour_utc": 22,
-    "answer_length": 2563
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-03-16T23:38:42.662726+00:00",
+    "hour_utc": 23,
+    "answer_length": 3363
   }
 }
