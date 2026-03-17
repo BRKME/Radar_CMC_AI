@@ -87,7 +87,7 @@ GITHUB_IMAGES_URL = "https://raw.githubusercontent.com/BRKME/Radar_CMC_AI/main/I
 IMAGE_FILES = [f"{i}.jpg" for i in range(10, 259)]  # 10.jpg до 258.jpg
 
 # Расписание публикаций (час UTC : тип вопроса)
-# v2.1.0: Добавлены bullish (10:00) и altcoins (15:00)
+# v2.1.0: Добавлен bullish (10:00)
 SCHEDULE = {
     0: None,
     1: None,
@@ -104,7 +104,7 @@ SCHEDULE = {
     12: None,
     13: "kols",          # 13:00
     14: "market_direction",  # 14:00
-    15: "altcoins",      # 15:00 - NEW!
+    15: "events",          # 15:00 - События
     16: "narratives",    # 16:00
     17: None,
     18: "sentiment",     # 18:00
@@ -125,8 +125,7 @@ QUESTION_GROUPS = {
     "sentiment": ["What is the market sentiment?"],
     "events": ["What upcoming events may impact crypto?"],
     "bullish": ["What cryptos are showing bullish momentum?"],
-    "narratives": ["What are the trending narratives?"],
-    "altcoins": ["Are altcoins outperforming Bitcoin?"]
+    "narratives": ["What are the trending narratives?"]
 }
 
 # Маппинг вопросов на заголовки и хэштеги для Telegram
@@ -159,10 +158,6 @@ QUESTION_DISPLAY_CONFIG = {
     "Why is the market down today?": {
         "title": "Market Analysis",
         "hashtags": "#Bitcoin #Markets"
-    },
-    "Are altcoins outperforming Bitcoin?": {
-        "title": "Altcoin Performance",
-        "hashtags": "#Altcoins #Bitcoin"
     }
 }
 
@@ -188,8 +183,6 @@ def get_question_group(question_text):
         return "bullish"
     if "trending narratives" in question_lower or "narratives" in question_lower:
         return "narratives"
-    if "altcoins" in question_lower and "bitcoin" in question_lower:
-        return "altcoins"
     
     return "dynamic"
 
@@ -434,7 +427,7 @@ def get_oldest_question_group(history):
     """Находит группу вопроса которая публиковалась дольше всего назад"""
     last_published = history.get("last_published", {})
     
-    all_groups = ["kols", "sentiment", "market_direction", "events", "bullish", "narratives", "altcoins"]
+    all_groups = ["kols", "sentiment", "market_direction", "events", "bullish", "narratives"]
     
     if not last_published:
         logger.info("📊 История пуста, возвращаю 'kols'")
@@ -1527,7 +1520,7 @@ async def main_parser():
                 logger.warning(f"   Пытаюсь найти любой доступный вопрос...")
                 
                 # Пробуем найти хоть что-то из стандартных групп
-                for fallback_group in ["kols", "sentiment", "events", "bullish", "narratives", "altcoins"]:
+                for fallback_group in ["kols", "sentiment", "events", "bullish", "narratives"]:
                     question_to_publish = find_question_by_group(questions_list, fallback_group)
                     if question_to_publish:
                         logger.info(f"✓ Найден вопрос из группы '{fallback_group}': {question_to_publish}")

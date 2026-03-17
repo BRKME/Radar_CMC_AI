@@ -69,8 +69,7 @@ TITLE_EMOJI_MAP = {
     "Daily Market Sentiment": "🎭",
     "Upcoming Crypto Events": "📅",
     "Bullish Crypto Watchlist": "🚀",
-    "Trending Crypto Narratives": "🔥",
-    "Altcoin Performance": "⚡"
+    "Trending Crypto Narratives": "🔥"
 }
 
 # Контекстные паттерны
