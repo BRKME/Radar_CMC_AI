@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-17T13:43:33.845593+00:00",
     "dynamic": "2026-03-17T21:49:08.149997+00:00",
-    "market_direction": "2026-03-16T22:43:33.655395+00:00",
+    "market_direction": "2026-03-17T22:43:15.254854+00:00",
     "narratives": "2026-03-16T23:38:42.662711+00:00",
     "events": "2026-03-17T19:15:04.473500+00:00",
     "sentiment": "2026-03-17T06:04:46.650480+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "US spot exchanges nearly double crypto share",
   "dynamic_published_at": "2026-03-17T21:49:08.149983+00:00",
   "last_publication": {
-    "question": "US spot exchanges nearly double crypto share",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-17T21:49:08.150017+00:00",
-    "hour_utc": 21,
-    "answer_length": 3370
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-03-17T22:43:15.254868+00:00",
+    "hour_utc": 22,
+    "answer_length": 3210
   }
 }
