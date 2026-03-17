@@ -4,7 +4,7 @@
     "dynamic": "2026-03-17T09:02:16.444328+00:00",
     "market_direction": "2026-03-16T22:43:33.655395+00:00",
     "narratives": "2026-03-16T23:38:42.662711+00:00",
-    "events": "2026-03-16T19:16:29.209178+00:00",
+    "events": "2026-03-17T19:15:04.473500+00:00",
     "sentiment": "2026-03-17T06:04:46.650480+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-17T10:02:55.200425+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "AI tokens surge as Nvidia boosts outlook",
   "dynamic_published_at": "2026-03-17T09:02:16.444315+00:00",
   "last_publication": {
-    "question": "Are altcoins outperforming Bitcoin?",
-    "group": "altcoins",
-    "published_at": "2026-03-17T15:06:38.160395+00:00",
-    "hour_utc": 15,
-    "answer_length": 2734
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-03-17T19:15:04.473515+00:00",
+    "hour_utc": 19,
+    "answer_length": 3533
   }
 }
