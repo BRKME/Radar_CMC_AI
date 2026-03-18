@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-03-17T13:43:33.845593+00:00",
+    "kols": "2026-03-18T13:45:33.147287+00:00",
     "dynamic": "2026-03-18T09:00:58.528464+00:00",
     "market_direction": "2026-03-17T22:43:15.254854+00:00",
     "narratives": "2026-03-17T23:40:40.890707+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP jumps back to 4th-largest crypto",
   "dynamic_published_at": "2026-03-18T09:00:58.528450+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-03-18T10:03:36.818536+00:00",
-    "hour_utc": 10,
-    "answer_length": 3152
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-03-18T13:45:33.147317+00:00",
+    "hour_utc": 13,
+    "answer_length": 3981
   }
 }
