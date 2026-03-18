@@ -7,15 +7,15 @@
     "events": "2026-03-17T19:15:04.473500+00:00",
     "sentiment": "2026-03-18T06:11:22.172463+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-03-17T10:02:55.200425+00:00"
+    "bullish": "2026-03-18T10:03:36.818520+00:00"
   },
   "last_dynamic_question": "XRP jumps back to 4th-largest crypto",
   "dynamic_published_at": "2026-03-18T09:00:58.528450+00:00",
   "last_publication": {
-    "question": "XRP jumps back to 4th-largest crypto",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-18T09:00:58.528470+00:00",
-    "hour_utc": 9,
-    "answer_length": 3141
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-03-18T10:03:36.818536+00:00",
+    "hour_utc": 10,
+    "answer_length": 3152
   }
 }
