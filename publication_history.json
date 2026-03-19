@@ -5,17 +5,17 @@
     "market_direction": "2026-03-18T22:40:36.599397+00:00",
     "narratives": "2026-03-18T23:38:20.286757+00:00",
     "events": "2026-03-18T19:14:38.889965+00:00",
-    "sentiment": "2026-03-18T06:11:22.172463+00:00",
+    "sentiment": "2026-03-19T06:04:24.169499+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-18T10:03:36.818520+00:00"
   },
   "last_dynamic_question": "Fed decision triggers 4% crypto market drop",
   "dynamic_published_at": "2026-03-18T21:43:57.407880+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-18T23:38:20.286771+00:00",
-    "hour_utc": 23,
-    "answer_length": 3561
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-03-19T06:04:24.169515+00:00",
+    "hour_utc": 6,
+    "answer_length": 2901
   }
 }
