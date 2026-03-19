@@ -4,7 +4,7 @@
     "dynamic": "2026-03-19T09:56:45.473005+00:00",
     "market_direction": "2026-03-19T14:57:52.447661+00:00",
     "narratives": "2026-03-19T16:02:16.901346+00:00",
-    "events": "2026-03-18T19:14:38.889965+00:00",
+    "events": "2026-03-19T19:10:24.055316+00:00",
     "sentiment": "2026-03-19T06:04:24.169499+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-19T10:53:41.814935+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC approves Nasdaq tokenized settlement for ETFs",
   "dynamic_published_at": "2026-03-19T09:56:45.472990+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-19T16:02:16.901364+00:00",
-    "hour_utc": 16,
-    "answer_length": 2748
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-03-19T19:10:24.055350+00:00",
+    "hour_utc": 19,
+    "answer_length": 3157
   }
 }
