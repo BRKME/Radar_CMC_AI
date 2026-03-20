@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-19T13:25:35.775957+00:00",
     "dynamic": "2026-03-19T21:44:53.446992+00:00",
-    "market_direction": "2026-03-19T22:38:22.440554+00:00",
+    "market_direction": "2026-03-20T08:53:58.011955+00:00",
     "narratives": "2026-03-19T23:38:18.972613+00:00",
     "events": "2026-03-19T19:10:24.055316+00:00",
     "sentiment": "2026-03-19T06:04:24.169499+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC faces volatile quadruple witching event",
   "dynamic_published_at": "2026-03-19T21:44:53.446976+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-19T23:38:18.972628+00:00",
-    "hour_utc": 23,
-    "answer_length": 3250
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-03-20T08:53:58.011972+00:00",
+    "hour_utc": 8,
+    "answer_length": 3335
   }
 }
