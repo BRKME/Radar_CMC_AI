@@ -7,15 +7,15 @@
     "events": "2026-03-20T19:41:01.521285+00:00",
     "sentiment": "2026-03-21T06:57:58.876130+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-03-20T10:50:28.118604+00:00"
+    "bullish": "2026-03-21T10:37:09.726052+00:00"
   },
   "last_dynamic_question": "Options expiry triggers over $500M crypto liquidations",
   "dynamic_published_at": "2026-03-21T09:41:02.318467+00:00",
   "last_publication": {
-    "question": "Options expiry triggers over $500M crypto liquidations",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-21T09:41:02.318489+00:00",
-    "hour_utc": 9,
-    "answer_length": 3697
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-03-21T10:37:09.726067+00:00",
+    "hour_utc": 10,
+    "answer_length": 2708
   }
 }
