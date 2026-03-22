@@ -7,15 +7,15 @@
     "events": "2026-03-21T19:32:58.722134+00:00",
     "sentiment": "2026-03-21T18:49:42.190793+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-03-21T10:37:09.726052+00:00"
+    "bullish": "2026-03-22T10:37:33.901095+00:00"
   },
   "last_dynamic_question": "Chrome security risks trigger crypto wallet warning",
   "dynamic_published_at": "2026-03-22T09:42:04.448960+00:00",
   "last_publication": {
-    "question": "Chrome security risks trigger crypto wallet warning",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-22T09:42:04.448979+00:00",
-    "hour_utc": 9,
-    "answer_length": 3564
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-03-22T10:37:33.901110+00:00",
+    "hour_utc": 10,
+    "answer_length": 2608
   }
 }
