@@ -5,17 +5,17 @@
     "market_direction": "2026-03-22T14:36:53.509405+00:00",
     "narratives": "2026-03-22T16:41:00.007085+00:00",
     "events": "2026-03-22T15:35:01.359090+00:00",
-    "sentiment": "2026-03-21T18:49:42.190793+00:00",
+    "sentiment": "2026-03-22T18:50:38.664922+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-22T10:37:33.901095+00:00"
   },
   "last_dynamic_question": "Chrome security risks trigger crypto wallet warning",
   "dynamic_published_at": "2026-03-22T09:42:04.448960+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-22T16:41:00.007102+00:00",
-    "hour_utc": 16,
-    "answer_length": 3025
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-03-22T18:50:38.664939+00:00",
+    "hour_utc": 18,
+    "answer_length": 2714
   }
 }
