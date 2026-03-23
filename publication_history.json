@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-03-23T13:27:41.218747+00:00",
+    "kols": "2026-03-23T22:41:56.784795+00:00",
     "dynamic": "2026-03-23T21:46:34.033553+00:00",
     "market_direction": "2026-03-22T22:35:37.913033+00:00",
     "narratives": "2026-03-23T16:08:20.135370+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BitMine lifts ETH treasury above $10B",
   "dynamic_published_at": "2026-03-23T21:46:34.033537+00:00",
   "last_publication": {
-    "question": "BitMine lifts ETH treasury above $10B",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-23T21:46:34.033558+00:00",
-    "hour_utc": 21,
-    "answer_length": 3809
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-03-23T22:41:56.784809+00:00",
+    "hour_utc": 22,
+    "answer_length": 3272
   }
 }
