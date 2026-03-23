@@ -4,7 +4,7 @@
     "dynamic": "2026-03-23T09:08:50.273365+00:00",
     "market_direction": "2026-03-22T22:35:37.913033+00:00",
     "narratives": "2026-03-22T23:36:57.287246+00:00",
-    "events": "2026-03-22T19:34:54.968282+00:00",
+    "events": "2026-03-23T15:05:34.612578+00:00",
     "sentiment": "2026-03-22T18:50:38.664922+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-22T10:37:33.901095+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC options traders increase downside hedges",
   "dynamic_published_at": "2026-03-23T09:08:50.273348+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-03-23T13:27:41.218762+00:00",
-    "hour_utc": 13,
-    "answer_length": 2922
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-03-23T15:05:34.612610+00:00",
+    "hour_utc": 15,
+    "answer_length": 4182
   }
 }
