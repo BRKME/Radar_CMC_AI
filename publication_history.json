@@ -4,7 +4,7 @@
     "dynamic": "2026-03-25T09:01:28.319904+00:00",
     "market_direction": "2026-03-22T22:35:37.913033+00:00",
     "narratives": "2026-03-24T23:40:07.517819+00:00",
-    "events": "2026-03-24T19:16:22.126327+00:00",
+    "events": "2026-03-25T15:10:57.124302+00:00",
     "sentiment": "2026-03-25T06:08:32.597696+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-25T10:58:52.021863+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC sees rare 2 block reorg",
   "dynamic_published_at": "2026-03-25T09:01:28.319890+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-03-25T13:47:29.082257+00:00",
-    "hour_utc": 13,
-    "answer_length": 3541
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-03-25T15:10:57.124318+00:00",
+    "hour_utc": 15,
+    "answer_length": 3206
   }
 }
