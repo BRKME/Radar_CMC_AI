@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-03-25T13:47:29.082240+00:00",
-    "dynamic": "2026-03-25T09:01:28.319904+00:00",
+    "dynamic": "2026-03-25T21:50:26.269418+00:00",
     "market_direction": "2026-03-22T22:35:37.913033+00:00",
     "narratives": "2026-03-24T23:40:07.517819+00:00",
     "events": "2026-03-25T19:07:22.557803+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-25T10:58:52.021863+00:00"
   },
-  "last_dynamic_question": "BTC sees rare 2 block reorg",
-  "dynamic_published_at": "2026-03-25T09:01:28.319890+00:00",
+  "last_dynamic_question": "ETH outlines cryptography roadmap for quantum risks",
+  "dynamic_published_at": "2026-03-25T21:50:26.269403+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-03-25T19:07:22.557816+00:00",
-    "hour_utc": 19,
-    "answer_length": 3928
+    "question": "ETH outlines cryptography roadmap for quantum risks",
+    "group": "DYNAMIC",
+    "published_at": "2026-03-25T21:50:26.269423+00:00",
+    "hour_utc": 21,
+    "answer_length": 4551
   }
 }
