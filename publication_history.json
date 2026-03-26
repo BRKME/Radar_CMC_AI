@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-03-25T13:47:29.082240+00:00",
+    "kols": "2026-03-26T13:48:50.736128+00:00",
     "dynamic": "2026-03-26T09:09:07.764021+00:00",
     "market_direction": "2026-03-25T22:49:09.094998+00:00",
     "narratives": "2026-03-25T23:44:39.281370+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Ex-justice says Korean exchange caps violate rights",
   "dynamic_published_at": "2026-03-26T09:09:07.764003+00:00",
   "last_publication": {
-    "question": "Ex-justice says Korean exchange caps violate rights",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-26T09:09:07.764026+00:00",
-    "hour_utc": 9,
-    "answer_length": 4451
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-03-26T13:48:50.736143+00:00",
+    "hour_utc": 13,
+    "answer_length": 3865
   }
 }
