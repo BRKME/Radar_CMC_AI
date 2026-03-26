@@ -3,7 +3,7 @@
     "kols": "2026-03-26T13:48:50.736128+00:00",
     "dynamic": "2026-03-26T21:39:37.851609+00:00",
     "market_direction": "2026-03-26T22:40:29.594945+00:00",
-    "narratives": "2026-03-25T23:44:39.281370+00:00",
+    "narratives": "2026-03-26T23:41:12.140065+00:00",
     "events": "2026-03-26T19:20:10.340338+00:00",
     "sentiment": "2026-03-25T06:08:32.597696+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "US stablecoin rewards bill sinks Circle stock",
   "dynamic_published_at": "2026-03-26T21:39:37.851591+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-03-26T22:40:29.594964+00:00",
-    "hour_utc": 22,
-    "answer_length": 3183
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-03-26T23:41:12.140081+00:00",
+    "hour_utc": 23,
+    "answer_length": 3097
   }
 }
