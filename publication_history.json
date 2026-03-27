@@ -7,15 +7,15 @@
     "events": "2026-03-26T19:20:10.340338+00:00",
     "sentiment": "2026-03-25T06:08:32.597696+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-03-27T10:02:22.680638+00:00"
+    "bullish": "2026-03-27T10:59:13.616506+00:00"
   },
   "last_dynamic_question": "Iran tensions spark BTC and crypto selloff",
   "dynamic_published_at": "2026-03-27T09:04:02.133585+00:00",
   "last_publication": {
     "question": "What cryptos are showing bullish momentum?",
     "group": "bullish",
-    "published_at": "2026-03-27T10:02:22.680653+00:00",
+    "published_at": "2026-03-27T10:59:13.616523+00:00",
     "hour_utc": 10,
-    "answer_length": 3168
+    "answer_length": 3030
   }
 }
