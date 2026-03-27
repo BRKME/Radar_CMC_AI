@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-03-27T13:25:17.718394+00:00",
-    "dynamic": "2026-03-27T09:04:02.133600+00:00",
+    "dynamic": "2026-03-27T21:46:04.566795+00:00",
     "market_direction": "2026-03-26T22:40:29.594945+00:00",
     "narratives": "2026-03-26T23:41:12.140065+00:00",
     "events": "2026-03-27T19:06:46.808137+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-27T10:59:13.616506+00:00"
   },
-  "last_dynamic_question": "Iran tensions spark BTC and crypto selloff",
-  "dynamic_published_at": "2026-03-27T09:04:02.133585+00:00",
+  "last_dynamic_question": "BTC $15B options expiry fuels volatility",
+  "dynamic_published_at": "2026-03-27T21:46:04.566779+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-03-27T19:06:46.808152+00:00",
-    "hour_utc": 19,
-    "answer_length": 3453
+    "question": "BTC $15B options expiry fuels volatility",
+    "group": "DYNAMIC",
+    "published_at": "2026-03-27T21:46:04.566800+00:00",
+    "hour_utc": 21,
+    "answer_length": 3287
   }
 }
