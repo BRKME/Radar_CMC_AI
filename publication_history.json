@@ -4,7 +4,7 @@
     "dynamic": "2026-03-28T09:48:10.472627+00:00",
     "market_direction": "2026-03-28T14:40:42.607225+00:00",
     "narratives": "2026-03-27T23:41:19.444077+00:00",
-    "events": "2026-03-27T19:06:46.808137+00:00",
+    "events": "2026-03-28T15:39:30.319259+00:00",
     "sentiment": "2026-03-28T06:03:16.291306+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-28T10:41:56.839906+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Tether hires KPMG to audit $185B reserves",
   "dynamic_published_at": "2026-03-28T09:48:10.472612+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-03-28T14:40:42.607242+00:00",
-    "hour_utc": 14,
-    "answer_length": 2569
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-03-28T15:39:30.319275+00:00",
+    "hour_utc": 15,
+    "answer_length": 3520
   }
 }
