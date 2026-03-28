@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-03-28T13:13:41.582225+00:00",
-    "dynamic": "2026-03-28T09:48:10.472627+00:00",
+    "dynamic": "2026-03-28T21:38:38.704917+00:00",
     "market_direction": "2026-03-28T14:40:42.607225+00:00",
     "narratives": "2026-03-28T16:45:41.824888+00:00",
     "events": "2026-03-28T19:37:27.969599+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-28T10:41:56.839906+00:00"
   },
-  "last_dynamic_question": "Tether hires KPMG to audit $185B reserves",
-  "dynamic_published_at": "2026-03-28T09:48:10.472612+00:00",
+  "last_dynamic_question": "Stablecoin yield fight stalls CLARITY Act",
+  "dynamic_published_at": "2026-03-28T21:38:38.704902+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-03-28T19:37:27.969618+00:00",
-    "hour_utc": 19,
-    "answer_length": 3595
+    "question": "Stablecoin yield fight stalls CLARITY Act",
+    "group": "DYNAMIC",
+    "published_at": "2026-03-28T21:38:38.704922+00:00",
+    "hour_utc": 21,
+    "answer_length": 4054
   }
 }
