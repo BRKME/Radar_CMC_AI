@@ -5,17 +5,17 @@
     "market_direction": "2026-03-26T22:40:29.594945+00:00",
     "narratives": "2026-03-27T23:41:19.444077+00:00",
     "events": "2026-03-27T19:06:46.808137+00:00",
-    "sentiment": "2026-03-25T06:08:32.597696+00:00",
+    "sentiment": "2026-03-28T06:03:16.291306+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-27T10:59:13.616506+00:00"
   },
   "last_dynamic_question": "BTC $15B options expiry fuels volatility",
   "dynamic_published_at": "2026-03-27T21:46:04.566779+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-03-27T23:41:19.444097+00:00",
-    "hour_utc": 23,
-    "answer_length": 3693
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-03-28T06:03:16.291323+00:00",
+    "hour_utc": 6,
+    "answer_length": 2765
   }
 }
