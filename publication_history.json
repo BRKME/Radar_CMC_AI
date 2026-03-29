@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-29T13:14:34.172217+00:00",
     "dynamic": "2026-03-29T21:41:38.177998+00:00",
-    "market_direction": "2026-03-29T14:41:32.139917+00:00",
+    "market_direction": "2026-03-29T22:41:04.966722+00:00",
     "narratives": "2026-03-29T16:46:28.064077+00:00",
     "events": "2026-03-29T19:39:00.891918+00:00",
     "sentiment": "2026-03-29T18:56:52.626565+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Goldman reveals $154M XRP ETF exposure",
   "dynamic_published_at": "2026-03-29T21:41:38.177982+00:00",
   "last_publication": {
-    "question": "Goldman reveals $154M XRP ETF exposure",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-29T21:41:38.178003+00:00",
-    "hour_utc": 21,
-    "answer_length": 3573
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-03-29T22:41:04.966741+00:00",
+    "hour_utc": 22,
+    "answer_length": 3085
   }
 }
