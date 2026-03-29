@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-03-29T08:53:43.092461+00:00",
+    "kols": "2026-03-29T13:14:34.172217+00:00",
     "dynamic": "2026-03-29T09:49:23.401651+00:00",
     "market_direction": "2026-03-28T22:38:45.226295+00:00",
     "narratives": "2026-03-28T23:39:43.121428+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SOL upgrade targets 150ms finality",
   "dynamic_published_at": "2026-03-29T09:49:23.401634+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-03-29T10:45:23.663235+00:00",
-    "hour_utc": 10,
-    "answer_length": 2525
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-03-29T13:14:34.172233+00:00",
+    "hour_utc": 13,
+    "answer_length": 3667
   }
 }
