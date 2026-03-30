@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-30T13:53:47.347388+00:00",
     "dynamic": "2026-03-30T21:52:20.423708+00:00",
-    "market_direction": "2026-03-29T22:41:04.966722+00:00",
+    "market_direction": "2026-03-30T22:48:12.575286+00:00",
     "narratives": "2026-03-29T23:41:59.993760+00:00",
     "events": "2026-03-30T15:13:21.545118+00:00",
     "sentiment": "2026-03-30T06:04:30.109290+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Iran ceasefire hopes lift BTC and majors",
   "dynamic_published_at": "2026-03-30T21:52:20.423695+00:00",
   "last_publication": {
-    "question": "Iran ceasefire hopes lift BTC and majors",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-30T21:52:20.423713+00:00",
-    "hour_utc": 21,
-    "answer_length": 3267
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-03-30T22:48:12.575301+00:00",
+    "hour_utc": 22,
+    "answer_length": 2893
   }
 }
