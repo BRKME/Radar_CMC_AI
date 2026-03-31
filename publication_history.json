@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-03-31T13:54:15.668146+00:00",
     "dynamic": "2026-03-31T21:51:10.147001+00:00",
-    "market_direction": "2026-03-30T22:48:12.575286+00:00",
+    "market_direction": "2026-03-31T22:43:09.741450+00:00",
     "narratives": "2026-03-30T23:51:12.845065+00:00",
     "events": "2026-03-31T19:14:26.158812+00:00",
     "sentiment": "2026-03-30T06:04:30.109290+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Stablecoin CLARITY Act deal curbs passive rewards",
   "dynamic_published_at": "2026-03-31T21:51:10.146985+00:00",
   "last_publication": {
-    "question": "Stablecoin CLARITY Act deal curbs passive rewards",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-31T21:51:10.147004+00:00",
-    "hour_utc": 21,
-    "answer_length": 3758
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-03-31T22:43:09.741465+00:00",
+    "hour_utc": 22,
+    "answer_length": 2926
   }
 }
