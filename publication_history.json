@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-03-30T13:53:47.347388+00:00",
+    "kols": "2026-03-31T13:54:15.668146+00:00",
     "dynamic": "2026-03-31T09:12:40.365839+00:00",
     "market_direction": "2026-03-30T22:48:12.575286+00:00",
     "narratives": "2026-03-30T23:51:12.845065+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Fidelity buys $140M ETH and signals demand",
   "dynamic_published_at": "2026-03-31T09:12:40.365822+00:00",
   "last_publication": {
-    "question": "Fidelity buys $140M ETH and signals demand",
-    "group": "DYNAMIC",
-    "published_at": "2026-03-31T09:12:40.365843+00:00",
-    "hour_utc": 9,
-    "answer_length": 3443
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-03-31T13:54:15.668163+00:00",
+    "hour_utc": 13,
+    "answer_length": 3458
   }
 }
