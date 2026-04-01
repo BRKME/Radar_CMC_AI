@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-01T13:56:31.971156+00:00",
-    "dynamic": "2026-04-01T09:19:31.241180+00:00",
+    "dynamic": "2026-04-01T21:53:00.529473+00:00",
     "market_direction": "2026-03-31T22:43:09.741450+00:00",
     "narratives": "2026-03-31T23:42:18.521619+00:00",
     "events": "2026-04-01T19:16:08.327680+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-29T10:45:23.663219+00:00"
   },
-  "last_dynamic_question": "Google quantum paper heightens BTC security fears",
-  "dynamic_published_at": "2026-04-01T09:19:31.241163+00:00",
+  "last_dynamic_question": "Google quantum warning sparks quantum-resistance token rally",
+  "dynamic_published_at": "2026-04-01T21:53:00.529461+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-04-01T19:16:08.327699+00:00",
-    "hour_utc": 19,
-    "answer_length": 4174
+    "question": "Google quantum warning sparks quantum-resistance token rally",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-01T21:53:00.529477+00:00",
+    "hour_utc": 21,
+    "answer_length": 3885
   }
 }
