@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-04-01T13:56:31.971156+00:00",
+    "kols": "2026-04-01T22:50:38.317301+00:00",
     "dynamic": "2026-04-01T21:53:00.529473+00:00",
     "market_direction": "2026-03-31T22:43:09.741450+00:00",
     "narratives": "2026-03-31T23:42:18.521619+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Google quantum warning sparks quantum-resistance token rally",
   "dynamic_published_at": "2026-04-01T21:53:00.529461+00:00",
   "last_publication": {
-    "question": "Google quantum warning sparks quantum-resistance token rally",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-01T21:53:00.529477+00:00",
-    "hour_utc": 21,
-    "answer_length": 3885
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-04-01T22:50:38.317316+00:00",
+    "hour_utc": 22,
+    "answer_length": 3331
   }
 }
