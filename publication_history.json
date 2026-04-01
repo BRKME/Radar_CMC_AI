@@ -4,7 +4,7 @@
     "dynamic": "2026-04-01T09:19:31.241180+00:00",
     "market_direction": "2026-03-31T22:43:09.741450+00:00",
     "narratives": "2026-03-31T23:42:18.521619+00:00",
-    "events": "2026-03-31T19:14:26.158812+00:00",
+    "events": "2026-04-01T15:15:58.192732+00:00",
     "sentiment": "2026-04-01T06:01:46.515161+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-29T10:45:23.663219+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Google quantum paper heightens BTC security fears",
   "dynamic_published_at": "2026-04-01T09:19:31.241163+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-04-01T13:56:31.971174+00:00",
-    "hour_utc": 13,
-    "answer_length": 3129
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-04-01T15:15:58.192748+00:00",
+    "hour_utc": 15,
+    "answer_length": 3937
   }
 }
