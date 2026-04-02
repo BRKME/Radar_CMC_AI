@@ -204,7 +204,7 @@ def get_ai_alpha_take(news_text, question_context=""):
                 alpha_take = line.replace('ALPHA_TAKE:', '').strip()
                 
                 # Убираем лишние префиксы если AI всё-таки их добавил
-                # НО НЕ убираем ◼️ - его мы добавим сами при форматировании
+                # НО НЕ убираем 📡 - его мы добавим сами при форматировании
                 alpha_take = alpha_take.replace('ALPHA TAKE —', '').strip()
                 alpha_take = alpha_take.replace('Structural / Macro', '').strip()
                 alpha_take = alpha_take.replace('Flow & Positioning', '').strip()
@@ -340,8 +340,8 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
     # Оригинальный контент (очищенный от дублей)
     caption += f"{text}\n\n"
     
-    # Alpha Take секция с ◼️
-    caption += f"◼️ <b>Alpha Take</b>\n"
+    # Alpha Take секция с 📡
+    caption += f"📡 <b>Alpha Take</b>\n"
     caption += f"{alpha_take}\n\n"
     
     # Context Tag если есть
@@ -358,7 +358,7 @@ def enhance_caption_with_alpha_take(title, text, hashtags_fallback, ai_result):
         caption = f"{hashtags}\n" if hashtags else ""
         caption += f"<b>{title}</b>\n\n"
         caption += f"{text}\n\n"
-        caption += f"◼️ <b>Alpha Take</b>\n"
+        caption += f"📡 <b>Alpha Take</b>\n"
         caption += f"{alpha_take}\n\n"
         if context_tag:
             caption += f"<i>Context: {context_tag}</i>"
