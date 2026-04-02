@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-04-01T22:50:38.317301+00:00",
+    "kols": "2026-04-02T13:47:14.081339+00:00",
     "dynamic": "2026-04-02T09:11:15.457010+00:00",
     "market_direction": "2026-03-31T22:43:09.741450+00:00",
     "narratives": "2026-04-01T23:45:09.063788+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Tokenized oil trade leads $17M liquidation",
   "dynamic_published_at": "2026-04-02T09:11:15.456995+00:00",
   "last_publication": {
-    "question": "Tokenized oil trade leads $17M liquidation",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-02T09:11:15.457014+00:00",
-    "hour_utc": 9,
-    "answer_length": 3432
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-04-02T13:47:14.081355+00:00",
+    "hour_utc": 13,
+    "answer_length": 3641
   }
 }
