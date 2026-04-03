@@ -3,7 +3,7 @@
     "kols": "2026-04-03T13:22:22.733209+00:00",
     "dynamic": "2026-04-03T09:06:07.122741+00:00",
     "market_direction": "2026-04-03T14:54:25.629158+00:00",
-    "narratives": "2026-04-02T23:43:40.765410+00:00",
+    "narratives": "2026-04-03T16:53:05.365295+00:00",
     "events": "2026-04-03T15:47:38.105097+00:00",
     "sentiment": "2026-04-01T06:01:46.515161+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SOL DeFi exploit raises questions on security",
   "dynamic_published_at": "2026-04-03T09:06:07.122724+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-04-03T15:47:38.105112+00:00",
-    "hour_utc": 15,
-    "answer_length": 3488
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-04-03T16:53:05.365309+00:00",
+    "hour_utc": 16,
+    "answer_length": 2887
   }
 }
