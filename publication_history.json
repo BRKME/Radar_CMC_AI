@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-02T13:47:14.081339+00:00",
-    "dynamic": "2026-04-02T21:48:46.319242+00:00",
+    "dynamic": "2026-04-03T09:06:07.122741+00:00",
     "market_direction": "2026-04-02T22:41:12.408671+00:00",
     "narratives": "2026-04-02T23:43:40.765410+00:00",
     "events": "2026-04-02T19:08:12.536766+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-03-29T10:45:23.663219+00:00"
   },
-  "last_dynamic_question": "Linux Foundation adds Major Exchange AI system",
-  "dynamic_published_at": "2026-04-02T21:48:46.319227+00:00",
+  "last_dynamic_question": "SOL DeFi exploit raises questions on security",
+  "dynamic_published_at": "2026-04-03T09:06:07.122724+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-02T23:43:40.765423+00:00",
-    "hour_utc": 23,
-    "answer_length": 2460
+    "question": "SOL DeFi exploit raises questions on security",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-03T09:06:07.122745+00:00",
+    "hour_utc": 9,
+    "answer_length": 3804
   }
 }
