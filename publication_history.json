@@ -3,7 +3,7 @@
     "kols": "2026-04-04T14:41:42.879594+00:00",
     "dynamic": "2026-04-04T21:40:15.402550+00:00",
     "market_direction": "2026-04-04T22:39:34.973025+00:00",
-    "narratives": "2026-04-04T16:47:38.009849+00:00",
+    "narratives": "2026-04-04T23:40:13.250820+00:00",
     "events": "2026-04-04T19:38:13.242017+00:00",
     "sentiment": "2026-04-04T18:56:35.326057+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Senate plans April 16 hearing for Warsh",
   "dynamic_published_at": "2026-04-04T21:40:15.402536+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-04-04T22:39:34.973040+00:00",
-    "hour_utc": 22,
-    "answer_length": 2918
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-04-04T23:40:13.250834+00:00",
+    "hour_utc": 23,
+    "answer_length": 3139
   }
 }
