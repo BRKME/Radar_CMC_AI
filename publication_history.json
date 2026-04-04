@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-04T08:53:35.715352+00:00",
-    "dynamic": "2026-04-03T21:43:31.764890+00:00",
+    "dynamic": "2026-04-04T09:50:20.179107+00:00",
     "market_direction": "2026-04-03T14:54:25.629158+00:00",
     "narratives": "2026-04-03T23:43:14.451831+00:00",
     "events": "2026-04-03T19:43:44.783019+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-03T10:54:26.174233+00:00"
   },
-  "last_dynamic_question": "US jobs beat weighs on BTC",
-  "dynamic_published_at": "2026-04-03T21:43:31.764874+00:00",
+  "last_dynamic_question": "Elliptic links Solana exploit to North Korea",
+  "dynamic_published_at": "2026-04-04T09:50:20.179093+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-04-04T08:53:35.715365+00:00",
-    "hour_utc": 8,
-    "answer_length": 3164
+    "question": "Elliptic links Solana exploit to North Korea",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-04T09:50:20.179112+00:00",
+    "hour_utc": 9,
+    "answer_length": 4159
   }
 }
