@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-04T14:41:42.879594+00:00",
-    "dynamic": "2026-04-04T09:50:20.179107+00:00",
+    "dynamic": "2026-04-04T21:40:15.402550+00:00",
     "market_direction": "2026-04-03T14:54:25.629158+00:00",
     "narratives": "2026-04-04T16:47:38.009849+00:00",
     "events": "2026-04-04T19:38:13.242017+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-04T10:43:21.114547+00:00"
   },
-  "last_dynamic_question": "Elliptic links Solana exploit to North Korea",
-  "dynamic_published_at": "2026-04-04T09:50:20.179093+00:00",
+  "last_dynamic_question": "Senate plans April 16 hearing for Warsh",
+  "dynamic_published_at": "2026-04-04T21:40:15.402536+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-04-04T19:38:13.242033+00:00",
-    "hour_utc": 19,
-    "answer_length": 4112
+    "question": "Senate plans April 16 hearing for Warsh",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-04T21:40:15.402555+00:00",
+    "hour_utc": 21,
+    "answer_length": 3319
   }
 }
