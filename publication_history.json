@@ -4,7 +4,7 @@
     "dynamic": "2026-04-04T09:50:20.179107+00:00",
     "market_direction": "2026-04-03T14:54:25.629158+00:00",
     "narratives": "2026-04-04T16:47:38.009849+00:00",
-    "events": "2026-04-04T15:40:42.801089+00:00",
+    "events": "2026-04-04T19:38:13.242017+00:00",
     "sentiment": "2026-04-04T18:56:35.326057+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-04T10:43:21.114547+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Elliptic links Solana exploit to North Korea",
   "dynamic_published_at": "2026-04-04T09:50:20.179093+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-04-04T18:56:35.326073+00:00",
-    "hour_utc": 18,
-    "answer_length": 3278
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-04-04T19:38:13.242033+00:00",
+    "hour_utc": 19,
+    "answer_length": 4112
   }
 }
