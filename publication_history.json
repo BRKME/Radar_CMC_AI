@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-05T14:43:33.269612+00:00",
-    "dynamic": "2026-04-05T09:50:41.390405+00:00",
+    "dynamic": "2026-04-05T21:41:36.625524+00:00",
     "market_direction": "2026-04-04T22:39:34.973025+00:00",
     "narratives": "2026-04-05T16:49:27.379568+00:00",
     "events": "2026-04-05T19:39:54.191366+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-05T10:46:49.346808+00:00"
   },
-  "last_dynamic_question": "Warsh Fed chair hearing date shapes outlook",
-  "dynamic_published_at": "2026-04-05T09:50:41.390392+00:00",
+  "last_dynamic_question": "SOL faces $110M CEX inflows after exploit",
+  "dynamic_published_at": "2026-04-05T21:41:36.625507+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-04-05T19:39:54.191382+00:00",
-    "hour_utc": 19,
-    "answer_length": 3642
+    "question": "SOL faces $110M CEX inflows after exploit",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-05T21:41:36.625529+00:00",
+    "hour_utc": 21,
+    "answer_length": 3256
   }
 }
