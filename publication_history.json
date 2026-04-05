@@ -4,7 +4,7 @@
     "dynamic": "2026-04-05T09:50:41.390405+00:00",
     "market_direction": "2026-04-04T22:39:34.973025+00:00",
     "narratives": "2026-04-05T16:49:27.379568+00:00",
-    "events": "2026-04-05T15:41:34.795330+00:00",
+    "events": "2026-04-05T19:39:54.191366+00:00",
     "sentiment": "2026-04-05T18:58:05.845182+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-05T10:46:49.346808+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Warsh Fed chair hearing date shapes outlook",
   "dynamic_published_at": "2026-04-05T09:50:41.390392+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-04-05T18:58:05.845199+00:00",
-    "hour_utc": 18,
-    "answer_length": 2914
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-04-05T19:39:54.191382+00:00",
+    "hour_utc": 19,
+    "answer_length": 3642
   }
 }
