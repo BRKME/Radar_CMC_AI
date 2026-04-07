@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-04-06T13:39:48.513588+00:00",
+    "kols": "2026-04-07T13:51:36.312533+00:00",
     "dynamic": "2026-04-07T09:15:26.237233+00:00",
     "market_direction": "2026-04-06T22:48:45.015423+00:00",
     "narratives": "2026-04-06T23:45:29.970243+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Short liquidations top $300M on ceasefire rally",
   "dynamic_published_at": "2026-04-07T09:15:26.237215+00:00",
   "last_publication": {
-    "question": "Short liquidations top $300M on ceasefire rally",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-07T09:15:26.237238+00:00",
-    "hour_utc": 9,
-    "answer_length": 4037
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-04-07T13:51:36.312548+00:00",
+    "hour_utc": 13,
+    "answer_length": 3380
   }
 }
