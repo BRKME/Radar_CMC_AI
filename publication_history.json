@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-08T13:54:04.548051+00:00",
-    "dynamic": "2026-04-08T09:14:30.582327+00:00",
+    "dynamic": "2026-04-08T21:53:37.410228+00:00",
     "market_direction": "2026-04-07T22:50:41.512335+00:00",
     "narratives": "2026-04-07T23:48:57.167452+00:00",
     "events": "2026-04-08T19:36:38.601808+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-05T10:46:49.346808+00:00"
   },
-  "last_dynamic_question": "FDIC proposes GENIUS Act rules for stablecoins",
-  "dynamic_published_at": "2026-04-08T09:14:30.582297+00:00",
+  "last_dynamic_question": "Altcoins break multi-year slump as bulls return",
+  "dynamic_published_at": "2026-04-08T21:53:37.410210+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-04-08T19:36:38.601824+00:00",
-    "hour_utc": 19,
-    "answer_length": 3843
+    "question": "Altcoins break multi-year slump as bulls return",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-08T21:53:37.410233+00:00",
+    "hour_utc": 21,
+    "answer_length": 3983
   }
 }
