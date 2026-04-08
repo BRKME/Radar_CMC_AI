@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-07T13:51:36.312533+00:00",
-    "dynamic": "2026-04-07T21:51:55.429760+00:00",
+    "dynamic": "2026-04-08T09:14:30.582327+00:00",
     "market_direction": "2026-04-07T22:50:41.512335+00:00",
     "narratives": "2026-04-07T23:48:57.167452+00:00",
     "events": "2026-04-07T19:17:11.280659+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-05T10:46:49.346808+00:00"
   },
-  "last_dynamic_question": "Central banks spotlight crypto in joint seminar",
-  "dynamic_published_at": "2026-04-07T21:51:55.429742+00:00",
+  "last_dynamic_question": "FDIC proposes GENIUS Act rules for stablecoins",
+  "dynamic_published_at": "2026-04-08T09:14:30.582297+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-07T23:48:57.167473+00:00",
-    "hour_utc": 23,
-    "answer_length": 3413
+    "question": "FDIC proposes GENIUS Act rules for stablecoins",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-08T09:14:30.582332+00:00",
+    "hour_utc": 9,
+    "answer_length": 3811
   }
 }
