@@ -4,7 +4,7 @@
     "dynamic": "2026-04-09T09:20:06.140716+00:00",
     "market_direction": "2026-04-09T14:03:43.601086+00:00",
     "narratives": "2026-04-08T23:49:42.808148+00:00",
-    "events": "2026-04-08T19:36:38.601808+00:00",
+    "events": "2026-04-09T15:46:33.794372+00:00",
     "sentiment": "2026-04-06T06:04:42.379287+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-05T10:46:49.346808+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "US–Iran ceasefire wipes out $427M shorts",
   "dynamic_published_at": "2026-04-09T09:20:06.140697+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-04-09T14:03:43.601106+00:00",
-    "hour_utc": 14,
-    "answer_length": 2845
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-04-09T15:46:33.794393+00:00",
+    "hour_utc": 15,
+    "answer_length": 3405
   }
 }
