@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-04-08T22:52:52.591775+00:00",
+    "kols": "2026-04-10T13:41:51.018477+00:00",
     "dynamic": "2026-04-10T09:19:36.393970+00:00",
     "market_direction": "2026-04-09T22:54:01.857309+00:00",
     "narratives": "2026-04-09T23:47:25.111832+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Short squeeze lifts crypto market above $2.5T",
   "dynamic_published_at": "2026-04-10T09:19:36.393954+00:00",
   "last_publication": {
-    "question": "Short squeeze lifts crypto market above $2.5T",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-10T09:19:36.393973+00:00",
-    "hour_utc": 9,
-    "answer_length": 3913
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-04-10T13:41:51.018493+00:00",
+    "hour_utc": 13,
+    "answer_length": 3443
   }
 }
