@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-11T13:17:04.064939+00:00",
-    "dynamic": "2026-04-11T09:52:24.431336+00:00",
+    "dynamic": "2026-04-11T21:42:08.402053+00:00",
     "market_direction": "2026-04-11T14:44:44.121515+00:00",
     "narratives": "2026-04-11T16:49:41.630228+00:00",
     "events": "2026-04-11T19:40:34.806513+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-11T10:45:49.880790+00:00"
   },
-  "last_dynamic_question": "Japan classifies crypto as financial instruments",
-  "dynamic_published_at": "2026-04-11T09:52:24.431322+00:00",
+  "last_dynamic_question": "CFTC launches innovation task force for crypto",
+  "dynamic_published_at": "2026-04-11T21:42:08.402034+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-04-11T19:40:34.806528+00:00",
-    "hour_utc": 19,
-    "answer_length": 4200
+    "question": "CFTC launches innovation task force for crypto",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-11T21:42:08.402058+00:00",
+    "hour_utc": 21,
+    "answer_length": 3807
   }
 }
