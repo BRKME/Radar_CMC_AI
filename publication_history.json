@@ -3,7 +3,7 @@
     "kols": "2026-04-11T13:17:04.064939+00:00",
     "dynamic": "2026-04-11T09:52:24.431336+00:00",
     "market_direction": "2026-04-11T14:44:44.121515+00:00",
-    "narratives": "2026-04-10T23:45:15.321840+00:00",
+    "narratives": "2026-04-11T16:49:41.630228+00:00",
     "events": "2026-04-11T15:42:16.150129+00:00",
     "sentiment": "2026-04-11T06:08:07.201108+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Japan classifies crypto as financial instruments",
   "dynamic_published_at": "2026-04-11T09:52:24.431322+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-04-11T15:42:16.150145+00:00",
-    "hour_utc": 15,
-    "answer_length": 3822
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-04-11T16:49:41.630246+00:00",
+    "hour_utc": 16,
+    "answer_length": 3231
   }
 }
