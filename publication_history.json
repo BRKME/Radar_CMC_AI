@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-11T22:41:55.852462+00:00",
-    "dynamic": "2026-04-12T09:00:41.269930+00:00",
+    "dynamic": "2026-04-12T09:53:40.361236+00:00",
     "market_direction": "2026-04-11T14:44:44.121515+00:00",
     "narratives": "2026-04-11T23:45:08.137538+00:00",
     "events": "2026-04-11T19:40:34.806513+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-11T10:45:49.880790+00:00"
   },
-  "last_dynamic_question": "ECB backs EU-wide crypto oversight shift",
-  "dynamic_published_at": "2026-04-12T09:00:41.269914+00:00",
+  "last_dynamic_question": "US-Iran talks fail",
+  "dynamic_published_at": "2026-04-12T09:53:40.361223+00:00",
   "last_publication": {
-    "question": "ECB backs EU-wide crypto oversight shift",
+    "question": "US-Iran talks fail",
     "group": "DYNAMIC",
-    "published_at": "2026-04-12T09:00:41.269934+00:00",
+    "published_at": "2026-04-12T09:53:40.361240+00:00",
     "hour_utc": 9,
-    "answer_length": 3455
+    "answer_length": 3592
   }
 }
