@@ -5,17 +5,17 @@
     "market_direction": "2026-04-12T22:45:08.111988+00:00",
     "narratives": "2026-04-12T23:45:52.270483+00:00",
     "events": "2026-04-12T19:45:51.151547+00:00",
-    "sentiment": "2026-04-12T06:00:29.940193+00:00",
+    "sentiment": "2026-04-13T06:24:04.814368+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-12T10:50:38.817998+00:00"
   },
   "last_dynamic_question": "Morgan Stanley cuts BTC ETF fee",
   "dynamic_published_at": "2026-04-12T21:45:05.088287+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-12T23:45:52.270499+00:00",
-    "hour_utc": 23,
-    "answer_length": 2883
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-04-13T06:24:04.814384+00:00",
+    "hour_utc": 6,
+    "answer_length": 2951
   }
 }
