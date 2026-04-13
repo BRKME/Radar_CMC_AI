@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-13T14:02:10.316379+00:00",
-    "dynamic": "2026-04-13T09:06:41.289996+00:00",
+    "dynamic": "2026-04-13T21:04:34.274787+00:00",
     "market_direction": "2026-04-12T22:45:08.111988+00:00",
     "narratives": "2026-04-12T23:45:52.270483+00:00",
     "events": "2026-04-13T19:24:50.265393+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-12T10:50:38.817998+00:00"
   },
-  "last_dynamic_question": "Fake Ledger app drains $420K in BTC",
-  "dynamic_published_at": "2026-04-13T09:06:41.289982+00:00",
+  "last_dynamic_question": "US SEC says wallet software isn't brokers",
+  "dynamic_published_at": "2026-04-13T21:04:34.274769+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-04-13T19:24:50.265408+00:00",
-    "hour_utc": 19,
-    "answer_length": 3791
+    "question": "US SEC says wallet software isn't brokers",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-13T21:04:34.274792+00:00",
+    "hour_utc": 21,
+    "answer_length": 3384
   }
 }
