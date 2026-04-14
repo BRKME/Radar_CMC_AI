@@ -5,17 +5,17 @@
     "market_direction": "2026-04-13T22:54:44.753226+00:00",
     "narratives": "2026-04-13T23:54:23.173952+00:00",
     "events": "2026-04-13T19:24:50.265393+00:00",
-    "sentiment": "2026-04-13T06:24:04.814368+00:00",
+    "sentiment": "2026-04-14T06:06:44.984029+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-12T10:50:38.817998+00:00"
   },
   "last_dynamic_question": "US SEC says wallet software isn't brokers",
   "dynamic_published_at": "2026-04-13T21:04:34.274769+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-13T23:54:23.173968+00:00",
-    "hour_utc": 23,
-    "answer_length": 3397
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-04-14T06:06:44.984045+00:00",
+    "hour_utc": 6,
+    "answer_length": 2991
   }
 }
