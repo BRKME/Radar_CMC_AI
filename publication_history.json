@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-04-13T14:02:10.316379+00:00",
+    "kols": "2026-04-14T22:54:04.859757+00:00",
     "dynamic": "2026-04-14T21:58:48.447714+00:00",
     "market_direction": "2026-04-14T14:09:54.057433+00:00",
     "narratives": "2026-04-14T16:17:36.460943+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC tops $76K as shorts liquidate",
   "dynamic_published_at": "2026-04-14T21:58:48.447696+00:00",
   "last_publication": {
-    "question": "BTC tops $76K as shorts liquidate",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-14T21:58:48.447719+00:00",
-    "hour_utc": 21,
-    "answer_length": 3561
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-04-14T22:54:04.859782+00:00",
+    "hour_utc": 22,
+    "answer_length": 3498
   }
 }
