@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-04-13T14:02:10.316379+00:00",
     "dynamic": "2026-04-13T21:04:34.274787+00:00",
-    "market_direction": "2026-04-14T08:48:55.981584+00:00",
+    "market_direction": "2026-04-14T14:09:54.057433+00:00",
     "narratives": "2026-04-13T23:54:23.173952+00:00",
     "events": "2026-04-13T19:24:50.265393+00:00",
     "sentiment": "2026-04-14T06:06:44.984029+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "US SEC says wallet software isn't brokers",
   "dynamic_published_at": "2026-04-13T21:04:34.274769+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-04-14T10:22:44.999212+00:00",
-    "hour_utc": 10,
-    "answer_length": 2975
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-04-14T14:09:54.057448+00:00",
+    "hour_utc": 14,
+    "answer_length": 2525
   }
 }
