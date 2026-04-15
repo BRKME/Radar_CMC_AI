@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-04-14T22:54:04.859757+00:00",
+    "kols": "2026-04-15T13:58:25.259181+00:00",
     "dynamic": "2026-04-14T21:58:48.447714+00:00",
     "market_direction": "2026-04-15T08:50:10.706457+00:00",
     "narratives": "2026-04-14T23:52:37.861289+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC tops $76K as shorts liquidate",
   "dynamic_published_at": "2026-04-14T21:58:48.447696+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-04-15T10:23:25.281375+00:00",
-    "hour_utc": 10,
-    "answer_length": 2815
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-04-15T13:58:25.259196+00:00",
+    "hour_utc": 13,
+    "answer_length": 3437
   }
 }
