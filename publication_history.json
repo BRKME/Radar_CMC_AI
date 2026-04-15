@@ -5,17 +5,17 @@
     "market_direction": "2026-04-14T14:09:54.057433+00:00",
     "narratives": "2026-04-14T23:52:37.861289+00:00",
     "events": "2026-04-13T19:24:50.265393+00:00",
-    "sentiment": "2026-04-14T18:12:39.477650+00:00",
+    "sentiment": "2026-04-15T06:06:14.852059+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-14T10:22:44.999194+00:00"
   },
   "last_dynamic_question": "BTC tops $76K as shorts liquidate",
   "dynamic_published_at": "2026-04-14T21:58:48.447696+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-14T23:52:37.861307+00:00",
-    "hour_utc": 23,
-    "answer_length": 3164
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-04-15T06:06:14.852075+00:00",
+    "hour_utc": 6,
+    "answer_length": 2926
   }
 }
