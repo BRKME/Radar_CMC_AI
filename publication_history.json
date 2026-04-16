@@ -7,15 +7,15 @@
     "events": "2026-04-15T19:39:43.679929+00:00",
     "sentiment": "2026-04-16T06:09:31.480039+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-04-15T10:23:25.281356+00:00"
+    "bullish": "2026-04-16T10:22:49.920021+00:00"
   },
   "last_dynamic_question": "UK watchdog launches consultation on crypto rules",
   "dynamic_published_at": "2026-04-15T21:59:21.168732+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-04-16T08:50:23.992560+00:00",
-    "hour_utc": 8,
-    "answer_length": 2819
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-04-16T10:22:49.920036+00:00",
+    "hour_utc": 10,
+    "answer_length": 3215
   }
 }
