@@ -7,15 +7,15 @@
     "events": "2026-04-15T19:39:43.679929+00:00",
     "sentiment": "2026-04-17T06:09:49.477852+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-04-16T10:22:49.920021+00:00"
+    "bullish": "2026-04-17T10:20:15.339899+00:00"
   },
   "last_dynamic_question": "FCA consultation maps UK's new crypto oversight",
   "dynamic_published_at": "2026-04-16T21:53:25.447312+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-04-17T08:49:56.742727+00:00",
-    "hour_utc": 8,
-    "answer_length": 2382
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-04-17T10:20:15.339913+00:00",
+    "hour_utc": 10,
+    "answer_length": 3059
   }
 }
