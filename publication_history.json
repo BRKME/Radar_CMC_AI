@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-17T13:49:37.844729+00:00",
-    "dynamic": "2026-04-16T21:53:25.447326+00:00",
+    "dynamic": "2026-04-17T21:54:09.624792+00:00",
     "market_direction": "2026-04-17T08:49:56.742713+00:00",
     "narratives": "2026-04-17T16:09:42.293563+00:00",
     "events": "2026-04-17T19:13:43.843357+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-17T10:20:15.339899+00:00"
   },
-  "last_dynamic_question": "FCA consultation maps UK's new crypto oversight",
-  "dynamic_published_at": "2026-04-16T21:53:25.447312+00:00",
+  "last_dynamic_question": "Ethereum Foundation helps expose North Korean infiltrators",
+  "dynamic_published_at": "2026-04-17T21:54:09.624779+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-04-17T19:13:43.843375+00:00",
-    "hour_utc": 19,
-    "answer_length": 4237
+    "question": "Ethereum Foundation helps expose North Korean infiltrators",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-17T21:54:09.624796+00:00",
+    "hour_utc": 21,
+    "answer_length": 4191
   }
 }
