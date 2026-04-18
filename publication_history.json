@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-04-18T13:20:07.146062+00:00",
     "dynamic": "2026-04-18T09:55:08.723691+00:00",
-    "market_direction": "2026-04-17T22:53:52.120700+00:00",
+    "market_direction": "2026-04-18T14:51:22.960860+00:00",
     "narratives": "2026-04-17T23:50:53.108876+00:00",
     "events": "2026-04-17T19:13:43.843357+00:00",
     "sentiment": "2026-04-17T06:09:49.477852+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC podcast signals pro-innovation crypto pivot",
   "dynamic_published_at": "2026-04-18T09:55:08.723677+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-04-18T13:20:07.146080+00:00",
-    "hour_utc": 13,
-    "answer_length": 3389
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-04-18T14:51:22.960877+00:00",
+    "hour_utc": 14,
+    "answer_length": 3221
   }
 }
