@@ -7,15 +7,15 @@
     "events": "2026-04-17T19:13:43.843357+00:00",
     "sentiment": "2026-04-17T06:09:49.477852+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-04-17T10:20:15.339899+00:00"
+    "bullish": "2026-04-18T10:51:50.118345+00:00"
   },
   "last_dynamic_question": "SEC podcast signals pro-innovation crypto pivot",
   "dynamic_published_at": "2026-04-18T09:55:08.723677+00:00",
   "last_publication": {
-    "question": "SEC podcast signals pro-innovation crypto pivot",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-18T09:55:08.723696+00:00",
-    "hour_utc": 9,
-    "answer_length": 4120
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-04-18T10:51:50.118362+00:00",
+    "hour_utc": 10,
+    "answer_length": 2982
   }
 }
