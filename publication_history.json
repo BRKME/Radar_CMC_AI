@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-04-19T13:20:39.616649+00:00",
     "dynamic": "2026-04-19T09:57:16.624995+00:00",
-    "market_direction": "2026-04-18T22:44:54.795281+00:00",
+    "market_direction": "2026-04-19T14:51:30.819492+00:00",
     "narratives": "2026-04-18T23:46:03.588426+00:00",
     "events": "2026-04-18T19:48:24.949023+00:00",
     "sentiment": "2026-04-19T06:05:04.351411+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC dominance climbs as altcoins de-risk",
   "dynamic_published_at": "2026-04-19T09:57:16.624978+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-04-19T13:20:39.616665+00:00",
-    "hour_utc": 13,
-    "answer_length": 3175
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-04-19T14:51:30.819509+00:00",
+    "hour_utc": 14,
+    "answer_length": 2586
   }
 }
