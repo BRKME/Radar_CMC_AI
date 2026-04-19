@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-04-19T13:20:39.616649+00:00",
     "dynamic": "2026-04-19T21:46:35.923286+00:00",
-    "market_direction": "2026-04-19T14:51:30.819492+00:00",
+    "market_direction": "2026-04-19T22:47:13.658167+00:00",
     "narratives": "2026-04-19T16:53:20.254390+00:00",
     "events": "2026-04-19T19:48:49.865871+00:00",
     "sentiment": "2026-04-19T06:05:04.351411+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Russia bill criminalizes unlicensed crypto services",
   "dynamic_published_at": "2026-04-19T21:46:35.923269+00:00",
   "last_publication": {
-    "question": "Russia bill criminalizes unlicensed crypto services",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-19T21:46:35.923290+00:00",
-    "hour_utc": 21,
-    "answer_length": 3674
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-04-19T22:47:13.658184+00:00",
+    "hour_utc": 22,
+    "answer_length": 2704
   }
 }
