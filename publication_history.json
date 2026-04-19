@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-18T13:20:07.146062+00:00",
-    "dynamic": "2026-04-18T21:45:32.032605+00:00",
+    "dynamic": "2026-04-19T09:03:07.974084+00:00",
     "market_direction": "2026-04-18T22:44:54.795281+00:00",
     "narratives": "2026-04-18T23:46:03.588426+00:00",
     "events": "2026-04-18T19:48:24.949023+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-18T10:51:50.118345+00:00"
   },
-  "last_dynamic_question": "X cashtag trading pilot drives $1B volume",
-  "dynamic_published_at": "2026-04-18T21:45:32.032589+00:00",
+  "last_dynamic_question": "DeFi whale loses $280M in wallet drain",
+  "dynamic_published_at": "2026-04-19T09:03:07.974069+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-04-19T06:05:04.351437+00:00",
-    "hour_utc": 6,
-    "answer_length": 2352
+    "question": "DeFi whale loses $280M in wallet drain",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-19T09:03:07.974089+00:00",
+    "hour_utc": 9,
+    "answer_length": 4282
   }
 }
