@@ -7,15 +7,15 @@
     "events": "2026-04-18T19:48:24.949023+00:00",
     "sentiment": "2026-04-19T06:05:04.351411+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-04-18T10:51:50.118345+00:00"
+    "bullish": "2026-04-19T10:52:17.568186+00:00"
   },
   "last_dynamic_question": "BTC dominance climbs as altcoins de-risk",
   "dynamic_published_at": "2026-04-19T09:57:16.624978+00:00",
   "last_publication": {
-    "question": "BTC dominance climbs as altcoins de-risk",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-19T09:57:16.625000+00:00",
-    "hour_utc": 9,
-    "answer_length": 3813
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-04-19T10:52:17.568201+00:00",
+    "hour_utc": 10,
+    "answer_length": 3344
   }
 }
