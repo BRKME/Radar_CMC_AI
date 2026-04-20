@@ -5,17 +5,17 @@
     "market_direction": "2026-04-19T22:47:13.658167+00:00",
     "narratives": "2026-04-19T23:48:40.046843+00:00",
     "events": "2026-04-19T19:48:49.865871+00:00",
-    "sentiment": "2026-04-19T06:05:04.351411+00:00",
+    "sentiment": "2026-04-20T06:24:11.920662+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-19T10:52:17.568186+00:00"
   },
   "last_dynamic_question": "Russia bill criminalizes unlicensed crypto services",
   "dynamic_published_at": "2026-04-19T21:46:35.923269+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-19T23:48:40.046857+00:00",
-    "hour_utc": 23,
-    "answer_length": 2824
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-04-20T06:24:11.920679+00:00",
+    "hour_utc": 6,
+    "answer_length": 2926
   }
 }
