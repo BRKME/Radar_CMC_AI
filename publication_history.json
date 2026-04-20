@@ -4,7 +4,7 @@
     "dynamic": "2026-04-20T09:12:35.581070+00:00",
     "market_direction": "2026-04-20T14:04:45.216199+00:00",
     "narratives": "2026-04-19T23:48:40.046843+00:00",
-    "events": "2026-04-19T19:48:49.865871+00:00",
+    "events": "2026-04-20T15:25:54.701072+00:00",
     "sentiment": "2026-04-20T06:24:11.920662+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-19T10:52:17.568186+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC ETFs push assets above $100B",
   "dynamic_published_at": "2026-04-20T09:12:35.581055+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-04-20T14:04:45.216215+00:00",
-    "hour_utc": 14,
-    "answer_length": 2871
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-04-20T15:25:54.701089+00:00",
+    "hour_utc": 15,
+    "answer_length": 3590
   }
 }
