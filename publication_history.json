@@ -3,7 +3,7 @@
     "kols": "2026-04-19T13:20:39.616649+00:00",
     "dynamic": "2026-04-20T21:55:56.442707+00:00",
     "market_direction": "2026-04-20T22:55:29.471068+00:00",
-    "narratives": "2026-04-19T23:48:40.046843+00:00",
+    "narratives": "2026-04-20T23:54:07.314750+00:00",
     "events": "2026-04-20T19:19:22.438848+00:00",
     "sentiment": "2026-04-20T06:24:11.920662+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC rebounds above $76,000 despite Iran tensions",
   "dynamic_published_at": "2026-04-20T21:55:56.442694+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-04-20T22:55:29.471082+00:00",
-    "hour_utc": 22,
-    "answer_length": 2838
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-04-20T23:54:07.314767+00:00",
+    "hour_utc": 23,
+    "answer_length": 2916
   }
 }
