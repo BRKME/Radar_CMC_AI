@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-04-19T13:20:39.616649+00:00",
     "dynamic": "2026-04-22T21:04:40.679806+00:00",
-    "market_direction": "2026-04-22T14:04:42.242896+00:00",
+    "market_direction": "2026-04-22T22:00:38.314025+00:00",
     "narratives": "2026-04-21T23:44:48.874616+00:00",
     "events": "2026-04-22T19:25:38.161697+00:00",
     "sentiment": "2026-04-22T06:06:58.261936+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC signals shift in crypto taxonomy rules",
   "dynamic_published_at": "2026-04-22T21:04:40.679789+00:00",
   "last_publication": {
-    "question": "SEC signals shift in crypto taxonomy rules",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-22T21:04:40.679812+00:00",
-    "hour_utc": 21,
-    "answer_length": 3803
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-04-22T22:00:38.314040+00:00",
+    "hour_utc": 22,
+    "answer_length": 2508
   }
 }
