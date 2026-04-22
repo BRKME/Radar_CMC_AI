@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-04-19T13:20:39.616649+00:00",
     "dynamic": "2026-04-21T21:55:09.706877+00:00",
-    "market_direction": "2026-04-22T08:53:37.088544+00:00",
+    "market_direction": "2026-04-22T14:04:42.242896+00:00",
     "narratives": "2026-04-21T23:44:48.874616+00:00",
     "events": "2026-04-21T19:23:42.550400+00:00",
     "sentiment": "2026-04-22T06:06:58.261936+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP whales buy $500M as ETFs gain",
   "dynamic_published_at": "2026-04-21T21:55:09.706859+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-04-22T10:25:26.790364+00:00",
-    "hour_utc": 10,
-    "answer_length": 3413
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-04-22T14:04:42.242912+00:00",
+    "hour_utc": 14,
+    "answer_length": 3263
   }
 }
