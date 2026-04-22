@@ -5,17 +5,17 @@
     "market_direction": "2026-04-21T22:49:37.699418+00:00",
     "narratives": "2026-04-21T23:44:48.874616+00:00",
     "events": "2026-04-21T19:23:42.550400+00:00",
-    "sentiment": "2026-04-21T06:09:24.037799+00:00",
+    "sentiment": "2026-04-22T06:06:58.261936+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-21T10:24:00.720226+00:00"
   },
   "last_dynamic_question": "XRP whales buy $500M as ETFs gain",
   "dynamic_published_at": "2026-04-21T21:55:09.706859+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-21T23:44:48.874630+00:00",
-    "hour_utc": 23,
-    "answer_length": 2603
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-04-22T06:06:58.261956+00:00",
+    "hour_utc": 6,
+    "answer_length": 3181
   }
 }
