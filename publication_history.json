@@ -5,17 +5,17 @@
     "market_direction": "2026-04-23T14:07:09.717611+00:00",
     "narratives": "2026-04-23T16:48:13.457987+00:00",
     "events": "2026-04-22T19:25:38.161697+00:00",
-    "sentiment": "2026-04-23T06:12:51.297044+00:00",
+    "sentiment": "2026-04-23T18:11:09.282763+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-23T10:26:56.620332+00:00"
   },
   "last_dynamic_question": "SEC signals shift in crypto taxonomy rules",
   "dynamic_published_at": "2026-04-22T21:04:40.679789+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-23T16:48:13.458005+00:00",
-    "hour_utc": 16,
-    "answer_length": 2674
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-04-23T18:11:09.282783+00:00",
+    "hour_utc": 18,
+    "answer_length": 2641
   }
 }
