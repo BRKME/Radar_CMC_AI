@@ -7,15 +7,15 @@
     "events": "2026-04-22T19:25:38.161697+00:00",
     "sentiment": "2026-04-24T06:17:33.892221+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-04-23T10:26:56.620332+00:00"
+    "bullish": "2026-04-24T10:43:03.659282+00:00"
   },
   "last_dynamic_question": "Morgan Stanley launches stablecoin reserves fund",
   "dynamic_published_at": "2026-04-24T09:06:01.740144+00:00",
   "last_publication": {
-    "question": "Morgan Stanley launches stablecoin reserves fund",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-24T09:06:01.740174+00:00",
-    "hour_utc": 9,
-    "answer_length": 3471
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-04-24T10:43:03.659299+00:00",
+    "hour_utc": 10,
+    "answer_length": 2865
   }
 }
