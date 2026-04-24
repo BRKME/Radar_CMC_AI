@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-19T13:20:39.616649+00:00",
-    "dynamic": "2026-04-23T21:54:19.479907+00:00",
+    "dynamic": "2026-04-24T09:06:01.740168+00:00",
     "market_direction": "2026-04-23T22:56:48.449108+00:00",
     "narratives": "2026-04-23T23:55:12.922638+00:00",
     "events": "2026-04-22T19:25:38.161697+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-23T10:26:56.620332+00:00"
   },
-  "last_dynamic_question": "US military runs Bitcoin node for cybersecurity",
-  "dynamic_published_at": "2026-04-23T21:54:19.479891+00:00",
+  "last_dynamic_question": "Morgan Stanley launches stablecoin reserves fund",
+  "dynamic_published_at": "2026-04-24T09:06:01.740144+00:00",
   "last_publication": {
-    "question": "BTC rebounds above $78K as sentiment flips",
-    "group": "sentiment",
-    "published_at": "2026-04-24T06:17:33.892237+00:00",
-    "hour_utc": 6,
-    "answer_length": 4847
+    "question": "Morgan Stanley launches stablecoin reserves fund",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-24T09:06:01.740174+00:00",
+    "hour_utc": 9,
+    "answer_length": 3471
   }
 }
