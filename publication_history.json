@@ -5,17 +5,17 @@
     "market_direction": "2026-04-23T22:56:48.449108+00:00",
     "narratives": "2026-04-23T23:55:12.922638+00:00",
     "events": "2026-04-22T19:25:38.161697+00:00",
-    "sentiment": "2026-04-23T18:11:09.282763+00:00",
+    "sentiment": "2026-04-24T06:17:33.892221+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-23T10:26:56.620332+00:00"
   },
   "last_dynamic_question": "US military runs Bitcoin node for cybersecurity",
   "dynamic_published_at": "2026-04-23T21:54:19.479891+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-23T23:55:12.922653+00:00",
-    "hour_utc": 23,
-    "answer_length": 2725
+    "question": "BTC rebounds above $78K as sentiment flips",
+    "group": "sentiment",
+    "published_at": "2026-04-24T06:17:33.892237+00:00",
+    "hour_utc": 6,
+    "answer_length": 4847
   }
 }
