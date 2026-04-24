@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-04-19T13:20:39.616649+00:00",
     "dynamic": "2026-04-24T21:54:38.579656+00:00",
-    "market_direction": "2026-04-24T14:00:50.960833+00:00",
+    "market_direction": "2026-04-24T22:50:52.868193+00:00",
     "narratives": "2026-04-23T23:55:12.922638+00:00",
     "events": "2026-04-24T19:06:22.699233+00:00",
     "sentiment": "2026-04-24T06:17:33.892221+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC and CFTC classify XRP as commodity",
   "dynamic_published_at": "2026-04-24T21:54:38.579641+00:00",
   "last_publication": {
-    "question": "SEC and CFTC classify XRP as commodity",
-    "group": "DYNAMIC",
-    "published_at": "2026-04-24T21:54:38.579661+00:00",
-    "hour_utc": 21,
-    "answer_length": 3913
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-04-24T22:50:52.868213+00:00",
+    "hour_utc": 22,
+    "answer_length": 2550
   }
 }
