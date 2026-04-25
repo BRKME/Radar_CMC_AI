@@ -7,15 +7,15 @@
     "events": "2026-04-24T19:06:22.699233+00:00",
     "sentiment": "2026-04-24T06:17:33.892221+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-04-25T10:00:15.538030+00:00"
+    "bullish": "2026-04-25T10:53:41.105979+00:00"
   },
   "last_dynamic_question": "China finalizes rules tightening crypto ad ban",
   "dynamic_published_at": "2026-04-25T09:04:45.676494+00:00",
   "last_publication": {
     "question": "What cryptos are showing bullish momentum?",
     "group": "bullish",
-    "published_at": "2026-04-25T10:00:15.538049+00:00",
+    "published_at": "2026-04-25T10:53:41.105995+00:00",
     "hour_utc": 10,
-    "answer_length": 2913
+    "answer_length": 3488
   }
 }
