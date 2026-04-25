@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-04-19T13:20:39.616649+00:00",
+    "kols": "2026-04-25T13:23:27.500819+00:00",
     "dynamic": "2026-04-25T09:04:45.676507+00:00",
     "market_direction": "2026-04-24T22:50:52.868193+00:00",
     "narratives": "2026-04-24T23:50:39.018947+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "China finalizes rules tightening crypto ad ban",
   "dynamic_published_at": "2026-04-25T09:04:45.676494+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-04-25T10:53:41.105995+00:00",
-    "hour_utc": 10,
-    "answer_length": 3488
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-04-25T13:23:27.500839+00:00",
+    "hour_utc": 13,
+    "answer_length": 3372
   }
 }
