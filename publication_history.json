@@ -5,17 +5,17 @@
     "market_direction": "2026-04-26T22:51:27.003963+00:00",
     "narratives": "2026-04-27T16:48:33.181519+00:00",
     "events": "2026-04-26T19:08:01.642386+00:00",
-    "sentiment": "2026-04-27T06:37:16.239255+00:00",
+    "sentiment": "2026-04-27T18:12:37.992341+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-26T10:54:56.893800+00:00"
   },
   "last_dynamic_question": "Study finds XRP still tracks Wall Street",
   "dynamic_published_at": "2026-04-27T09:27:05.409055+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-27T16:48:33.181537+00:00",
-    "hour_utc": 16,
-    "answer_length": 3222
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-04-27T18:12:37.992356+00:00",
+    "hour_utc": 18,
+    "answer_length": 2586
   }
 }
