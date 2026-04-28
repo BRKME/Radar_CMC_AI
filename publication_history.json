@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-04-27T14:20:26.241354+00:00",
-    "dynamic": "2026-04-27T09:27:05.409074+00:00",
+    "dynamic": "2026-04-28T09:30:43.152164+00:00",
     "market_direction": "2026-04-27T22:01:24.077007+00:00",
     "narratives": "2026-04-27T23:59:44.332789+00:00",
     "events": "2026-04-26T19:08:01.642386+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-26T10:54:56.893800+00:00"
   },
-  "last_dynamic_question": "Study finds XRP still tracks Wall Street",
-  "dynamic_published_at": "2026-04-27T09:27:05.409055+00:00",
+  "last_dynamic_question": "Asset manager buys $255M in BTC",
+  "dynamic_published_at": "2026-04-28T09:30:43.152151+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-04-28T06:38:02.882897+00:00",
-    "hour_utc": 6,
-    "answer_length": 2818
+    "question": "Asset manager buys $255M in BTC",
+    "group": "DYNAMIC",
+    "published_at": "2026-04-28T09:30:43.152169+00:00",
+    "hour_utc": 9,
+    "answer_length": 3667
   }
 }
