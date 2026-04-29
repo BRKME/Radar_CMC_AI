@@ -5,17 +5,17 @@
     "market_direction": "2026-04-29T14:23:57.010708+00:00",
     "narratives": "2026-04-29T16:48:49.998513+00:00",
     "events": "2026-04-26T19:08:01.642386+00:00",
-    "sentiment": "2026-04-29T06:31:25.015828+00:00",
+    "sentiment": "2026-04-29T18:18:50.571756+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-26T10:54:56.893800+00:00"
   },
   "last_dynamic_question": "Prediction markets price in new L2 launch",
   "dynamic_published_at": "2026-04-29T09:19:44.192898+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-04-29T16:48:49.998533+00:00",
-    "hour_utc": 16,
-    "answer_length": 3259
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-04-29T18:18:50.571770+00:00",
+    "hour_utc": 18,
+    "answer_length": 2793
   }
 }
