@@ -3,7 +3,7 @@
     "kols": "2026-04-30T14:19:42.176752+00:00",
     "dynamic": "2026-04-30T09:22:42.772346+00:00",
     "market_direction": "2026-04-29T22:07:31.062815+00:00",
-    "narratives": "2026-04-29T16:48:49.998513+00:00",
+    "narratives": "2026-04-30T16:27:01.535662+00:00",
     "events": "2026-04-26T19:08:01.642386+00:00",
     "sentiment": "2026-04-30T06:34:50.581597+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Hong Kong warns on fake HSBC stablecoins",
   "dynamic_published_at": "2026-04-30T09:22:42.772289+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-04-30T14:19:42.176770+00:00",
-    "hour_utc": 14,
-    "answer_length": 2969
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-04-30T16:27:01.535680+00:00",
+    "hour_utc": 16,
+    "answer_length": 2496
   }
 }
