@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-04-30T14:19:42.176752+00:00",
+    "kols": "2026-05-01T13:46:29.502456+00:00",
     "dynamic": "2026-05-01T09:55:10.871817+00:00",
     "market_direction": "2026-04-30T22:03:42.520362+00:00",
     "narratives": "2026-04-30T23:03:38.704062+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "RWA tokenization surges 420% to $30B",
   "dynamic_published_at": "2026-05-01T09:55:10.871782+00:00",
   "last_publication": {
-    "question": "RWA tokenization surges 420% to $30B",
-    "group": "DYNAMIC",
-    "published_at": "2026-05-01T09:55:10.871823+00:00",
-    "hour_utc": 9,
-    "answer_length": 3641
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-05-01T13:46:29.502476+00:00",
+    "hour_utc": 13,
+    "answer_length": 3181
   }
 }
