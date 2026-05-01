@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-05-01T13:46:29.502456+00:00",
-    "dynamic": "2026-05-01T09:55:10.871817+00:00",
+    "dynamic": "2026-05-01T21:02:56.884904+00:00",
     "market_direction": "2026-04-30T22:03:42.520362+00:00",
     "narratives": "2026-05-01T16:06:21.632901+00:00",
     "events": "2026-05-01T19:25:50.529436+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-04-26T10:54:56.893800+00:00"
   },
-  "last_dynamic_question": "RWA tokenization surges 420% to $30B",
-  "dynamic_published_at": "2026-05-01T09:55:10.871782+00:00",
+  "last_dynamic_question": "Are altcoins outperforming Bitcoin?",
+  "dynamic_published_at": "2026-05-01T21:02:56.884881+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-05-01T19:25:50.529452+00:00",
-    "hour_utc": 19,
-    "answer_length": 4254
+    "question": "Are altcoins outperforming Bitcoin?",
+    "group": "DYNAMIC",
+    "published_at": "2026-05-01T21:02:56.884908+00:00",
+    "hour_utc": 21,
+    "answer_length": 3113
   }
 }
