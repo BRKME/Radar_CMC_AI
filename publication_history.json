@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-05-02T14:57:14.340145+00:00",
     "dynamic": "2026-05-02T21:53:09.868846+00:00",
-    "market_direction": "2026-05-02T08:26:03.183657+00:00",
+    "market_direction": "2026-05-02T22:54:23.641991+00:00",
     "narratives": "2026-05-01T16:06:21.632901+00:00",
     "events": "2026-05-02T19:12:25.229446+00:00",
     "sentiment": "2026-05-02T06:17:12.052179+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Stablecoin giant posts $1.04B profit in Q1",
   "dynamic_published_at": "2026-05-02T21:53:09.868810+00:00",
   "last_publication": {
-    "question": "Stablecoin giant posts $1.04B profit in Q1",
-    "group": "DYNAMIC",
-    "published_at": "2026-05-02T21:53:09.868851+00:00",
-    "hour_utc": 21,
-    "answer_length": 3459
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-05-02T22:54:23.642008+00:00",
+    "hour_utc": 22,
+    "answer_length": 2446
   }
 }
