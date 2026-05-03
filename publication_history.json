@@ -7,15 +7,15 @@
     "events": "2026-05-02T19:12:25.229446+00:00",
     "sentiment": "2026-05-03T06:34:19.970862+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-05-02T10:05:39.025584+00:00"
+    "bullish": "2026-05-03T10:13:25.621321+00:00"
   },
   "last_dynamic_question": "Stablecoin giant posts $1.04B profit in Q1",
   "dynamic_published_at": "2026-05-02T21:53:09.868810+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-05-03T08:53:27.707324+00:00",
-    "hour_utc": 8,
-    "answer_length": 3707
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-05-03T10:13:25.621341+00:00",
+    "hour_utc": 10,
+    "answer_length": 2484
   }
 }
