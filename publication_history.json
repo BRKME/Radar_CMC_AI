@@ -4,7 +4,7 @@
     "dynamic": "2026-05-02T21:53:09.868846+00:00",
     "market_direction": "2026-05-02T22:54:23.641991+00:00",
     "narratives": "2026-05-02T23:55:35.528872+00:00",
-    "events": "2026-05-02T19:12:25.229446+00:00",
+    "events": "2026-05-03T15:56:08.664132+00:00",
     "sentiment": "2026-05-03T06:34:19.970862+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-03T10:13:25.621321+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Stablecoin giant posts $1.04B profit in Q1",
   "dynamic_published_at": "2026-05-02T21:53:09.868810+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-05-03T14:57:17.777679+00:00",
-    "hour_utc": 14,
-    "answer_length": 3344
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-05-03T15:56:08.664146+00:00",
+    "hour_utc": 15,
+    "answer_length": 3508
   }
 }
