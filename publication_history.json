@@ -5,17 +5,17 @@
     "market_direction": "2026-05-02T22:54:23.641991+00:00",
     "narratives": "2026-05-04T16:55:40.311715+00:00",
     "events": "2026-05-03T19:12:22.593530+00:00",
-    "sentiment": "2026-05-04T06:47:29.929745+00:00",
+    "sentiment": "2026-05-04T18:22:52.020370+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-03T10:13:25.621321+00:00"
   },
   "last_dynamic_question": "April DeFi exploits hit record losses",
   "dynamic_published_at": "2026-05-04T09:29:24.426100+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-05-04T16:55:40.311734+00:00",
-    "hour_utc": 16,
-    "answer_length": 3203
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-05-04T18:22:52.020388+00:00",
+    "hour_utc": 18,
+    "answer_length": 3077
   }
 }
