@@ -5,17 +5,17 @@
     "market_direction": "2026-05-05T14:16:16.190509+00:00",
     "narratives": "2026-05-05T16:51:44.975042+00:00",
     "events": "2026-05-03T19:12:22.593530+00:00",
-    "sentiment": "2026-05-05T06:28:24.321970+00:00",
+    "sentiment": "2026-05-05T18:19:38.601633+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-03T10:13:25.621321+00:00"
   },
   "last_dynamic_question": "US Senate bans lawmakers from prediction markets",
   "dynamic_published_at": "2026-05-05T09:13:12.266056+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-05-05T16:51:44.975059+00:00",
-    "hour_utc": 16,
-    "answer_length": 3577
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-05-05T18:19:38.601649+00:00",
+    "hour_utc": 18,
+    "answer_length": 2979
   }
 }
