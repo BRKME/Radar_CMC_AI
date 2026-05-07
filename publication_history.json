@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-05-06T22:04:29.096756+00:00",
     "dynamic": "2026-05-07T09:42:24.493366+00:00",
-    "market_direction": "2026-05-05T22:08:04.296549+00:00",
+    "market_direction": "2026-05-07T14:40:52.219518+00:00",
     "narratives": "2026-05-06T23:59:46.499556+00:00",
     "events": "2026-05-03T19:12:22.593530+00:00",
     "sentiment": "2026-05-07T06:45:46.402351+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC jumps past $82K as oil sinks",
   "dynamic_published_at": "2026-05-07T09:42:24.493350+00:00",
   "last_publication": {
-    "question": "BTC jumps past $82K as oil sinks",
-    "group": "DYNAMIC",
-    "published_at": "2026-05-07T09:42:24.493370+00:00",
-    "hour_utc": 9,
-    "answer_length": 3629
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-05-07T14:40:52.219538+00:00",
+    "hour_utc": 14,
+    "answer_length": 2883
   }
 }
