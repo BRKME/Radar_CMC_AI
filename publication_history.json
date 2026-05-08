@@ -5,17 +5,17 @@
     "market_direction": "2026-05-08T14:09:42.219111+00:00",
     "narratives": "2026-05-08T16:22:39.865009+00:00",
     "events": "2026-05-03T19:12:22.593530+00:00",
-    "sentiment": "2026-05-08T06:06:07.436666+00:00",
+    "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-03T10:13:25.621321+00:00"
   },
   "last_dynamic_question": "Major Exchange outage halts trading for hours",
   "dynamic_published_at": "2026-05-08T09:47:38.508121+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-05-08T16:22:39.865028+00:00",
-    "hour_utc": 16,
-    "answer_length": 2712
+    "question": "What is the market sentiment?",
+    "group": "sentiment",
+    "published_at": "2026-05-08T18:17:01.145685+00:00",
+    "hour_utc": 18,
+    "answer_length": 3014
   }
 }
