@@ -95,7 +95,7 @@ SCHEDULE = {
     3: None,
     4: None,
     5: None,
-    6: "sentiment",      # 06:00 UTC
+    6: None,              # was: sentiment
     7: None,
     8: "market_direction",  # 08:00
     9: "DYNAMIC",        # 09:00
@@ -107,7 +107,7 @@ SCHEDULE = {
     15: "events",          # 15:00 - События
     16: "narratives",    # 16:00
     17: None,
-    18: "sentiment",     # 18:00
+    18: None,            # was: sentiment
     19: "events",        # 19:00
     20: None,
     21: "DYNAMIC",       # 21:00
@@ -427,7 +427,7 @@ def get_oldest_question_group(history):
     """Находит группу вопроса которая публиковалась дольше всего назад"""
     last_published = history.get("last_published", {})
     
-    all_groups = ["kols", "sentiment", "market_direction", "events", "bullish", "narratives"]
+    all_groups = ["kols", "market_direction", "events", "bullish", "narratives"]
     
     if not last_published:
         logger.info("📊 История пуста, возвращаю 'kols'")
@@ -1520,7 +1520,7 @@ async def main_parser():
                 logger.warning(f"   Пытаюсь найти любой доступный вопрос...")
                 
                 # Пробуем найти хоть что-то из стандартных групп
-                for fallback_group in ["kols", "sentiment", "events", "bullish", "narratives"]:
+                for fallback_group in ["kols", "events", "bullish", "narratives"]:
                     question_to_publish = find_question_by_group(questions_list, fallback_group)
                     if question_to_publish:
                         logger.info(f"✓ Найден вопрос из группы '{fallback_group}': {question_to_publish}")
