@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-05-06T22:04:29.096756+00:00",
-    "dynamic": "2026-05-07T09:42:24.493366+00:00",
+    "dynamic": "2026-05-08T09:47:38.508137+00:00",
     "market_direction": "2026-05-07T22:10:29.597705+00:00",
     "narratives": "2026-05-07T16:59:36.182061+00:00",
     "events": "2026-05-03T19:12:22.593530+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-03T10:13:25.621321+00:00"
   },
-  "last_dynamic_question": "BTC jumps past $82K as oil sinks",
-  "dynamic_published_at": "2026-05-07T09:42:24.493350+00:00",
+  "last_dynamic_question": "Major Exchange outage halts trading for hours",
+  "dynamic_published_at": "2026-05-08T09:47:38.508121+00:00",
   "last_publication": {
-    "question": "What is the market sentiment?",
-    "group": "sentiment",
-    "published_at": "2026-05-08T06:06:07.436682+00:00",
-    "hour_utc": 6,
-    "answer_length": 2617
+    "question": "Major Exchange outage halts trading for hours",
+    "group": "DYNAMIC",
+    "published_at": "2026-05-08T09:47:38.508140+00:00",
+    "hour_utc": 9,
+    "answer_length": 3446
   }
 }
