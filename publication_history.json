@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-05-06T22:04:29.096756+00:00",
+    "kols": "2026-05-09T13:44:19.928655+00:00",
     "dynamic": "2026-05-08T09:47:38.508137+00:00",
     "market_direction": "2026-05-09T08:47:00.487160+00:00",
     "narratives": "2026-05-08T23:06:42.215649+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Major Exchange outage halts trading for hours",
   "dynamic_published_at": "2026-05-08T09:47:38.508121+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-05-09T10:14:09.647542+00:00",
-    "hour_utc": 10,
-    "answer_length": 2875
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-05-09T13:44:19.928671+00:00",
+    "hour_utc": 13,
+    "answer_length": 3510
   }
 }
