@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-05-09T22:56:40.186036+00:00",
-    "dynamic": "2026-05-09T21:55:25.020619+00:00",
+    "dynamic": "2026-05-10T09:00:21.962273+00:00",
     "market_direction": "2026-05-09T08:47:00.487160+00:00",
     "narratives": "2026-05-09T23:57:34.764845+00:00",
     "events": "2026-05-09T19:15:51.399803+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-09T10:14:09.647525+00:00"
   },
-  "last_dynamic_question": "Senate panel sets CLARITY Act vote",
-  "dynamic_published_at": "2026-05-09T21:55:25.020603+00:00",
+  "last_dynamic_question": "Crypto exchange parent seeks US trust charter",
+  "dynamic_published_at": "2026-05-10T09:00:21.962259+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-05-09T23:57:34.764862+00:00",
-    "hour_utc": 23,
-    "answer_length": 3007
+    "question": "Crypto exchange parent seeks US trust charter",
+    "group": "DYNAMIC",
+    "published_at": "2026-05-10T09:00:21.962279+00:00",
+    "hour_utc": 9,
+    "answer_length": 3158
   }
 }
