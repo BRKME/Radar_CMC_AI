@@ -4,7 +4,7 @@
     "dynamic": "2026-05-10T09:00:21.962273+00:00",
     "market_direction": "2026-05-09T08:47:00.487160+00:00",
     "narratives": "2026-05-09T23:57:34.764845+00:00",
-    "events": "2026-05-09T19:15:51.399803+00:00",
+    "events": "2026-05-10T15:02:05.079047+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-10T10:20:55.100089+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Crypto exchange parent seeks US trust charter",
   "dynamic_published_at": "2026-05-10T09:00:21.962259+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-05-10T13:47:17.978329+00:00",
-    "hour_utc": 13,
-    "answer_length": 3614
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-05-10T15:02:05.079068+00:00",
+    "hour_utc": 15,
+    "answer_length": 3541
   }
 }
