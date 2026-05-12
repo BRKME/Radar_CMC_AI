@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-05-11T08:29:55.376967+00:00",
-    "dynamic": "2026-05-12T09:47:04.122832+00:00",
+    "dynamic": "2026-05-12T21:37:12.737719+00:00",
     "market_direction": "2026-05-12T14:47:30.513351+00:00",
     "narratives": "2026-05-11T16:09:09.467286+00:00",
     "events": "2026-05-11T19:03:47.021161+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-10T10:20:55.100089+00:00"
   },
-  "last_dynamic_question": "Senate panel releases Crypto Clarity Act draft",
-  "dynamic_published_at": "2026-05-12T09:47:04.122814+00:00",
+  "last_dynamic_question": "XRP ETFs log $26M daily inflow",
+  "dynamic_published_at": "2026-05-12T21:37:12.737703+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-05-12T14:47:30.513368+00:00",
-    "hour_utc": 14,
-    "answer_length": 2655
+    "question": "XRP ETFs log $26M daily inflow",
+    "group": "DYNAMIC",
+    "published_at": "2026-05-12T21:37:12.737724+00:00",
+    "hour_utc": 21,
+    "answer_length": 3909
   }
 }
