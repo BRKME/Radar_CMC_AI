@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-05-14T13:02:16.007374+00:00",
     "dynamic": "2026-05-14T21:17:13.827732+00:00",
-    "market_direction": "2026-05-15T22:05:04.385959+00:00",
+    "market_direction": "2026-05-16T08:54:10.104022+00:00",
     "narratives": "2026-05-15T23:08:17.262323+00:00",
     "events": "2026-05-14T19:58:37.690876+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC surge triggers $236M liquidations across crypto",
   "dynamic_published_at": "2026-05-14T21:17:13.827713+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-05-15T23:08:17.262336+00:00",
-    "hour_utc": 23,
-    "answer_length": 3006
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-05-16T08:54:10.104041+00:00",
+    "hour_utc": 8,
+    "answer_length": 3550
   }
 }
