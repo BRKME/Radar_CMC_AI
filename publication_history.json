@@ -3,7 +3,7 @@
     "kols": "2026-05-16T13:49:52.046791+00:00",
     "dynamic": "2026-05-14T21:17:13.827732+00:00",
     "market_direction": "2026-05-16T08:54:10.104022+00:00",
-    "narratives": "2026-05-15T23:08:17.262323+00:00",
+    "narratives": "2026-05-16T16:06:26.481828+00:00",
     "events": "2026-05-16T15:05:30.320891+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC surge triggers $236M liquidations across crypto",
   "dynamic_published_at": "2026-05-14T21:17:13.827713+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-05-16T15:05:30.320908+00:00",
-    "hour_utc": 15,
-    "answer_length": 3722
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-05-16T16:06:26.481845+00:00",
+    "hour_utc": 16,
+    "answer_length": 3442
   }
 }
