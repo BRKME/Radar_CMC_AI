@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-05-17T13:50:20.413014+00:00",
-    "dynamic": "2026-05-17T09:55:26.117216+00:00",
+    "dynamic": "2026-05-17T21:03:58.349663+00:00",
     "market_direction": "2026-05-16T22:56:17.056598+00:00",
     "narratives": "2026-05-17T16:07:28.126826+00:00",
     "events": "2026-05-17T19:22:59.560285+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-16T10:23:02.406775+00:00"
   },
-  "last_dynamic_question": "Bitcoin ETFs log $1B weekly outflows",
-  "dynamic_published_at": "2026-05-17T09:55:26.117199+00:00",
+  "last_dynamic_question": "CLARITY Act clears US Senate committee",
+  "dynamic_published_at": "2026-05-17T21:03:58.349646+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-05-17T19:22:59.560297+00:00",
-    "hour_utc": 19,
-    "answer_length": 3785
+    "question": "CLARITY Act clears US Senate committee",
+    "group": "DYNAMIC",
+    "published_at": "2026-05-17T21:03:58.349668+00:00",
+    "hour_utc": 21,
+    "answer_length": 3689
   }
 }
