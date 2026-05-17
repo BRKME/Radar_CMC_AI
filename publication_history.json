@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-05-16T13:49:52.046791+00:00",
+    "kols": "2026-05-17T13:50:20.413014+00:00",
     "dynamic": "2026-05-17T09:55:26.117216+00:00",
     "market_direction": "2026-05-16T22:56:17.056598+00:00",
     "narratives": "2026-05-17T00:00:12.946972+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Bitcoin ETFs log $1B weekly outflows",
   "dynamic_published_at": "2026-05-17T09:55:26.117199+00:00",
   "last_publication": {
-    "question": "Bitcoin ETFs log $1B weekly outflows",
-    "group": "DYNAMIC",
-    "published_at": "2026-05-17T09:55:26.117220+00:00",
-    "hour_utc": 9,
-    "answer_length": 3875
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-05-17T13:50:20.413029+00:00",
+    "hour_utc": 13,
+    "answer_length": 3521
   }
 }
