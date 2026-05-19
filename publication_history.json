@@ -4,7 +4,7 @@
     "dynamic": "2026-05-17T21:03:58.349663+00:00",
     "market_direction": "2026-05-18T22:08:43.814175+00:00",
     "narratives": "2026-05-19T16:29:08.929145+00:00",
-    "events": "2026-05-17T19:22:59.560285+00:00",
+    "events": "2026-05-19T19:09:25.416803+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-19T10:00:31.276674+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "CLARITY Act clears US Senate committee",
   "dynamic_published_at": "2026-05-17T21:03:58.349646+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-05-19T16:29:08.929161+00:00",
-    "hour_utc": 16,
-    "answer_length": 3799
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-05-19T19:09:25.416824+00:00",
+    "hour_utc": 19,
+    "answer_length": 3871
   }
 }
