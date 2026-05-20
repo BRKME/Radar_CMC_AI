@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-05-20T08:33:07.888085+00:00",
-    "dynamic": "2026-05-19T21:40:09.041935+00:00",
+    "dynamic": "2026-05-20T21:04:05.429861+00:00",
     "market_direction": "2026-05-18T22:08:43.814175+00:00",
     "narratives": "2026-05-19T23:13:42.209697+00:00",
     "events": "2026-05-20T15:50:09.179520+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-19T10:00:31.276674+00:00"
   },
-  "last_dynamic_question": "Japan clarifies rules for foreign stablecoins",
-  "dynamic_published_at": "2026-05-19T21:40:09.041919+00:00",
+  "last_dynamic_question": "Japan expands access for foreign stablecoins",
+  "dynamic_published_at": "2026-05-20T21:04:05.429845+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-05-20T15:50:09.179542+00:00",
-    "hour_utc": 15,
-    "answer_length": 4227
+    "question": "Japan expands access for foreign stablecoins",
+    "group": "DYNAMIC",
+    "published_at": "2026-05-20T21:04:05.429866+00:00",
+    "hour_utc": 21,
+    "answer_length": 3925
   }
 }
