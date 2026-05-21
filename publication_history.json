@@ -3,7 +3,7 @@
     "kols": "2026-05-20T08:33:07.888085+00:00",
     "dynamic": "2026-05-21T09:57:55.426840+00:00",
     "market_direction": "2026-05-20T22:40:54.868083+00:00",
-    "narratives": "2026-05-19T23:13:42.209697+00:00",
+    "narratives": "2026-05-21T16:21:50.768578+00:00",
     "events": "2026-05-20T15:50:09.179520+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Trump orders review of crypto banking access",
   "dynamic_published_at": "2026-05-21T09:57:55.426825+00:00",
   "last_publication": {
-    "question": "Trump orders review of crypto banking access",
-    "group": "DYNAMIC",
-    "published_at": "2026-05-21T09:57:55.426845+00:00",
-    "hour_utc": 9,
-    "answer_length": 3743
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-05-21T16:21:50.768598+00:00",
+    "hour_utc": 16,
+    "answer_length": 2912
   }
 }
