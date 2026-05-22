@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-05-20T08:33:07.888085+00:00",
-    "dynamic": "2026-05-22T09:44:21.362345+00:00",
+    "dynamic": "2026-05-22T21:18:42.729434+00:00",
     "market_direction": "2026-05-21T22:25:01.336002+00:00",
     "narratives": "2026-05-21T16:21:50.768578+00:00",
     "events": "2026-05-22T15:52:10.213331+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-19T10:00:31.276674+00:00"
   },
-  "last_dynamic_question": "RWA and stable tokens hit new highs",
-  "dynamic_published_at": "2026-05-22T09:44:21.362325+00:00",
+  "last_dynamic_question": "SEC delays tokenized stock trading framework",
+  "dynamic_published_at": "2026-05-22T21:18:42.729416+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-05-22T15:52:10.213344+00:00",
-    "hour_utc": 15,
-    "answer_length": 3956
+    "question": "SEC delays tokenized stock trading framework",
+    "group": "DYNAMIC",
+    "published_at": "2026-05-22T21:18:42.729445+00:00",
+    "hour_utc": 21,
+    "answer_length": 4209
   }
 }
