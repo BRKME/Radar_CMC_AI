@@ -3,7 +3,7 @@
     "kols": "2026-05-23T13:55:48.524241+00:00",
     "dynamic": "2026-05-23T21:03:42.146805+00:00",
     "market_direction": "2026-05-23T22:02:25.355701+00:00",
-    "narratives": "2026-05-22T23:12:22.863532+00:00",
+    "narratives": "2026-05-23T23:01:29.987880+00:00",
     "events": "2026-05-23T19:23:20.846087+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC drop triggers nearly $1B liquidations",
   "dynamic_published_at": "2026-05-23T21:03:42.146791+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-05-23T22:02:25.355717+00:00",
-    "hour_utc": 22,
-    "answer_length": 2802
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-05-23T23:01:29.987897+00:00",
+    "hour_utc": 23,
+    "answer_length": 3565
   }
 }
