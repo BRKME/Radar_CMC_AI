@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-05-24T13:52:59.305027+00:00",
-    "dynamic": "2026-05-23T21:03:42.146805+00:00",
+    "dynamic": "2026-05-24T21:05:46.184247+00:00",
     "market_direction": "2026-05-23T22:02:25.355701+00:00",
     "narratives": "2026-05-23T23:01:29.987880+00:00",
     "events": "2026-05-24T19:27:00.216561+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-24T10:02:32.625296+00:00"
   },
-  "last_dynamic_question": "BTC drop triggers nearly $1B liquidations",
-  "dynamic_published_at": "2026-05-23T21:03:42.146791+00:00",
+  "last_dynamic_question": "AI speeds quantum threat to crypto security",
+  "dynamic_published_at": "2026-05-24T21:05:46.184230+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-05-24T19:27:00.216577+00:00",
-    "hour_utc": 19,
-    "answer_length": 3500
+    "question": "AI speeds quantum threat to crypto security",
+    "group": "DYNAMIC",
+    "published_at": "2026-05-24T21:05:46.184253+00:00",
+    "hour_utc": 21,
+    "answer_length": 3983
   }
 }
