@@ -4,7 +4,7 @@
     "dynamic": "2026-05-26T21:53:57.032940+00:00",
     "market_direction": "2026-05-28T08:50:13.517191+00:00",
     "narratives": "2026-05-28T17:00:08.293514+00:00",
-    "events": "2026-05-27T19:31:02.252896+00:00",
+    "events": "2026-05-28T19:40:01.877061+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-05-25T10:25:44.903308+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP ETFs attract $117M as BTC lags",
   "dynamic_published_at": "2026-05-26T21:53:57.032922+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-05-28T17:00:08.293530+00:00",
-    "hour_utc": 16,
-    "answer_length": 3117
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-05-28T19:40:01.877083+00:00",
+    "hour_utc": 19,
+    "answer_length": 3885
   }
 }
