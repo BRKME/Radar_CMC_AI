@@ -3,7 +3,7 @@
     "kols": "2026-05-24T13:52:59.305027+00:00",
     "dynamic": "2026-05-29T21:59:11.250272+00:00",
     "market_direction": "2026-05-29T08:48:20.421989+00:00",
-    "narratives": "2026-05-29T16:51:06.292024+00:00",
+    "narratives": "2026-05-29T23:21:05.178484+00:00",
     "events": "2026-05-29T19:36:54.337950+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC chair signals Trump signs crypto bill",
   "dynamic_published_at": "2026-05-29T21:59:11.250252+00:00",
   "last_publication": {
-    "question": "SEC chair signals Trump signs crypto bill",
-    "group": "DYNAMIC",
-    "published_at": "2026-05-29T21:59:11.250277+00:00",
-    "hour_utc": 21,
-    "answer_length": 3995
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-05-29T23:21:05.178496+00:00",
+    "hour_utc": 23,
+    "answer_length": 3084
   }
 }
