@@ -3,7 +3,7 @@
     "kols": "2026-05-24T13:52:59.305027+00:00",
     "dynamic": "2026-06-01T21:41:26.019079+00:00",
     "market_direction": "2026-05-31T14:04:20.726726+00:00",
-    "narratives": "2026-05-31T23:10:03.988220+00:00",
+    "narratives": "2026-06-01T23:40:21.286102+00:00",
     "events": "2026-05-31T19:37:18.278292+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "US CLARITY Act pushes toward Senate vote",
   "dynamic_published_at": "2026-06-01T21:41:26.019061+00:00",
   "last_publication": {
-    "question": "US CLARITY Act pushes toward Senate vote",
-    "group": "DYNAMIC",
-    "published_at": "2026-06-01T21:41:26.019083+00:00",
-    "hour_utc": 21,
-    "answer_length": 4160
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-06-01T23:40:21.286120+00:00",
+    "hour_utc": 23,
+    "answer_length": 2934
   }
 }
