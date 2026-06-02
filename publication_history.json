@@ -3,7 +3,7 @@
     "kols": "2026-05-24T13:52:59.305027+00:00",
     "dynamic": "2026-06-02T21:55:41.815294+00:00",
     "market_direction": "2026-06-02T14:15:04.734517+00:00",
-    "narratives": "2026-06-01T23:40:21.286102+00:00",
+    "narratives": "2026-06-02T23:55:20.493141+00:00",
     "events": "2026-05-31T19:37:18.278292+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Altcoin ETFs gain while BTC funds exit",
   "dynamic_published_at": "2026-06-02T21:55:41.815275+00:00",
   "last_publication": {
-    "question": "Altcoin ETFs gain while BTC funds exit",
-    "group": "DYNAMIC",
-    "published_at": "2026-06-02T21:55:41.815300+00:00",
-    "hour_utc": 21,
-    "answer_length": 3687
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-06-02T23:55:20.493157+00:00",
+    "hour_utc": 23,
+    "answer_length": 3258
   }
 }
