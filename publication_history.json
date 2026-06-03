@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-05-24T13:52:59.305027+00:00",
-    "dynamic": "2026-06-02T21:55:41.815294+00:00",
+    "dynamic": "2026-06-03T21:56:06.891428+00:00",
     "market_direction": "2026-06-03T14:50:09.873874+00:00",
     "narratives": "2026-06-02T23:55:20.493141+00:00",
     "events": "2026-05-31T19:37:18.278292+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-06-03T10:00:57.922006+00:00"
   },
-  "last_dynamic_question": "Altcoin ETFs gain while BTC funds exit",
-  "dynamic_published_at": "2026-06-02T21:55:41.815275+00:00",
+  "last_dynamic_question": "Banks urge Congress to ban stablecoin interest",
+  "dynamic_published_at": "2026-06-03T21:56:06.891415+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-06-03T14:50:09.873894+00:00",
-    "hour_utc": 14,
-    "answer_length": 3202
+    "question": "Banks urge Congress to ban stablecoin interest",
+    "group": "DYNAMIC",
+    "published_at": "2026-06-03T21:56:06.891431+00:00",
+    "hour_utc": 21,
+    "answer_length": 3528
   }
 }
