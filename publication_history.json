@@ -3,7 +3,7 @@
     "kols": "2026-05-24T13:52:59.305027+00:00",
     "dynamic": "2026-06-04T21:49:15.054163+00:00",
     "market_direction": "2026-06-04T08:56:32.134806+00:00",
-    "narratives": "2026-06-04T16:26:27.350553+00:00",
+    "narratives": "2026-06-04T23:16:16.717260+00:00",
     "events": "2026-06-04T19:27:59.128734+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC plunge triggers over $1.6B crypto liquidations",
   "dynamic_published_at": "2026-06-04T21:49:15.054146+00:00",
   "last_publication": {
-    "question": "BTC plunge triggers over $1.6B crypto liquidations",
-    "group": "DYNAMIC",
-    "published_at": "2026-06-04T21:49:15.054168+00:00",
-    "hour_utc": 21,
-    "answer_length": 4103
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-06-04T23:16:16.717273+00:00",
+    "hour_utc": 23,
+    "answer_length": 2342
   }
 }
