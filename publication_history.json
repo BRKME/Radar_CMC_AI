@@ -4,7 +4,7 @@
     "dynamic": "2026-06-03T21:56:06.891428+00:00",
     "market_direction": "2026-06-04T08:56:32.134806+00:00",
     "narratives": "2026-06-04T16:26:27.350553+00:00",
-    "events": "2026-05-31T19:37:18.278292+00:00",
+    "events": "2026-06-04T19:27:59.128734+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-06-03T10:00:57.922006+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Banks urge Congress to ban stablecoin interest",
   "dynamic_published_at": "2026-06-03T21:56:06.891415+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-06-04T16:26:27.350571+00:00",
-    "hour_utc": 16,
-    "answer_length": 3101
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-06-04T19:27:59.128753+00:00",
+    "hour_utc": 19,
+    "answer_length": 3489
   }
 }
