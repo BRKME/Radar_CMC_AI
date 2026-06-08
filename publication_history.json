@@ -4,7 +4,7 @@
     "dynamic": "2026-06-07T09:29:36.008694+00:00",
     "market_direction": "2026-06-07T22:12:53.302871+00:00",
     "narratives": "2026-06-08T16:11:16.863389+00:00",
-    "events": "2026-06-05T19:01:46.723919+00:00",
+    "events": "2026-06-08T19:28:25.623139+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-06-06T10:14:25.840328+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "$1.03B liquidations hit leveraged crypto longs",
   "dynamic_published_at": "2026-06-07T09:29:36.008679+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-06-08T16:11:16.863408+00:00",
-    "hour_utc": 16,
-    "answer_length": 3310
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-06-08T19:28:25.623155+00:00",
+    "hour_utc": 19,
+    "answer_length": 4094
   }
 }
