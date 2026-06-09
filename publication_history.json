@@ -3,7 +3,7 @@
     "kols": "2026-06-09T08:37:27.534886+00:00",
     "dynamic": "2026-06-08T21:57:40.323515+00:00",
     "market_direction": "2026-06-07T22:12:53.302871+00:00",
-    "narratives": "2026-06-08T23:17:52.300899+00:00",
+    "narratives": "2026-06-09T16:10:25.617954+00:00",
     "events": "2026-06-08T19:28:25.623139+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Stablecoin issuer freezes CEX wallets under sanctions",
   "dynamic_published_at": "2026-06-08T21:57:40.323497+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-06-09T08:37:27.534905+00:00",
-    "hour_utc": 8,
-    "answer_length": 3413
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-06-09T16:10:25.617972+00:00",
+    "hour_utc": 16,
+    "answer_length": 3223
   }
 }
