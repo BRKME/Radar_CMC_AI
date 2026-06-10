@@ -3,7 +3,7 @@
     "kols": "2026-06-09T08:37:27.534886+00:00",
     "dynamic": "2026-06-09T21:55:43.092515+00:00",
     "market_direction": "2026-06-10T08:57:01.233409+00:00",
-    "narratives": "2026-06-09T23:23:47.127535+00:00",
+    "narratives": "2026-06-10T16:41:35.010614+00:00",
     "events": "2026-06-09T19:23:45.370839+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "DeFi identity token suffers $32M exploit",
   "dynamic_published_at": "2026-06-09T21:55:43.092499+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-06-10T08:57:01.233426+00:00",
-    "hour_utc": 8,
-    "answer_length": 3099
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-06-10T16:41:35.010628+00:00",
+    "hour_utc": 16,
+    "answer_length": 2673
   }
 }
