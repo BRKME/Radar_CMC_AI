@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-06-10T22:12:31.230524+00:00",
-    "dynamic": "2026-06-11T21:27:35.211186+00:00",
+    "dynamic": "2026-06-12T09:06:47.439425+00:00",
     "market_direction": "2026-06-11T14:48:00.874386+00:00",
     "narratives": "2026-06-11T23:45:00.223394+00:00",
     "events": "2026-06-10T19:42:14.327911+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-06-11T10:52:37.457167+00:00"
   },
-  "last_dynamic_question": "EU sanctions 11 crypto platforms over Russia",
-  "dynamic_published_at": "2026-06-11T21:27:35.211170+00:00",
+  "last_dynamic_question": "Bitmine nears 5% ownership of ETH supply",
+  "dynamic_published_at": "2026-06-12T09:06:47.439409+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-06-11T23:45:00.223411+00:00",
-    "hour_utc": 23,
-    "answer_length": 3742
+    "question": "Bitmine nears 5% ownership of ETH supply",
+    "group": "DYNAMIC",
+    "published_at": "2026-06-12T09:06:47.439430+00:00",
+    "hour_utc": 9,
+    "answer_length": 3206
   }
 }
