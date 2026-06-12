@@ -4,7 +4,7 @@
     "dynamic": "2026-06-12T09:06:47.439425+00:00",
     "market_direction": "2026-06-11T14:48:00.874386+00:00",
     "narratives": "2026-06-12T16:51:49.132004+00:00",
-    "events": "2026-06-10T19:42:14.327911+00:00",
+    "events": "2026-06-12T19:14:52.991941+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-06-11T10:52:37.457167+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Bitmine nears 5% ownership of ETH supply",
   "dynamic_published_at": "2026-06-12T09:06:47.439409+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-06-12T16:51:49.132019+00:00",
-    "hour_utc": 16,
-    "answer_length": 2871
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-06-12T19:14:52.991961+00:00",
+    "hour_utc": 19,
+    "answer_length": 4008
   }
 }
