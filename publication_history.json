@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-06-15T13:22:57.278285+00:00",
-    "dynamic": "2026-06-14T09:50:35.950951+00:00",
+    "dynamic": "2026-06-15T21:48:20.413137+00:00",
     "market_direction": "2026-06-14T22:18:56.144300+00:00",
     "narratives": "2026-06-14T16:43:17.463525+00:00",
     "events": "2026-06-12T19:14:52.991941+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-06-11T10:52:37.457167+00:00"
   },
-  "last_dynamic_question": "India uncovers $104M in hidden crypto",
-  "dynamic_published_at": "2026-06-14T09:50:35.950939+00:00",
+  "last_dynamic_question": "India sends over 44,000 crypto tax notices",
+  "dynamic_published_at": "2026-06-15T21:48:20.413125+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-06-15T13:22:57.278300+00:00",
-    "hour_utc": 13,
-    "answer_length": 3271
+    "question": "India sends over 44,000 crypto tax notices",
+    "group": "DYNAMIC",
+    "published_at": "2026-06-15T21:48:20.413140+00:00",
+    "hour_utc": 21,
+    "answer_length": 3432
   }
 }
