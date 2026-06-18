@@ -3,7 +3,7 @@
     "kols": "2026-06-17T13:49:43.744701+00:00",
     "dynamic": "2026-06-18T21:26:19.665829+00:00",
     "market_direction": "2026-06-18T14:18:14.129512+00:00",
-    "narratives": "2026-06-16T23:41:40.024535+00:00",
+    "narratives": "2026-06-18T23:52:57.293277+00:00",
     "events": "2026-06-12T19:14:52.991941+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Oman launches mandatory national Bitcoin mining pool",
   "dynamic_published_at": "2026-06-18T21:26:19.665814+00:00",
   "last_publication": {
-    "question": "Oman launches mandatory national Bitcoin mining pool",
-    "group": "DYNAMIC",
-    "published_at": "2026-06-18T21:26:19.665833+00:00",
-    "hour_utc": 21,
-    "answer_length": 3593
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-06-18T23:52:57.293296+00:00",
+    "hour_utc": 23,
+    "answer_length": 3104
   }
 }
