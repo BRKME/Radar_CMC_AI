@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-06-17T13:49:43.744701+00:00",
     "dynamic": "2026-06-17T09:58:04.701157+00:00",
-    "market_direction": "2026-06-14T22:18:56.144300+00:00",
+    "market_direction": "2026-06-18T14:18:14.129512+00:00",
     "narratives": "2026-06-16T23:41:40.024535+00:00",
     "events": "2026-06-12T19:14:52.991941+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC options open interest tops $36B",
   "dynamic_published_at": "2026-06-17T09:58:04.701136+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-06-18T10:44:29.450885+00:00",
-    "hour_utc": 10,
-    "answer_length": 3030
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-06-18T14:18:14.129526+00:00",
+    "hour_utc": 14,
+    "answer_length": 2709
   }
 }
