@@ -4,7 +4,7 @@
     "dynamic": "2026-06-18T21:26:19.665829+00:00",
     "market_direction": "2026-06-19T14:18:11.236550+00:00",
     "narratives": "2026-06-18T23:52:57.293277+00:00",
-    "events": "2026-06-12T19:14:52.991941+00:00",
+    "events": "2026-06-19T19:59:08.425069+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-06-19T10:52:32.655192+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Oman launches mandatory national Bitcoin mining pool",
   "dynamic_published_at": "2026-06-18T21:26:19.665814+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-06-19T14:18:11.236566+00:00",
-    "hour_utc": 14,
-    "answer_length": 2881
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-06-19T19:59:08.425088+00:00",
+    "hour_utc": 19,
+    "answer_length": 3752
   }
 }
