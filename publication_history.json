@@ -3,7 +3,7 @@
     "kols": "2026-06-21T13:14:04.200323+00:00",
     "dynamic": "2026-06-21T21:23:28.152557+00:00",
     "market_direction": "2026-06-20T22:17:30.749479+00:00",
-    "narratives": "2026-06-21T16:01:31.618895+00:00",
+    "narratives": "2026-06-21T23:24:09.536253+00:00",
     "events": "2026-06-21T19:55:55.744943+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP remittance network launches across Southeast Asia",
   "dynamic_published_at": "2026-06-21T21:23:28.152543+00:00",
   "last_publication": {
-    "question": "XRP remittance network launches across Southeast Asia",
-    "group": "DYNAMIC",
-    "published_at": "2026-06-21T21:23:28.152562+00:00",
-    "hour_utc": 21,
-    "answer_length": 3861
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-06-21T23:24:09.536268+00:00",
+    "hour_utc": 23,
+    "answer_length": 3576
   }
 }
