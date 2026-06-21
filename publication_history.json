@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-06-20T14:22:57.737284+00:00",
+    "kols": "2026-06-21T13:14:04.200323+00:00",
     "dynamic": "2026-06-19T21:15:08.601629+00:00",
     "market_direction": "2026-06-20T22:17:30.749479+00:00",
     "narratives": "2026-06-20T16:26:33.810485+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "EU AML regulation bans privacy coins trading",
   "dynamic_published_at": "2026-06-19T21:15:08.601611+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-06-21T10:37:38.450458+00:00",
-    "hour_utc": 10,
-    "answer_length": 2775
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-06-21T13:14:04.200335+00:00",
+    "hour_utc": 13,
+    "answer_length": 3201
   }
 }
