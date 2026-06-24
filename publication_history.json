@@ -3,7 +3,7 @@
     "kols": "2026-06-24T08:29:41.722581+00:00",
     "dynamic": "2026-06-24T21:38:38.033121+00:00",
     "market_direction": "2026-06-24T14:49:19.699617+00:00",
-    "narratives": "2026-06-22T23:27:38.371714+00:00",
+    "narratives": "2026-06-24T23:14:19.441255+00:00",
     "events": "2026-06-24T19:59:05.834593+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Global banks test stablecoin FX settlements",
   "dynamic_published_at": "2026-06-24T21:38:38.033104+00:00",
   "last_publication": {
-    "question": "Global banks test stablecoin FX settlements",
-    "group": "DYNAMIC",
-    "published_at": "2026-06-24T21:38:38.033126+00:00",
-    "hour_utc": 21,
-    "answer_length": 4008
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-06-24T23:14:19.441273+00:00",
+    "hour_utc": 23,
+    "answer_length": 3609
   }
 }
