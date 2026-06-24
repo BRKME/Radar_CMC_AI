@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-06-24T08:29:41.722581+00:00",
-    "dynamic": "2026-06-23T21:06:17.816699+00:00",
+    "dynamic": "2026-06-24T21:38:38.033121+00:00",
     "market_direction": "2026-06-24T14:49:19.699617+00:00",
     "narratives": "2026-06-22T23:27:38.371714+00:00",
     "events": "2026-06-24T19:59:05.834593+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-06-21T10:37:38.450446+00:00"
   },
-  "last_dynamic_question": "MiCA deadline forces thousands of EU exits",
-  "dynamic_published_at": "2026-06-23T21:06:17.816681+00:00",
+  "last_dynamic_question": "Global banks test stablecoin FX settlements",
+  "dynamic_published_at": "2026-06-24T21:38:38.033104+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-06-24T19:59:05.834612+00:00",
-    "hour_utc": 19,
-    "answer_length": 3542
+    "question": "Global banks test stablecoin FX settlements",
+    "group": "DYNAMIC",
+    "published_at": "2026-06-24T21:38:38.033126+00:00",
+    "hour_utc": 21,
+    "answer_length": 4008
   }
 }
