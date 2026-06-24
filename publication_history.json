@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-06-24T08:29:41.722581+00:00",
     "dynamic": "2026-06-23T21:06:17.816699+00:00",
-    "market_direction": "2026-06-23T22:20:51.803468+00:00",
+    "market_direction": "2026-06-24T14:49:19.699617+00:00",
     "narratives": "2026-06-22T23:27:38.371714+00:00",
     "events": "2026-06-23T15:57:29.869837+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "MiCA deadline forces thousands of EU exits",
   "dynamic_published_at": "2026-06-23T21:06:17.816681+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-06-24T08:29:41.722599+00:00",
-    "hour_utc": 8,
-    "answer_length": 3288
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-06-24T14:49:19.699633+00:00",
+    "hour_utc": 14,
+    "answer_length": 2792
   }
 }
