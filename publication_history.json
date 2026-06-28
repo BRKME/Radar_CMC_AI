@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-06-24T08:29:41.722581+00:00",
-    "dynamic": "2026-06-26T21:25:19.658461+00:00",
+    "dynamic": "2026-06-28T09:25:01.467029+00:00",
     "market_direction": "2026-06-27T22:10:57.359414+00:00",
     "narratives": "2026-06-27T16:14:05.547923+00:00",
     "events": "2026-06-26T15:28:40.355931+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-06-27T10:18:38.830947+00:00"
   },
-  "last_dynamic_question": "ASIC extends licensing relief for crypto firms",
-  "dynamic_published_at": "2026-06-26T21:25:19.658443+00:00",
+  "last_dynamic_question": "Solana DEX activity cools despite SOL rebound",
+  "dynamic_published_at": "2026-06-28T09:25:01.467007+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-06-27T22:10:57.359429+00:00",
-    "hour_utc": 22,
-    "answer_length": 3119
+    "question": "Solana DEX activity cools despite SOL rebound",
+    "group": "DYNAMIC",
+    "published_at": "2026-06-28T09:25:01.467034+00:00",
+    "hour_utc": 9,
+    "answer_length": 3337
   }
 }
