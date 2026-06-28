@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-06-24T08:29:41.722581+00:00",
     "dynamic": "2026-06-28T09:25:01.467029+00:00",
-    "market_direction": "2026-06-28T14:07:00.508368+00:00",
+    "market_direction": "2026-06-28T22:09:13.087654+00:00",
     "narratives": "2026-06-28T16:20:21.592676+00:00",
     "events": "2026-06-26T15:28:40.355931+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Solana DEX activity cools despite SOL rebound",
   "dynamic_published_at": "2026-06-28T09:25:01.467007+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-06-28T16:20:21.592692+00:00",
-    "hour_utc": 16,
-    "answer_length": 3204
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-06-28T22:09:13.087676+00:00",
+    "hour_utc": 22,
+    "answer_length": 2674
   }
 }
