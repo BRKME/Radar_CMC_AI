@@ -4,7 +4,7 @@
     "dynamic": "2026-07-08T21:17:55.266678+00:00",
     "market_direction": "2026-07-07T22:18:19.381001+00:00",
     "narratives": "2026-07-08T23:17:23.261380+00:00",
-    "events": "2026-07-08T19:47:04.326300+00:00",
+    "events": "2026-07-09T15:28:31.476097+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-08T10:27:51.936260+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Weak yen drives BTC XRP corporate adoption",
   "dynamic_published_at": "2026-07-08T21:17:55.266654+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-07-08T23:17:23.261391+00:00",
-    "hour_utc": 23,
-    "answer_length": 3739
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-07-09T15:28:31.476109+00:00",
+    "hour_utc": 15,
+    "answer_length": 3680
   }
 }
