@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-07-11T13:44:26.687875+00:00",
+    "kols": "2026-07-11T22:57:38.687573+00:00",
     "dynamic": "2026-07-11T21:57:46.122187+00:00",
     "market_direction": "2026-07-10T22:12:07.854299+00:00",
     "narratives": "2026-07-11T16:03:31.331694+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SOL marks 1,000th epoch amid wallet hack",
   "dynamic_published_at": "2026-07-11T21:57:46.122170+00:00",
   "last_publication": {
-    "question": "SOL marks 1,000th epoch amid wallet hack",
-    "group": "DYNAMIC",
-    "published_at": "2026-07-11T21:57:46.122192+00:00",
-    "hour_utc": 21,
-    "answer_length": 4256
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-07-11T22:57:38.687588+00:00",
+    "hour_utc": 22,
+    "answer_length": 3231
   }
 }
