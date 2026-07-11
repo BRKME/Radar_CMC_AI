@@ -4,7 +4,7 @@
     "dynamic": "2026-07-09T21:36:25.307637+00:00",
     "market_direction": "2026-07-10T22:12:07.854299+00:00",
     "narratives": "2026-07-09T23:19:42.259199+00:00",
-    "events": "2026-07-09T15:28:31.476097+00:00",
+    "events": "2026-07-11T15:03:23.084854+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-11T10:21:45.124233+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "EU targets non-EU stablecoins in MiCA revision",
   "dynamic_published_at": "2026-07-09T21:36:25.307623+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-07-11T13:44:26.687887+00:00",
-    "hour_utc": 13,
-    "answer_length": 4310
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-07-11T15:03:23.084868+00:00",
+    "hour_utc": 15,
+    "answer_length": 3720
   }
 }
