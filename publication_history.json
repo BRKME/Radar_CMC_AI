@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-07-07T08:30:39.539007+00:00",
+    "kols": "2026-07-11T08:53:55.949088+00:00",
     "dynamic": "2026-07-09T21:36:25.307637+00:00",
     "market_direction": "2026-07-10T22:12:07.854299+00:00",
     "narratives": "2026-07-09T23:19:42.259199+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "EU targets non-EU stablecoins in MiCA revision",
   "dynamic_published_at": "2026-07-09T21:36:25.307623+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-07-10T22:12:07.854315+00:00",
-    "hour_utc": 22,
-    "answer_length": 2950
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-07-11T08:53:55.949105+00:00",
+    "hour_utc": 8,
+    "answer_length": 3407
   }
 }
