@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-07-12T13:45:32.994741+00:00",
-    "dynamic": "2026-07-12T09:09:20.234934+00:00",
+    "dynamic": "2026-07-12T21:00:54.591701+00:00",
     "market_direction": "2026-07-10T22:12:07.854299+00:00",
     "narratives": "2026-07-12T16:07:52.515380+00:00",
     "events": "2026-07-12T19:18:53.739252+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-11T10:21:45.124233+00:00"
   },
-  "last_dynamic_question": "ESMA launches EU-wide MiCA custodian review",
-  "dynamic_published_at": "2026-07-12T09:09:20.234917+00:00",
+  "last_dynamic_question": "BTC fork fight grows as BIP-110 stalls",
+  "dynamic_published_at": "2026-07-12T21:00:54.591685+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-07-12T19:18:53.739268+00:00",
-    "hour_utc": 19,
-    "answer_length": 4083
+    "question": "BTC fork fight grows as BIP-110 stalls",
+    "group": "DYNAMIC",
+    "published_at": "2026-07-12T21:00:54.591706+00:00",
+    "hour_utc": 21,
+    "answer_length": 4144
   }
 }
