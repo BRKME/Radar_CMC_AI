@@ -3,7 +3,7 @@
     "kols": "2026-07-12T13:45:32.994741+00:00",
     "dynamic": "2026-07-12T09:09:20.234934+00:00",
     "market_direction": "2026-07-10T22:12:07.854299+00:00",
-    "narratives": "2026-07-11T16:03:31.331694+00:00",
+    "narratives": "2026-07-12T16:07:52.515380+00:00",
     "events": "2026-07-12T15:05:32.212642+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "ESMA launches EU-wide MiCA custodian review",
   "dynamic_published_at": "2026-07-12T09:09:20.234917+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-07-12T15:05:32.212662+00:00",
-    "hour_utc": 15,
-    "answer_length": 4204
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-07-12T16:07:52.515399+00:00",
+    "hour_utc": 16,
+    "answer_length": 3293
   }
 }
