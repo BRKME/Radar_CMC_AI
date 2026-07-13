@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-07-12T13:45:32.994741+00:00",
-    "dynamic": "2026-07-12T21:58:43.033485+00:00",
+    "dynamic": "2026-07-13T21:06:14.435231+00:00",
     "market_direction": "2026-07-13T14:53:23.756997+00:00",
     "narratives": "2026-07-12T16:07:52.515380+00:00",
     "events": "2026-07-13T19:40:35.880106+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-11T10:21:45.124233+00:00"
   },
-  "last_dynamic_question": "US Iran strikes keep BTC volatility elevated",
-  "dynamic_published_at": "2026-07-12T21:58:43.033470+00:00",
+  "last_dynamic_question": "BTC and ETH trigger $1.35B liquidations",
+  "dynamic_published_at": "2026-07-13T21:06:14.435214+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-07-13T19:40:35.880161+00:00",
-    "hour_utc": 19,
-    "answer_length": 3903
+    "question": "BTC and ETH trigger $1.35B liquidations",
+    "group": "DYNAMIC",
+    "published_at": "2026-07-13T21:06:14.435235+00:00",
+    "hour_utc": 21,
+    "answer_length": 3447
   }
 }
