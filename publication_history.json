@@ -3,7 +3,7 @@
     "kols": "2026-07-12T13:45:32.994741+00:00",
     "dynamic": "2026-07-14T21:07:22.703787+00:00",
     "market_direction": "2026-07-14T14:03:45.507018+00:00",
-    "narratives": "2026-07-13T23:02:51.076942+00:00",
+    "narratives": "2026-07-14T23:03:12.646212+00:00",
     "events": "2026-07-14T19:38:14.498979+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SOL leads DEX volume with $4.15B",
   "dynamic_published_at": "2026-07-14T21:07:22.703768+00:00",
   "last_publication": {
-    "question": "SOL leads DEX volume with $4.15B",
-    "group": "DYNAMIC",
-    "published_at": "2026-07-14T21:07:22.703793+00:00",
-    "hour_utc": 21,
-    "answer_length": 3944
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-07-14T23:03:12.646229+00:00",
+    "hour_utc": 23,
+    "answer_length": 3061
   }
 }
