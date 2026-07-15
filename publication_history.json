@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-07-12T13:45:32.994741+00:00",
     "dynamic": "2026-07-15T09:16:50.604958+00:00",
-    "market_direction": "2026-07-14T14:03:45.507018+00:00",
+    "market_direction": "2026-07-15T14:00:47.470399+00:00",
     "narratives": "2026-07-14T23:03:12.646212+00:00",
     "events": "2026-07-14T19:38:14.498979+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Senate targets July vote on CLARITY Act",
   "dynamic_published_at": "2026-07-15T09:16:50.604944+00:00",
   "last_publication": {
-    "question": "Senate targets July vote on CLARITY Act",
-    "group": "DYNAMIC",
-    "published_at": "2026-07-15T09:16:50.604962+00:00",
-    "hour_utc": 9,
-    "answer_length": 4039
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-07-15T14:00:47.470435+00:00",
+    "hour_utc": 14,
+    "answer_length": 3082
   }
 }
