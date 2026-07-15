@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-07-12T13:45:32.994741+00:00",
-    "dynamic": "2026-07-15T09:16:50.604958+00:00",
+    "dynamic": "2026-07-15T21:09:35.552299+00:00",
     "market_direction": "2026-07-15T14:00:47.470399+00:00",
     "narratives": "2026-07-14T23:03:12.646212+00:00",
     "events": "2026-07-15T19:24:13.630003+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-11T10:21:45.124233+00:00"
   },
-  "last_dynamic_question": "Senate targets July vote on CLARITY Act",
-  "dynamic_published_at": "2026-07-15T09:16:50.604944+00:00",
+  "last_dynamic_question": "Japan reclassifies crypto as financial assets",
+  "dynamic_published_at": "2026-07-15T21:09:35.552281+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-07-15T19:24:13.630014+00:00",
-    "hour_utc": 19,
-    "answer_length": 3840
+    "question": "Japan reclassifies crypto as financial assets",
+    "group": "DYNAMIC",
+    "published_at": "2026-07-15T21:09:35.552305+00:00",
+    "hour_utc": 21,
+    "answer_length": 3814
   }
 }
