@@ -7,15 +7,15 @@
     "events": "2026-07-15T19:24:13.630003+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-07-11T10:21:45.124233+00:00"
+    "bullish": "2026-07-16T10:19:10.694991+00:00"
   },
   "last_dynamic_question": "Japan reclassifies crypto as financial assets",
   "dynamic_published_at": "2026-07-15T21:09:35.552281+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-07-15T23:04:45.546172+00:00",
-    "hour_utc": 23,
-    "answer_length": 3297
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-07-16T10:19:10.695006+00:00",
+    "hour_utc": 10,
+    "answer_length": 3068
   }
 }
