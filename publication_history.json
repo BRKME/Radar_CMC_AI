@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-07-12T13:45:32.994741+00:00",
     "dynamic": "2026-07-16T21:10:51.192403+00:00",
-    "market_direction": "2026-07-15T14:00:47.470399+00:00",
+    "market_direction": "2026-07-17T14:49:33.211340+00:00",
     "narratives": "2026-07-16T23:04:46.562488+00:00",
     "events": "2026-07-16T19:23:46.874771+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Japan reclassifies BTC as financial asset",
   "dynamic_published_at": "2026-07-16T21:10:51.192387+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-07-17T10:06:58.889645+00:00",
-    "hour_utc": 10,
-    "answer_length": 2966
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-07-17T14:49:33.211355+00:00",
+    "hour_utc": 14,
+    "answer_length": 2870
   }
 }
