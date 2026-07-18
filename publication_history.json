@@ -4,7 +4,7 @@
     "dynamic": "2026-07-16T21:10:51.192403+00:00",
     "market_direction": "2026-07-18T08:54:06.638451+00:00",
     "narratives": "2026-07-17T23:58:17.660750+00:00",
-    "events": "2026-07-16T19:23:46.874771+00:00",
+    "events": "2026-07-18T15:03:03.697002+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-18T10:24:58.444036+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Japan reclassifies BTC as financial asset",
   "dynamic_published_at": "2026-07-16T21:10:51.192387+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-07-18T13:39:26.177813+00:00",
-    "hour_utc": 13,
-    "answer_length": 3307
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-07-18T15:03:03.697017+00:00",
+    "hour_utc": 15,
+    "answer_length": 4031
   }
 }
