@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-07-18T13:39:26.177797+00:00",
     "dynamic": "2026-07-18T21:00:20.489521+00:00",
-    "market_direction": "2026-07-18T08:54:06.638451+00:00",
+    "market_direction": "2026-07-18T21:57:28.724215+00:00",
     "narratives": "2026-07-18T16:04:18.400421+00:00",
     "events": "2026-07-18T19:15:42.417690+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "CLARITY Act negotiations stall over Trump ethics",
   "dynamic_published_at": "2026-07-18T21:00:20.489506+00:00",
   "last_publication": {
-    "question": "CLARITY Act negotiations stall over Trump ethics",
-    "group": "DYNAMIC",
-    "published_at": "2026-07-18T21:00:20.489526+00:00",
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-07-18T21:57:28.724229+00:00",
     "hour_utc": 21,
-    "answer_length": 3955
+    "answer_length": 2576
   }
 }
