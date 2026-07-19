@@ -4,7 +4,7 @@
     "dynamic": "2026-07-19T09:10:05.061784+00:00",
     "market_direction": "2026-07-18T22:57:57.191862+00:00",
     "narratives": "2026-07-18T16:04:18.400421+00:00",
-    "events": "2026-07-18T19:15:42.417690+00:00",
+    "events": "2026-07-19T15:04:43.141531+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-18T10:24:58.444036+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Major broker adds stablecoin funding for crypto",
   "dynamic_published_at": "2026-07-19T09:10:05.061770+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-07-19T13:42:07.463842+00:00",
-    "hour_utc": 13,
-    "answer_length": 3520
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-07-19T15:04:43.141548+00:00",
+    "hour_utc": 15,
+    "answer_length": 4165
   }
 }
