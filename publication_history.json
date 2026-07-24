@@ -7,15 +7,15 @@
     "events": "2026-07-23T19:37:47.514801+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-07-23T10:31:56.121808+00:00"
+    "bullish": "2026-07-24T10:26:38.999685+00:00"
   },
   "last_dynamic_question": "Senate pushes CLARITY Act toward floor vote",
   "dynamic_published_at": "2026-07-23T21:14:26.804354+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-07-23T23:05:08.894661+00:00",
-    "hour_utc": 23,
-    "answer_length": 2143
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-07-24T10:26:38.999701+00:00",
+    "hour_utc": 10,
+    "answer_length": 3178
   }
 }
