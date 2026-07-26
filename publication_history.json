@@ -7,15 +7,15 @@
     "events": "2026-07-25T19:20:04.997923+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-07-24T10:26:38.999685+00:00"
+    "bullish": "2026-07-26T10:08:43.769633+00:00"
   },
   "last_dynamic_question": "Are altcoins outperforming Bitcoin?",
   "dynamic_published_at": "2026-07-25T21:02:22.667357+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-07-25T23:03:32.293327+00:00",
-    "hour_utc": 23,
-    "answer_length": 2876
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-07-26T10:08:43.769652+00:00",
+    "hour_utc": 10,
+    "answer_length": 2787
   }
 }
