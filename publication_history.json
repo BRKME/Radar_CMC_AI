@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-07-25T22:02:36.082754+00:00",
+    "kols": "2026-07-27T14:54:03.311857+00:00",
     "dynamic": "2026-07-25T21:02:22.667375+00:00",
     "market_direction": "2026-07-26T22:05:55.389798+00:00",
     "narratives": "2026-07-26T23:09:15.192903+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Are altcoins outperforming Bitcoin?",
   "dynamic_published_at": "2026-07-25T21:02:22.667357+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-07-26T23:09:15.192919+00:00",
-    "hour_utc": 23,
-    "answer_length": 3058
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-07-27T14:54:03.311874+00:00",
+    "hour_utc": 14,
+    "answer_length": 3612
   }
 }
