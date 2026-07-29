@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-07-27T14:54:03.311857+00:00",
-    "dynamic": "2026-07-29T09:44:15.608499+00:00",
+    "dynamic": "2026-07-29T21:05:27.520654+00:00",
     "market_direction": "2026-07-27T22:13:36.699723+00:00",
     "narratives": "2026-07-28T23:08:48.738839+00:00",
     "events": "2026-07-29T19:35:39.279244+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-28T10:42:41.221495+00:00"
   },
-  "last_dynamic_question": "BTC and ETH rise ahead Fed decision",
-  "dynamic_published_at": "2026-07-29T09:44:15.608481+00:00",
+  "last_dynamic_question": "Fed leaves rates unchanged as crypto steadies",
+  "dynamic_published_at": "2026-07-29T21:05:27.520636+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-07-29T19:35:39.279263+00:00",
-    "hour_utc": 19,
-    "answer_length": 3860
+    "question": "Fed leaves rates unchanged as crypto steadies",
+    "group": "DYNAMIC",
+    "published_at": "2026-07-29T21:05:27.520659+00:00",
+    "hour_utc": 21,
+    "answer_length": 3197
   }
 }
