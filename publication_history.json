@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-07-27T14:54:03.311857+00:00",
-    "dynamic": "2026-07-28T21:15:59.230577+00:00",
+    "dynamic": "2026-07-29T09:44:15.608499+00:00",
     "market_direction": "2026-07-27T22:13:36.699723+00:00",
     "narratives": "2026-07-28T23:08:48.738839+00:00",
     "events": "2026-07-28T19:44:24.909444+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-28T10:42:41.221495+00:00"
   },
-  "last_dynamic_question": "BTC and ETH plunge trigger $700M liquidations",
-  "dynamic_published_at": "2026-07-28T21:15:59.230567+00:00",
+  "last_dynamic_question": "BTC and ETH rise ahead Fed decision",
+  "dynamic_published_at": "2026-07-29T09:44:15.608481+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-07-28T23:08:48.738859+00:00",
-    "hour_utc": 23,
-    "answer_length": 2830
+    "question": "BTC and ETH rise ahead Fed decision",
+    "group": "DYNAMIC",
+    "published_at": "2026-07-29T09:44:15.608505+00:00",
+    "hour_utc": 9,
+    "answer_length": 4117
   }
 }
