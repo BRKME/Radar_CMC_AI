@@ -4,7 +4,7 @@
     "dynamic": "2026-07-29T09:44:15.608499+00:00",
     "market_direction": "2026-07-27T22:13:36.699723+00:00",
     "narratives": "2026-07-28T23:08:48.738839+00:00",
-    "events": "2026-07-28T19:44:24.909444+00:00",
+    "events": "2026-07-29T15:13:11.119390+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-28T10:42:41.221495+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC and ETH rise ahead Fed decision",
   "dynamic_published_at": "2026-07-29T09:44:15.608481+00:00",
   "last_publication": {
-    "question": "BTC and ETH rise ahead Fed decision",
-    "group": "DYNAMIC",
-    "published_at": "2026-07-29T09:44:15.608505+00:00",
-    "hour_utc": 9,
-    "answer_length": 4117
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-07-29T15:13:11.119408+00:00",
+    "hour_utc": 15,
+    "answer_length": 3311
   }
 }
