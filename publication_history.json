@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-07-31T13:02:32.831200+00:00",
-    "dynamic": "2026-07-30T09:35:33.034442+00:00",
+    "dynamic": "2026-08-01T09:11:52.739998+00:00",
     "market_direction": "2026-07-30T22:14:19.578707+00:00",
     "narratives": "2026-07-31T23:10:35.649605+00:00",
     "events": "2026-07-31T19:45:24.849242+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-07-31T10:47:45.703751+00:00"
   },
-  "last_dynamic_question": "AI model finds flaw in post-quantum crypto",
-  "dynamic_published_at": "2026-07-30T09:35:33.034425+00:00",
+  "last_dynamic_question": "Fed BoJ rate decisions weigh on BTC",
+  "dynamic_published_at": "2026-08-01T09:11:52.739982+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-07-31T23:10:35.649624+00:00",
-    "hour_utc": 23,
-    "answer_length": 3369
+    "question": "Fed BoJ rate decisions weigh on BTC",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-01T09:11:52.740001+00:00",
+    "hour_utc": 9,
+    "answer_length": 4608
   }
 }
