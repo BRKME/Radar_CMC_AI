@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-07-31T13:02:32.831200+00:00",
+    "kols": "2026-08-01T13:45:29.014907+00:00",
     "dynamic": "2026-08-01T09:11:52.739998+00:00",
     "market_direction": "2026-07-30T22:14:19.578707+00:00",
     "narratives": "2026-07-31T23:10:35.649605+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Fed BoJ rate decisions weigh on BTC",
   "dynamic_published_at": "2026-08-01T09:11:52.739982+00:00",
   "last_publication": {
-    "question": "Fed BoJ rate decisions weigh on BTC",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-01T09:11:52.740001+00:00",
-    "hour_utc": 9,
-    "answer_length": 4608
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-01T13:45:29.014921+00:00",
+    "hour_utc": 13,
+    "answer_length": 3680
   }
 }
