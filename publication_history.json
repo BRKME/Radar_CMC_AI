@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-02T13:44:55.845646+00:00",
-    "dynamic": "2026-08-01T21:02:47.712155+00:00",
+    "dynamic": "2026-08-03T21:13:22.108721+00:00",
     "market_direction": "2026-08-03T08:36:24.923091+00:00",
     "narratives": "2026-08-02T23:04:12.198638+00:00",
     "events": "2026-08-03T19:48:03.353489+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-02T10:05:05.932554+00:00"
   },
-  "last_dynamic_question": "Are altcoins outperforming Bitcoin?",
-  "dynamic_published_at": "2026-08-01T21:02:47.712140+00:00",
+  "last_dynamic_question": "South Africa drafts cross-border crypto reporting rules",
+  "dynamic_published_at": "2026-08-03T21:13:22.108705+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-08-03T19:48:03.353507+00:00",
-    "hour_utc": 19,
-    "answer_length": 3791
+    "question": "South Africa drafts cross-border crypto reporting rules",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-03T21:13:22.108726+00:00",
+    "hour_utc": 21,
+    "answer_length": 3593
   }
 }
