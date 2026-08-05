@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-02T13:44:55.845646+00:00",
-    "dynamic": "2026-08-04T21:20:46.621547+00:00",
+    "dynamic": "2026-08-05T09:42:19.996027+00:00",
     "market_direction": "2026-08-03T08:36:24.923091+00:00",
     "narratives": "2026-08-04T23:10:41.436813+00:00",
     "events": "2026-08-04T19:47:16.737523+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-02T10:05:05.932554+00:00"
   },
-  "last_dynamic_question": "Mastercard expands stablecoin payments with BVNK",
-  "dynamic_published_at": "2026-08-04T21:20:46.621533+00:00",
+  "last_dynamic_question": "CLARITY Act stalls as Senate recess looms",
+  "dynamic_published_at": "2026-08-05T09:42:19.996011+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-04T23:10:41.436826+00:00",
-    "hour_utc": 23,
-    "answer_length": 3148
+    "question": "CLARITY Act stalls as Senate recess looms",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-05T09:42:19.996031+00:00",
+    "hour_utc": 9,
+    "answer_length": 4555
   }
 }
