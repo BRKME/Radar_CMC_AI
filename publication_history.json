@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-08-02T13:44:55.845646+00:00",
     "dynamic": "2026-08-05T09:42:19.996027+00:00",
-    "market_direction": "2026-08-05T14:28:18.773451+00:00",
+    "market_direction": "2026-08-05T22:17:09.684855+00:00",
     "narratives": "2026-08-05T16:47:10.244011+00:00",
     "events": "2026-08-04T19:47:16.737523+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "CLARITY Act stalls as Senate recess looms",
   "dynamic_published_at": "2026-08-05T09:42:19.996011+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-05T16:47:10.244025+00:00",
-    "hour_utc": 16,
-    "answer_length": 3188
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-08-05T22:17:09.684867+00:00",
+    "hour_utc": 22,
+    "answer_length": 3050
   }
 }
