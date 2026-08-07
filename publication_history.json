@@ -4,7 +4,7 @@
     "dynamic": "2026-08-07T09:09:01.471010+00:00",
     "market_direction": "2026-08-05T22:17:09.684855+00:00",
     "narratives": "2026-08-07T16:02:09.156265+00:00",
-    "events": "2026-08-07T15:01:28.850640+00:00",
+    "events": "2026-08-07T19:07:18.233016+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-07T11:00:08.888692+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "EU regulators warn MiCA-linked crypto scams",
   "dynamic_published_at": "2026-08-07T09:09:01.470996+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-07T16:02:09.156281+00:00",
-    "hour_utc": 16,
-    "answer_length": 3466
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-08-07T19:07:18.233036+00:00",
+    "hour_utc": 19,
+    "answer_length": 4202
   }
 }
