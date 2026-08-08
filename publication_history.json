@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-08T14:39:27.973305+00:00",
-    "dynamic": "2026-08-08T09:46:33.767670+00:00",
+    "dynamic": "2026-08-08T21:38:32.837173+00:00",
     "market_direction": "2026-08-08T08:52:31.304611+00:00",
     "narratives": "2026-08-08T16:44:00.029075+00:00",
     "events": "2026-08-08T19:36:57.303076+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-08T10:41:41.850928+00:00"
   },
-  "last_dynamic_question": "US Senate delays CLARITY Act again",
-  "dynamic_published_at": "2026-08-08T09:46:33.767652+00:00",
+  "last_dynamic_question": "Bitcoin Ether ETFs add $220M inflows",
+  "dynamic_published_at": "2026-08-08T21:38:32.837157+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-08-08T19:36:57.303093+00:00",
-    "hour_utc": 19,
-    "answer_length": 3857
+    "question": "Bitcoin Ether ETFs add $220M inflows",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-08T21:38:32.837178+00:00",
+    "hour_utc": 21,
+    "answer_length": 4109
   }
 }
