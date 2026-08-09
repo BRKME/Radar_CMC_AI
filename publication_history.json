@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-09T08:54:17.773319+00:00",
+    "kols": "2026-08-09T13:06:58.106973+00:00",
     "dynamic": "2026-08-09T09:49:15.134920+00:00",
     "market_direction": "2026-08-08T08:52:31.304611+00:00",
     "narratives": "2026-08-08T23:36:42.503633+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "EU launches MiCA review on non-EU issuers",
   "dynamic_published_at": "2026-08-09T09:49:15.134901+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-08-09T10:42:29.960649+00:00",
-    "hour_utc": 10,
-    "answer_length": 2820
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-09T13:06:58.106988+00:00",
+    "hour_utc": 13,
+    "answer_length": 3505
   }
 }
