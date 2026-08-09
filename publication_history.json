@@ -3,7 +3,7 @@
     "kols": "2026-08-09T22:44:40.971919+00:00",
     "dynamic": "2026-08-09T21:41:10.976349+00:00",
     "market_direction": "2026-08-08T08:52:31.304611+00:00",
-    "narratives": "2026-08-09T16:45:20.780181+00:00",
+    "narratives": "2026-08-09T23:38:43.456243+00:00",
     "events": "2026-08-09T19:40:07.118764+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "US Senate sets Sept 15 CLARITY vote",
   "dynamic_published_at": "2026-08-09T21:41:10.976333+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-08-09T22:44:40.971937+00:00",
-    "hour_utc": 22,
-    "answer_length": 3097
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-08-09T23:38:43.456262+00:00",
+    "hour_utc": 23,
+    "answer_length": 3260
   }
 }
