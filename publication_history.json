@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-09T14:42:17.948312+00:00",
-    "dynamic": "2026-08-09T09:49:15.134920+00:00",
+    "dynamic": "2026-08-09T21:41:10.976349+00:00",
     "market_direction": "2026-08-08T08:52:31.304611+00:00",
     "narratives": "2026-08-09T16:45:20.780181+00:00",
     "events": "2026-08-09T19:40:07.118764+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-09T10:42:29.960630+00:00"
   },
-  "last_dynamic_question": "EU launches MiCA review on non-EU issuers",
-  "dynamic_published_at": "2026-08-09T09:49:15.134901+00:00",
+  "last_dynamic_question": "US Senate sets Sept 15 CLARITY vote",
+  "dynamic_published_at": "2026-08-09T21:41:10.976333+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-08-09T19:40:07.118776+00:00",
-    "hour_utc": 19,
-    "answer_length": 4394
+    "question": "US Senate sets Sept 15 CLARITY vote",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-09T21:41:10.976353+00:00",
+    "hour_utc": 21,
+    "answer_length": 4072
   }
 }
