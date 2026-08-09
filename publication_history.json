@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-08T22:37:37.024335+00:00",
+    "kols": "2026-08-09T08:54:17.773319+00:00",
     "dynamic": "2026-08-08T21:38:32.837173+00:00",
     "market_direction": "2026-08-08T08:52:31.304611+00:00",
     "narratives": "2026-08-08T23:36:42.503633+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Bitcoin Ether ETFs add $220M inflows",
   "dynamic_published_at": "2026-08-08T21:38:32.837157+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-08T23:36:42.503650+00:00",
-    "hour_utc": 23,
-    "answer_length": 2485
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-09T08:54:17.773336+00:00",
+    "hour_utc": 8,
+    "answer_length": 3194
   }
 }
