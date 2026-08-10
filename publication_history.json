@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-08-10T13:26:24.694538+00:00",
     "dynamic": "2026-08-10T21:51:22.325838+00:00",
-    "market_direction": "2026-08-08T08:52:31.304611+00:00",
+    "market_direction": "2026-08-10T22:48:00.067287+00:00",
     "narratives": "2026-08-09T23:38:43.456243+00:00",
     "events": "2026-08-10T19:06:52.863838+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "North Korea hackers deploy AI against crypto",
   "dynamic_published_at": "2026-08-10T21:51:22.325825+00:00",
   "last_publication": {
-    "question": "North Korea hackers deploy AI against crypto",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-10T21:51:22.325843+00:00",
-    "hour_utc": 21,
-    "answer_length": 4749
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-08-10T22:48:00.067305+00:00",
+    "hour_utc": 22,
+    "answer_length": 2733
   }
 }
