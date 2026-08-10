@@ -7,15 +7,15 @@
     "events": "2026-08-09T19:40:07.118764+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-09T10:42:29.960630+00:00"
+    "bullish": "2026-08-10T10:24:56.854559+00:00"
   },
   "last_dynamic_question": "US Senate sets Sept 15 CLARITY vote",
   "dynamic_published_at": "2026-08-09T21:41:10.976333+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-08-10T08:45:36.941605+00:00",
-    "hour_utc": 8,
-    "answer_length": 3082
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-08-10T10:24:56.854577+00:00",
+    "hour_utc": 10,
+    "answer_length": 2662
   }
 }
