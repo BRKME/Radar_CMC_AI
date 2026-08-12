@@ -7,15 +7,15 @@
     "events": "2026-08-11T19:14:31.330422+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-11T10:57:34.210955+00:00"
+    "bullish": "2026-08-12T10:15:05.266450+00:00"
   },
   "last_dynamic_question": "Major Exchange secures Abu Dhabi tokenization hub",
   "dynamic_published_at": "2026-08-11T21:57:25.410119+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-08-12T08:24:52.743203+00:00",
-    "hour_utc": 8,
-    "answer_length": 3133
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-08-12T10:15:05.266469+00:00",
+    "hour_utc": 10,
+    "answer_length": 2702
   }
 }
