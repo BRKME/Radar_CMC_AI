@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-12T08:24:52.743188+00:00",
+    "kols": "2026-08-12T13:27:05.475843+00:00",
     "dynamic": "2026-08-11T21:57:25.410132+00:00",
     "market_direction": "2026-08-10T22:48:00.067287+00:00",
     "narratives": "2026-08-11T23:51:13.631395+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Major Exchange secures Abu Dhabi tokenization hub",
   "dynamic_published_at": "2026-08-11T21:57:25.410119+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-08-12T10:15:05.266469+00:00",
-    "hour_utc": 10,
-    "answer_length": 2702
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-12T13:27:05.475859+00:00",
+    "hour_utc": 13,
+    "answer_length": 3005
   }
 }
