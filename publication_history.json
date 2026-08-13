@@ -3,7 +3,7 @@
     "kols": "2026-08-13T22:52:38.234553+00:00",
     "dynamic": "2026-08-13T21:54:54.682587+00:00",
     "market_direction": "2026-08-12T22:51:44.394581+00:00",
-    "narratives": "2026-08-13T16:06:26.739723+00:00",
+    "narratives": "2026-08-13T23:51:17.467486+00:00",
     "events": "2026-08-13T19:13:14.832336+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP ETFs lock nearly 1B XRP supply",
   "dynamic_published_at": "2026-08-13T21:54:54.682569+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-08-13T22:52:38.234570+00:00",
-    "hour_utc": 22,
-    "answer_length": 3587
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-08-13T23:51:17.467504+00:00",
+    "hour_utc": 23,
+    "answer_length": 3386
   }
 }
