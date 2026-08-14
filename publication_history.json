@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-13T22:52:38.234553+00:00",
+    "kols": "2026-08-14T13:23:15.315166+00:00",
     "dynamic": "2026-08-13T21:54:54.682587+00:00",
     "market_direction": "2026-08-14T08:22:53.055057+00:00",
     "narratives": "2026-08-13T23:51:17.467486+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP ETFs lock nearly 1B XRP supply",
   "dynamic_published_at": "2026-08-13T21:54:54.682569+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-08-14T10:12:26.739220+00:00",
-    "hour_utc": 10,
-    "answer_length": 2804
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-14T13:23:15.315181+00:00",
+    "hour_utc": 13,
+    "answer_length": 3084
   }
 }
