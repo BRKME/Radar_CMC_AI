@@ -7,15 +7,15 @@
     "events": "2026-08-13T19:13:14.832336+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-13T10:21:29.703531+00:00"
+    "bullish": "2026-08-14T10:12:26.739199+00:00"
   },
   "last_dynamic_question": "XRP ETFs lock nearly 1B XRP supply",
   "dynamic_published_at": "2026-08-13T21:54:54.682569+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-08-14T08:22:53.055074+00:00",
-    "hour_utc": 8,
-    "answer_length": 2932
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-08-14T10:12:26.739220+00:00",
+    "hour_utc": 10,
+    "answer_length": 2804
   }
 }
