@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-14T13:23:15.315166+00:00",
-    "dynamic": "2026-08-13T21:54:54.682587+00:00",
+    "dynamic": "2026-08-14T21:32:37.575683+00:00",
     "market_direction": "2026-08-14T14:59:46.195761+00:00",
     "narratives": "2026-08-13T23:51:17.467486+00:00",
     "events": "2026-08-14T19:51:58.544428+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-14T10:12:26.739199+00:00"
   },
-  "last_dynamic_question": "XRP ETFs lock nearly 1B XRP supply",
-  "dynamic_published_at": "2026-08-13T21:54:54.682569+00:00",
+  "last_dynamic_question": "Are altcoins outperforming Bitcoin?",
+  "dynamic_published_at": "2026-08-14T21:32:37.575667+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-08-14T19:51:58.544466+00:00",
-    "hour_utc": 19,
-    "answer_length": 3639
+    "question": "Are altcoins outperforming Bitcoin?",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-14T21:32:37.575688+00:00",
+    "hour_utc": 21,
+    "answer_length": 3061
   }
 }
