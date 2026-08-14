@@ -3,7 +3,7 @@
     "kols": "2026-08-14T13:23:15.315166+00:00",
     "dynamic": "2026-08-14T21:32:37.575683+00:00",
     "market_direction": "2026-08-14T22:31:45.428814+00:00",
-    "narratives": "2026-08-13T23:51:17.467486+00:00",
+    "narratives": "2026-08-14T23:29:04.662411+00:00",
     "events": "2026-08-14T19:51:58.544428+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Are altcoins outperforming Bitcoin?",
   "dynamic_published_at": "2026-08-14T21:32:37.575667+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-08-14T22:31:45.428829+00:00",
-    "hour_utc": 22,
-    "answer_length": 2914
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-08-14T23:29:04.662429+00:00",
+    "hour_utc": 23,
+    "answer_length": 2403
   }
 }
