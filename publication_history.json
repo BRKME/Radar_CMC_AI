@@ -3,7 +3,7 @@
     "kols": "2026-08-15T22:29:48.437750+00:00",
     "dynamic": "2026-08-15T21:30:59.200968+00:00",
     "market_direction": "2026-08-15T14:30:36.655053+00:00",
-    "narratives": "2026-08-15T16:33:31.076209+00:00",
+    "narratives": "2026-08-15T23:27:33.831573+00:00",
     "events": "2026-08-15T19:27:17.728302+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "UBS ramps BTC ETF call exposure",
   "dynamic_published_at": "2026-08-15T21:30:59.200954+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-08-15T22:29:48.437767+00:00",
-    "hour_utc": 22,
-    "answer_length": 3547
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-08-15T23:27:33.831594+00:00",
+    "hour_utc": 23,
+    "answer_length": 3097
   }
 }
