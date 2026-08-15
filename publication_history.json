@@ -4,7 +4,7 @@
     "dynamic": "2026-08-14T21:32:37.575683+00:00",
     "market_direction": "2026-08-15T14:30:36.655053+00:00",
     "narratives": "2026-08-15T16:33:31.076209+00:00",
-    "events": "2026-08-15T15:28:46.436606+00:00",
+    "events": "2026-08-15T19:27:17.728302+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-15T10:29:59.290041+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Are altcoins outperforming Bitcoin?",
   "dynamic_published_at": "2026-08-14T21:32:37.575667+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-15T16:33:31.076225+00:00",
-    "hour_utc": 16,
-    "answer_length": 2517
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-08-15T19:27:17.728320+00:00",
+    "hour_utc": 19,
+    "answer_length": 4064
   }
 }
