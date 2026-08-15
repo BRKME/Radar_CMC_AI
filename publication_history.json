@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-15T13:36:37.299261+00:00",
-    "dynamic": "2026-08-14T21:32:37.575683+00:00",
+    "dynamic": "2026-08-15T21:30:59.200968+00:00",
     "market_direction": "2026-08-15T14:30:36.655053+00:00",
     "narratives": "2026-08-15T16:33:31.076209+00:00",
     "events": "2026-08-15T19:27:17.728302+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-15T10:29:59.290041+00:00"
   },
-  "last_dynamic_question": "Are altcoins outperforming Bitcoin?",
-  "dynamic_published_at": "2026-08-14T21:32:37.575667+00:00",
+  "last_dynamic_question": "UBS ramps BTC ETF call exposure",
+  "dynamic_published_at": "2026-08-15T21:30:59.200954+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-08-15T19:27:17.728320+00:00",
-    "hour_utc": 19,
-    "answer_length": 4064
+    "question": "UBS ramps BTC ETF call exposure",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-15T21:30:59.200973+00:00",
+    "hour_utc": 21,
+    "answer_length": 4155
   }
 }
