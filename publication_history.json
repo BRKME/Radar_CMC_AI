@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-16T08:38:50.508217+00:00",
-    "dynamic": "2026-08-15T21:30:59.200968+00:00",
+    "dynamic": "2026-08-16T09:34:52.210699+00:00",
     "market_direction": "2026-08-15T14:30:36.655053+00:00",
     "narratives": "2026-08-15T23:27:33.831573+00:00",
     "events": "2026-08-15T19:27:17.728302+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-15T10:29:59.290041+00:00"
   },
-  "last_dynamic_question": "UBS ramps BTC ETF call exposure",
-  "dynamic_published_at": "2026-08-15T21:30:59.200954+00:00",
+  "last_dynamic_question": "White House plans August 19 crypto summit",
+  "dynamic_published_at": "2026-08-16T09:34:52.210685+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-08-16T08:38:50.508234+00:00",
-    "hour_utc": 8,
-    "answer_length": 3383
+    "question": "White House plans August 19 crypto summit",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-16T09:34:52.210704+00:00",
+    "hour_utc": 9,
+    "answer_length": 4577
   }
 }
