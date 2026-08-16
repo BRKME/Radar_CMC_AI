@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-16T14:30:44.321960+00:00",
-    "dynamic": "2026-08-16T09:34:52.210699+00:00",
+    "dynamic": "2026-08-16T21:27:38.218701+00:00",
     "market_direction": "2026-08-15T14:30:36.655053+00:00",
     "narratives": "2026-08-16T16:33:45.329408+00:00",
     "events": "2026-08-16T19:27:07.991051+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-16T10:30:29.339847+00:00"
   },
-  "last_dynamic_question": "White House plans August 19 crypto summit",
-  "dynamic_published_at": "2026-08-16T09:34:52.210685+00:00",
+  "last_dynamic_question": "SafePal breach exposes 39,798 customer order records",
+  "dynamic_published_at": "2026-08-16T21:27:38.218682+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-08-16T19:27:07.991090+00:00",
-    "hour_utc": 19,
-    "answer_length": 3941
+    "question": "SafePal breach exposes 39,798 customer order records",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-16T21:27:38.218704+00:00",
+    "hour_utc": 21,
+    "answer_length": 4236
   }
 }
