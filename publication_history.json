@@ -7,15 +7,15 @@
     "events": "2026-08-15T19:27:17.728302+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-15T10:29:59.290041+00:00"
+    "bullish": "2026-08-16T10:30:29.339847+00:00"
   },
   "last_dynamic_question": "White House plans August 19 crypto summit",
   "dynamic_published_at": "2026-08-16T09:34:52.210685+00:00",
   "last_publication": {
-    "question": "White House plans August 19 crypto summit",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-16T09:34:52.210704+00:00",
-    "hour_utc": 9,
-    "answer_length": 4577
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-08-16T10:30:29.339866+00:00",
+    "hour_utc": 10,
+    "answer_length": 2680
   }
 }
