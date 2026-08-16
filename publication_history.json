@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-15T22:29:48.437750+00:00",
+    "kols": "2026-08-16T08:38:50.508217+00:00",
     "dynamic": "2026-08-15T21:30:59.200968+00:00",
     "market_direction": "2026-08-15T14:30:36.655053+00:00",
     "narratives": "2026-08-15T23:27:33.831573+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "UBS ramps BTC ETF call exposure",
   "dynamic_published_at": "2026-08-15T21:30:59.200954+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-15T23:27:33.831594+00:00",
-    "hour_utc": 23,
-    "answer_length": 3097
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-16T08:38:50.508234+00:00",
+    "hour_utc": 8,
+    "answer_length": 3383
   }
 }
