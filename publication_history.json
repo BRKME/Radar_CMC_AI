@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-16T14:30:44.321960+00:00",
+    "kols": "2026-08-16T22:29:36.297369+00:00",
     "dynamic": "2026-08-16T21:27:38.218701+00:00",
     "market_direction": "2026-08-15T14:30:36.655053+00:00",
     "narratives": "2026-08-16T16:33:45.329408+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SafePal breach exposes 39,798 customer order records",
   "dynamic_published_at": "2026-08-16T21:27:38.218682+00:00",
   "last_publication": {
-    "question": "SafePal breach exposes 39,798 customer order records",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-16T21:27:38.218704+00:00",
-    "hour_utc": 21,
-    "answer_length": 4236
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-16T22:29:36.297383+00:00",
+    "hour_utc": 22,
+    "answer_length": 3334
   }
 }
