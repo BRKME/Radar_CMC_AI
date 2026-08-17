@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-08-17T13:44:38.610149+00:00",
     "dynamic": "2026-08-17T09:51:24.264777+00:00",
-    "market_direction": "2026-08-15T14:30:36.655053+00:00",
+    "market_direction": "2026-08-17T14:36:01.408357+00:00",
     "narratives": "2026-08-16T23:27:32.128875+00:00",
     "events": "2026-08-16T19:27:07.991051+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC delays Reg Crypto and innovation exemption",
   "dynamic_published_at": "2026-08-17T09:51:24.264760+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-08-17T13:44:38.610165+00:00",
-    "hour_utc": 13,
-    "answer_length": 3368
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-08-17T14:36:01.408373+00:00",
+    "hour_utc": 14,
+    "answer_length": 2932
   }
 }
