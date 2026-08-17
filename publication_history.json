@@ -7,15 +7,15 @@
     "events": "2026-08-16T19:27:07.991051+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-16T10:30:29.339847+00:00"
+    "bullish": "2026-08-17T10:40:23.017338+00:00"
   },
   "last_dynamic_question": "SEC delays Reg Crypto and innovation exemption",
   "dynamic_published_at": "2026-08-17T09:51:24.264760+00:00",
   "last_publication": {
-    "question": "SEC delays Reg Crypto and innovation exemption",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-17T09:51:24.264782+00:00",
-    "hour_utc": 9,
-    "answer_length": 4274
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-08-17T10:40:23.017357+00:00",
+    "hour_utc": 10,
+    "answer_length": 3039
   }
 }
