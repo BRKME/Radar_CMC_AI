@@ -4,7 +4,7 @@
     "dynamic": "2026-08-17T09:51:24.264777+00:00",
     "market_direction": "2026-08-17T14:36:01.408357+00:00",
     "narratives": "2026-08-16T23:27:32.128875+00:00",
-    "events": "2026-08-16T19:27:07.991051+00:00",
+    "events": "2026-08-17T15:32:39.444123+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-17T10:40:23.017338+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC delays Reg Crypto and innovation exemption",
   "dynamic_published_at": "2026-08-17T09:51:24.264760+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-08-17T14:36:01.408373+00:00",
-    "hour_utc": 14,
-    "answer_length": 2932
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-08-17T15:32:39.444142+00:00",
+    "hour_utc": 15,
+    "answer_length": 4490
   }
 }
