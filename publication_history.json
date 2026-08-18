@@ -3,7 +3,7 @@
     "kols": "2026-08-18T13:49:00.256328+00:00",
     "dynamic": "2026-08-18T09:41:12.210587+00:00",
     "market_direction": "2026-08-18T14:40:53.804380+00:00",
-    "narratives": "2026-08-17T23:29:36.025961+00:00",
+    "narratives": "2026-08-18T16:40:48.378456+00:00",
     "events": "2026-08-18T15:42:13.684307+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Stock-linked perps on CEXs reach $142B",
   "dynamic_published_at": "2026-08-18T09:41:12.210572+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-08-18T15:42:13.684324+00:00",
-    "hour_utc": 15,
-    "answer_length": 3640
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-08-18T16:40:48.378476+00:00",
+    "hour_utc": 16,
+    "answer_length": 3334
   }
 }
