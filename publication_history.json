@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-17T13:44:38.610149+00:00",
+    "kols": "2026-08-18T13:00:17.137874+00:00",
     "dynamic": "2026-08-18T09:41:12.210587+00:00",
     "market_direction": "2026-08-18T08:47:33.590800+00:00",
     "narratives": "2026-08-17T23:29:36.025961+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Stock-linked perps on CEXs reach $142B",
   "dynamic_published_at": "2026-08-18T09:41:12.210572+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-08-18T10:36:44.853167+00:00",
-    "hour_utc": 10,
-    "answer_length": 2887
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-18T13:00:17.137889+00:00",
+    "hour_utc": 13,
+    "answer_length": 3033
   }
 }
