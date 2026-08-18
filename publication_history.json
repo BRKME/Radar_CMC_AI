@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-08-18T13:49:00.256328+00:00",
     "dynamic": "2026-08-18T09:41:12.210587+00:00",
-    "market_direction": "2026-08-18T08:47:33.590800+00:00",
+    "market_direction": "2026-08-18T14:40:53.804380+00:00",
     "narratives": "2026-08-17T23:29:36.025961+00:00",
     "events": "2026-08-17T19:34:17.811319+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Stock-linked perps on CEXs reach $142B",
   "dynamic_published_at": "2026-08-18T09:41:12.210572+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-08-18T13:49:00.256342+00:00",
-    "hour_utc": 13,
-    "answer_length": 3479
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-08-18T14:40:53.804397+00:00",
+    "hour_utc": 14,
+    "answer_length": 2964
   }
 }
