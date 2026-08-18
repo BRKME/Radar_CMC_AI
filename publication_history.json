@@ -7,15 +7,15 @@
     "events": "2026-08-17T19:34:17.811319+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-17T10:40:23.017338+00:00"
+    "bullish": "2026-08-18T10:36:44.853155+00:00"
   },
   "last_dynamic_question": "Stock-linked perps on CEXs reach $142B",
   "dynamic_published_at": "2026-08-18T09:41:12.210572+00:00",
   "last_publication": {
-    "question": "Stock-linked perps on CEXs reach $142B",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-18T09:41:12.210591+00:00",
-    "hour_utc": 9,
-    "answer_length": 4025
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-08-18T10:36:44.853167+00:00",
+    "hour_utc": 10,
+    "answer_length": 2887
   }
 }
