@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-18T22:31:53.150138+00:00",
+    "kols": "2026-08-19T13:00:58.091192+00:00",
     "dynamic": "2026-08-19T09:41:44.400985+00:00",
     "market_direction": "2026-08-18T14:40:53.804380+00:00",
     "narratives": "2026-08-18T23:29:38.542457+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC unveils Regulation Crypto Assets exemptions",
   "dynamic_published_at": "2026-08-19T09:41:44.400968+00:00",
   "last_publication": {
-    "question": "SEC unveils Regulation Crypto Assets exemptions",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-19T09:41:44.400989+00:00",
-    "hour_utc": 9,
-    "answer_length": 4398
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-19T13:00:58.091212+00:00",
+    "hour_utc": 13,
+    "answer_length": 3468
   }
 }
