@@ -4,7 +4,7 @@
     "dynamic": "2026-08-19T09:41:44.400985+00:00",
     "market_direction": "2026-08-19T14:41:40.071559+00:00",
     "narratives": "2026-08-19T16:40:41.940727+00:00",
-    "events": "2026-08-19T15:40:28.935553+00:00",
+    "events": "2026-08-19T19:37:15.713594+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-18T10:36:44.853155+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC unveils Regulation Crypto Assets exemptions",
   "dynamic_published_at": "2026-08-19T09:41:44.400968+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-19T16:40:41.940744+00:00",
-    "hour_utc": 16,
-    "answer_length": 3064
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-08-19T19:37:15.713609+00:00",
+    "hour_utc": 19,
+    "answer_length": 3368
   }
 }
