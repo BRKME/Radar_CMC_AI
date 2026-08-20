@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-08-20T13:53:42.633375+00:00",
     "dynamic": "2026-08-20T21:35:09.556112+00:00",
-    "market_direction": "2026-08-20T14:43:45.632129+00:00",
+    "market_direction": "2026-08-20T22:36:09.824880+00:00",
     "narratives": "2026-08-20T16:42:26.980334+00:00",
     "events": "2026-08-20T19:37:38.238981+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Trump and Treasury actions ignite crypto rally",
   "dynamic_published_at": "2026-08-20T21:35:09.556093+00:00",
   "last_publication": {
-    "question": "Trump and Treasury actions ignite crypto rally",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-20T21:35:09.556117+00:00",
-    "hour_utc": 21,
-    "answer_length": 4522
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-08-20T22:36:09.824896+00:00",
+    "hour_utc": 22,
+    "answer_length": 3021
   }
 }
