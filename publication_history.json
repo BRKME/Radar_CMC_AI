@@ -7,15 +7,15 @@
     "events": "2026-08-20T19:37:38.238981+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-20T10:38:26.730693+00:00"
+    "bullish": "2026-08-21T10:37:42.706746+00:00"
   },
   "last_dynamic_question": "CFTC plans new crypto market structure rules",
   "dynamic_published_at": "2026-08-21T09:45:01.006753+00:00",
   "last_publication": {
-    "question": "CFTC plans new crypto market structure rules",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-21T09:45:01.006776+00:00",
-    "hour_utc": 9,
-    "answer_length": 4057
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-08-21T10:37:42.706763+00:00",
+    "hour_utc": 10,
+    "answer_length": 2883
   }
 }
