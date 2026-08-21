@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-08-21T13:52:12.465463+00:00",
     "dynamic": "2026-08-21T09:45:01.006770+00:00",
-    "market_direction": "2026-08-21T08:50:52.552802+00:00",
+    "market_direction": "2026-08-21T14:42:49.004976+00:00",
     "narratives": "2026-08-20T23:32:58.546721+00:00",
     "events": "2026-08-20T19:37:38.238981+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "CFTC plans new crypto market structure rules",
   "dynamic_published_at": "2026-08-21T09:45:01.006753+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-08-21T13:52:12.465480+00:00",
-    "hour_utc": 13,
-    "answer_length": 2854
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-08-21T14:42:49.004994+00:00",
+    "hour_utc": 14,
+    "answer_length": 2963
   }
 }
