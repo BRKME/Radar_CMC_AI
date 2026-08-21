@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-20T13:53:42.633375+00:00",
-    "dynamic": "2026-08-20T21:35:09.556112+00:00",
+    "dynamic": "2026-08-21T09:45:01.006770+00:00",
     "market_direction": "2026-08-21T08:50:52.552802+00:00",
     "narratives": "2026-08-20T23:32:58.546721+00:00",
     "events": "2026-08-20T19:37:38.238981+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-20T10:38:26.730693+00:00"
   },
-  "last_dynamic_question": "Trump and Treasury actions ignite crypto rally",
-  "dynamic_published_at": "2026-08-20T21:35:09.556093+00:00",
+  "last_dynamic_question": "CFTC plans new crypto market structure rules",
+  "dynamic_published_at": "2026-08-21T09:45:01.006753+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-08-21T08:50:52.552820+00:00",
-    "hour_utc": 8,
-    "answer_length": 3169
+    "question": "CFTC plans new crypto market structure rules",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-21T09:45:01.006776+00:00",
+    "hour_utc": 9,
+    "answer_length": 4057
   }
 }
