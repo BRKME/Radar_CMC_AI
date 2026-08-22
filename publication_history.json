@@ -4,7 +4,7 @@
     "dynamic": "2026-08-22T09:34:27.485762+00:00",
     "market_direction": "2026-08-22T14:29:20.702849+00:00",
     "narratives": "2026-08-22T16:33:26.031260+00:00",
-    "events": "2026-08-22T15:29:01.554802+00:00",
+    "events": "2026-08-22T19:28:19.977337+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-22T10:31:24.100558+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC and ETH ETFs pull $827M",
   "dynamic_published_at": "2026-08-22T09:34:27.485752+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-22T16:33:26.031274+00:00",
-    "hour_utc": 16,
-    "answer_length": 3110
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-08-22T19:28:19.977354+00:00",
+    "hour_utc": 19,
+    "answer_length": 4135
   }
 }
