@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-21T13:52:12.465463+00:00",
-    "dynamic": "2026-08-21T21:31:44.314911+00:00",
+    "dynamic": "2026-08-22T09:34:27.485762+00:00",
     "market_direction": "2026-08-22T08:39:56.326726+00:00",
     "narratives": "2026-08-21T23:31:00.120023+00:00",
     "events": "2026-08-21T19:31:28.071574+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-21T10:37:42.706746+00:00"
   },
-  "last_dynamic_question": "Armstrong sees CLARITY Act clearing Senate hurdle",
-  "dynamic_published_at": "2026-08-21T21:31:44.314897+00:00",
+  "last_dynamic_question": "BTC and ETH ETFs pull $827M",
+  "dynamic_published_at": "2026-08-22T09:34:27.485752+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-08-22T08:39:56.326739+00:00",
-    "hour_utc": 8,
-    "answer_length": 3209
+    "question": "BTC and ETH ETFs pull $827M",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-22T09:34:27.485767+00:00",
+    "hour_utc": 9,
+    "answer_length": 3527
   }
 }
