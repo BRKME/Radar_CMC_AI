@@ -3,7 +3,7 @@
     "kols": "2026-08-23T13:38:18.658843+00:00",
     "dynamic": "2026-08-23T21:28:46.654103+00:00",
     "market_direction": "2026-08-23T22:29:54.651814+00:00",
-    "narratives": "2026-08-23T16:34:34.586691+00:00",
+    "narratives": "2026-08-23T23:28:21.955009+00:00",
     "events": "2026-08-23T19:28:00.927612+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "US SEC proposes Regulation Crypto Assets",
   "dynamic_published_at": "2026-08-23T21:28:46.654091+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-08-23T22:29:54.651831+00:00",
-    "hour_utc": 22,
-    "answer_length": 2901
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-08-23T23:28:21.955023+00:00",
+    "hour_utc": 23,
+    "answer_length": 3649
   }
 }
