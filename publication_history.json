@@ -4,7 +4,7 @@
     "dynamic": "2026-08-23T09:35:20.619830+00:00",
     "market_direction": "2026-08-23T14:30:48.353584+00:00",
     "narratives": "2026-08-22T23:28:01.081188+00:00",
-    "events": "2026-08-22T19:28:19.977337+00:00",
+    "events": "2026-08-23T15:30:05.992259+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-23T10:31:45.861240+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Nomura-backed platform wins Japan exchange approval",
   "dynamic_published_at": "2026-08-23T09:35:20.619814+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-08-23T14:30:48.353603+00:00",
-    "hour_utc": 14,
-    "answer_length": 3143
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-08-23T15:30:05.992277+00:00",
+    "hour_utc": 15,
+    "answer_length": 3016
   }
 }
