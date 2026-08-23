@@ -7,15 +7,15 @@
     "events": "2026-08-22T19:28:19.977337+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-22T10:31:24.100558+00:00"
+    "bullish": "2026-08-23T10:31:45.861240+00:00"
   },
   "last_dynamic_question": "Nomura-backed platform wins Japan exchange approval",
   "dynamic_published_at": "2026-08-23T09:35:20.619814+00:00",
   "last_publication": {
-    "question": "Nomura-backed platform wins Japan exchange approval",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-23T09:35:20.619834+00:00",
-    "hour_utc": 9,
-    "answer_length": 3466
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-08-23T10:31:45.861255+00:00",
+    "hour_utc": 10,
+    "answer_length": 3078
   }
 }
