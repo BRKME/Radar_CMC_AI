@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-22T13:37:53.492988+00:00",
-    "dynamic": "2026-08-22T21:29:03.483028+00:00",
+    "dynamic": "2026-08-23T09:35:20.619830+00:00",
     "market_direction": "2026-08-23T08:39:44.801277+00:00",
     "narratives": "2026-08-22T23:28:01.081188+00:00",
     "events": "2026-08-22T19:28:19.977337+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-22T10:31:24.100558+00:00"
   },
-  "last_dynamic_question": "Altcoins surge as CLARITY Act hopes rise",
-  "dynamic_published_at": "2026-08-22T21:29:03.483013+00:00",
+  "last_dynamic_question": "Nomura-backed platform wins Japan exchange approval",
+  "dynamic_published_at": "2026-08-23T09:35:20.619814+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-08-23T08:39:44.801293+00:00",
-    "hour_utc": 8,
-    "answer_length": 2711
+    "question": "Nomura-backed platform wins Japan exchange approval",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-23T09:35:20.619834+00:00",
+    "hour_utc": 9,
+    "answer_length": 3466
   }
 }
