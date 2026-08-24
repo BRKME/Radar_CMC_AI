@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-23T13:38:18.658843+00:00",
+    "kols": "2026-08-24T13:05:18.944484+00:00",
     "dynamic": "2026-08-24T09:56:19.843607+00:00",
     "market_direction": "2026-08-24T08:57:20.235410+00:00",
     "narratives": "2026-08-23T23:28:21.955009+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC implements Regulation Crypto Assets framework",
   "dynamic_published_at": "2026-08-24T09:56:19.843590+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-08-24T10:43:53.236272+00:00",
-    "hour_utc": 10,
-    "answer_length": 2814
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-24T13:05:18.944505+00:00",
+    "hour_utc": 13,
+    "answer_length": 3437
   }
 }
