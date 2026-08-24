@@ -3,7 +3,7 @@
     "kols": "2026-08-24T13:58:03.513291+00:00",
     "dynamic": "2026-08-24T09:56:19.843607+00:00",
     "market_direction": "2026-08-24T14:50:49.433834+00:00",
-    "narratives": "2026-08-23T23:28:21.955009+00:00",
+    "narratives": "2026-08-24T16:47:45.444808+00:00",
     "events": "2026-08-24T15:47:51.881161+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SEC implements Regulation Crypto Assets framework",
   "dynamic_published_at": "2026-08-24T09:56:19.843590+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-08-24T15:47:51.881175+00:00",
-    "hour_utc": 15,
-    "answer_length": 3796
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-08-24T16:47:45.444825+00:00",
+    "hour_utc": 16,
+    "answer_length": 3225
   }
 }
