@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-24T13:58:03.513291+00:00",
+    "kols": "2026-08-25T13:01:35.740520+00:00",
     "dynamic": "2026-08-25T09:44:01.033013+00:00",
     "market_direction": "2026-08-25T08:52:22.889389+00:00",
     "narratives": "2026-08-24T23:28:30.100767+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Germany adds six banks to MiCA roster",
   "dynamic_published_at": "2026-08-25T09:44:01.032993+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-08-25T10:40:31.148799+00:00",
-    "hour_utc": 10,
-    "answer_length": 2390
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-25T13:01:35.740540+00:00",
+    "hour_utc": 13,
+    "answer_length": 3507
   }
 }
