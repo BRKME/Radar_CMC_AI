@@ -4,7 +4,7 @@
     "dynamic": "2026-08-25T09:44:01.033013+00:00",
     "market_direction": "2026-08-25T14:53:32.946637+00:00",
     "narratives": "2026-08-24T23:28:30.100767+00:00",
-    "events": "2026-08-24T19:35:47.455799+00:00",
+    "events": "2026-08-25T15:51:45.654579+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-25T10:40:31.148782+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Germany adds six banks to MiCA roster",
   "dynamic_published_at": "2026-08-25T09:44:01.032993+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-08-25T14:53:32.946659+00:00",
-    "hour_utc": 14,
-    "answer_length": 3256
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-08-25T15:51:45.654597+00:00",
+    "hour_utc": 15,
+    "answer_length": 3524
   }
 }
