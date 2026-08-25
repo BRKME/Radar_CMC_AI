@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-08-24T13:58:03.513291+00:00",
     "dynamic": "2026-08-24T21:36:46.401054+00:00",
-    "market_direction": "2026-08-24T22:34:36.410184+00:00",
+    "market_direction": "2026-08-25T08:52:22.889389+00:00",
     "narratives": "2026-08-24T23:28:30.100767+00:00",
     "events": "2026-08-24T19:35:47.455799+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC nears $80K on ETF inflows",
   "dynamic_published_at": "2026-08-24T21:36:46.401039+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-24T23:28:30.100783+00:00",
-    "hour_utc": 23,
-    "answer_length": 3553
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-08-25T08:52:22.889406+00:00",
+    "hour_utc": 8,
+    "answer_length": 2499
   }
 }
