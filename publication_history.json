@@ -7,15 +7,15 @@
     "events": "2026-08-25T19:38:17.104656+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-25T10:40:31.148782+00:00"
+    "bullish": "2026-08-26T10:42:12.111386+00:00"
   },
   "last_dynamic_question": "SOL ETF inflows hit $1.22B record",
   "dynamic_published_at": "2026-08-26T09:51:18.271662+00:00",
   "last_publication": {
-    "question": "SOL ETF inflows hit $1.22B record",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-26T09:51:18.271681+00:00",
-    "hour_utc": 9,
-    "answer_length": 4046
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-08-26T10:42:12.111411+00:00",
+    "hour_utc": 10,
+    "answer_length": 2973
   }
 }
