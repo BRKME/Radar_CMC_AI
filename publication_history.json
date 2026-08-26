@@ -3,7 +3,7 @@
     "kols": "2026-08-26T13:07:13.743069+00:00",
     "dynamic": "2026-08-26T09:51:18.271676+00:00",
     "market_direction": "2026-08-26T14:52:23.027854+00:00",
-    "narratives": "2026-08-25T23:31:30.499118+00:00",
+    "narratives": "2026-08-26T16:24:30.204800+00:00",
     "events": "2026-08-25T19:38:17.104656+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SOL ETF inflows hit $1.22B record",
   "dynamic_published_at": "2026-08-26T09:51:18.271662+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-08-26T14:52:23.027873+00:00",
-    "hour_utc": 14,
-    "answer_length": 2925
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-08-26T16:24:30.204816+00:00",
+    "hour_utc": 16,
+    "answer_length": 2896
   }
 }
