@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-25T13:56:17.774381+00:00",
+    "kols": "2026-08-26T13:07:13.743069+00:00",
     "dynamic": "2026-08-26T09:51:18.271676+00:00",
     "market_direction": "2026-08-26T08:54:09.904167+00:00",
     "narratives": "2026-08-25T23:31:30.499118+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SOL ETF inflows hit $1.22B record",
   "dynamic_published_at": "2026-08-26T09:51:18.271662+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-08-26T10:42:12.111411+00:00",
-    "hour_utc": 10,
-    "answer_length": 2973
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-08-26T13:07:13.743083+00:00",
+    "hour_utc": 13,
+    "answer_length": 3354
   }
 }
