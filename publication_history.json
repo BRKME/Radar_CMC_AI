@@ -4,7 +4,7 @@
     "dynamic": "2026-08-26T09:51:18.271676+00:00",
     "market_direction": "2026-08-27T08:57:08.571621+00:00",
     "narratives": "2026-08-26T23:18:38.603273+00:00",
-    "events": "2026-08-26T19:11:41.592112+00:00",
+    "events": "2026-08-27T19:48:49.728665+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-26T10:42:12.111386+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SOL ETF inflows hit $1.22B record",
   "dynamic_published_at": "2026-08-26T09:51:18.271662+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-08-27T08:57:08.571638+00:00",
-    "hour_utc": 8,
-    "answer_length": 2640
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-08-27T19:48:49.728680+00:00",
+    "hour_utc": 19,
+    "answer_length": 3626
   }
 }
