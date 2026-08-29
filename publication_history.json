@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-08-26T13:07:13.743069+00:00",
-    "dynamic": "2026-08-26T09:51:18.271676+00:00",
+    "dynamic": "2026-08-29T21:39:01.861487+00:00",
     "market_direction": "2026-08-29T14:23:05.692340+00:00",
     "narratives": "2026-08-26T23:18:38.603273+00:00",
     "events": "2026-08-27T19:48:49.728665+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-26T10:42:12.111386+00:00"
   },
-  "last_dynamic_question": "SOL ETF inflows hit $1.22B record",
-  "dynamic_published_at": "2026-08-26T09:51:18.271662+00:00",
+  "last_dynamic_question": "SOL ETF assets cross $1B milestone",
+  "dynamic_published_at": "2026-08-29T21:39:01.861470+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-08-29T14:23:05.692360+00:00",
-    "hour_utc": 14,
-    "answer_length": 3034
+    "question": "SOL ETF assets cross $1B milestone",
+    "group": "DYNAMIC",
+    "published_at": "2026-08-29T21:39:01.861492+00:00",
+    "hour_utc": 21,
+    "answer_length": 3105
   }
 }
