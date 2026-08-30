@@ -4,7 +4,7 @@
     "dynamic": "2026-08-29T21:39:01.861487+00:00",
     "market_direction": "2026-08-29T14:23:05.692340+00:00",
     "narratives": "2026-08-30T16:34:31.228681+00:00",
-    "events": "2026-08-27T19:48:49.728665+00:00",
+    "events": "2026-08-30T19:43:36.002345+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-26T10:42:12.111386+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "SOL ETF assets cross $1B milestone",
   "dynamic_published_at": "2026-08-29T21:39:01.861470+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-08-30T16:34:31.228695+00:00",
-    "hour_utc": 16,
-    "answer_length": 3294
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-08-30T19:43:36.002358+00:00",
+    "hour_utc": 19,
+    "answer_length": 3876
   }
 }
