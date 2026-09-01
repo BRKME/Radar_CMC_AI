@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-08-31T08:34:24.982924+00:00",
+    "kols": "2026-09-01T13:26:15.591684+00:00",
     "dynamic": "2026-08-31T21:52:06.997908+00:00",
     "market_direction": "2026-08-30T22:38:37.535177+00:00",
     "narratives": "2026-08-30T16:34:31.228681+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Map reveals 67M US crypto holders",
   "dynamic_published_at": "2026-08-31T21:52:06.997890+00:00",
   "last_publication": {
-    "question": "Map reveals 67M US crypto holders",
-    "group": "DYNAMIC",
-    "published_at": "2026-08-31T21:52:06.997913+00:00",
-    "hour_utc": 21,
-    "answer_length": 4592
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-09-01T13:26:15.591705+00:00",
+    "hour_utc": 13,
+    "answer_length": 3691
   }
 }
