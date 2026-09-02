@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-09-01T13:26:15.591684+00:00",
-    "dynamic": "2026-09-02T09:27:08.735162+00:00",
+    "dynamic": "2026-09-02T21:45:14.846688+00:00",
     "market_direction": "2026-09-02T14:18:55.780036+00:00",
     "narratives": "2026-09-01T23:14:12.562582+00:00",
     "events": "2026-08-30T19:43:36.002345+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-26T10:42:12.111386+00:00"
   },
-  "last_dynamic_question": "Singapore proposes licence regime for stablecoins",
-  "dynamic_published_at": "2026-09-02T09:27:08.735145+00:00",
+  "last_dynamic_question": "Thailand finalizes strict crypto Travel Rule",
+  "dynamic_published_at": "2026-09-02T21:45:14.846670+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-09-02T14:18:55.780046+00:00",
-    "hour_utc": 14,
-    "answer_length": 2920
+    "question": "Thailand finalizes strict crypto Travel Rule",
+    "group": "DYNAMIC",
+    "published_at": "2026-09-02T21:45:14.846693+00:00",
+    "hour_utc": 21,
+    "answer_length": 3553
   }
 }
