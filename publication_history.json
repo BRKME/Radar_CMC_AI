@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-09-01T13:26:15.591684+00:00",
-    "dynamic": "2026-08-31T21:52:06.997908+00:00",
+    "dynamic": "2026-09-02T09:27:08.735162+00:00",
     "market_direction": "2026-08-30T22:38:37.535177+00:00",
     "narratives": "2026-09-01T23:14:12.562582+00:00",
     "events": "2026-08-30T19:43:36.002345+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-26T10:42:12.111386+00:00"
   },
-  "last_dynamic_question": "Map reveals 67M US crypto holders",
-  "dynamic_published_at": "2026-08-31T21:52:06.997890+00:00",
+  "last_dynamic_question": "Singapore proposes licence regime for stablecoins",
+  "dynamic_published_at": "2026-09-02T09:27:08.735145+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-09-01T23:14:12.562601+00:00",
-    "hour_utc": 23,
-    "answer_length": 3388
+    "question": "Singapore proposes licence regime for stablecoins",
+    "group": "DYNAMIC",
+    "published_at": "2026-09-02T09:27:08.735168+00:00",
+    "hour_utc": 9,
+    "answer_length": 4228
   }
 }
