@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-09-01T13:26:15.591684+00:00",
-    "dynamic": "2026-09-03T09:36:55.837926+00:00",
+    "dynamic": "2026-09-03T21:38:54.200842+00:00",
     "market_direction": "2026-09-03T14:21:54.562792+00:00",
     "narratives": "2026-09-01T23:14:12.562582+00:00",
     "events": "2026-08-30T19:43:36.002345+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-26T10:42:12.111386+00:00"
   },
-  "last_dynamic_question": "CLARITY Act passage odds drop to 15%",
-  "dynamic_published_at": "2026-09-03T09:36:55.837908+00:00",
+  "last_dynamic_question": "BTC ETFs gain $101M as alts exit",
+  "dynamic_published_at": "2026-09-03T21:38:54.200823+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-09-03T14:21:54.562809+00:00",
-    "hour_utc": 14,
-    "answer_length": 2837
+    "question": "BTC ETFs gain $101M as alts exit",
+    "group": "DYNAMIC",
+    "published_at": "2026-09-03T21:38:54.200847+00:00",
+    "hour_utc": 21,
+    "answer_length": 4095
   }
 }
