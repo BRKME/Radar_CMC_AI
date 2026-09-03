@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-09-01T13:26:15.591684+00:00",
     "dynamic": "2026-09-03T09:36:55.837926+00:00",
-    "market_direction": "2026-09-02T14:18:55.780036+00:00",
+    "market_direction": "2026-09-03T14:21:54.562792+00:00",
     "narratives": "2026-09-01T23:14:12.562582+00:00",
     "events": "2026-08-30T19:43:36.002345+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "CLARITY Act passage odds drop to 15%",
   "dynamic_published_at": "2026-09-03T09:36:55.837908+00:00",
   "last_publication": {
-    "question": "CLARITY Act passage odds drop to 15%",
-    "group": "DYNAMIC",
-    "published_at": "2026-09-03T09:36:55.837932+00:00",
-    "hour_utc": 9,
-    "answer_length": 4491
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-09-03T14:21:54.562809+00:00",
+    "hour_utc": 14,
+    "answer_length": 2837
   }
 }
