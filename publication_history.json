@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-09-01T13:26:15.591684+00:00",
-    "dynamic": "2026-09-03T21:38:54.200842+00:00",
+    "dynamic": "2026-09-04T09:29:12.287658+00:00",
     "market_direction": "2026-09-03T14:21:54.562792+00:00",
     "narratives": "2026-09-03T23:56:16.064683+00:00",
     "events": "2026-08-30T19:43:36.002345+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-08-26T10:42:12.111386+00:00"
   },
-  "last_dynamic_question": "BTC ETFs gain $101M as alts exit",
-  "dynamic_published_at": "2026-09-03T21:38:54.200823+00:00",
+  "last_dynamic_question": "XRP volume hits highest since February",
+  "dynamic_published_at": "2026-09-04T09:29:12.287641+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-09-03T23:56:16.064700+00:00",
-    "hour_utc": 23,
-    "answer_length": 3203
+    "question": "XRP volume hits highest since February",
+    "group": "DYNAMIC",
+    "published_at": "2026-09-04T09:29:12.287663+00:00",
+    "hour_utc": 9,
+    "answer_length": 3907
   }
 }
