@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-09-01T13:26:15.591684+00:00",
     "dynamic": "2026-09-04T21:21:47.554918+00:00",
-    "market_direction": "2026-09-04T14:10:48.341125+00:00",
+    "market_direction": "2026-09-05T08:56:50.248827+00:00",
     "narratives": "2026-09-04T23:55:15.671791+00:00",
     "events": "2026-08-30T19:43:36.002345+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Senate CLARITY Act vote faces calendar squeeze",
   "dynamic_published_at": "2026-09-04T21:21:47.554899+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-09-04T23:55:15.671807+00:00",
-    "hour_utc": 23,
-    "answer_length": 2869
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-09-05T08:56:50.248841+00:00",
+    "hour_utc": 8,
+    "answer_length": 3250
   }
 }
