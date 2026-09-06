@@ -7,15 +7,15 @@
     "events": "2026-09-05T15:55:49.679593+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-08-26T10:42:12.111386+00:00"
+    "bullish": "2026-09-06T10:45:59.178322+00:00"
   },
   "last_dynamic_question": "Privacy coin ETF assets jump to $400M",
   "dynamic_published_at": "2026-09-05T21:06:05.462808+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-09-05T22:50:34.888968+00:00",
-    "hour_utc": 22,
-    "answer_length": 3154
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-09-06T10:45:59.178339+00:00",
+    "hour_utc": 10,
+    "answer_length": 3089
   }
 }
