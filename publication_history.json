@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-09-06T22:51:30.560547+00:00",
-    "dynamic": "2026-09-09T21:37:52.027717+00:00",
+    "dynamic": "2026-09-10T09:33:59.261815+00:00",
     "market_direction": "2026-09-09T14:22:57.565364+00:00",
     "narratives": "2026-09-04T23:55:15.671791+00:00",
     "events": "2026-09-08T15:03:34.706579+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-09-06T10:45:59.178322+00:00"
   },
-  "last_dynamic_question": "New XRP fund files SEC retail strategy",
-  "dynamic_published_at": "2026-09-09T21:37:52.027697+00:00",
+  "last_dynamic_question": "US bank tests dollar stablecoin for payments",
+  "dynamic_published_at": "2026-09-10T09:33:59.261798+00:00",
   "last_publication": {
-    "question": "New XRP fund files SEC retail strategy",
+    "question": "US bank tests dollar stablecoin for payments",
     "group": "DYNAMIC",
-    "published_at": "2026-09-09T21:37:52.027722+00:00",
-    "hour_utc": 21,
-    "answer_length": 3688
+    "published_at": "2026-09-10T09:33:59.261819+00:00",
+    "hour_utc": 9,
+    "answer_length": 4164
   }
 }
