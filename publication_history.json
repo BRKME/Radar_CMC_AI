@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-09-06T22:51:30.560547+00:00",
-    "dynamic": "2026-09-11T09:30:46.752598+00:00",
+    "dynamic": "2026-09-11T21:39:47.808117+00:00",
     "market_direction": "2026-09-11T14:15:36.461551+00:00",
     "narratives": "2026-09-10T23:58:34.090999+00:00",
     "events": "2026-09-08T15:03:34.706579+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-09-06T10:45:59.178322+00:00"
   },
-  "last_dynamic_question": "CoinMarketCap launches CMC AI data endpoints",
-  "dynamic_published_at": "2026-09-11T09:30:46.752583+00:00",
+  "last_dynamic_question": "Bitcoin ETFs extend multiday outflows",
+  "dynamic_published_at": "2026-09-11T21:39:47.808101+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-09-11T14:15:36.461567+00:00",
-    "hour_utc": 14,
-    "answer_length": 2722
+    "question": "Bitcoin ETFs extend multiday outflows",
+    "group": "DYNAMIC",
+    "published_at": "2026-09-11T21:39:47.808122+00:00",
+    "hour_utc": 21,
+    "answer_length": 4048
   }
 }
