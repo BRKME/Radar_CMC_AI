@@ -4,7 +4,7 @@
     "dynamic": "2026-09-12T09:10:34.569126+00:00",
     "market_direction": "2026-09-15T22:04:53.788751+00:00",
     "narratives": "2026-09-16T16:41:26.935317+00:00",
-    "events": "2026-09-13T19:18:09.216213+00:00",
+    "events": "2026-09-16T19:58:32.934456+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-09-06T10:45:59.178322+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Canada treats tokenized bank deposits as traditional",
   "dynamic_published_at": "2026-09-12T09:10:34.569108+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-09-16T16:41:26.935334+00:00",
-    "hour_utc": 16,
-    "answer_length": 2852
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-09-16T19:58:32.934474+00:00",
+    "hour_utc": 19,
+    "answer_length": 4115
   }
 }
