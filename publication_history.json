@@ -1,7 +1,7 @@
 {
   "last_published": {
     "kols": "2026-09-19T22:52:42.761614+00:00",
-    "dynamic": "2026-09-18T21:34:54.479300+00:00",
+    "dynamic": "2026-09-20T21:24:54.083348+00:00",
     "market_direction": "2026-09-19T14:18:15.805163+00:00",
     "narratives": "2026-09-16T16:41:26.935317+00:00",
     "events": "2026-09-20T15:56:01.211840+00:00",
@@ -9,13 +9,13 @@
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-09-19T10:45:55.603877+00:00"
   },
-  "last_dynamic_question": "UAE and Sweden bust crypto laundering ring",
-  "dynamic_published_at": "2026-09-18T21:34:54.479285+00:00",
+  "last_dynamic_question": "US sanctions Iran-linked crypto exchange",
+  "dynamic_published_at": "2026-09-20T21:24:54.083337+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-09-20T15:56:01.211857+00:00",
-    "hour_utc": 15,
-    "answer_length": 4113
+    "question": "US sanctions Iran-linked crypto exchange",
+    "group": "DYNAMIC",
+    "published_at": "2026-09-20T21:24:54.083353+00:00",
+    "hour_utc": 21,
+    "answer_length": 4389
   }
 }
