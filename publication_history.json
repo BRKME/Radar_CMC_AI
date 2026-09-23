@@ -3,7 +3,7 @@
     "kols": "2026-09-19T22:52:42.761614+00:00",
     "dynamic": "2026-09-22T21:58:34.214432+00:00",
     "market_direction": "2026-09-22T14:38:50.164948+00:00",
-    "narratives": "2026-09-22T00:00:09.135788+00:00",
+    "narratives": "2026-09-23T16:43:36.218907+00:00",
     "events": "2026-09-20T15:56:01.211840+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "Russia central bank outlines crypto market rules",
   "dynamic_published_at": "2026-09-22T21:58:34.214413+00:00",
   "last_publication": {
-    "question": "Russia central bank outlines crypto market rules",
-    "group": "DYNAMIC",
-    "published_at": "2026-09-22T21:58:34.214436+00:00",
-    "hour_utc": 21,
-    "answer_length": 4467
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-09-23T16:43:36.218929+00:00",
+    "hour_utc": 16,
+    "answer_length": 3001
   }
 }
