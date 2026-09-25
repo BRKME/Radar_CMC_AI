@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-09-24T14:52:41.865650+00:00",
+    "kols": "2026-09-25T13:36:14.538601+00:00",
     "dynamic": "2026-09-24T09:52:57.321996+00:00",
     "market_direction": "2026-09-24T22:11:56.820285+00:00",
     "narratives": "2026-09-23T23:34:40.265674+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC drop triggers $237M long liquidations",
   "dynamic_published_at": "2026-09-24T09:52:57.321977+00:00",
   "last_publication": {
-    "question": "Why is the market up today?",
-    "group": "market_direction",
-    "published_at": "2026-09-24T22:11:56.820304+00:00",
-    "hour_utc": 22,
-    "answer_length": 3039
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-09-25T13:36:14.538618+00:00",
+    "hour_utc": 13,
+    "answer_length": 3146
   }
 }
