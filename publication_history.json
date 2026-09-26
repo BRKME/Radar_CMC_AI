@@ -4,7 +4,7 @@
     "dynamic": "2026-09-24T09:52:57.321996+00:00",
     "market_direction": "2026-09-24T22:11:56.820285+00:00",
     "narratives": "2026-09-23T23:34:40.265674+00:00",
-    "events": "2026-09-20T15:56:01.211840+00:00",
+    "events": "2026-09-26T19:42:50.821047+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-09-21T10:36:13.417989+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "BTC drop triggers $237M long liquidations",
   "dynamic_published_at": "2026-09-24T09:52:57.321977+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-09-25T22:11:59.466131+00:00",
-    "hour_utc": 22,
-    "answer_length": 3222
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-09-26T19:42:50.821064+00:00",
+    "hour_utc": 19,
+    "answer_length": 3418
   }
 }
