@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-09-27T13:49:02.230018+00:00",
     "dynamic": "2026-09-27T21:59:48.869673+00:00",
-    "market_direction": "2026-09-24T22:11:56.820285+00:00",
+    "market_direction": "2026-09-29T08:18:39.008442+00:00",
     "narratives": "2026-09-23T23:34:40.265674+00:00",
     "events": "2026-09-28T15:16:19.550660+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP Upgrade Bug Fix Rolls Out",
   "dynamic_published_at": "2026-09-27T21:59:48.869658+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-09-28T15:16:19.550678+00:00",
-    "hour_utc": 15,
-    "answer_length": 3874
+    "question": "Why is the market up today?",
+    "group": "market_direction",
+    "published_at": "2026-09-29T08:18:39.008461+00:00",
+    "hour_utc": 8,
+    "answer_length": 2961
   }
 }
