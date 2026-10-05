@@ -4,7 +4,7 @@
     "dynamic": "2026-09-27T21:59:48.869673+00:00",
     "market_direction": "2026-10-02T08:20:53.802029+00:00",
     "narratives": "2026-10-03T23:43:16.115128+00:00",
-    "events": "2026-10-02T15:41:12.007388+00:00",
+    "events": "2026-10-05T15:50:46.805741+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
     "bullish": "2026-09-21T10:36:13.417989+00:00"
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP Upgrade Bug Fix Rolls Out",
   "dynamic_published_at": "2026-09-27T21:59:48.869658+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-10-03T23:43:16.115141+00:00",
-    "hour_utc": 23,
-    "answer_length": 3650
+    "question": "What upcoming events may impact crypto?",
+    "group": "events",
+    "published_at": "2026-10-05T15:50:46.805753+00:00",
+    "hour_utc": 15,
+    "answer_length": 3277
   }
 }
