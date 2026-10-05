@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-10-01T08:42:31.206908+00:00",
+    "kols": "2026-10-05T22:30:37.286637+00:00",
     "dynamic": "2026-09-27T21:59:48.869673+00:00",
     "market_direction": "2026-10-02T08:20:53.802029+00:00",
     "narratives": "2026-10-03T23:43:16.115128+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP Upgrade Bug Fix Rolls Out",
   "dynamic_published_at": "2026-09-27T21:59:48.869658+00:00",
   "last_publication": {
-    "question": "What upcoming events may impact crypto?",
-    "group": "events",
-    "published_at": "2026-10-05T15:50:46.805753+00:00",
-    "hour_utc": 15,
-    "answer_length": 3277
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-10-05T22:30:37.286652+00:00",
+    "hour_utc": 22,
+    "answer_length": 3471
   }
 }
