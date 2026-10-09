@@ -3,7 +3,7 @@
     "kols": "2026-10-09T08:50:49.293761+00:00",
     "dynamic": "2026-09-27T21:59:48.869673+00:00",
     "market_direction": "2026-10-07T08:30:59.038642+00:00",
-    "narratives": "2026-10-08T16:20:54.793873+00:00",
+    "narratives": "2026-10-09T16:04:59.943059+00:00",
     "events": "2026-10-05T15:50:46.805741+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP Upgrade Bug Fix Rolls Out",
   "dynamic_published_at": "2026-09-27T21:59:48.869658+00:00",
   "last_publication": {
-    "question": "What are KOLs discussing?",
-    "group": "kols",
-    "published_at": "2026-10-09T08:50:49.293778+00:00",
-    "hour_utc": 8,
-    "answer_length": 3864
+    "question": "What are the trending narratives?",
+    "group": "narratives",
+    "published_at": "2026-10-09T16:04:59.943079+00:00",
+    "hour_utc": 16,
+    "answer_length": 3346
   }
 }
