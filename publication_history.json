@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-10-10T13:31:30.168271+00:00",
+    "kols": "2026-10-10T22:23:37.141106+00:00",
     "dynamic": "2026-09-27T21:59:48.869673+00:00",
     "market_direction": "2026-10-07T08:30:59.038642+00:00",
     "narratives": "2026-10-09T16:04:59.943059+00:00",
@@ -14,8 +14,8 @@
   "last_publication": {
     "question": "What are KOLs discussing?",
     "group": "kols",
-    "published_at": "2026-10-10T13:31:30.168289+00:00",
-    "hour_utc": 13,
-    "answer_length": 3316
+    "published_at": "2026-10-10T22:23:37.141121+00:00",
+    "hour_utc": 22,
+    "answer_length": 3135
   }
 }
