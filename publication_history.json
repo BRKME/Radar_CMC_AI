@@ -1,6 +1,6 @@
 {
   "last_published": {
-    "kols": "2026-10-15T14:50:02.641116+00:00",
+    "kols": "2026-10-17T13:35:49.959703+00:00",
     "dynamic": "2026-09-27T21:59:48.869673+00:00",
     "market_direction": "2026-10-15T22:06:50.856743+00:00",
     "narratives": "2026-10-16T23:26:16.409483+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP Upgrade Bug Fix Rolls Out",
   "dynamic_published_at": "2026-09-27T21:59:48.869658+00:00",
   "last_publication": {
-    "question": "What are the trending narratives?",
-    "group": "narratives",
-    "published_at": "2026-10-16T23:26:16.409502+00:00",
-    "hour_utc": 23,
-    "answer_length": 3312
+    "question": "What are KOLs discussing?",
+    "group": "kols",
+    "published_at": "2026-10-17T13:35:49.959719+00:00",
+    "hour_utc": 13,
+    "answer_length": 3259
   }
 }
