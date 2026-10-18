@@ -7,15 +7,15 @@
     "events": "2026-10-17T19:11:22.246803+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
     "altcoins": "2026-03-17T15:06:38.160378+00:00",
-    "bullish": "2026-10-06T10:03:40.170674+00:00"
+    "bullish": "2026-10-18T10:51:19.187799+00:00"
   },
   "last_dynamic_question": "XRP Upgrade Bug Fix Rolls Out",
   "dynamic_published_at": "2026-09-27T21:59:48.869658+00:00",
   "last_publication": {
-    "question": "Why is the market down today?",
-    "group": "market_direction",
-    "published_at": "2026-10-17T22:10:18.251225+00:00",
-    "hour_utc": 22,
-    "answer_length": 2996
+    "question": "What cryptos are showing bullish momentum?",
+    "group": "bullish",
+    "published_at": "2026-10-18T10:51:19.187816+00:00",
+    "hour_utc": 10,
+    "answer_length": 3036
   }
 }
