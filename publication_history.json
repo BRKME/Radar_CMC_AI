@@ -2,7 +2,7 @@
   "last_published": {
     "kols": "2026-10-17T13:35:49.959703+00:00",
     "dynamic": "2026-09-27T21:59:48.869673+00:00",
-    "market_direction": "2026-10-17T22:10:18.251210+00:00",
+    "market_direction": "2026-10-18T14:28:12.448487+00:00",
     "narratives": "2026-10-17T16:58:50.386908+00:00",
     "events": "2026-10-17T19:11:22.246803+00:00",
     "sentiment": "2026-05-08T18:17:01.145669+00:00",
@@ -12,10 +12,10 @@
   "last_dynamic_question": "XRP Upgrade Bug Fix Rolls Out",
   "dynamic_published_at": "2026-09-27T21:59:48.869658+00:00",
   "last_publication": {
-    "question": "What cryptos are showing bullish momentum?",
-    "group": "bullish",
-    "published_at": "2026-10-18T10:51:19.187816+00:00",
-    "hour_utc": 10,
-    "answer_length": 3036
+    "question": "Why is the market down today?",
+    "group": "market_direction",
+    "published_at": "2026-10-18T14:28:12.448501+00:00",
+    "hour_utc": 14,
+    "answer_length": 3237
   }
 }
